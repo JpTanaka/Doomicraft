@@ -153,6 +153,11 @@ void initialize_default_shaders()
 
 
 
+/**
+ * Set callback functions that define the gameplay.
+ * 
+ * Other modules might be called for better modularity of the program.
+*/
 
 
 //Callback functions

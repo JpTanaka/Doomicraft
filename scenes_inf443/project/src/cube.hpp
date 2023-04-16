@@ -20,6 +20,7 @@ public:
     cube();
     cube(vec3 center);
     void draw(environment_structure&);
-    bool colision(cube const&);
+    vec3 colision(cube const&);
+    bool check_colision(cube const&);
     float distance(cube const&);
 };

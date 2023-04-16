@@ -79,8 +79,8 @@ void scene_structure::display_frame()
 		draw_wireframe(terrain, environment);
 	}
 	
-	if(cube1.colision(player.body)) {
-		std::cout << timer.t << "<-->" << cube1.distance(player.body) <<  std::endl;
+	if(cube1.check_colision(player.body) ) {
+		std::cout << timer.t << "<-->" << cube1.colision(player.body) <<  std::endl;
 	}
 	
 

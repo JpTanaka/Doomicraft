@@ -29,12 +29,6 @@ void scene_structure::initialize()
 	// Set the behavior of the camera and its initial position
 	// ********************************************** //
 	camera_control.initialize(inputs, window); 
-	camera_control.set_rotation_axis_z(); // camera rotates around z-axis
-	//   look_at(camera_position, targeted_point, up_direction)
-	camera_control.look_at(
-		{ 5.0f, -4.0f, 3.5f } /* position of the camera in the 3D scene */,
-		{0,0,0} /* targeted point in 3D scene */,
-		{0,0,1} /* direction of the "up" vector */);
 
 
 	// Create the global (x,y,z) frame
@@ -44,17 +38,16 @@ void scene_structure::initialize()
 	// Create the shapes seen in the 3D scene
 	// ********************************************** //
 
-	float L = 5.0f;
+	float L = 10.0f;
 	mesh terrain_mesh = mesh_primitive_grid({ -L,-L,0 }, { L,-L,0 }, { L,L,0 }, { -L,L,0 }, 100, 100);
-	deform_terrain(terrain_mesh);
 	terrain.initialize_data_on_gpu(terrain_mesh);
-	terrain.texture.load_and_initialize_texture_2d_on_gpu(project::path + "assets/sand.jpg");
 
 
-	cube1.initialize_data_on_gpu(mesh_primitive_cube({ 0,0,0 }, 0.5f));
-	cube1.model.rotation = rotation_transform::from_axis_angle({ -1,1,0 }, Pi / 7.0f);
-	cube1.model.translation = { 1.0f,1.0f,-0.1f };
-	cube1.texture.load_and_initialize_texture_2d_on_gpu(project::path + "assets/wood.jpg");
+	// cube1.initialize_data_on_gpu(mesh_primitive_cube({ 0,0,0.5f }, 1.0f));
+
+	cube1 = cube(vec3{0,0,0.5f});
+	player = character(camera_control, {0, 0, 1});
+
 
 }
 
@@ -76,20 +69,20 @@ void scene_structure::display_frame()
 	
 
 	// Draw all the shapes
-	draw(cube1, environment);
+	// draw(cube1, environment);
+	draw(terrain, environment);
+	cube1.draw(environment);
+
 
 
 	if (gui.display_wireframe) {
 		draw_wireframe(terrain, environment);
-		draw_wireframe(cube1, environment);
 	}
 	
-
-
-
-
-
-
+	if(cube1.colision(player.body)) {
+		std::cout << timer.t << "<-->" << cube1.distance(player.body) <<  std::endl;
+	}
+	
 
 }
 
@@ -116,5 +109,5 @@ void scene_structure::keyboard_event()
 void scene_structure::idle_frame()
 {
 	camera_control.idle_frame(environment.camera_view);
+	player.move();
 }
-

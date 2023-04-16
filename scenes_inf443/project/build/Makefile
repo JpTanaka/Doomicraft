@@ -2313,6 +2313,78 @@ home/guile/x/Doomicraft/cgp/library/third_party/src/simplexnoise/simplexnoise123
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/simplexnoise/simplexnoise1234.cpp.s
 .PHONY : home/guile/x/Doomicraft/cgp/library/third_party/src/simplexnoise/simplexnoise1234.cpp.s
 
+src/camera.o: src/camera.cpp.o
+.PHONY : src/camera.o
+
+# target to build an object file
+src/camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/camera.cpp.o
+.PHONY : src/camera.cpp.o
+
+src/camera.i: src/camera.cpp.i
+.PHONY : src/camera.i
+
+# target to preprocess a source file
+src/camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/camera.cpp.i
+.PHONY : src/camera.cpp.i
+
+src/camera.s: src/camera.cpp.s
+.PHONY : src/camera.s
+
+# target to generate assembly for a file
+src/camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/camera.cpp.s
+.PHONY : src/camera.cpp.s
+
+src/character.o: src/character.cpp.o
+.PHONY : src/character.o
+
+# target to build an object file
+src/character.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/character.cpp.o
+.PHONY : src/character.cpp.o
+
+src/character.i: src/character.cpp.i
+.PHONY : src/character.i
+
+# target to preprocess a source file
+src/character.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/character.cpp.i
+.PHONY : src/character.cpp.i
+
+src/character.s: src/character.cpp.s
+.PHONY : src/character.s
+
+# target to generate assembly for a file
+src/character.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/character.cpp.s
+.PHONY : src/character.cpp.s
+
+src/cube.o: src/cube.cpp.o
+.PHONY : src/cube.o
+
+# target to build an object file
+src/cube.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/cube.cpp.o
+.PHONY : src/cube.cpp.o
+
+src/cube.i: src/cube.cpp.i
+.PHONY : src/cube.i
+
+# target to preprocess a source file
+src/cube.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/cube.cpp.i
+.PHONY : src/cube.cpp.i
+
+src/cube.s: src/cube.cpp.s
+.PHONY : src/cube.s
+
+# target to generate assembly for a file
+src/cube.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/cube.cpp.s
+.PHONY : src/cube.cpp.s
+
 src/environment.o: src/environment.cpp.o
 .PHONY : src/environment.o
 
@@ -2667,6 +2739,15 @@ help:
 	@echo "... home/guile/x/Doomicraft/cgp/library/third_party/src/simplexnoise/simplexnoise1234.o"
 	@echo "... home/guile/x/Doomicraft/cgp/library/third_party/src/simplexnoise/simplexnoise1234.i"
 	@echo "... home/guile/x/Doomicraft/cgp/library/third_party/src/simplexnoise/simplexnoise1234.s"
+	@echo "... src/camera.o"
+	@echo "... src/camera.i"
+	@echo "... src/camera.s"
+	@echo "... src/character.o"
+	@echo "... src/character.i"
+	@echo "... src/character.s"
+	@echo "... src/cube.o"
+	@echo "... src/cube.i"
+	@echo "... src/cube.s"
 	@echo "... src/environment.o"
 	@echo "... src/environment.i"
 	@echo "... src/environment.s"

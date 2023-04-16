@@ -327,4 +327,7 @@ CMakeFiles/project.dir/src/scene.cpp.o: \
  /home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/tracker/tracker.hpp \
  /home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/tracker/velocity_tracker/velocity_tracker.hpp \
  /home/guile/x/Doomicraft/cgp/library/cgp/graphics/emscripten/emscripten.hpp \
- /home/guile/x/Doomicraft/scenes_inf443/project/src/environment.hpp
+ /home/guile/x/Doomicraft/scenes_inf443/project/src/environment.hpp \
+ /home/guile/x/Doomicraft/scenes_inf443/project/src/camera.hpp \
+ /home/guile/x/Doomicraft/scenes_inf443/project/src/character.hpp \
+ /home/guile/x/Doomicraft/scenes_inf443/project/src/cube.hpp

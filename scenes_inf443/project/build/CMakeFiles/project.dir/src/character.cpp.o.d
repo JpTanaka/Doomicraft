@@ -1,13 +1,6 @@
 CMakeFiles/project.dir/src/character.cpp.o: \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/character.cpp \
- /usr/include/stdc-predef.h \
- /home/guile/x/Doomicraft/scenes_inf443/project/src/character.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/cgp.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/cgp_parameters.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/core/core.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/core/base/base.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/core/base/error/error.hpp \
- /usr/include/c++/12/string \
+ /usr/include/stdc-predef.h /usr/include/c++/12/utility \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -18,7 +11,17 @@ CMakeFiles/project.dir/src/character.cpp.o: \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
- /usr/include/c++/12/bits/stringfwd.h \
+ /usr/include/c++/12/bits/stl_relops.h \
+ /usr/include/c++/12/bits/stl_pair.h /usr/include/c++/12/type_traits \
+ /usr/include/c++/12/bits/move.h /usr/include/c++/12/bits/utility.h \
+ /usr/include/c++/12/initializer_list \
+ /home/guile/x/Doomicraft/scenes_inf443/project/src/character.hpp \
+ /home/guile/x/Doomicraft/cgp/library/cgp/cgp.hpp \
+ /home/guile/x/Doomicraft/cgp/library/cgp/cgp_parameters.hpp \
+ /home/guile/x/Doomicraft/cgp/library/cgp/core/core.hpp \
+ /home/guile/x/Doomicraft/cgp/library/cgp/core/base/base.hpp \
+ /home/guile/x/Doomicraft/cgp/library/cgp/core/base/error/error.hpp \
+ /usr/include/c++/12/string /usr/include/c++/12/bits/stringfwd.h \
  /usr/include/c++/12/bits/memoryfwd.h \
  /usr/include/c++/12/bits/char_traits.h \
  /usr/include/c++/12/bits/postypes.h /usr/include/c++/12/cwchar \
@@ -37,8 +40,7 @@ CMakeFiles/project.dir/src/character.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/wchar2-decl.h \
- /usr/include/x86_64-linux-gnu/bits/wchar2.h \
- /usr/include/c++/12/type_traits /usr/include/c++/12/cstdint \
+ /usr/include/x86_64-linux-gnu/bits/wchar2.h /usr/include/c++/12/cstdint \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/types.h \
  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
@@ -51,7 +53,6 @@ CMakeFiles/project.dir/src/character.cpp.o: \
  /usr/include/c++/12/bits/exception.h \
  /usr/include/c++/12/bits/functexcept.h \
  /usr/include/c++/12/bits/exception_defines.h \
- /usr/include/c++/12/bits/move.h \
  /usr/include/c++/12/bits/cpp_type_traits.h \
  /usr/include/c++/12/bits/localefwd.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++locale.h \
@@ -73,12 +74,10 @@ CMakeFiles/project.dir/src/character.cpp.o: \
  /usr/include/c++/12/backward/binders.h \
  /usr/include/c++/12/ext/numeric_traits.h \
  /usr/include/c++/12/bits/stl_algobase.h \
- /usr/include/c++/12/bits/stl_pair.h /usr/include/c++/12/bits/utility.h \
  /usr/include/c++/12/debug/debug.h \
  /usr/include/c++/12/bits/predefined_ops.h \
  /usr/include/c++/12/bits/refwrap.h /usr/include/c++/12/bits/invoke.h \
  /usr/include/c++/12/bits/range_access.h \
- /usr/include/c++/12/initializer_list \
  /usr/include/c++/12/bits/basic_string.h \
  /usr/include/c++/12/ext/alloc_traits.h \
  /usr/include/c++/12/bits/alloc_traits.h \
@@ -329,4 +328,5 @@ CMakeFiles/project.dir/src/character.cpp.o: \
  /home/guile/x/Doomicraft/cgp/library/cgp/graphics/emscripten/emscripten.hpp \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/camera.hpp \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/environment.hpp \
- /home/guile/x/Doomicraft/scenes_inf443/project/src/cube.hpp
+ /home/guile/x/Doomicraft/scenes_inf443/project/src/cube.hpp \
+ /home/guile/x/Doomicraft/scenes_inf443/project/src/constants.hpp

@@ -13,14 +13,14 @@ using cgp::vec3;
 
 class cube {
     mesh_drawable mesh;
-    float L = 1.0f;
 
 public:
+    float L = 1.0f;
     vec3 position;
     cube();
-    cube(vec3 center);
+    cube(vec3 center, vec3 color = {1, 0, 0});
     void draw(environment_structure&);
     vec3 colision(cube const&);
-    bool check_colision(cube const&);
+    bool check_colision(cube const&, double tolerance = 0.0);
     float distance(cube const&);
 };

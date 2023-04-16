@@ -43,12 +43,15 @@ struct scene_structure : cgp::scene_inputs_generic
 
 	timer_basic timer;
 
-	mesh_drawable terrain;
+	// mesh_drawable terrain;
 	// mesh_drawable cube1;
 
 
 	cube cube1;
 	character player;
+
+
+	std::vector<cube> terrain;
 
 
 

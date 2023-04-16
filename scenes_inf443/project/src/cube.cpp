@@ -2,9 +2,9 @@
 #include <initializer_list>
 #include <algorithm>
 
-cube::cube(vec3 center){
+cube::cube(vec3 center, vec3 color){
     mesh.initialize_data_on_gpu(mesh_primitive_cube(center, L));
-    mesh.material.color = {1, 0, 0};
+    mesh.material.color = color;
     position = center;
 };
 cube::cube(){};
@@ -23,20 +23,18 @@ vec3 cube::colision(cube const& c){
     float ady = std::abs(dy);
     float adz = std::abs(dz);
 
-    auto sign = [](float x) -> float { return x < 0 ? -1 : 1; };
-
 
     if( !check_colision(c) ) return {0, 0, 0};
 
-    if (adx >= ady && adx >= adz) return {sign(dx), 0, 0};
-    if (ady >= adx && ady >= adz) return {0, sign(dy), 0};
-    if (adz >= ady && adz >= adx) return {0, 0, sign(dz)};
+    if (adx > ady && adx > adz) return {dx, 0, 0};
+    if (ady > adx && ady > adz) return {0, dy, 0};
+    if (adz > ady && adz > adx) return {0, 0, dz};
 
     return {0, 0, 0};
 }
 
-bool cube::check_colision(cube const& c){
-    return distance(c) < L;
+bool cube::check_colision(cube const& c, double tolerance){
+    return distance(c) < L * (1 - tolerance);
 }
 
 

@@ -38,16 +38,27 @@ void scene_structure::initialize()
 	// Create the shapes seen in the 3D scene
 	// ********************************************** //
 
-	float L = 10.0f;
-	mesh terrain_mesh = mesh_primitive_grid({ -L,-L,0 }, { L,-L,0 }, { L,L,0 }, { -L,L,0 }, 100, 100);
-	terrain.initialize_data_on_gpu(terrain_mesh);
+	// float L = 10.0f;
+	// mesh terrain_mesh = mesh_primitive_grid({ -L,-L,0 }, { L,-L,0 }, { L,L,0 }, { -L,L,0 }, 100, 100);
+	// terrain.initialize_data_on_gpu(terrain_mesh);
 
 
 	// cube1.initialize_data_on_gpu(mesh_primitive_cube({ 0,0,0.5f }, 1.0f));
 
-	cube1 = cube(vec3{0,0,0.5f});
-	player = character(camera_control, {0, 0, 1});
+	cube1 = cube(vec3{0,0,1.0f}, {0, 1, 0});
+	player = character(camera_control, {2, 0, 1});
 
+	for (int i = -5 ; i < 5; i++){
+		for (int j = -5 ; j < 5; j++){
+			terrain.push_back(cube({i, j, 0}));
+		}
+	}
+
+	for (int i = -5 ; i < 5; i++){
+		terrain.push_back(cube({i, 3, 1}));
+	}
+
+	terrain.push_back(cube1);
 
 }
 
@@ -69,18 +80,13 @@ void scene_structure::display_frame()
 	
 
 	// Draw all the shapes
-	// draw(cube1, environment);
-	draw(terrain, environment);
-	cube1.draw(environment);
+
+	for (auto c : terrain) c.draw(environment);
 
 
 
 	if (gui.display_wireframe) {
-		draw_wireframe(terrain, environment);
-	}
-	
-	if(cube1.check_colision(player.body) ) {
-		std::cout << timer.t << "<-->" << cube1.colision(player.body) <<  std::endl;
+		// draw_wireframe(terrain, environment);
 	}
 	
 
@@ -109,5 +115,5 @@ void scene_structure::keyboard_event()
 void scene_structure::idle_frame()
 {
 	camera_control.idle_frame(environment.camera_view);
-	player.move();
+	player.move(terrain);
 }

@@ -20135,13 +20135,7 @@ CMakeFiles/project.dir/src/camera.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/
 
 CMakeFiles/project.dir/src/character.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/project/src/character.cpp \
   /usr/include/stdc-predef.h \
-  /home/guile/x/Doomicraft/scenes_inf443/project/src/character.hpp \
-  /home/guile/x/Doomicraft/cgp/library/cgp/cgp.hpp \
-  /home/guile/x/Doomicraft/cgp/library/cgp/cgp_parameters.hpp \
-  /home/guile/x/Doomicraft/cgp/library/cgp/core/core.hpp \
-  /home/guile/x/Doomicraft/cgp/library/cgp/core/base/base.hpp \
-  /home/guile/x/Doomicraft/cgp/library/cgp/core/base/error/error.hpp \
-  /usr/include/c++/12/string \
+  /usr/include/c++/12/utility \
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
   /usr/include/features.h \
@@ -20153,6 +20147,19 @@ CMakeFiles/project.dir/src/character.cpp.o: /home/guile/x/Doomicraft/scenes_inf4
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/bits/stl_relops.h \
+  /usr/include/c++/12/bits/stl_pair.h \
+  /usr/include/c++/12/type_traits \
+  /usr/include/c++/12/bits/move.h \
+  /usr/include/c++/12/bits/utility.h \
+  /usr/include/c++/12/initializer_list \
+  /home/guile/x/Doomicraft/scenes_inf443/project/src/character.hpp \
+  /home/guile/x/Doomicraft/cgp/library/cgp/cgp.hpp \
+  /home/guile/x/Doomicraft/cgp/library/cgp/cgp_parameters.hpp \
+  /home/guile/x/Doomicraft/cgp/library/cgp/core/core.hpp \
+  /home/guile/x/Doomicraft/cgp/library/cgp/core/base/base.hpp \
+  /home/guile/x/Doomicraft/cgp/library/cgp/core/base/error/error.hpp \
+  /usr/include/c++/12/string \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -20174,7 +20181,6 @@ CMakeFiles/project.dir/src/character.cpp.o: /home/guile/x/Doomicraft/scenes_inf4
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/wchar2-decl.h \
   /usr/include/x86_64-linux-gnu/bits/wchar2.h \
-  /usr/include/c++/12/type_traits \
   /usr/include/c++/12/cstdint \
   /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h \
   /usr/include/stdint.h \
@@ -20190,7 +20196,6 @@ CMakeFiles/project.dir/src/character.cpp.o: /home/guile/x/Doomicraft/scenes_inf4
   /usr/include/c++/12/bits/exception.h \
   /usr/include/c++/12/bits/functexcept.h \
   /usr/include/c++/12/bits/exception_defines.h \
-  /usr/include/c++/12/bits/move.h \
   /usr/include/c++/12/bits/cpp_type_traits.h \
   /usr/include/c++/12/bits/localefwd.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++locale.h \
@@ -20215,14 +20220,11 @@ CMakeFiles/project.dir/src/character.cpp.o: /home/guile/x/Doomicraft/scenes_inf4
   /usr/include/c++/12/backward/binders.h \
   /usr/include/c++/12/ext/numeric_traits.h \
   /usr/include/c++/12/bits/stl_algobase.h \
-  /usr/include/c++/12/bits/stl_pair.h \
-  /usr/include/c++/12/bits/utility.h \
   /usr/include/c++/12/debug/debug.h \
   /usr/include/c++/12/bits/predefined_ops.h \
   /usr/include/c++/12/bits/refwrap.h \
   /usr/include/c++/12/bits/invoke.h \
   /usr/include/c++/12/bits/range_access.h \
-  /usr/include/c++/12/initializer_list \
   /usr/include/c++/12/bits/basic_string.h \
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
@@ -20505,7 +20507,8 @@ CMakeFiles/project.dir/src/character.cpp.o: /home/guile/x/Doomicraft/scenes_inf4
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/emscripten/emscripten.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/camera.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/environment.hpp \
-  /home/guile/x/Doomicraft/scenes_inf443/project/src/cube.hpp
+  /home/guile/x/Doomicraft/scenes_inf443/project/src/cube.hpp \
+  /home/guile/x/Doomicraft/scenes_inf443/project/src/constants.hpp
 
 CMakeFiles/project.dir/src/cube.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/project/src/cube.cpp \
   /usr/include/stdc-predef.h \
@@ -21629,7 +21632,8 @@ CMakeFiles/project.dir/src/main.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/pr
   /home/guile/x/Doomicraft/scenes_inf443/project/src/scene.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/camera.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/character.hpp \
-  /home/guile/x/Doomicraft/scenes_inf443/project/src/cube.hpp
+  /home/guile/x/Doomicraft/scenes_inf443/project/src/cube.hpp \
+  /home/guile/x/Doomicraft/scenes_inf443/project/src/constants.hpp
 
 CMakeFiles/project.dir/src/scene.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/project/src/scene.cpp \
   /usr/include/stdc-predef.h \
@@ -22004,7 +22008,8 @@ CMakeFiles/project.dir/src/scene.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
   /home/guile/x/Doomicraft/scenes_inf443/project/src/environment.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/camera.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/character.hpp \
-  /home/guile/x/Doomicraft/scenes_inf443/project/src/cube.hpp
+  /home/guile/x/Doomicraft/scenes_inf443/project/src/cube.hpp \
+  /home/guile/x/Doomicraft/scenes_inf443/project/src/constants.hpp
 
 
 /home/guile/x/Doomicraft/scenes_inf443/project/src/scene.cpp:
@@ -22012,6 +22017,10 @@ CMakeFiles/project.dir/src/scene.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 /home/guile/x/Doomicraft/scenes_inf443/project/src/scene.hpp:
 
 /home/guile/x/Doomicraft/scenes_inf443/project/src/main.cpp:
+
+/home/guile/x/Doomicraft/scenes_inf443/project/src/environment.cpp:
+
+/home/guile/x/Doomicraft/scenes_inf443/project/src/constants.hpp:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/geometry/transform/rotation_transform/test/test_rotation.cpp:
 
@@ -22036,6 +22045,10 @@ CMakeFiles/project.dir/src/scene.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 /usr/include/c++/12/sstream:
 
 /usr/include/c++/12/bits/parse_numbers.h:
+
+/home/guile/x/Doomicraft/scenes_inf443/project/src/cube.cpp:
+
+/usr/include/c++/12/streambuf:
 
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
@@ -22344,8 +22357,6 @@ CMakeFiles/project.dir/src/scene.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 /usr/include/x86_64-linux-gnu/asm/errno.h:
 
 /usr/include/x86_64-linux-gnu/c++/12/bits/ctype_inline.h:
-
-/usr/include/x86_64-linux-gnu/c++/12/bits/atomic_word.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
@@ -22855,6 +22866,10 @@ CMakeFiles/project.dir/src/scene.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 
 /home/guile/x/Doomicraft/cgp/library/cgp/geometry/mat/mat3/mat3.cpp:
 
+/usr/include/x86_64-linux-gnu/c++/12/bits/atomic_word.h:
+
+/usr/include/c++/12/utility:
+
 /usr/include/x86_64-linux-gnu/asm/types.h:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/geometry/transform/rotation_transform/rotation_transform.hpp:
@@ -22894,8 +22909,6 @@ CMakeFiles/project.dir/src/scene.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 /home/guile/x/Doomicraft/cgp/library/cgp/geometry/transform/affine/affine_rt/affine_rt.hpp:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/geometry/transform/affine/affine_rts/affine_rts.hpp:
-
-/home/guile/x/Doomicraft/scenes_inf443/project/src/environment.cpp:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/geometry/transform/projection/projection.hpp:
 
@@ -22938,10 +22951,6 @@ CMakeFiles/project.dir/src/scene.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 /home/guile/x/Doomicraft/cgp/library/cgp/graphics/window/window.hpp:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/camera_model/camera_first_person/camera_first_person.hpp:
-
-/usr/include/c++/12/streambuf:
-
-/home/guile/x/Doomicraft/scenes_inf443/project/src/cube.cpp:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/camera_model/camera_first_person_euler/camera_first_person_euler.hpp:
 
@@ -23094,3 +23103,5 @@ CMakeFiles/project.dir/src/scene.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 /home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer.hpp:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/tracker/tracker.hpp:
+
+/usr/include/c++/12/bits/stl_relops.h:

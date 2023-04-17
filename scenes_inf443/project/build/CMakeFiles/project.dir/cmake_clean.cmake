@@ -193,6 +193,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/project.dir/src/main.cpp.o.d"
   "CMakeFiles/project.dir/src/scene.cpp.o"
   "CMakeFiles/project.dir/src/scene.cpp.o.d"
+  "CMakeFiles/project.dir/src/utils.cpp.o"
+  "CMakeFiles/project.dir/src/utils.cpp.o.d"
   "project"
   "project.pdb"
 )

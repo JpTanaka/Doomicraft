@@ -1,4 +1,5 @@
 #include "cube.hpp"
+#include "utils.hpp"
 #include <initializer_list>
 #include <algorithm>
 
@@ -34,13 +35,50 @@ vec3 cube::colision(cube const& c){
 }
 
 bool cube::check_colision(cube const& c, double tolerance){
-    return distance(c) < L * (1 - tolerance);
+    return std::abs(distance(c) - L ) < tolerance;
 }
 
+std::pair<int, int> cube::get_colision_direction(cube const& c, double tolerance){
+    /**
+     * returns a pair:
+     *  first: the coordinate the colision is taking place (0 for x, 1 for y , 2 for z, -1 if no colision)
+     *  second: positive or negative semiaxis (1 for positive, -1 for negative, 0 for no collision)
+     * the direction is from this perspective (inverse for cube "c" perspective)
+    */
+    if (!check_colision(c, tolerance)) return {-1, 0}; // if they are not coliding
+
+    float distance = this->distance(c);
+
+    vec3 dr = c.position - position;
+    for(int i = 0; i < 3; i++)
+        if (std::abs(std::abs(dr[i])  - distance) < tolerance) {
+            vec3 dir = {0,0,0};
+            dir[i] = 1;
+            return {i, dot(dr, dir) < 0  ? -1 : 1};
+        }
+
+    return {-1, 0};
+}
 
 float cube::distance(cube const& c){
     float dx = std::abs(c.position.x - position.x);
     float dy = std::abs(c.position.y - position.y);
     float dz = std::abs(c.position.z - position.z);
     return std::max({dx, dy, dz});
+}
+
+float cube::distancexy(cube const& c){
+    float dx = std::abs(c.position.x - position.x);
+    float dy = std::abs(c.position.y - position.y);
+    return std::max(dx, dy);
+}
+
+
+
+float cube::top(){
+    return position.z + L/2.0f;
+}
+
+float cube::bottom(){
+    return position.z - L/2.0f;
 }

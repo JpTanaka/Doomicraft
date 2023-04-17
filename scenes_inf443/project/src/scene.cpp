@@ -24,12 +24,9 @@ void deform_terrain(mesh& m)
 // This function can contain any complex operation that can be pre-computed once
 void scene_structure::initialize()
 {
-	std::cout << "Start function scene_structure::initialize()" << std::endl;
-
 	// Set the behavior of the camera and its initial position
 	// ********************************************** //
 	camera_control.initialize(inputs, window); 
-
 
 	// Create the global (x,y,z) frame
 	global_frame.initialize_data_on_gpu(mesh_primitive_frame());
@@ -38,23 +35,22 @@ void scene_structure::initialize()
 	// Create the shapes seen in the 3D scene
 	// ********************************************** //
 
-	// float L = 10.0f;
-	// mesh terrain_mesh = mesh_primitive_grid({ -L,-L,0 }, { L,-L,0 }, { L,L,0 }, { -L,L,0 }, 100, 100);
-	// terrain.initialize_data_on_gpu(terrain_mesh);
-
-
-	// cube1.initialize_data_on_gpu(mesh_primitive_cube({ 0,0,0.5f }, 1.0f));
+	player = character(camera_control, {2, 0, 1});
 
 	cube1 = cube(vec3{0,0,1.0f}, {0, 1, 0});
-	player = character(camera_control, {2, 0, 1});
 
 	for (int i = -5 ; i < 5; i++){
 		for (int j = -5 ; j < 5; j++){
 			terrain.push_back(cube({i, j, 0}));
 		}
 	}
-
 	for (int i = -5 ; i < 5; i++){
+		for (int j = -5 ; j < 5; j++){
+			terrain.push_back(cube({i, j, 3}, {0,0,1}));
+		}
+	}
+
+	for (int i = -1 ; i < 1; i++){
 		terrain.push_back(cube({i, 3, 1}));
 	}
 
@@ -77,18 +73,10 @@ void scene_structure::display_frame()
 	// conditional display of the global frame (set via the GUI)
 	if (gui.display_frame)
 		draw(global_frame, environment);
-	
 
 	// Draw all the shapes
 
 	for (auto c : terrain) c.draw(environment);
-
-
-
-	if (gui.display_wireframe) {
-		// draw_wireframe(terrain, environment);
-	}
-	
 
 }
 

@@ -21,6 +21,12 @@ public:
     cube(vec3 center, vec3 color = {1, 0, 0});
     void draw(environment_structure&);
     vec3 colision(cube const&);
-    bool check_colision(cube const&, double tolerance = 0.0);
     float distance(cube const&);
+    float distancexy(cube const&);
+
+    bool check_colision(cube const&, double tolerance = 0.1);
+    std::pair<int, int> get_colision_direction(cube const&, double tolerance = 0.1);
+
+    float top();
+    float bottom();
 };

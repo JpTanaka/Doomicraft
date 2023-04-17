@@ -7,14 +7,16 @@
 
 class character {
 
+    float jump_velocity = 5;
+
 public:
     camera_controller_custom* camera;
     cube body;
 
     vec3 position;
     vec2 direction;
+    vec3 velocity;
 
-    float velocity_z;
     bool is_jumping;
 
     character(camera_controller_custom&, vec3 center);

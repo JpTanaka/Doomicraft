@@ -43,6 +43,11 @@ namespace utils
     int sign(float x){
         return x < 0 ? -1 : 1;
     }
+
+
+    float gaussian(vec2 r, vec2 mean, vec2 sigma){
+        return std::exp( - std::pow(norm((r - mean)/sigma), 2));
+    }
     
 } // namespace utils
 

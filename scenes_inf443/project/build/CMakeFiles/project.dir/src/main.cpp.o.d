@@ -272,6 +272,7 @@ CMakeFiles/project.dir/src/main.cpp.o: \
  /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/shaders.hpp \
  /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/cache_uniform_location/cache_uniform_location.hpp \
  /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/texture/texture.hpp \
+ /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.hpp \
  /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/drawable.hpp \
  /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/material/material.hpp \
  /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/material/material_mesh_drawable_phong/material_mesh_drawable_phong.hpp \
@@ -331,4 +332,6 @@ CMakeFiles/project.dir/src/main.cpp.o: \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/camera.hpp \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/character.hpp \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/cube.hpp \
- /home/guile/x/Doomicraft/scenes_inf443/project/src/constants.hpp
+ /home/guile/x/Doomicraft/scenes_inf443/project/src/constants.hpp \
+ /home/guile/x/Doomicraft/scenes_inf443/project/src/block.hpp \
+ /home/guile/x/Doomicraft/scenes_inf443/project/src/terrain.hpp

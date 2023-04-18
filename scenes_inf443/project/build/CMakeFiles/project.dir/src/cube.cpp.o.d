@@ -273,6 +273,7 @@ CMakeFiles/project.dir/src/cube.cpp.o: \
  /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/shaders.hpp \
  /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/cache_uniform_location/cache_uniform_location.hpp \
  /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/texture/texture.hpp \
+ /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.hpp \
  /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/drawable.hpp \
  /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/material/material.hpp \
  /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/material/material_mesh_drawable_phong/material_mesh_drawable_phong.hpp \
@@ -329,6 +330,7 @@ CMakeFiles/project.dir/src/cube.cpp.o: \
  /home/guile/x/Doomicraft/cgp/library/cgp/graphics/emscripten/emscripten.hpp \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/environment.hpp \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/utils.hpp \
+ /home/guile/x/Doomicraft/scenes_inf443/project/src/constants.hpp \
  /usr/include/c++/12/algorithm /usr/include/c++/12/bits/stl_algo.h \
  /usr/include/c++/12/bits/algorithmfwd.h \
  /usr/include/c++/12/bits/stl_heap.h \

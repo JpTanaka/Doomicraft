@@ -273,6 +273,7 @@ CMakeFiles/project.dir/src/environment.cpp.o: \
  /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/shaders.hpp \
  /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/cache_uniform_location/cache_uniform_location.hpp \
  /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/texture/texture.hpp \
+ /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.hpp \
  /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/drawable.hpp \
  /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/material/material.hpp \
  /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/material/material_mesh_drawable_phong/material_mesh_drawable_phong.hpp \

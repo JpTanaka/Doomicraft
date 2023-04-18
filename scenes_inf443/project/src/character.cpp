@@ -1,22 +1,25 @@
 #include <utility>
 #include "character.hpp"
 #include "utils.hpp"
+#include "constants.hpp"
 
-character::character(camera_controller_custom &cam, vec3 center)
+character::character(camera_controller_custom &cam, vec3 center, bool creative)
+    : creative(creative)
 {
     camera = &cam;
     position = center;
     direction = {1.0f, 0.0f};
     velocity = {0, 0, 0};
     body = cube(center);
-    body.position.z += body.L;
+    body.position.z += Length;
     legs = cube(center);
 
     camera->set_position(center);
     is_jumping = false;
 }
 
-character::character() {}
+character::character()
+{}
 
 float character::bottom(){
     return legs.bottom();
@@ -24,6 +27,10 @@ float character::bottom(){
 
 float character::top(){
     return body.top();
+}
+
+vec3 character::get_eyes(){
+    return body.position;
 }
 
 void character::move(std::vector<cube> cubes)
@@ -37,7 +44,15 @@ void character::move(std::vector<cube> cubes)
     float z_move = 0;
 
     // get input to move
-    if (inputs->keyboard.is_pressed(GLFW_KEY_SPACE) && !is_jumping){
+    if(creative){
+        if (inputs->keyboard.is_pressed(GLFW_KEY_SPACE) )
+            z_move += step;
+        if (inputs->keyboard.is_pressed(GLFW_KEY_Q) )
+            z_move -= step;
+
+    }
+
+    if (inputs->keyboard.is_pressed(GLFW_KEY_SPACE) && !is_jumping && !creative){
         velocity += {0, 0, jump_velocity};
         is_jumping = true;
     }
@@ -55,8 +70,10 @@ void character::move(std::vector<cube> cubes)
         move_direction += -step * utils::standardize_direction(camera->camera_model.front());
 
     // updating z on gravity
-    z_move += velocity.z * dt - 0.5 * gravity * dt * dt;
-    velocity.z -= gravity * dt;
+    if(!creative){
+        z_move += velocity.z * dt - 0.5 * gravity * dt * dt;
+        velocity.z -= gravity * dt;
+    }
 
     // check for cubes colisions
     for (cube c : cubes)
@@ -76,7 +93,7 @@ void character::move(std::vector<cube> cubes)
         }
 
         // z colision
-        if(body.distancexy(c) < body.L){ // check only on the cilinder
+        if(body.distancexy(c) < Length){ // check only on the cilinder
             if(
                 bottom() >= c.top() &&
                 bottom() + z_move <= c.top()
@@ -104,7 +121,7 @@ void character::move(std::vector<cube> cubes)
     legs.position = position;
 
     body.position = position;
-    body.position.z += body.L;
+    body.position.z += Length;
 
     camera->set_position(body.position);
 }

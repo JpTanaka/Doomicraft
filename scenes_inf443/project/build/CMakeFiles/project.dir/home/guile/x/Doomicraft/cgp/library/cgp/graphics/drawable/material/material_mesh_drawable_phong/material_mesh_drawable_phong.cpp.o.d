@@ -239,4 +239,5 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable
  /home/guile/x/Doomicraft/cgp/library/cgp/core/containers/grid/grid.hpp \
  /home/guile/x/Doomicraft/cgp/library/cgp/core/containers/grid/grid_2D/grid_2D.hpp \
  /home/guile/x/Doomicraft/cgp/library/cgp/core/containers/grid/grid_3D/grid_3D.hpp \
+ /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.hpp \
  /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/material/material_mesh_drawable_phong/material_mesh_drawable_phong.hpp

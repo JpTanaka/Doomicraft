@@ -18,5 +18,7 @@ namespace utils
     vec2 standardize_direction(vec3);
 
     int sign(float);
+
+    float gaussian(vec2 r, vec2 mean, vec2 sigma);
     
 } // namespace utils

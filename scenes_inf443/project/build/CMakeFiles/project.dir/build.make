@@ -993,10 +993,24 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/d
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/debug/debug.cpp.s"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/debug/debug.cpp -o CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/debug/debug.cpp.s
 
+CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.cpp.o: CMakeFiles/project.dir/flags.make
+CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.cpp.o: /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.cpp
+CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.cpp.o"
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.cpp.o -MF CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.cpp.o.d -o CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.cpp.o -c /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.cpp
+
+CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.cpp.i"
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.cpp > CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.cpp.i
+
+CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.cpp.s"
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.cpp -o CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.cpp.s
+
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/cache_uniform_location/cache_uniform_location.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/cache_uniform_location/cache_uniform_location.cpp.o: /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/cache_uniform_location/cache_uniform_location.cpp
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/cache_uniform_location/cache_uniform_location.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/cache_uniform_location/cache_uniform_location.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/cache_uniform_location/cache_uniform_location.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/cache_uniform_location/cache_uniform_location.cpp.o -MF CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/cache_uniform_location/cache_uniform_location.cpp.o.d -o CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/cache_uniform_location/cache_uniform_location.cpp.o -c /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/cache_uniform_location/cache_uniform_location.cpp
 
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/cache_uniform_location/cache_uniform_location.cpp.i: cmake_force
@@ -1010,7 +1024,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/s
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/shaders.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/shaders.cpp.o: /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/shaders.cpp
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/shaders.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/shaders.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/shaders.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/shaders.cpp.o -MF CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/shaders.cpp.o.d -o CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/shaders.cpp.o -c /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/shaders.cpp
 
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/shaders.cpp.i: cmake_force
@@ -1024,7 +1038,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/s
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/texture/texture.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/texture/texture.cpp.o: /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/texture/texture.cpp
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/texture/texture.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/texture/texture.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/texture/texture.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/texture/texture.cpp.o -MF CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/texture/texture.cpp.o.d -o CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/texture/texture.cpp.o -c /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/texture/texture.cpp
 
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/texture/texture.cpp.i: cmake_force
@@ -1038,7 +1052,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/t
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/uniform/uniform.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/uniform/uniform.cpp.o: /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/uniform/uniform.cpp
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/uniform/uniform.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/uniform/uniform.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/uniform/uniform.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/uniform/uniform.cpp.o -MF CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/uniform/uniform.cpp.o.d -o CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/uniform/uniform.cpp.o -c /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/uniform/uniform.cpp
 
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/uniform/uniform.cpp.i: cmake_force
@@ -1052,7 +1066,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/u
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_plane/picking_plane.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_plane/picking_plane.cpp.o: /home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_plane/picking_plane.cpp
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_plane/picking_plane.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_plane/picking_plane.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_plane/picking_plane.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_plane/picking_plane.cpp.o -MF CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_plane/picking_plane.cpp.o.d -o CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_plane/picking_plane.cpp.o -c /home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_plane/picking_plane.cpp
 
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_plane/picking_plane.cpp.i: cmake_force
@@ -1066,7 +1080,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_spheres/picking_spheres.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_spheres/picking_spheres.cpp.o: /home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_spheres/picking_spheres.cpp
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_spheres/picking_spheres.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_spheres/picking_spheres.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_spheres/picking_spheres.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_spheres/picking_spheres.cpp.o -MF CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_spheres/picking_spheres.cpp.o.d -o CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_spheres/picking_spheres.cpp.o -c /home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_spheres/picking_spheres.cpp
 
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_spheres/picking_spheres.cpp.i: cmake_force
@@ -1080,7 +1094,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_structure/picking_structure.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_structure/picking_structure.cpp.o: /home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_structure/picking_structure.cpp
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_structure/picking_structure.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_structure/picking_structure.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_structure/picking_structure.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_structure/picking_structure.cpp.o -MF CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_structure/picking_structure.cpp.o.d -o CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_structure/picking_structure.cpp.o -c /home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_structure/picking_structure.cpp
 
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_structure/picking_structure.cpp.i: cmake_force
@@ -1094,7 +1108,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_basic/timer_basic.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_basic/timer_basic.cpp.o: /home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_basic/timer_basic.cpp
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_basic/timer_basic.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_basic/timer_basic.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_basic/timer_basic.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_basic/timer_basic.cpp.o -MF CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_basic/timer_basic.cpp.o.d -o CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_basic/timer_basic.cpp.o -c /home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_basic/timer_basic.cpp
 
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_basic/timer_basic.cpp.i: cmake_force
@@ -1108,7 +1122,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/tim
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_event_periodic/timer_event_periodic.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_event_periodic/timer_event_periodic.cpp.o: /home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_event_periodic/timer_event_periodic.cpp
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_event_periodic/timer_event_periodic.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_event_periodic/timer_event_periodic.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_event_periodic/timer_event_periodic.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_event_periodic/timer_event_periodic.cpp.o -MF CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_event_periodic/timer_event_periodic.cpp.o.d -o CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_event_periodic/timer_event_periodic.cpp.o -c /home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_event_periodic/timer_event_periodic.cpp
 
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_event_periodic/timer_event_periodic.cpp.i: cmake_force
@@ -1122,7 +1136,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/tim
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_fps/timer_fps.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_fps/timer_fps.cpp.o: /home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_fps/timer_fps.cpp
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_fps/timer_fps.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_fps/timer_fps.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_fps/timer_fps.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_fps/timer_fps.cpp.o -MF CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_fps/timer_fps.cpp.o.d -o CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_fps/timer_fps.cpp.o -c /home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_fps/timer_fps.cpp
 
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_fps/timer_fps.cpp.i: cmake_force
@@ -1136,7 +1150,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/tim
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_interval/timer_interval.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_interval/timer_interval.cpp.o: /home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_interval/timer_interval.cpp
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_interval/timer_interval.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_interval/timer_interval.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_interval/timer_interval.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_interval/timer_interval.cpp.o -MF CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_interval/timer_interval.cpp.o.d -o CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_interval/timer_interval.cpp.o -c /home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_interval/timer_interval.cpp
 
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_interval/timer_interval.cpp.i: cmake_force
@@ -1150,7 +1164,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/tim
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/tracker/velocity_tracker/velocity_tracker.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/tracker/velocity_tracker/velocity_tracker.cpp.o: /home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/tracker/velocity_tracker/velocity_tracker.cpp
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/tracker/velocity_tracker/velocity_tracker.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/tracker/velocity_tracker/velocity_tracker.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/tracker/velocity_tracker/velocity_tracker.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/tracker/velocity_tracker/velocity_tracker.cpp.o -MF CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/tracker/velocity_tracker/velocity_tracker.cpp.o.d -o CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/tracker/velocity_tracker/velocity_tracker.cpp.o -c /home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/tracker/velocity_tracker/velocity_tracker.cpp
 
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/tracker/velocity_tracker/velocity_tracker.cpp.i: cmake_force
@@ -1164,7 +1178,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/tra
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/window/window.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/window/window.cpp.o: /home/guile/x/Doomicraft/cgp/library/cgp/graphics/window/window.cpp
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/window/window.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/window/window.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/window/window.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/window/window.cpp.o -MF CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/window/window.cpp.o.d -o CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/window/window.cpp.o -c /home/guile/x/Doomicraft/cgp/library/cgp/graphics/window/window.cpp
 
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/window/window.cpp.i: cmake_force
@@ -1178,7 +1192,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/window/w
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/glad/opengl33/glad.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/glad/opengl33/glad.cpp.o: /home/guile/x/Doomicraft/cgp/library/third_party/src/glad/opengl33/glad.cpp
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/glad/opengl33/glad.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/glad/opengl33/glad.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/glad/opengl33/glad.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/glad/opengl33/glad.cpp.o -MF CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/glad/opengl33/glad.cpp.o.d -o CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/glad/opengl33/glad.cpp.o -c /home/guile/x/Doomicraft/cgp/library/third_party/src/glad/opengl33/glad.cpp
 
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/glad/opengl33/glad.cpp.i: cmake_force
@@ -1192,7 +1206,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/glad/
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/glad/opengl46/glad.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/glad/opengl46/glad.cpp.o: /home/guile/x/Doomicraft/cgp/library/third_party/src/glad/opengl46/glad.cpp
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/glad/opengl46/glad.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/glad/opengl46/glad.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/glad/opengl46/glad.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/glad/opengl46/glad.cpp.o -MF CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/glad/opengl46/glad.cpp.o.d -o CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/glad/opengl46/glad.cpp.o -c /home/guile/x/Doomicraft/cgp/library/third_party/src/glad/opengl46/glad.cpp
 
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/glad/opengl46/glad.cpp.i: cmake_force
@@ -1206,7 +1220,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/glad/
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui.cpp.o: /home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui.cpp
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui.cpp.o -MF CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui.cpp.o.d -o CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui.cpp.o -c /home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui.cpp
 
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui.cpp.i: cmake_force
@@ -1220,7 +1234,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_demo.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_demo.cpp.o: /home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_demo.cpp
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_demo.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_demo.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_demo.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_demo.cpp.o -MF CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_demo.cpp.o.d -o CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_demo.cpp.o -c /home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_demo.cpp
 
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_demo.cpp.i: cmake_force
@@ -1234,7 +1248,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_draw.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_draw.cpp.o: /home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_draw.cpp
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_draw.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_draw.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_draw.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_draw.cpp.o -MF CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_draw.cpp.o.d -o CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_draw.cpp.o -c /home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_draw.cpp
 
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_draw.cpp.i: cmake_force
@@ -1248,7 +1262,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_impl_glfw.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_impl_glfw.cpp.o: /home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_impl_glfw.cpp
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_impl_glfw.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_impl_glfw.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_impl_glfw.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_impl_glfw.cpp.o -MF CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_impl_glfw.cpp.o.d -o CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_impl_glfw.cpp.o -c /home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_impl_glfw.cpp
 
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_impl_glfw.cpp.i: cmake_force
@@ -1262,7 +1276,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_impl_opengl3.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_impl_opengl3.cpp.o: /home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_impl_opengl3.cpp
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_impl_opengl3.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_impl_opengl3.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_impl_opengl3.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_impl_opengl3.cpp.o -MF CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_impl_opengl3.cpp.o.d -o CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_impl_opengl3.cpp.o -c /home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_impl_opengl3.cpp
 
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_impl_opengl3.cpp.i: cmake_force
@@ -1276,7 +1290,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_widgets.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_widgets.cpp.o: /home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_widgets.cpp
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_widgets.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_widgets.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_widgets.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_widgets.cpp.o -MF CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_widgets.cpp.o.d -o CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_widgets.cpp.o -c /home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_widgets.cpp
 
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_widgets.cpp.i: cmake_force
@@ -1290,7 +1304,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/jpeg/jpgd.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/jpeg/jpgd.cpp.o: /home/guile/x/Doomicraft/cgp/library/third_party/src/jpeg/jpgd.cpp
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/jpeg/jpgd.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/jpeg/jpgd.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/jpeg/jpgd.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/jpeg/jpgd.cpp.o -MF CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/jpeg/jpgd.cpp.o.d -o CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/jpeg/jpgd.cpp.o -c /home/guile/x/Doomicraft/cgp/library/third_party/src/jpeg/jpgd.cpp
 
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/jpeg/jpgd.cpp.i: cmake_force
@@ -1304,7 +1318,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/jpeg/
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/jpeg/jpge.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/jpeg/jpge.cpp.o: /home/guile/x/Doomicraft/cgp/library/third_party/src/jpeg/jpge.cpp
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/jpeg/jpge.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/jpeg/jpge.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/jpeg/jpge.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/jpeg/jpge.cpp.o -MF CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/jpeg/jpge.cpp.o.d -o CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/jpeg/jpge.cpp.o -c /home/guile/x/Doomicraft/cgp/library/third_party/src/jpeg/jpge.cpp
 
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/jpeg/jpge.cpp.i: cmake_force
@@ -1318,7 +1332,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/jpeg/
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/lodepng/lodepng.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/lodepng/lodepng.cpp.o: /home/guile/x/Doomicraft/cgp/library/third_party/src/lodepng/lodepng.cpp
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/lodepng/lodepng.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/lodepng/lodepng.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/lodepng/lodepng.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/lodepng/lodepng.cpp.o -MF CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/lodepng/lodepng.cpp.o.d -o CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/lodepng/lodepng.cpp.o -c /home/guile/x/Doomicraft/cgp/library/third_party/src/lodepng/lodepng.cpp
 
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/lodepng/lodepng.cpp.i: cmake_force
@@ -1332,7 +1346,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/lodep
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/simplexnoise/simplexnoise1234.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/simplexnoise/simplexnoise1234.cpp.o: /home/guile/x/Doomicraft/cgp/library/third_party/src/simplexnoise/simplexnoise1234.cpp
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/simplexnoise/simplexnoise1234.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/simplexnoise/simplexnoise1234.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building CXX object CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/simplexnoise/simplexnoise1234.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/simplexnoise/simplexnoise1234.cpp.o -MF CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/simplexnoise/simplexnoise1234.cpp.o.d -o CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/simplexnoise/simplexnoise1234.cpp.o -c /home/guile/x/Doomicraft/cgp/library/third_party/src/simplexnoise/simplexnoise1234.cpp
 
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/simplexnoise/simplexnoise1234.cpp.i: cmake_force
@@ -1343,10 +1357,24 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/simpl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/simplexnoise/simplexnoise1234.cpp.s"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guile/x/Doomicraft/cgp/library/third_party/src/simplexnoise/simplexnoise1234.cpp -o CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/simplexnoise/simplexnoise1234.cpp.s
 
+CMakeFiles/project.dir/src/block.cpp.o: CMakeFiles/project.dir/flags.make
+CMakeFiles/project.dir/src/block.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/project/src/block.cpp
+CMakeFiles/project.dir/src/block.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building CXX object CMakeFiles/project.dir/src/block.cpp.o"
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/block.cpp.o -MF CMakeFiles/project.dir/src/block.cpp.o.d -o CMakeFiles/project.dir/src/block.cpp.o -c /home/guile/x/Doomicraft/scenes_inf443/project/src/block.cpp
+
+CMakeFiles/project.dir/src/block.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project.dir/src/block.cpp.i"
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guile/x/Doomicraft/scenes_inf443/project/src/block.cpp > CMakeFiles/project.dir/src/block.cpp.i
+
+CMakeFiles/project.dir/src/block.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/block.cpp.s"
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guile/x/Doomicraft/scenes_inf443/project/src/block.cpp -o CMakeFiles/project.dir/src/block.cpp.s
+
 CMakeFiles/project.dir/src/camera.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/src/camera.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/project/src/camera.cpp
 CMakeFiles/project.dir/src/camera.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building CXX object CMakeFiles/project.dir/src/camera.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building CXX object CMakeFiles/project.dir/src/camera.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/camera.cpp.o -MF CMakeFiles/project.dir/src/camera.cpp.o.d -o CMakeFiles/project.dir/src/camera.cpp.o -c /home/guile/x/Doomicraft/scenes_inf443/project/src/camera.cpp
 
 CMakeFiles/project.dir/src/camera.cpp.i: cmake_force
@@ -1360,7 +1388,7 @@ CMakeFiles/project.dir/src/camera.cpp.s: cmake_force
 CMakeFiles/project.dir/src/character.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/src/character.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/project/src/character.cpp
 CMakeFiles/project.dir/src/character.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building CXX object CMakeFiles/project.dir/src/character.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building CXX object CMakeFiles/project.dir/src/character.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/character.cpp.o -MF CMakeFiles/project.dir/src/character.cpp.o.d -o CMakeFiles/project.dir/src/character.cpp.o -c /home/guile/x/Doomicraft/scenes_inf443/project/src/character.cpp
 
 CMakeFiles/project.dir/src/character.cpp.i: cmake_force
@@ -1374,7 +1402,7 @@ CMakeFiles/project.dir/src/character.cpp.s: cmake_force
 CMakeFiles/project.dir/src/cube.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/src/cube.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/project/src/cube.cpp
 CMakeFiles/project.dir/src/cube.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building CXX object CMakeFiles/project.dir/src/cube.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building CXX object CMakeFiles/project.dir/src/cube.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/cube.cpp.o -MF CMakeFiles/project.dir/src/cube.cpp.o.d -o CMakeFiles/project.dir/src/cube.cpp.o -c /home/guile/x/Doomicraft/scenes_inf443/project/src/cube.cpp
 
 CMakeFiles/project.dir/src/cube.cpp.i: cmake_force
@@ -1388,7 +1416,7 @@ CMakeFiles/project.dir/src/cube.cpp.s: cmake_force
 CMakeFiles/project.dir/src/environment.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/src/environment.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/project/src/environment.cpp
 CMakeFiles/project.dir/src/environment.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building CXX object CMakeFiles/project.dir/src/environment.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building CXX object CMakeFiles/project.dir/src/environment.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/environment.cpp.o -MF CMakeFiles/project.dir/src/environment.cpp.o.d -o CMakeFiles/project.dir/src/environment.cpp.o -c /home/guile/x/Doomicraft/scenes_inf443/project/src/environment.cpp
 
 CMakeFiles/project.dir/src/environment.cpp.i: cmake_force
@@ -1402,7 +1430,7 @@ CMakeFiles/project.dir/src/environment.cpp.s: cmake_force
 CMakeFiles/project.dir/src/main.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/src/main.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/project/src/main.cpp
 CMakeFiles/project.dir/src/main.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building CXX object CMakeFiles/project.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building CXX object CMakeFiles/project.dir/src/main.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/main.cpp.o -MF CMakeFiles/project.dir/src/main.cpp.o.d -o CMakeFiles/project.dir/src/main.cpp.o -c /home/guile/x/Doomicraft/scenes_inf443/project/src/main.cpp
 
 CMakeFiles/project.dir/src/main.cpp.i: cmake_force
@@ -1416,7 +1444,7 @@ CMakeFiles/project.dir/src/main.cpp.s: cmake_force
 CMakeFiles/project.dir/src/scene.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/src/scene.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/project/src/scene.cpp
 CMakeFiles/project.dir/src/scene.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building CXX object CMakeFiles/project.dir/src/scene.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building CXX object CMakeFiles/project.dir/src/scene.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/scene.cpp.o -MF CMakeFiles/project.dir/src/scene.cpp.o.d -o CMakeFiles/project.dir/src/scene.cpp.o -c /home/guile/x/Doomicraft/scenes_inf443/project/src/scene.cpp
 
 CMakeFiles/project.dir/src/scene.cpp.i: cmake_force
@@ -1427,10 +1455,24 @@ CMakeFiles/project.dir/src/scene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/scene.cpp.s"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guile/x/Doomicraft/scenes_inf443/project/src/scene.cpp -o CMakeFiles/project.dir/src/scene.cpp.s
 
+CMakeFiles/project.dir/src/terrain.cpp.o: CMakeFiles/project.dir/flags.make
+CMakeFiles/project.dir/src/terrain.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/project/src/terrain.cpp
+CMakeFiles/project.dir/src/terrain.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building CXX object CMakeFiles/project.dir/src/terrain.cpp.o"
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/terrain.cpp.o -MF CMakeFiles/project.dir/src/terrain.cpp.o.d -o CMakeFiles/project.dir/src/terrain.cpp.o -c /home/guile/x/Doomicraft/scenes_inf443/project/src/terrain.cpp
+
+CMakeFiles/project.dir/src/terrain.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project.dir/src/terrain.cpp.i"
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guile/x/Doomicraft/scenes_inf443/project/src/terrain.cpp > CMakeFiles/project.dir/src/terrain.cpp.i
+
+CMakeFiles/project.dir/src/terrain.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/terrain.cpp.s"
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guile/x/Doomicraft/scenes_inf443/project/src/terrain.cpp -o CMakeFiles/project.dir/src/terrain.cpp.s
+
 CMakeFiles/project.dir/src/utils.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/project/src/utils.cpp
 CMakeFiles/project.dir/src/utils.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building CXX object CMakeFiles/project.dir/src/utils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building CXX object CMakeFiles/project.dir/src/utils.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/utils.cpp.o -MF CMakeFiles/project.dir/src/utils.cpp.o.d -o CMakeFiles/project.dir/src/utils.cpp.o -c /home/guile/x/Doomicraft/scenes_inf443/project/src/utils.cpp
 
 CMakeFiles/project.dir/src/utils.cpp.i: cmake_force
@@ -1509,6 +1551,7 @@ project_OBJECTS = \
 "CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/buffer/opengl_buffer/opengl_buffer.cpp.o" \
 "CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/buffer/vbo/vbo.cpp.o" \
 "CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/debug/debug.cpp.o" \
+"CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.cpp.o" \
 "CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/cache_uniform_location/cache_uniform_location.cpp.o" \
 "CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/shaders.cpp.o" \
 "CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/texture/texture.cpp.o" \
@@ -1534,12 +1577,14 @@ project_OBJECTS = \
 "CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/jpeg/jpge.cpp.o" \
 "CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/lodepng/lodepng.cpp.o" \
 "CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/simplexnoise/simplexnoise1234.cpp.o" \
+"CMakeFiles/project.dir/src/block.cpp.o" \
 "CMakeFiles/project.dir/src/camera.cpp.o" \
 "CMakeFiles/project.dir/src/character.cpp.o" \
 "CMakeFiles/project.dir/src/cube.cpp.o" \
 "CMakeFiles/project.dir/src/environment.cpp.o" \
 "CMakeFiles/project.dir/src/main.cpp.o" \
 "CMakeFiles/project.dir/src/scene.cpp.o" \
+"CMakeFiles/project.dir/src/terrain.cpp.o" \
 "CMakeFiles/project.dir/src/utils.cpp.o"
 
 # External object files for target project
@@ -1611,6 +1656,7 @@ project: CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics
 project: CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/buffer/opengl_buffer/opengl_buffer.cpp.o
 project: CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/buffer/vbo/vbo.cpp.o
 project: CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/debug/debug.cpp.o
+project: CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.cpp.o
 project: CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/cache_uniform_location/cache_uniform_location.cpp.o
 project: CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/shaders.cpp.o
 project: CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/texture/texture.cpp.o
@@ -1636,17 +1682,19 @@ project: CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/
 project: CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/jpeg/jpge.cpp.o
 project: CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/lodepng/lodepng.cpp.o
 project: CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/simplexnoise/simplexnoise1234.cpp.o
+project: CMakeFiles/project.dir/src/block.cpp.o
 project: CMakeFiles/project.dir/src/camera.cpp.o
 project: CMakeFiles/project.dir/src/character.cpp.o
 project: CMakeFiles/project.dir/src/cube.cpp.o
 project: CMakeFiles/project.dir/src/environment.cpp.o
 project: CMakeFiles/project.dir/src/main.cpp.o
 project: CMakeFiles/project.dir/src/scene.cpp.o
+project: CMakeFiles/project.dir/src/terrain.cpp.o
 project: CMakeFiles/project.dir/src/utils.cpp.o
 project: CMakeFiles/project.dir/build.make
 project: /usr/lib/x86_64-linux-gnu/libglfw.so.3.3
 project: CMakeFiles/project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Linking CXX executable project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Linking CXX executable project"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/project.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

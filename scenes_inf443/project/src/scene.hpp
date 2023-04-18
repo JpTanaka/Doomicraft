@@ -5,6 +5,8 @@
 #include "camera.hpp"
 #include "character.hpp"
 #include "cube.hpp"
+#include "block.hpp"
+#include "terrain.hpp"
 
 // This definitions allow to use the structures: mesh, mesh_drawable, etc. without mentionning explicitly cgp::
 using cgp::mesh;
@@ -51,7 +53,10 @@ struct scene_structure : cgp::scene_inputs_generic
 	character player;
 
 
-	std::vector<cube> terrain;
+	// std::vector<block> terrain;
+	// std::vector<cube> terrain_cubes;
+
+	terrain terr;
 
 
 

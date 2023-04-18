@@ -4,7 +4,6 @@
 camera_controller_custom::camera_controller_custom()
 {
     camera_model.axis_of_rotation = {0, 0, 1};
-    camera_model.position_camera = {0, 0, 5};
 }
 
 void camera_controller_custom::set_position(vec3& position){
@@ -26,7 +25,6 @@ void camera_controller_custom::action_mouse_move(mat4 &camera_matrix_view)
     vec2 const &p0 = inputs->mouse.position.previous;
     vec2 const dp = mouse_sensitivity * (p1 - p0);
 
-    // bool const event_valid = !inputs->mouse.on_gui && std::abs(camera_model.pitch) < 0.5f * pi - 0.1f;
     bool const event_valid = !inputs->mouse.on_gui;
     // bool const click_left = inputs->mouse.click.left;
     // bool const click_right = inputs->mouse.click.right;
@@ -62,10 +60,5 @@ void camera_controller_custom::idle_frame(mat4 &camera_matrix_view)
     assert_cgp_no_msg(window != nullptr);
     if (!is_active)
         return;
-
-    float const magnitude = keyboard_sensitivity * inputs->time_interval;
-
-    // displacement with WSAD
-
     update(camera_matrix_view);
 }

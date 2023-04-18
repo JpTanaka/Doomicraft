@@ -1713,6 +1713,30 @@ home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/debug/debug.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/debug/debug.cpp.s
 .PHONY : home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/debug/debug.cpp.s
 
+home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.o: home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.cpp.o
+.PHONY : home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.o
+
+# target to build an object file
+home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.cpp.o
+.PHONY : home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.cpp.o
+
+home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.i: home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.cpp.i
+.PHONY : home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.i
+
+# target to preprocess a source file
+home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.cpp.i
+.PHONY : home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.cpp.i
+
+home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.s: home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.cpp.s
+.PHONY : home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.s
+
+# target to generate assembly for a file
+home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.cpp.s
+.PHONY : home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.cpp.s
+
 home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/cache_uniform_location/cache_uniform_location.o: home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/cache_uniform_location/cache_uniform_location.cpp.o
 .PHONY : home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/cache_uniform_location/cache_uniform_location.o
 
@@ -2313,6 +2337,30 @@ home/guile/x/Doomicraft/cgp/library/third_party/src/simplexnoise/simplexnoise123
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/simplexnoise/simplexnoise1234.cpp.s
 .PHONY : home/guile/x/Doomicraft/cgp/library/third_party/src/simplexnoise/simplexnoise1234.cpp.s
 
+src/block.o: src/block.cpp.o
+.PHONY : src/block.o
+
+# target to build an object file
+src/block.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/block.cpp.o
+.PHONY : src/block.cpp.o
+
+src/block.i: src/block.cpp.i
+.PHONY : src/block.i
+
+# target to preprocess a source file
+src/block.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/block.cpp.i
+.PHONY : src/block.cpp.i
+
+src/block.s: src/block.cpp.s
+.PHONY : src/block.s
+
+# target to generate assembly for a file
+src/block.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/block.cpp.s
+.PHONY : src/block.cpp.s
+
 src/camera.o: src/camera.cpp.o
 .PHONY : src/camera.o
 
@@ -2456,6 +2504,30 @@ src/scene.s: src/scene.cpp.s
 src/scene.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/scene.cpp.s
 .PHONY : src/scene.cpp.s
+
+src/terrain.o: src/terrain.cpp.o
+.PHONY : src/terrain.o
+
+# target to build an object file
+src/terrain.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/terrain.cpp.o
+.PHONY : src/terrain.cpp.o
+
+src/terrain.i: src/terrain.cpp.i
+.PHONY : src/terrain.i
+
+# target to preprocess a source file
+src/terrain.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/terrain.cpp.i
+.PHONY : src/terrain.cpp.i
+
+src/terrain.s: src/terrain.cpp.s
+.PHONY : src/terrain.s
+
+# target to generate assembly for a file
+src/terrain.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/terrain.cpp.s
+.PHONY : src/terrain.cpp.s
 
 src/utils.o: src/utils.cpp.o
 .PHONY : src/utils.o
@@ -2688,6 +2760,9 @@ help:
 	@echo "... home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/debug/debug.o"
 	@echo "... home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/debug/debug.i"
 	@echo "... home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/debug/debug.s"
+	@echo "... home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.o"
+	@echo "... home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.i"
+	@echo "... home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.s"
 	@echo "... home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/cache_uniform_location/cache_uniform_location.o"
 	@echo "... home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/cache_uniform_location/cache_uniform_location.i"
 	@echo "... home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/cache_uniform_location/cache_uniform_location.s"
@@ -2763,6 +2838,9 @@ help:
 	@echo "... home/guile/x/Doomicraft/cgp/library/third_party/src/simplexnoise/simplexnoise1234.o"
 	@echo "... home/guile/x/Doomicraft/cgp/library/third_party/src/simplexnoise/simplexnoise1234.i"
 	@echo "... home/guile/x/Doomicraft/cgp/library/third_party/src/simplexnoise/simplexnoise1234.s"
+	@echo "... src/block.o"
+	@echo "... src/block.i"
+	@echo "... src/block.s"
 	@echo "... src/camera.o"
 	@echo "... src/camera.i"
 	@echo "... src/camera.s"
@@ -2781,6 +2859,9 @@ help:
 	@echo "... src/scene.o"
 	@echo "... src/scene.i"
 	@echo "... src/scene.s"
+	@echo "... src/terrain.o"
+	@echo "... src/terrain.i"
+	@echo "... src/terrain.s"
 	@echo "... src/utils.o"
 	@echo "... src/utils.i"
 	@echo "... src/utils.s"

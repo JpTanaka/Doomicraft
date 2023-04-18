@@ -250,4 +250,5 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/containers/i
  /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/uniform/uniform.hpp \
  /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/shaders.hpp \
  /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/cache_uniform_location/cache_uniform_location.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/texture/texture.hpp
+ /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/texture/texture.hpp \
+ /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/fbo/fbo.hpp

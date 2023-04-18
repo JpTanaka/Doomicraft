@@ -19,12 +19,15 @@ public:
     vec3 velocity;
 
     bool is_jumping;
+    bool creative;
 
-    character(camera_controller_custom&, vec3 center);
+    character(camera_controller_custom&, vec3 center, bool creative = false);
     character();
 
     void move(std::vector<cube>);
 
     float bottom();
     float top();
+
+    vec3 get_eyes();
 };

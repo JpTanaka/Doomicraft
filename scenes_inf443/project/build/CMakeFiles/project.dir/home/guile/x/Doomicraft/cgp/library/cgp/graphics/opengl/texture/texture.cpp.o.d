@@ -2,13 +2,12 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/t
  /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/texture/texture.cpp \
  /usr/include/stdc-predef.h \
  /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/texture/texture.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/core/containers/image/image.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/core/containers/containers.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/core/containers/offset_grid/offset_grid.hpp \
- /usr/include/c++/12/tuple /usr/include/c++/12/bits/stl_pair.h \
- /usr/include/c++/12/type_traits \
- /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
- /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
+ /home/guile/x/Doomicraft/cgp/library/cgp/opengl_include.hpp \
+ /home/guile/x/Doomicraft/cgp/library/cgp/cgp_parameters.hpp \
+ /home/guile/x/Doomicraft/cgp/library/third_party/src/glad/opengl33/glad.hpp \
+ /home/guile/x/Doomicraft/cgp/library/third_party/src/glad/opengl33/khrplatform.hpp \
+ /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
  /usr/include/x86_64-linux-gnu/bits/timesize.h \
@@ -16,26 +15,25 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/t
  /usr/include/x86_64-linux-gnu/bits/long-double.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+ /usr/include/x86_64-linux-gnu/bits/types.h \
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+ /usr/include/x86_64-linux-gnu/bits/time64.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/texture/../debug/debug.hpp \
+ /usr/include/c++/12/string \
+ /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
+ /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
- /usr/include/c++/12/bits/move.h /usr/include/c++/12/bits/utility.h \
- /usr/include/c++/12/bits/uses_allocator.h \
- /usr/include/c++/12/bits/invoke.h /usr/include/c++/12/cstddef \
- /usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h \
- /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/numarray_stack.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/core/base/base.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/core/base/error/error.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/cgp_parameters.hpp \
- /usr/include/c++/12/string /usr/include/c++/12/bits/stringfwd.h \
+ /usr/include/c++/12/bits/stringfwd.h \
  /usr/include/c++/12/bits/memoryfwd.h \
  /usr/include/c++/12/bits/char_traits.h \
  /usr/include/c++/12/bits/postypes.h /usr/include/c++/12/cwchar \
- /usr/include/wchar.h \
- /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
- /usr/include/x86_64-linux-gnu/bits/floatn.h \
+ /usr/include/wchar.h /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+ /usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/stdarg.h \
- /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
@@ -44,19 +42,15 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/t
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/wchar2-decl.h \
- /usr/include/x86_64-linux-gnu/bits/wchar2.h /usr/include/c++/12/cstdint \
- /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h /usr/include/stdint.h \
- /usr/include/x86_64-linux-gnu/bits/types.h \
- /usr/include/x86_64-linux-gnu/bits/typesizes.h \
- /usr/include/x86_64-linux-gnu/bits/time64.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar2.h \
+ /usr/include/c++/12/type_traits /usr/include/c++/12/cstdint \
  /usr/include/c++/12/bits/allocator.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++allocator.h \
  /usr/include/c++/12/bits/new_allocator.h /usr/include/c++/12/new \
  /usr/include/c++/12/bits/exception.h \
  /usr/include/c++/12/bits/functexcept.h \
  /usr/include/c++/12/bits/exception_defines.h \
+ /usr/include/c++/12/bits/move.h \
  /usr/include/c++/12/bits/cpp_type_traits.h \
  /usr/include/c++/12/bits/localefwd.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++locale.h \
@@ -78,9 +72,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/t
  /usr/include/c++/12/backward/binders.h \
  /usr/include/c++/12/ext/numeric_traits.h \
  /usr/include/c++/12/bits/stl_algobase.h \
+ /usr/include/c++/12/bits/stl_pair.h /usr/include/c++/12/bits/utility.h \
  /usr/include/c++/12/debug/debug.h \
  /usr/include/c++/12/bits/predefined_ops.h \
- /usr/include/c++/12/bits/refwrap.h \
+ /usr/include/c++/12/bits/refwrap.h /usr/include/c++/12/bits/invoke.h \
  /usr/include/c++/12/bits/range_access.h \
  /usr/include/c++/12/initializer_list \
  /usr/include/c++/12/bits/basic_string.h \
@@ -129,8 +124,17 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/t
  /usr/include/c++/12/bits/charconv.h \
  /usr/include/c++/12/bits/functional_hash.h \
  /usr/include/c++/12/bits/hash_bytes.h \
- /usr/include/c++/12/bits/basic_string.tcc /usr/include/c++/12/map \
- /usr/include/c++/12/bits/stl_tree.h \
+ /usr/include/c++/12/bits/basic_string.tcc \
+ /home/guile/x/Doomicraft/cgp/library/cgp/core/containers/image/image.hpp \
+ /home/guile/x/Doomicraft/cgp/library/cgp/core/containers/containers.hpp \
+ /home/guile/x/Doomicraft/cgp/library/cgp/core/containers/offset_grid/offset_grid.hpp \
+ /usr/include/c++/12/tuple /usr/include/c++/12/bits/uses_allocator.h \
+ /usr/include/c++/12/cstddef \
+ /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/numarray_stack.hpp \
+ /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack.hpp \
+ /home/guile/x/Doomicraft/cgp/library/cgp/core/base/base.hpp \
+ /home/guile/x/Doomicraft/cgp/library/cgp/core/base/error/error.hpp \
+ /usr/include/c++/12/map /usr/include/c++/12/bits/stl_tree.h \
  /usr/include/c++/12/ext/aligned_buffer.h \
  /usr/include/c++/12/bits/stl_map.h \
  /usr/include/c++/12/bits/stl_multimap.h \
@@ -220,21 +224,4 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/t
  /usr/include/c++/12/bits/locale_conv.h \
  /usr/include/c++/12/bits/quoted_string.h \
  /home/guile/x/Doomicraft/cgp/library/cgp/core/containers/matrix_stack/special_types/special_types.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/core/containers/matrix_stack/special_types/definition/special_types.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/opengl.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/opengl_include.hpp \
- /home/guile/x/Doomicraft/cgp/library/third_party/src/glad/opengl33/glad.hpp \
- /home/guile/x/Doomicraft/cgp/library/third_party/src/glad/opengl33/khrplatform.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/buffer/buffer.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/buffer/opengl_buffer/opengl_buffer.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/buffer/vbo/vbo.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/geometry/mat/mat.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/geometry/mat/mat2/mat2.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/geometry/mat/mat3/mat3.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/geometry/mat/mat4/mat4.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/geometry/mat/functions/mat_functions.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/buffer/ebo/ebo.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/debug/debug.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/uniform/uniform.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/shaders.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/cache_uniform_location/cache_uniform_location.hpp
+ /home/guile/x/Doomicraft/cgp/library/cgp/core/containers/matrix_stack/special_types/definition/special_types.hpp

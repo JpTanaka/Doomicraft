@@ -1,19 +1,13 @@
 #include "cube.hpp"
 #include "utils.hpp"
+#include "constants.hpp"
 #include <initializer_list>
 #include <algorithm>
 
-cube::cube(vec3 center, vec3 color){
-    mesh.initialize_data_on_gpu(mesh_primitive_cube(center, L));
-    mesh.material.color = color;
+cube::cube(vec3 center){
     position = center;
 };
 cube::cube(){};
-
-void cube::draw(environment_structure& env){
-	cgp::draw(mesh, env);
-}
-
 
 vec3 cube::colision(cube const& c){
     float dx = c.position.x - position.x;
@@ -35,7 +29,7 @@ vec3 cube::colision(cube const& c){
 }
 
 bool cube::check_colision(cube const& c, double tolerance){
-    return std::abs(distance(c) - L ) < tolerance;
+    return std::abs(distance(c) - Length ) < tolerance;
 }
 
 std::pair<int, int> cube::get_colision_direction(cube const& c, double tolerance){
@@ -76,9 +70,9 @@ float cube::distancexy(cube const& c){
 
 
 float cube::top(){
-    return position.z + L/2.0f;
+    return position.z + Length/2.0f;
 }
 
 float cube::bottom(){
-    return position.z - L/2.0f;
+    return position.z - Length/2.0f;
 }

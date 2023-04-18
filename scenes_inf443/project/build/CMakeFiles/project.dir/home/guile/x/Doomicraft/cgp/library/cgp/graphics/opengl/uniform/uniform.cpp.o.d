@@ -224,6 +224,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/u
  /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/shaders.hpp \
  /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/cache_uniform_location/cache_uniform_location.hpp \
  /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/texture/texture.hpp \
+ /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/texture/../debug/debug.hpp \
  /home/guile/x/Doomicraft/cgp/library/cgp/core/containers/image/image.hpp \
  /home/guile/x/Doomicraft/cgp/library/cgp/core/containers/containers.hpp \
  /home/guile/x/Doomicraft/cgp/library/cgp/core/containers/grid_stack/grid_stack.hpp \
@@ -232,10 +233,4 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/u
  /home/guile/x/Doomicraft/cgp/library/cgp/core/containers/grid/grid_2D/grid_2D.hpp \
  /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray/numarray.hpp \
  /home/guile/x/Doomicraft/cgp/library/cgp/core/containers/grid/grid_3D/grid_3D.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/core/array/array.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/opengl.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/buffer/buffer.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/buffer/opengl_buffer/opengl_buffer.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/buffer/vbo/vbo.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/buffer/ebo/ebo.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/debug/debug.hpp
+ /home/guile/x/Doomicraft/cgp/library/cgp/core/array/array.hpp

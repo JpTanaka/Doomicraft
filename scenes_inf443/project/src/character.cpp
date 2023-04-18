@@ -3,18 +3,28 @@
 #include "utils.hpp"
 
 character::character(camera_controller_custom &cam, vec3 center)
-    : body(center)
 {
     camera = &cam;
     position = center;
     direction = {1.0f, 0.0f};
     velocity = {0, 0, 0};
+    body = cube(center);
+    body.position.z += body.L;
+    legs = cube(center);
 
     camera->set_position(center);
     is_jumping = false;
 }
 
 character::character() {}
+
+float character::bottom(){
+    return legs.bottom();
+}
+
+float character::top(){
+    return body.top();
+}
 
 void character::move(std::vector<cube> cubes)
 {
@@ -53,8 +63,8 @@ void character::move(std::vector<cube> cubes)
     {
         // plane collision
         if (!(
-            c.top() <= body.bottom() ||
-            c.bottom() >= body.top()
+            c.top() <= bottom() ||
+            c.bottom() >= top()
         )){ // checks only on the strip
             auto direction = body.get_colision_direction(c);
             int axis = direction.first;
@@ -68,17 +78,20 @@ void character::move(std::vector<cube> cubes)
         // z colision
         if(body.distancexy(c) < body.L){ // check only on the cilinder
             if(
-                body.bottom() >= c.top() &&
-                body.bottom() + z_move <= c.top()
+                bottom() >= c.top() &&
+                bottom() + z_move <= c.top()
             ) {
-                z_move = c.top() - body.bottom();
+                z_move = c.top() - bottom();
                 velocity.z = 0;
                 is_jumping = false;
             };
             if(
-                body.top() <= c.bottom() &&
-                body.top() + z_move >= c.bottom()
-            ) z_move = c.bottom() - body.top() ;
+                top() <= c.bottom() &&
+                top() + z_move >= c.bottom()
+            ) {
+                z_move = c.bottom() - top() ;
+                velocity.z = 0;
+            }
         }
 
     }
@@ -88,7 +101,10 @@ void character::move(std::vector<cube> cubes)
     position.z += z_move;
 
     // moves!
-    camera->set_position(position);
-    body.position = position;
+    legs.position = position;
 
+    body.position = position;
+    body.position.z += body.L;
+
+    camera->set_position(body.position);
 }

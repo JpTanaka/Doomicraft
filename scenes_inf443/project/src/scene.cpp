@@ -27,6 +27,7 @@ void scene_structure::initialize()
 	// Set the behavior of the camera and its initial position
 	// ********************************************** //
 	camera_control.initialize(inputs, window); 
+	glfwSetCursorPos(window.glfw_window, 0, 0);
 
 	// Create the global (x,y,z) frame
 	global_frame.initialize_data_on_gpu(mesh_primitive_frame());
@@ -44,9 +45,10 @@ void scene_structure::initialize()
 			terrain.push_back(cube({i, j, 0}));
 		}
 	}
+
 	for (int i = -5 ; i < 5; i++){
 		for (int j = -5 ; j < 5; j++){
-			terrain.push_back(cube({i, j, 3}, {0,0,1}));
+			terrain.push_back(cube({i, j, 5}, {0,0,1}));
 		}
 	}
 
@@ -65,7 +67,7 @@ void scene_structure::display_frame()
 {
 
 	// Set the light to the current position of the camera
-	environment.light = camera_control.camera_model.position();
+	environment.light = {10, 10, 10};
 
 	// Update time
 	timer.update();

@@ -20131,7 +20131,8 @@ CMakeFiles/project.dir/src/camera.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/tracker/tracker.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/tracker/velocity_tracker/velocity_tracker.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/emscripten/emscripten.hpp \
-  /home/guile/x/Doomicraft/scenes_inf443/project/src/environment.hpp
+  /home/guile/x/Doomicraft/scenes_inf443/project/src/environment.hpp \
+  /home/guile/x/Doomicraft/scenes_inf443/project/src/utils.hpp
 
 CMakeFiles/project.dir/src/character.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/project/src/character.cpp \
   /usr/include/stdc-predef.h \
@@ -22397,6 +22398,8 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 
 /home/guile/x/Doomicraft/scenes_inf443/project/src/constants.hpp:
 
+/home/guile/x/Doomicraft/scenes_inf443/project/src/cube.hpp:
+
 /home/guile/x/Doomicraft/cgp/library/cgp/geometry/transform/rotation_transform/test/test_rotation.cpp:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/camera.hpp:
@@ -22562,8 +22565,6 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 /usr/include/c++/12/bits/erase_if.h:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/mesh/primitive/mesh_primitive.cpp:
-
-/home/guile/x/Doomicraft/scenes_inf443/project/src/cube.hpp:
 
 /usr/include/c++/12/bits/locale_facets.h:
 
@@ -22886,10 +22887,6 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 /usr/include/c++/12/iosfwd:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
-
-/home/guile/x/Doomicraft/scenes_inf443/project/src/utils.hpp:
-
-/usr/include/ctype.h:
 
 /usr/include/c++/12/bits/stl_algobase.h:
 
@@ -23478,6 +23475,10 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 /home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/time.hpp:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer.hpp:
+
+/usr/include/ctype.h:
+
+/home/guile/x/Doomicraft/scenes_inf443/project/src/utils.hpp:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/tracker/tracker.hpp:
 

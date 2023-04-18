@@ -1,4 +1,5 @@
 #include "camera.hpp"
+#include "utils.hpp"
 
 camera_controller_custom::camera_controller_custom()
 {
@@ -25,18 +26,20 @@ void camera_controller_custom::action_mouse_move(mat4 &camera_matrix_view)
     vec2 const &p0 = inputs->mouse.position.previous;
     vec2 const dp = mouse_sensitivity * (p1 - p0);
 
+    // bool const event_valid = !inputs->mouse.on_gui && std::abs(camera_model.pitch) < 0.5f * pi - 0.1f;
     bool const event_valid = !inputs->mouse.on_gui;
     // bool const click_left = inputs->mouse.click.left;
     // bool const click_right = inputs->mouse.click.right;
 
-    auto sign = [](float x)
-    { return x < 0 ? -1 : 1; };
-
     if (event_valid)
     {
-        camera_model.manipulator_rotate_roll_pitch_yaw(0,
-                                                       std::abs(camera_model.pitch) <= pi / 2.0 ? dp.y : -0.001 * sign(camera_model.pitch),
-                                                       -dp.x);
+        camera_model.manipulator_rotate_roll_pitch_yaw(
+            0,
+            dp.y > 0 
+                ? std::min(dp.y, 0.5f*pi - camera_model.pitch  - 0.01f)
+                : std::max(dp.y, -0.5f*pi - camera_model.pitch + 0.01f),
+            -dp.x
+        );
     }
 
     update(camera_matrix_view);

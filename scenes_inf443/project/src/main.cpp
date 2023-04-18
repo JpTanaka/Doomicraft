@@ -42,6 +42,8 @@ int main(int, char* argv[])
 
 	// Standard Initialization of an OpenGL ready window
 	scene.window = standard_window_initialization();
+	scene.window.is_full_screen = true;
+	scene.window.set_full_screen();
 
 	// Initialize System Info
 	project::path = cgp::project_path_find(argv[0], "shaders/");

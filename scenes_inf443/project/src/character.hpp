@@ -12,6 +12,7 @@ class character {
 public:
     camera_controller_custom* camera;
     cube body;
+    cube legs;
 
     vec3 position;
     vec2 direction;
@@ -23,4 +24,7 @@ public:
     character();
 
     void move(std::vector<cube>);
+
+    float bottom();
+    float top();
 };

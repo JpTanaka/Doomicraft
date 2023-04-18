@@ -125,7 +125,7 @@ src/scene.o: src/scene.cpp src/scene.hpp ../../cgp/library/cgp/cgp.hpp \
  ../../cgp/library/cgp/graphics/time/tracker/velocity_tracker/velocity_tracker.hpp \
  ../../cgp/library/cgp/graphics/emscripten/emscripten.hpp \
  src/environment.hpp src/camera.hpp src/character.hpp src/cube.hpp \
- src/constants.hpp
+ src/constants.hpp src/stb_image.h
 src/scene.hpp:
 ../../cgp/library/cgp/cgp.hpp:
 ../../cgp/library/cgp/cgp_parameters.hpp:
@@ -258,3 +258,4 @@ src/camera.hpp:
 src/character.hpp:
 src/cube.hpp:
 src/constants.hpp:
+src/stb_image.h:

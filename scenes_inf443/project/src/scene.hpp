@@ -6,6 +6,7 @@
 #include "character.hpp"
 #include "cube.hpp"
 
+
 // This definitions allow to use the structures: mesh, mesh_drawable, etc. without mentionning explicitly cgp::
 using cgp::mesh;
 using cgp::mesh_drawable;
@@ -13,12 +14,20 @@ using cgp::numarray;
 using cgp::timer_basic;
 using cgp::vec3;
 
-
+// for loading sprites in the ImGui
+struct image_obj {
+	int image_width = 0;
+	int image_height = 0;
+	GLuint image_texture = 0;
+};
 // Variables associated to the GUI (buttons, etc)
 struct gui_parameters
 {
 	bool display_frame = true;
 	bool display_wireframe = false;
+	
+	image_obj portal_gun;
+	image_obj crosshair;
 };
 
 // The structure of the custom scene
@@ -31,6 +40,7 @@ struct scene_structure : cgp::scene_inputs_generic
 	camera_controller_custom camera_control;
 	camera_projection_perspective camera_projection;
 	window_structure window;
+
 
 	mesh_drawable global_frame;		   // The standard global frame
 	environment_structure environment; // Standard environment controler

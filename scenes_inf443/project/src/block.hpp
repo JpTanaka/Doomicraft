@@ -17,7 +17,7 @@ class block {
 public:
     cube block_cube;
 
-    void draw(environment_structure&, vec3 eyes);
+    void draw(environment_structure&, bool wireframe);
 
     block();
 

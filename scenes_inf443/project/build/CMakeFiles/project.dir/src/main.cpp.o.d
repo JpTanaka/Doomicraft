@@ -334,4 +334,9 @@ CMakeFiles/project.dir/src/main.cpp.o: \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/cube.hpp \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/constants.hpp \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/block.hpp \
- /home/guile/x/Doomicraft/scenes_inf443/project/src/terrain.hpp
+ /home/guile/x/Doomicraft/scenes_inf443/project/src/terrain.hpp \
+ /home/guile/x/Doomicraft/scenes_inf443/project/src/utils.hpp \
+ /usr/include/c++/12/unordered_map /usr/include/c++/12/bits/hashtable.h \
+ /usr/include/c++/12/bits/hashtable_policy.h \
+ /usr/include/c++/12/bits/enable_special_members.h \
+ /usr/include/c++/12/bits/unordered_map.h

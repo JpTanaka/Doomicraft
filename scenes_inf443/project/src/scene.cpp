@@ -49,7 +49,10 @@ void scene_structure::initialize()
 
 	block::initialize();
 	terr = terrain();
-	player = character(camera_control, {2, 0, 10}, false);
+	player = character(camera_control, {2, 0, 10}, true);
+
+
+	block b = block(block_types::rock, {0,0,15});
 
 	// Adding portal gun
 	glfwInit();
@@ -64,7 +67,8 @@ void scene_structure::initialize()
 void scene_structure::display_frame()
 {
 	timer.update();
-	terr.draw(environment, player.get_eyes());
+	terr.draw(environment, true);
+	b.draw(environment, gui.display_wireframe);
 }
 
 void scene_structure::display_gui()
@@ -72,16 +76,16 @@ void scene_structure::display_gui()
 	ImGui::Checkbox("Frame", &gui.display_frame);
 	ImGui::Checkbox("Wireframe", &gui.display_wireframe);
 	ImGui::Begin("Weapon", NULL ,  ImGuiWindowFlags_NoBackground | ImGuiWindowFlags_NoInputs | ImGuiWindowFlags_NoDecoration);
-	gui.portal_gun.image_height = std::min(window.width/4, 300);
-	gui.portal_gun.image_width = std::min(window.width/4, 300);
+	gui.portal_gun.image_height = std::min(window.width/4.0f, 300.0f);
+	gui.portal_gun.image_width = std::min(window.width/4.0f, 300.0f);
 	ImGui::SetWindowPos({window.width-gui.portal_gun.image_width, window.height-gui.portal_gun.image_height});
 	ImGui::Image((void*)(intptr_t) gui.portal_gun.image_texture, ImVec2(gui.portal_gun.image_width, gui.portal_gun.image_height));
 	ImGui::End();
 
 	ImGui::Begin("Crosshair", NULL ,  ImGuiWindowFlags_NoBackground | ImGuiWindowFlags_NoInputs | ImGuiWindowFlags_NoDecoration);
-	gui.crosshair.image_height = std::min(30, window.width/30);
-	gui.crosshair.image_width = std::min(30, window.width/30);
-	ImGui::SetWindowPos({(window.width-gui.crosshair.image_width)/2, (window.height-gui.crosshair.image_height)/2});
+	gui.crosshair.image_height = std::min(30.0f, window.width/30.0f);
+	gui.crosshair.image_width = std::min(30.0f, window.width/30.0f);
+	ImGui::SetWindowPos({(window.width-gui.crosshair.image_width)/2.0f, (window.height-gui.crosshair.image_height)/2.0f});
 	ImGui::Image((void*)(intptr_t) gui.crosshair.image_texture, ImVec2(gui.crosshair.image_width, gui.crosshair.image_height));
 	ImGui::End();
 }

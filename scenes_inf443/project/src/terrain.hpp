@@ -3,11 +3,14 @@
 #include "environment.hpp"
 #include "cube.hpp"
 #include "block.hpp"
+#include "utils.hpp"
+#include <unordered_map>
+#include <functional>
 
 class terrain {
 
     int generator_function(int x, int y);
-    std::vector<block> blocks;
+    std::unordered_map<utils::Triplet, block, utils::TripletHash> blocks;
     std::vector<cube> cubes;
 
     std::vector<std::tuple<double, vec2, vec2>> gaussians;
@@ -24,6 +27,6 @@ class terrain {
 public:
     terrain();
     ~terrain();
-    void draw(environment_structure&, vec3 eyes);
+    void draw(environment_structure&, bool wireframe);
     std::vector<cube> get_cubes();
 };

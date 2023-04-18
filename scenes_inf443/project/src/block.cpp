@@ -23,8 +23,11 @@ block::block(block_types b_type, vec3 pos)
     position = pos;
 }
 
-void block::draw(environment_structure& env, vec3 eyes){
+void block::draw(environment_structure& env, bool wireframe){
     mesh_drawable& mesh = blocks[block_type];
     mesh.model.translation = position;
-	cgp::draw(mesh, env);
+    if(!wireframe)
+	    cgp::draw(mesh, env);
+    else
+        cgp::draw_wireframe(mesh, env);
 }

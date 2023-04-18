@@ -27,11 +27,14 @@ terrain::terrain(){
 
         for (int z = zmin; z < height; z++){
             b = block(block_types::rock, {x, y, z });
-            blocks.push_back(b);
+            utils::Triplet t(x, y, z);
+            blocks[utils::Triplet(x, y, z)] = b;
+            // blocks.push_back(b);
             cubes.push_back(b.block_cube);
         }
         b = block(block_types::earth, {x, y, height });
-        blocks.push_back(b);
+        // blocks.push_back(b);
+        blocks[utils::Triplet(x, y, height)] = b;
         cubes.push_back(b.block_cube);
     }
 }
@@ -40,10 +43,25 @@ terrain::~terrain(){
     // dont really know how to do it
 }
 
-void terrain::draw(environment_structure& env, vec3 eyes){
+void terrain::draw(environment_structure& env, bool wireframe){
+    using namespace utils;
+
+    auto check_has_block = [&](Triplet t){
+        return ! (blocks.find(t) == blocks.end());
+    };
+
     // blocking: fps drop
-    for (block b : blocks)
-        b.draw(env, eyes);
+    for (auto& [key, value] : blocks){
+        if(
+            check_has_block(key + Triplet( 1, 0, 0)) &&
+            check_has_block(key + Triplet(-1, 0, 0)) &&
+            check_has_block(key + Triplet(0,  1, 0)) &&
+            check_has_block(key + Triplet(0, -1, 0)) &&
+            check_has_block(key + Triplet(0, 0,  1)) &&
+            check_has_block(key + Triplet(0, 0, -1))
+        ) continue;
+        value.draw(env, wireframe);
+    }
 }
 
 std::vector<cube> terrain::get_cubes(){

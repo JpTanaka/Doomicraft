@@ -76,6 +76,7 @@ src/environment.o: src/environment.cpp src/environment.hpp \
  ../../cgp/library/cgp/graphics/opengl/shaders/shaders.hpp \
  ../../cgp/library/cgp/graphics/opengl/shaders/cache_uniform_location/cache_uniform_location.hpp \
  ../../cgp/library/cgp/graphics/opengl/texture/texture.hpp \
+ ../../cgp/library/cgp/graphics/opengl/fbo/fbo.hpp \
  ../../cgp/library/cgp/graphics/drawable/drawable.hpp \
  ../../cgp/library/cgp/graphics/drawable/material/material.hpp \
  ../../cgp/library/cgp/graphics/drawable/material/material_mesh_drawable_phong/material_mesh_drawable_phong.hpp \
@@ -202,6 +203,7 @@ src/environment.hpp:
 ../../cgp/library/cgp/graphics/opengl/shaders/shaders.hpp:
 ../../cgp/library/cgp/graphics/opengl/shaders/cache_uniform_location/cache_uniform_location.hpp:
 ../../cgp/library/cgp/graphics/opengl/texture/texture.hpp:
+../../cgp/library/cgp/graphics/opengl/fbo/fbo.hpp:
 ../../cgp/library/cgp/graphics/drawable/drawable.hpp:
 ../../cgp/library/cgp/graphics/drawable/material/material.hpp:
 ../../cgp/library/cgp/graphics/drawable/material/material_mesh_drawable_phong/material_mesh_drawable_phong.hpp:

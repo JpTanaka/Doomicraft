@@ -76,6 +76,7 @@ src/main.o: src/main.cpp ../../cgp/library/cgp/cgp.hpp \
  ../../cgp/library/cgp/graphics/opengl/shaders/shaders.hpp \
  ../../cgp/library/cgp/graphics/opengl/shaders/cache_uniform_location/cache_uniform_location.hpp \
  ../../cgp/library/cgp/graphics/opengl/texture/texture.hpp \
+ ../../cgp/library/cgp/graphics/opengl/fbo/fbo.hpp \
  ../../cgp/library/cgp/graphics/drawable/drawable.hpp \
  ../../cgp/library/cgp/graphics/drawable/material/material.hpp \
  ../../cgp/library/cgp/graphics/drawable/material/material_mesh_drawable_phong/material_mesh_drawable_phong.hpp \
@@ -123,7 +124,8 @@ src/main.o: src/main.cpp ../../cgp/library/cgp/cgp.hpp \
  ../../cgp/library/cgp/graphics/time/tracker/tracker.hpp \
  ../../cgp/library/cgp/graphics/time/tracker/velocity_tracker/velocity_tracker.hpp \
  ../../cgp/library/cgp/graphics/emscripten/emscripten.hpp \
- src/environment.hpp src/scene.hpp
+ src/environment.hpp src/scene.hpp src/camera.hpp src/character.hpp \
+ src/cube.hpp src/constants.hpp
 ../../cgp/library/cgp/cgp.hpp:
 ../../cgp/library/cgp/cgp_parameters.hpp:
 ../../cgp/library/cgp/core/core.hpp:
@@ -202,6 +204,7 @@ src/main.o: src/main.cpp ../../cgp/library/cgp/cgp.hpp \
 ../../cgp/library/cgp/graphics/opengl/shaders/shaders.hpp:
 ../../cgp/library/cgp/graphics/opengl/shaders/cache_uniform_location/cache_uniform_location.hpp:
 ../../cgp/library/cgp/graphics/opengl/texture/texture.hpp:
+../../cgp/library/cgp/graphics/opengl/fbo/fbo.hpp:
 ../../cgp/library/cgp/graphics/drawable/drawable.hpp:
 ../../cgp/library/cgp/graphics/drawable/material/material.hpp:
 ../../cgp/library/cgp/graphics/drawable/material/material_mesh_drawable_phong/material_mesh_drawable_phong.hpp:
@@ -251,3 +254,7 @@ src/main.o: src/main.cpp ../../cgp/library/cgp/cgp.hpp \
 ../../cgp/library/cgp/graphics/emscripten/emscripten.hpp:
 src/environment.hpp:
 src/scene.hpp:
+src/camera.hpp:
+src/character.hpp:
+src/cube.hpp:
+src/constants.hpp:

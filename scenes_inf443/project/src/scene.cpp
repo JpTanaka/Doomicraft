@@ -52,11 +52,10 @@ void scene_structure::initialize()
 	player = character(camera_control, {2, 0, 10}, false);
 
 	// Adding portal gun
-
 	glfwInit();
-	bool ret = LoadTextureFromFile("/home/tanaka/repos/Doomicraft/scenes_inf443/project/assets/portal_gun.png", &gui.portal_gun.image_texture, &gui.portal_gun.image_width, &gui.portal_gun.image_height);
+	bool ret = LoadTextureFromFile("../assets/portal_gun.png", &gui.portal_gun.image_texture, &gui.portal_gun.image_width, &gui.portal_gun.image_height);
 	IM_ASSERT(ret);
-	ret = LoadTextureFromFile("/home/tanaka/repos/Doomicraft/scenes_inf443/project/assets/crosshair.png", &gui.crosshair.image_texture, &gui.crosshair.image_width, &gui.crosshair.image_height);
+	ret = LoadTextureFromFile("../assets/crosshair.png", &gui.crosshair.image_texture, &gui.crosshair.image_width, &gui.crosshair.image_height);
 	IM_ASSERT(ret);
 
 }
@@ -64,12 +63,8 @@ void scene_structure::initialize()
 
 void scene_structure::display_frame()
 {
-
-
 	timer.update();
-
 	terr.draw(environment, player.get_eyes());
-
 }
 
 void scene_structure::display_gui()
@@ -84,12 +79,11 @@ void scene_structure::display_gui()
 	ImGui::End();
 
 	ImGui::Begin("Crosshair", NULL ,  ImGuiWindowFlags_NoBackground | ImGuiWindowFlags_NoInputs | ImGuiWindowFlags_NoDecoration);
-	gui.crosshair.image_height = std::min(50, window.width/30);
-	gui.crosshair.image_width = std::min(50, window.width/30);
+	gui.crosshair.image_height = std::min(30, window.width/30);
+	gui.crosshair.image_width = std::min(30, window.width/30);
 	ImGui::SetWindowPos({(window.width-gui.crosshair.image_width)/2, (window.height-gui.crosshair.image_height)/2});
 	ImGui::Image((void*)(intptr_t) gui.crosshair.image_texture, ImVec2(gui.crosshair.image_width, gui.crosshair.image_height));
 	ImGui::End();
-
 }
 
 void scene_structure::mouse_move_event()

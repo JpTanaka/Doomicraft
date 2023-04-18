@@ -22666,7 +22666,23 @@ CMakeFiles/project.dir/src/scene.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
   /home/guile/x/Doomicraft/scenes_inf443/project/src/cube.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/constants.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/block.hpp \
-  /home/guile/x/Doomicraft/scenes_inf443/project/src/terrain.hpp
+  /home/guile/x/Doomicraft/scenes_inf443/project/src/terrain.hpp \
+  /home/guile/x/Doomicraft/scenes_inf443/project/src/stb_image.h \
+  /usr/include/c++/12/stdlib.h \
+  /usr/lib/gcc/x86_64-linux-gnu/12/include/limits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/12/include/syslimits.h \
+  /usr/include/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+  /usr/include/linux/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+  /usr/include/c++/12/math.h \
+  /usr/lib/gcc/x86_64-linux-gnu/12/include/emmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/12/include/xmmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/12/include/mmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/12/include/mm_malloc.h
 
 CMakeFiles/project.dir/src/terrain.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/project/src/terrain.cpp \
   /usr/include/stdc-predef.h \
@@ -23420,6 +23436,14 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 
 /home/guile/x/Doomicraft/scenes_inf443/project/src/utils.cpp:
 
+/usr/lib/gcc/x86_64-linux-gnu/12/include/mm_malloc.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/12/include/mmintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/12/include/xmmintrin.h:
+
+/home/guile/x/Doomicraft/scenes_inf443/project/src/stb_image.h:
+
 /home/guile/x/Doomicraft/scenes_inf443/project/src/scene.cpp:
 
 /home/guile/x/Doomicraft/scenes_inf443/project/src/terrain.hpp:
@@ -24037,6 +24061,8 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 /usr/include/c++/12/ext/aligned_buffer.h:
 
 /usr/include/stdlib.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/12/include/emmintrin.h:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/core/containers/grid/grid_2D/grid_2D.hpp:
 

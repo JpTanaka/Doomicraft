@@ -14,7 +14,7 @@ struct camera_controller_custom : camera_controller_first_person_euler
 {
 
 	float mouse_sensitivity = 3.0;
-	float keyboard_sensitivity = 5.0;
+	float keyboard_sensitivity = 3.0;
 	float const pi = std::atan(1) * 4;
 
 	camera_controller_custom();

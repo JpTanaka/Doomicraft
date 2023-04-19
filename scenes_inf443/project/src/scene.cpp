@@ -49,7 +49,7 @@ void scene_structure::initialize()
 
 	block::initialize();
 	terr = terrain();
-	player = character(camera_control, {2, 0, 10}, &gui.creative);
+	main_player = player(camera_control, {2, 0, 10}, &gui.creative);
 
 
 	block b = block(block_types::rock, {0,0,15});
@@ -106,5 +106,5 @@ void scene_structure::keyboard_event()
 void scene_structure::idle_frame()
 {
 	camera_control.idle_frame(environment.camera_view);
-	player.move(terr.get_cubes());
+	main_player.move(terr.get_cubes());
 }

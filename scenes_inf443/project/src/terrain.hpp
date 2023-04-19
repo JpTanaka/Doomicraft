@@ -17,10 +17,10 @@ class terrain {
 
 
     static const int 
-        xmin = -32, 
-        xmax =  32, 
-        ymin = -32, 
-        ymax =  32,
+        xmin = -10, 
+        xmax =  10, 
+        ymin = -10, 
+        ymax =  10,
         zmin = -2, 
         zmax =  10;
 

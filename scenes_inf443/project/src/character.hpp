@@ -10,7 +10,6 @@ class character {
     float jump_velocity = 5;
 
 public:
-    camera_controller_custom* camera;
     cube body;
     cube legs;
 
@@ -19,12 +18,10 @@ public:
     vec3 velocity;
 
     bool is_jumping;
-    bool* creative;
-
-    character(camera_controller_custom&, vec3 center, bool* creative);
+    character(vec3 center);
     character();
 
-    void move(const std::vector<cube>&);
+    virtual void move(const std::vector<cube>&) = 0;
 
     float bottom();
     float top();

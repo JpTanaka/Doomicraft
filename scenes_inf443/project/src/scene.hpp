@@ -3,7 +3,7 @@
 #include "cgp/cgp.hpp"
 #include "environment.hpp"
 #include "camera.hpp"
-#include "character.hpp"
+#include "player.hpp"
 #include "cube.hpp"
 #include "block.hpp"
 #include "terrain.hpp"
@@ -60,7 +60,7 @@ struct scene_structure : cgp::scene_inputs_generic
 	// mesh_drawable cube1;
 
 
-	character player;
+	player main_player;
 	block b;
 
 

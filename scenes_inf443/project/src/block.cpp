@@ -1,18 +1,83 @@
 #include "block.hpp"
 
+block_mesh::block_mesh(){}
+
+block_mesh::block_mesh(std::string texture_path){
+
+    float l = Length/2.0f;
+    meshes[directions::kTop].initialize_data_on_gpu(
+        mesh_primitive_quadrangle(
+            { l, l, l},
+            {-l, l, l},
+            {-l,-l, l},
+            { l,-l, l}
+        )
+    );
+    meshes[directions::kBottom].initialize_data_on_gpu(
+        mesh_primitive_quadrangle(
+            { l, l,-l},
+            { l,-l,-l},
+            {-l,-l,-l},
+            {-l, l,-l}
+        )
+    );
+    meshes[directions::kFront].initialize_data_on_gpu(
+        mesh_primitive_quadrangle(
+            { l, l, l},
+            { l,-l, l},
+            { l,-l,-l},
+            { l, l,-l}
+        )
+    );
+    meshes[directions::kBack].initialize_data_on_gpu(
+        mesh_primitive_quadrangle(
+            {-l, l, l},
+            {-l, l,-l},
+            {-l,-l,-l},
+            {-l,-l, l}
+        )
+    );
+    meshes[directions::kLeft].initialize_data_on_gpu(
+        mesh_primitive_quadrangle(
+            { l, l, l},
+            {-l, l, l},
+            {-l, l,-l},
+            { l, l,-l}
+        )
+    );
+    meshes[directions::kRight].initialize_data_on_gpu(
+        mesh_primitive_quadrangle(
+            { l,-l, l},
+            { l,-l,-l},
+            {-l,-l,-l},
+            {-l,-l, l}
+        )
+    );
+
+    for (mesh_drawable mesh: meshes)
+        mesh.texture.load_and_initialize_texture_2d_on_gpu(texture_path);
+
+}
+
+void block_mesh::draw(environment_structure& env, vec3 position, std::vector<directions> render_directions, bool wireframe){
+    for (directions dir : render_directions){
+        mesh_drawable& mesh = meshes[dir];
+        mesh.model.translation = position;
+        if(!wireframe) cgp::draw(mesh, env);
+        else cgp::draw_wireframe(mesh, env);
+    }
+}
+
+
+std::array<block_mesh, 2> block::blocks;
 
 void block::initialize(){
-    mesh_drawable earth;
-    earth.initialize_data_on_gpu(mesh_primitive_cube({0,0,0}, Length));
-    earth.texture.load_and_initialize_texture_2d_on_gpu(project::path + "assets/dirt.jpg");
-    // earth.material.color = {0.6, 0.3, 0};
-    blocks.push_back(earth);
-
-    mesh_drawable rock;
-    rock.initialize_data_on_gpu(mesh_primitive_cube({0,0,0}, Length));
-    rock.texture.load_and_initialize_texture_2d_on_gpu(project::path + "assets/stone.jpg");
-    // rock.material.color = {0.5, 0.5, 0.5};
-    blocks.push_back(rock);
+    blocks[block_types::earth] = block_mesh(
+        project::path + "assets/dirt.jpg"
+    );
+    blocks[block_types::rock] = block_mesh(
+        project::path + "assets/stone.jpg"
+    );
 }
 
 block::block(){}
@@ -23,11 +88,7 @@ block::block(block_types b_type, vec3 pos)
     position = pos;
 }
 
-void block::draw(environment_structure& env, bool wireframe){
-    mesh_drawable& mesh = blocks[block_type];
-    mesh.model.translation = position;
-    if(!wireframe)
-	    cgp::draw(mesh, env);
-    else
-        cgp::draw_wireframe(mesh, env);
+void block::draw(environment_structure& env, std::vector<directions> render_directions, bool wireframe){
+    block_mesh& mesh = blocks[block_type];
+    mesh.draw(env, position, render_directions, wireframe);
 }

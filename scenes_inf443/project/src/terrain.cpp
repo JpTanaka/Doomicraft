@@ -51,16 +51,15 @@ void terrain::draw(environment_structure& env, bool wireframe){
     };
 
     // blocking: fps drop
-    for (auto& [key, value] : blocks){
-        if(
-            check_has_block(key + Triplet( 1, 0, 0)) &&
-            check_has_block(key + Triplet(-1, 0, 0)) &&
-            check_has_block(key + Triplet(0,  1, 0)) &&
-            check_has_block(key + Triplet(0, -1, 0)) &&
-            check_has_block(key + Triplet(0, 0,  1)) &&
-            check_has_block(key + Triplet(0, 0, -1))
-        ) continue;
-        value.draw(env, wireframe);
+    for (auto& [pos, blk] : blocks){
+        std::vector<directions> render_dirs;
+        if(!check_has_block(pos + Triplet( 1, 0, 0))) render_dirs.push_back(directions::kFront);
+        if(!check_has_block(pos + Triplet(-1, 0, 0))) render_dirs.push_back(directions::kBack);
+        if(!check_has_block(pos + Triplet(0,  1, 0))) render_dirs.push_back(directions::kLeft);
+        if(!check_has_block(pos + Triplet(0, -1, 0))) render_dirs.push_back(directions::kRight);
+        if(!check_has_block(pos + Triplet(0, 0,  1))) render_dirs.push_back(directions::kTop);
+        if(!check_has_block(pos + Triplet(0, 0, -1))) render_dirs.push_back(directions::kBottom);
+        blk.draw(env, render_dirs, wireframe);
     }
 }
 

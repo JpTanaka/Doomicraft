@@ -46,10 +46,10 @@ void camera_controller_custom::action_mouse_move(mat4 &camera_matrix_view)
 void camera_controller_custom::action_keyboard(mat4 &)
 {
     // Escape toggles "menu mode"
-    if (inputs->keyboard.last_action.is_pressed(GLFW_KEY_ESCAPE) && !cursor_enabled)
+    if (inputs->keyboard.last_action.is_pressed(GLFW_KEY_ESCAPE) )
     {
         glfwSetInputMode(window->glfw_window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
-        cursor_enabled = true;
+        cursor_enabled = !cursor_enabled;
     }
 }
 

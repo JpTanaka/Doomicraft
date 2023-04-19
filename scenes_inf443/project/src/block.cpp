@@ -54,8 +54,9 @@ block_mesh::block_mesh(std::string texture_path){
         )
     );
 
-    for (mesh_drawable mesh: meshes)
+    for (mesh_drawable& mesh : meshes){
         mesh.texture.load_and_initialize_texture_2d_on_gpu(texture_path);
+    }
 
 }
 

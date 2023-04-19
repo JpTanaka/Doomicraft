@@ -49,7 +49,7 @@ void scene_structure::initialize()
 
 	block::initialize();
 	terr = terrain();
-	player = character(camera_control, {2, 0, 10}, true);
+	player = character(camera_control, {2, 0, 10}, false);
 
 
 	block b = block(block_types::rock, {0,0,15});
@@ -67,7 +67,7 @@ void scene_structure::initialize()
 void scene_structure::display_frame()
 {
 	timer.update();
-	terr.draw(environment, true);
+	terr.draw(environment, gui.display_wireframe);
 	// b.draw(environment, gui.display_wireframe);
 }
 

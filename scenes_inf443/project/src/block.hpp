@@ -2,7 +2,6 @@
 #include "cube.hpp"
 #include "constants.hpp"
 
-
 enum block_types {
     earth,
     rock
@@ -23,22 +22,25 @@ class block_mesh {
 public:
     block_mesh(std::string texture_path);
     block_mesh();
-    void draw(environment_structure& env, vec3 position, std::vector<directions> render_directions, bool wireframe);
+    void draw(const environment_structure& env, vec3 position, std::vector<directions> render_directions, bool wireframe);
 };
 
 
 class block {
+
     block_types block_type;
 
     vec3 position;
 
 
 public:
-    static std::array<block_mesh, 2> blocks;
+    std::vector<directions> render_directions;
+
+    static std::array<block_mesh, NUM_BLOCKS> blocks;
 
     cube block_cube;
 
-    void draw(environment_structure&, std::vector<directions> render_directions, bool wireframe);
+    void draw(const environment_structure&, bool wireframe);
 
     block();
 

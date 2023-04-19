@@ -6,5 +6,5 @@ CXX_DEFINES = -DIMGUI_IMPL_OPENGL_LOADER_GLAD
 
 CXX_INCLUDES = -I/home/guile/x/Doomicraft/scenes_inf443/project/src -I/home/guile/x/Doomicraft/cgp/library
 
-CXX_FLAGS = -O2 -g -DNDEBUG   -g -O2 -std=c++14 -Wall -Wextra -Wfatal-errors -Wno-pragmas -Wno-sign-compare -Wno-type-limits
+CXX_FLAGS = -O2 -g -DNDEBUG   -march=native -flto -Ofast -std=c++17 -Wall -Wextra -Wfatal-errors -Wno-pragmas -Wno-sign-compare -Wno-type-limits
 

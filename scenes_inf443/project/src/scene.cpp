@@ -49,7 +49,7 @@ void scene_structure::initialize()
 
 	block::initialize();
 	terr = terrain();
-	player = character(camera_control, {2, 0, 10}, false);
+	player = character(camera_control, {2, 0, 10}, &gui.creative);
 
 
 	block b = block(block_types::rock, {0,0,15});
@@ -68,13 +68,13 @@ void scene_structure::display_frame()
 {
 	timer.update();
 	terr.draw(environment, gui.display_wireframe);
-	// b.draw(environment, gui.display_wireframe);
 }
 
 void scene_structure::display_gui()
 {
 	ImGui::Checkbox("Frame", &gui.display_frame);
 	ImGui::Checkbox("Wireframe", &gui.display_wireframe);
+	ImGui::Checkbox("Creative", &gui.creative);
 	ImGui::Begin("Weapon", NULL ,  ImGuiWindowFlags_NoBackground | ImGuiWindowFlags_NoInputs | ImGuiWindowFlags_NoDecoration);
 	gui.portal_gun.image_height = std::min(window.width/4.0f, 300.0f);
 	gui.portal_gun.image_width = std::min(window.width/4.0f, 300.0f);

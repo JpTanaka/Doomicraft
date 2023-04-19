@@ -21,6 +21,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarr
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -95,6 +96,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarr
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -145,12 +150,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarr
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -183,6 +187,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarr
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -253,6 +271,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarr
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -327,6 +346,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarr
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -377,12 +400,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarr
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -417,6 +439,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarr
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp
@@ -438,6 +474,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarr
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -512,6 +549,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarr
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -562,12 +603,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarr
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -604,6 +644,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarr
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -673,6 +727,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/base/basic_t
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h \
   /usr/include/c++/12/string \
   /usr/include/c++/12/bits/stringfwd.h \
@@ -748,6 +803,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/base/basic_t
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -798,8 +857,6 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/base/basic_t
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/iostream \
   /usr/include/c++/12/ostream \
@@ -858,7 +915,21 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/base/basic_t
   /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
-  /usr/include/x86_64-linux-gnu/bits/iscanonical.h
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc
 
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/base/error/error.cpp.o: /home/guile/x/Doomicraft/cgp/library/cgp/core/base/error/error.cpp \
   /usr/include/stdc-predef.h \
@@ -876,6 +947,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/base/error/e
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -950,6 +1022,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/base/error/e
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -1000,12 +1076,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/base/error/e
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -1075,6 +1150,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/base/rand/ra
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/cpp_type_traits.h \
   /usr/include/c++/12/ext/type_traits.h \
   /usr/include/math.h \
@@ -1128,6 +1204,36 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/base/rand/ra
   /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/bits/stl_algobase.h \
+  /usr/include/c++/12/bits/functexcept.h \
+  /usr/include/c++/12/bits/exception_defines.h \
+  /usr/include/c++/12/ext/numeric_traits.h \
+  /usr/include/c++/12/bits/stl_pair.h \
+  /usr/include/c++/12/type_traits \
+  /usr/include/c++/12/bits/move.h \
+  /usr/include/c++/12/bits/utility.h \
+  /usr/include/c++/12/bits/stl_iterator_base_types.h \
+  /usr/include/c++/12/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/12/bits/concept_check.h \
+  /usr/include/c++/12/debug/assertions.h \
+  /usr/include/c++/12/bits/stl_iterator.h \
+  /usr/include/c++/12/bits/ptr_traits.h \
+  /usr/include/c++/12/debug/debug.h \
+  /usr/include/c++/12/bits/predefined_ops.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /usr/include/c++/12/cstdlib \
   /usr/include/c++/12/string \
   /usr/include/c++/12/bits/stringfwd.h \
@@ -1145,7 +1251,6 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/base/rand/ra
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
   /usr/include/x86_64-linux-gnu/bits/wchar2-decl.h \
   /usr/include/x86_64-linux-gnu/bits/wchar2.h \
-  /usr/include/c++/12/type_traits \
   /usr/include/c++/12/cstdint \
   /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h \
   /usr/include/stdint.h \
@@ -1155,9 +1260,6 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/base/rand/ra
   /usr/include/c++/12/bits/new_allocator.h \
   /usr/include/c++/12/new \
   /usr/include/c++/12/bits/exception.h \
-  /usr/include/c++/12/bits/functexcept.h \
-  /usr/include/c++/12/bits/exception_defines.h \
-  /usr/include/c++/12/bits/move.h \
   /usr/include/c++/12/bits/localefwd.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++locale.h \
   /usr/include/c++/12/clocale \
@@ -1168,20 +1270,8 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/base/rand/ra
   /usr/include/ctype.h \
   /usr/include/c++/12/bits/ostream_insert.h \
   /usr/include/c++/12/bits/cxxabi_forced.h \
-  /usr/include/c++/12/bits/stl_iterator_base_types.h \
-  /usr/include/c++/12/bits/stl_iterator_base_funcs.h \
-  /usr/include/c++/12/bits/concept_check.h \
-  /usr/include/c++/12/debug/assertions.h \
-  /usr/include/c++/12/bits/stl_iterator.h \
-  /usr/include/c++/12/bits/ptr_traits.h \
   /usr/include/c++/12/bits/stl_function.h \
   /usr/include/c++/12/backward/binders.h \
-  /usr/include/c++/12/ext/numeric_traits.h \
-  /usr/include/c++/12/bits/stl_algobase.h \
-  /usr/include/c++/12/bits/stl_pair.h \
-  /usr/include/c++/12/bits/utility.h \
-  /usr/include/c++/12/debug/debug.h \
-  /usr/include/c++/12/bits/predefined_ops.h \
   /usr/include/c++/12/bits/refwrap.h \
   /usr/include/c++/12/bits/invoke.h \
   /usr/include/c++/12/bits/range_access.h \
@@ -1190,6 +1280,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/base/rand/ra
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdio \
   /usr/include/stdio.h \
@@ -1210,10 +1304,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/base/rand/ra
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
-  /usr/include/c++/12/limits \
   /usr/include/c++/12/bits/random.h \
   /usr/include/c++/12/vector \
   /usr/include/c++/12/bits/stl_uninitialized.h \
@@ -1222,10 +1313,19 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/base/rand/ra
   /usr/include/c++/12/bits/vector.tcc \
   /usr/include/c++/12/bits/uniform_int_dist.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/opt_random.h \
+  /usr/lib/gcc/x86_64-linux-gnu/12/include/pmmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/12/include/emmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/12/include/xmmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/12/include/mmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/12/include/mm_malloc.h \
+  /usr/include/c++/12/stdlib.h \
+  /usr/lib/gcc/x86_64-linux-gnu/12/include/mwaitintrin.h \
   /usr/include/c++/12/bits/random.tcc \
   /usr/include/c++/12/numeric \
   /usr/include/c++/12/bits/stl_numeric.h \
   /usr/include/c++/12/bit \
+  /usr/include/c++/12/pstl/glue_numeric_defs.h \
+  /usr/include/c++/12/pstl/execution_defs.h \
   /usr/include/c++/12/chrono \
   /usr/include/c++/12/bits/chrono.h \
   /usr/include/c++/12/ratio \
@@ -1252,6 +1352,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/base/string/
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -1326,6 +1427,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/base/string/
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -1376,8 +1481,6 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/base/string/
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/vector \
   /usr/include/c++/12/bits/stl_uninitialized.h \
@@ -1393,7 +1496,9 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/base/string/
   /usr/include/c++/12/bits/algorithmfwd.h \
   /usr/include/c++/12/bits/stl_heap.h \
   /usr/include/c++/12/bits/stl_tempbuf.h \
-  /usr/include/c++/12/bits/uniform_int_dist.h
+  /usr/include/c++/12/bits/uniform_int_dist.h \
+  /usr/include/c++/12/pstl/glue_algorithm_defs.h \
+  /usr/include/c++/12/pstl/execution_defs.h
 
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/containers/grid/test/test_grid.cpp.o: /home/guile/x/Doomicraft/cgp/library/cgp/core/containers/grid/test/test_grid.cpp \
   /usr/include/stdc-predef.h \
@@ -1412,6 +1517,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/containers/g
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -1486,6 +1592,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/containers/g
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -1536,12 +1646,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/containers/g
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -1626,6 +1735,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/containers/g
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -1651,6 +1774,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/containers/g
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -1725,6 +1849,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/containers/g
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -1775,12 +1903,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/containers/g
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -1816,6 +1943,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/containers/g
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -1888,6 +2029,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/containers/i
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/move.h \
   /usr/include/c++/12/bits/utility.h \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -1968,6 +2110,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/containers/i
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -2018,12 +2164,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/containers/i
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/bits/stl_multimap.h \
   /usr/include/c++/12/bits/erase_if.h \
@@ -2053,6 +2198,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/containers/i
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -2183,6 +2342,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/containers/m
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -2257,6 +2417,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/containers/m
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -2307,12 +2471,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/containers/m
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -2349,6 +2512,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/containers/m
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -2437,6 +2614,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/containers/o
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -2511,6 +2689,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/containers/o
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -2561,12 +2743,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/containers/o
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -2602,6 +2783,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/containers/o
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -2628,6 +2823,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/files/files.
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -2702,6 +2898,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/files/files.
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -2752,12 +2952,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/files/files.
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -2790,6 +2989,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/files/files.
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -2884,6 +3097,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/path/path.cp
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -2958,6 +3172,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/path/path.cp
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -3008,8 +3226,6 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/path/path.cp
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/base/base.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/base/error/error.hpp \
@@ -3017,6 +3233,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/path/path.cp
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -3053,6 +3270,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/path/path.cp
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -3133,6 +3364,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/mat/func
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -3207,6 +3439,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/mat/func
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -3257,12 +3493,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/mat/func
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -3300,6 +3535,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/mat/func
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -3392,6 +3641,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/mat/func
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -3466,6 +3716,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/mat/func
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -3516,12 +3770,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/mat/func
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -3559,6 +3812,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/mat/func
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -3650,6 +3917,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/mat/mat2
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -3724,6 +3992,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/mat/mat2
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -3774,12 +4046,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/mat/mat2
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -3816,6 +4087,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/mat/mat2
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -3905,6 +4190,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/mat/mat3
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -3979,6 +4265,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/mat/mat3
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -4029,12 +4319,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/mat/mat3
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -4071,6 +4360,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/mat/mat3
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -4166,6 +4469,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/mat/mat4
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -4240,6 +4544,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/mat/mat4
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -4290,12 +4598,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/mat/mat4
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -4332,6 +4639,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/mat/mat4
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -4431,6 +4752,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/mat/test
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -4505,6 +4827,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/mat/test
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -4555,12 +4881,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/mat/test
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -4593,6 +4918,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/mat/test
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -4686,6 +5025,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/quaterni
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -4760,6 +5100,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/quaterni
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -4810,12 +5154,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/quaterni
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -4851,6 +5194,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/quaterni
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -4920,6 +5277,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/cu
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -4994,6 +5352,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/cu
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -5044,12 +5406,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/cu
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -5086,6 +5447,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/cu
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -5187,6 +5562,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/im
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -5261,6 +5637,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/im
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -5311,12 +5691,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/im
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -5349,6 +5728,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/im
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -5374,6 +5767,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/im
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -5448,6 +5842,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/im
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -5498,12 +5896,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/im
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -5586,6 +5983,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/im
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -5663,6 +6074,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/in
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -5737,6 +6149,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/in
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -5787,12 +6203,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/in
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -5830,6 +6245,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/in
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -5905,6 +6334,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/me
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/move.h \
   /usr/include/c++/12/bits/utility.h \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -5985,6 +6415,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/me
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -6035,12 +6469,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/me
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/bits/stl_multimap.h \
   /usr/include/c++/12/bits/erase_if.h \
@@ -6070,6 +6503,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/me
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -6189,6 +6636,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/me
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/move.h \
   /usr/include/c++/12/bits/utility.h \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -6269,6 +6717,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/me
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -6319,12 +6771,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/me
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/bits/stl_multimap.h \
   /usr/include/c++/12/bits/erase_if.h \
@@ -6354,6 +6805,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/me
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -6467,6 +6932,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/me
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/move.h \
   /usr/include/c++/12/bits/utility.h \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -6547,6 +7013,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/me
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -6597,12 +7067,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/me
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/bits/stl_multimap.h \
   /usr/include/c++/12/bits/erase_if.h \
@@ -6632,6 +7101,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/me
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -6748,6 +7231,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/no
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -6822,6 +7306,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/no
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -6872,12 +7360,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/no
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -6910,6 +7397,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/no
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -6984,6 +7485,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/sp
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/move.h \
   /usr/include/c++/12/bits/utility.h \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -7064,6 +7566,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/sp
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -7114,12 +7620,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/sp
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/bits/stl_multimap.h \
   /usr/include/c++/12/bits/erase_if.h \
@@ -7149,6 +7654,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/sp
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -7246,6 +7765,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/transfor
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -7320,6 +7840,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/transfor
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -7370,12 +7894,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/transfor
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -7413,6 +7936,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/transfor
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -7510,6 +8047,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/transfor
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -7584,6 +8122,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/transfor
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -7634,12 +8176,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/transfor
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -7677,6 +8218,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/transfor
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -7772,6 +8327,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/transfor
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -7846,6 +8402,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/transfor
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -7896,12 +8456,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/transfor
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -7939,6 +8498,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/transfor
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -8035,6 +8608,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/transfor
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -8109,6 +8683,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/transfor
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -8159,12 +8737,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/transfor
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -8202,6 +8779,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/transfor
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -8298,6 +8889,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/transfor
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -8372,6 +8964,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/transfor
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -8422,12 +9018,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/transfor
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -8465,6 +9060,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/transfor
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -8558,6 +9167,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/transfor
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -8632,6 +9242,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/transfor
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -8682,12 +9296,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/transfor
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -8724,6 +9337,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/transfor
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -8820,6 +9447,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/transfor
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -8894,6 +9522,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/transfor
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -8944,12 +9576,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/transfor
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -8986,6 +9617,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/geometry/transfor
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -9081,6 +9726,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -9155,6 +9801,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -9205,12 +9855,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -9253,6 +9902,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -9364,6 +10027,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -9438,6 +10102,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -9488,12 +10156,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -9536,6 +10203,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -9666,6 +10347,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -9730,6 +10412,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -9780,12 +10466,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -9818,6 +10503,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -9929,6 +10628,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -10003,6 +10703,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -10053,12 +10757,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -10101,6 +10804,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -10212,6 +10929,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -10286,6 +11004,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -10336,12 +11058,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -10384,6 +11105,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -10501,6 +11236,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -10575,6 +11311,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -10625,12 +11365,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -10663,6 +11402,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -10772,6 +11525,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -10846,6 +11600,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -10896,12 +11654,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -10934,6 +11691,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -11037,6 +11808,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -11111,6 +11883,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -11161,12 +11937,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -11205,6 +11980,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -11312,6 +12101,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -11386,6 +12176,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -11436,12 +12230,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -11474,6 +12267,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -11583,6 +12390,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -11657,6 +12465,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -11707,12 +12519,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -11745,6 +12556,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -11854,6 +12679,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -11928,6 +12754,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -11978,12 +12808,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -12016,6 +12845,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -12123,6 +12966,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -12197,6 +13041,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -12247,12 +13095,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -12285,6 +13132,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/c
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -12387,6 +13248,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -12461,6 +13323,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -12511,12 +13377,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -12552,6 +13417,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -12687,6 +13566,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -12761,6 +13641,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -12811,12 +13695,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -12852,6 +13735,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -13000,6 +13897,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -13065,6 +13963,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -13115,12 +14017,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -13144,6 +14045,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -13218,6 +14120,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -13268,12 +14174,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -13318,6 +14223,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -13427,7 +14346,17 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/material/material_mesh_drawable_phong/material_mesh_drawable_phong.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/environment/environment.hpp \
   /usr/include/c++/12/functional \
-  /usr/include/c++/12/bits/std_function.h
+  /usr/include/c++/12/bits/std_function.h \
+  /usr/include/c++/12/unordered_map \
+  /usr/include/c++/12/bits/hashtable.h \
+  /usr/include/c++/12/bits/hashtable_policy.h \
+  /usr/include/c++/12/bits/enable_special_members.h \
+  /usr/include/c++/12/bits/unordered_map.h \
+  /usr/include/c++/12/bits/stl_algo.h \
+  /usr/include/c++/12/bits/algorithmfwd.h \
+  /usr/include/c++/12/bits/stl_heap.h \
+  /usr/include/c++/12/bits/stl_tempbuf.h \
+  /usr/include/c++/12/bits/uniform_int_dist.h
 
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/material/material_mesh_drawable_phong/material_mesh_drawable_phong.cpp.o: /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/material/material_mesh_drawable_phong/material_mesh_drawable_phong.cpp \
   /usr/include/stdc-predef.h \
@@ -13446,6 +14375,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -13520,6 +14450,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -13570,12 +14504,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -13618,6 +14551,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -13749,6 +14696,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -13814,6 +14762,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -13864,12 +14816,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -13902,6 +14853,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -14011,7 +14976,17 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/material/material_mesh_drawable_phong/material_mesh_drawable_phong.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/environment/environment.hpp \
   /usr/include/c++/12/functional \
-  /usr/include/c++/12/bits/std_function.h
+  /usr/include/c++/12/bits/std_function.h \
+  /usr/include/c++/12/unordered_map \
+  /usr/include/c++/12/bits/hashtable.h \
+  /usr/include/c++/12/bits/hashtable_policy.h \
+  /usr/include/c++/12/bits/enable_special_members.h \
+  /usr/include/c++/12/bits/unordered_map.h \
+  /usr/include/c++/12/bits/stl_algo.h \
+  /usr/include/c++/12/bits/algorithmfwd.h \
+  /usr/include/c++/12/bits/stl_heap.h \
+  /usr/include/c++/12/bits/stl_tempbuf.h \
+  /usr/include/c++/12/bits/uniform_int_dist.h
 
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/special_drawable/skybox_drawable/skybox_drawable.cpp.o: /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/special_drawable/skybox_drawable/skybox_drawable.cpp \
   /usr/include/stdc-predef.h \
@@ -14050,6 +15025,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -14115,6 +15091,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -14165,12 +15145,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -14203,6 +15182,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -14349,6 +15342,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -14414,6 +15408,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -14464,12 +15462,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -14502,6 +15499,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -14642,6 +15653,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -14707,6 +15719,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -14757,12 +15773,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -14795,6 +15810,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -14904,7 +15933,17 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/material/material_mesh_drawable_phong/material_mesh_drawable_phong.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/environment/environment.hpp \
   /usr/include/c++/12/functional \
-  /usr/include/c++/12/bits/std_function.h
+  /usr/include/c++/12/bits/std_function.h \
+  /usr/include/c++/12/unordered_map \
+  /usr/include/c++/12/bits/hashtable.h \
+  /usr/include/c++/12/bits/hashtable_policy.h \
+  /usr/include/c++/12/bits/enable_special_members.h \
+  /usr/include/c++/12/bits/unordered_map.h \
+  /usr/include/c++/12/bits/stl_algo.h \
+  /usr/include/c++/12/bits/algorithmfwd.h \
+  /usr/include/c++/12/bits/stl_heap.h \
+  /usr/include/c++/12/bits/stl_tempbuf.h \
+  /usr/include/c++/12/bits/uniform_int_dist.h
 
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/emscripten/emscripten.cpp.o: /home/guile/x/Doomicraft/cgp/library/cgp/graphics/emscripten/emscripten.cpp \
   /usr/include/stdc-predef.h \
@@ -15008,6 +16047,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/input_de
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -15072,6 +16112,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/input_de
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -15122,12 +16166,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/input_de
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -15160,6 +16203,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/input_de
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -15250,6 +16307,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/b
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -15315,6 +16373,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/b
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -15365,12 +16427,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/b
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -15403,6 +16464,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/b
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -15512,6 +16587,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/b
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -15577,6 +16653,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/b
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -15627,8 +16707,6 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/b
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc
 
 CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/buffer/vbo/vbo.cpp.o: /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/buffer/vbo/vbo.cpp \
@@ -15665,6 +16743,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/b
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -15730,6 +16809,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/b
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -15780,12 +16863,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/b
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -15818,6 +16900,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/b
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -15940,6 +17036,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/d
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -16005,6 +17102,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/d
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -16055,14 +17156,13 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/d
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/base/base.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/base/error/error.hpp \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -16166,6 +17266,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/f
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -16231,6 +17332,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/f
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -16281,12 +17386,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/f
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -16319,6 +17423,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/f
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -16436,6 +17554,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/s
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -16501,6 +17620,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/s
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -16551,12 +17674,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/s
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -16658,6 +17780,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/s
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -16723,6 +17846,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/s
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -16773,12 +17900,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/s
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -16817,6 +17943,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/s
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -16907,6 +18047,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/t
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -16972,6 +18113,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/t
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -17022,8 +18167,6 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/t
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/containers/image/image.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/containers/containers.hpp \
@@ -17038,6 +18181,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/t
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/bits/stl_multimap.h \
   /usr/include/c++/12/bits/erase_if.h \
@@ -17067,6 +18211,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/t
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -17161,6 +18319,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/u
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -17235,6 +18394,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/u
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -17285,8 +18448,6 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/u
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/opengl_include.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/cgp_parameters.hpp \
@@ -17301,6 +18462,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/u
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -17333,6 +18495,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/u
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -17445,6 +18621,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -17519,6 +18696,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -17569,12 +18750,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -17607,6 +18787,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -17738,6 +18932,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -17812,6 +19007,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -17862,12 +19061,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -17900,6 +19098,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -18030,6 +19242,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -18104,6 +19317,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -18154,12 +19371,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -18192,6 +19408,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -18344,6 +19574,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/tim
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -18418,6 +19649,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/tim
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -18468,12 +19703,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/tim
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -18519,6 +19753,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/tra
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -18593,6 +19828,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/tra
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -18643,12 +19882,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/tra
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -18686,6 +19924,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/tra
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -18776,6 +20028,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/window/w
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -18841,6 +20094,10 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/window/w
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -18891,12 +20148,11 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/window/w
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -18929,6 +20185,20 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/graphics/window/w
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -19060,6 +20330,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/glad/
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/stdlib.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
@@ -19144,6 +20415,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/glad/
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/stdlib.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
@@ -19236,6 +20508,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/stdlib.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
@@ -19282,6 +20555,36 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/bits/stl_algobase.h \
+  /usr/include/c++/12/bits/functexcept.h \
+  /usr/include/c++/12/bits/exception_defines.h \
+  /usr/include/c++/12/ext/numeric_traits.h \
+  /usr/include/c++/12/bits/stl_pair.h \
+  /usr/include/c++/12/type_traits \
+  /usr/include/c++/12/bits/move.h \
+  /usr/include/c++/12/bits/utility.h \
+  /usr/include/c++/12/bits/stl_iterator_base_types.h \
+  /usr/include/c++/12/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/12/bits/concept_check.h \
+  /usr/include/c++/12/debug/assertions.h \
+  /usr/include/c++/12/bits/stl_iterator.h \
+  /usr/include/c++/12/bits/ptr_traits.h \
+  /usr/include/c++/12/debug/debug.h \
+  /usr/include/c++/12/bits/predefined_ops.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /usr/lib/gcc/x86_64-linux-gnu/12/include/limits.h \
   /usr/lib/gcc/x86_64-linux-gnu/12/include/syslimits.h \
   /usr/include/limits.h \
@@ -19343,6 +20646,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/cpp_type_traits.h \
   /usr/include/c++/12/ext/type_traits.h \
   /usr/include/math.h \
@@ -19387,6 +20691,36 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui
   /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/bits/stl_algobase.h \
+  /usr/include/c++/12/bits/functexcept.h \
+  /usr/include/c++/12/bits/exception_defines.h \
+  /usr/include/c++/12/ext/numeric_traits.h \
+  /usr/include/c++/12/bits/stl_pair.h \
+  /usr/include/c++/12/type_traits \
+  /usr/include/c++/12/bits/move.h \
+  /usr/include/c++/12/bits/utility.h \
+  /usr/include/c++/12/bits/stl_iterator_base_types.h \
+  /usr/include/c++/12/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/12/bits/concept_check.h \
+  /usr/include/c++/12/debug/assertions.h \
+  /usr/include/c++/12/bits/stl_iterator.h \
+  /usr/include/c++/12/bits/ptr_traits.h \
+  /usr/include/c++/12/debug/debug.h \
+  /usr/include/c++/12/bits/predefined_ops.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /usr/include/stdio.h \
   /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
@@ -19452,6 +20786,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/stdlib.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
@@ -19498,6 +20833,36 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/bits/stl_algobase.h \
+  /usr/include/c++/12/bits/functexcept.h \
+  /usr/include/c++/12/bits/exception_defines.h \
+  /usr/include/c++/12/ext/numeric_traits.h \
+  /usr/include/c++/12/bits/stl_pair.h \
+  /usr/include/c++/12/type_traits \
+  /usr/include/c++/12/bits/move.h \
+  /usr/include/c++/12/bits/utility.h \
+  /usr/include/c++/12/bits/stl_iterator_base_types.h \
+  /usr/include/c++/12/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/12/bits/concept_check.h \
+  /usr/include/c++/12/debug/assertions.h \
+  /usr/include/c++/12/bits/stl_iterator.h \
+  /usr/include/c++/12/bits/ptr_traits.h \
+  /usr/include/c++/12/debug/debug.h \
+  /usr/include/c++/12/bits/predefined_ops.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /usr/lib/gcc/x86_64-linux-gnu/12/include/limits.h \
   /usr/lib/gcc/x86_64-linux-gnu/12/include/syslimits.h \
   /usr/include/limits.h \
@@ -19644,6 +21009,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/stdlib.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
@@ -19690,6 +21056,36 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/bits/stl_algobase.h \
+  /usr/include/c++/12/bits/functexcept.h \
+  /usr/include/c++/12/bits/exception_defines.h \
+  /usr/include/c++/12/ext/numeric_traits.h \
+  /usr/include/c++/12/bits/stl_pair.h \
+  /usr/include/c++/12/type_traits \
+  /usr/include/c++/12/bits/move.h \
+  /usr/include/c++/12/bits/utility.h \
+  /usr/include/c++/12/bits/stl_iterator_base_types.h \
+  /usr/include/c++/12/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/12/bits/concept_check.h \
+  /usr/include/c++/12/debug/assertions.h \
+  /usr/include/c++/12/bits/stl_iterator.h \
+  /usr/include/c++/12/bits/ptr_traits.h \
+  /usr/include/c++/12/debug/debug.h \
+  /usr/include/c++/12/bits/predefined_ops.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /usr/lib/gcc/x86_64-linux-gnu/12/include/limits.h \
   /usr/lib/gcc/x86_64-linux-gnu/12/include/syslimits.h \
   /usr/include/limits.h \
@@ -19723,6 +21119,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/jpeg/
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/stdlib.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h \
@@ -19803,6 +21200,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/jpeg/
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/stdlib.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h \
@@ -19886,6 +21284,7 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/lodep
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/functexcept.h \
   /usr/include/c++/12/bits/exception_defines.h \
   /usr/include/c++/12/bits/cpp_type_traits.h \
@@ -19962,6 +21361,8 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/lodep
   /usr/include/c++/12/bits/ostream_insert.h \
   /usr/include/c++/12/bits/cxxabi_forced.h \
   /usr/include/c++/12/bits/basic_string.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -20050,6 +21451,7 @@ CMakeFiles/project.dir/src/block.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -20124,6 +21526,10 @@ CMakeFiles/project.dir/src/block.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -20174,12 +21580,11 @@ CMakeFiles/project.dir/src/block.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -20215,6 +21620,20 @@ CMakeFiles/project.dir/src/block.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -20352,6 +21771,16 @@ CMakeFiles/project.dir/src/block.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/environment/environment.hpp \
   /usr/include/c++/12/functional \
   /usr/include/c++/12/bits/std_function.h \
+  /usr/include/c++/12/unordered_map \
+  /usr/include/c++/12/bits/hashtable.h \
+  /usr/include/c++/12/bits/hashtable_policy.h \
+  /usr/include/c++/12/bits/enable_special_members.h \
+  /usr/include/c++/12/bits/unordered_map.h \
+  /usr/include/c++/12/bits/stl_algo.h \
+  /usr/include/c++/12/bits/algorithmfwd.h \
+  /usr/include/c++/12/bits/stl_heap.h \
+  /usr/include/c++/12/bits/stl_tempbuf.h \
+  /usr/include/c++/12/bits/uniform_int_dist.h \
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/triangles_drawable/triangles_drawable.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/curve_drawable/curve_drawable.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/curve_drawable_dynamic_extend/curve_drawable_dynamic_extend.hpp \
@@ -20424,6 +21853,7 @@ CMakeFiles/project.dir/src/camera.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -20498,6 +21928,10 @@ CMakeFiles/project.dir/src/camera.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -20548,12 +21982,11 @@ CMakeFiles/project.dir/src/camera.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -20589,6 +22022,20 @@ CMakeFiles/project.dir/src/camera.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -20726,6 +22173,16 @@ CMakeFiles/project.dir/src/camera.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/environment/environment.hpp \
   /usr/include/c++/12/functional \
   /usr/include/c++/12/bits/std_function.h \
+  /usr/include/c++/12/unordered_map \
+  /usr/include/c++/12/bits/hashtable.h \
+  /usr/include/c++/12/bits/hashtable_policy.h \
+  /usr/include/c++/12/bits/enable_special_members.h \
+  /usr/include/c++/12/bits/unordered_map.h \
+  /usr/include/c++/12/bits/stl_algo.h \
+  /usr/include/c++/12/bits/algorithmfwd.h \
+  /usr/include/c++/12/bits/stl_heap.h \
+  /usr/include/c++/12/bits/stl_tempbuf.h \
+  /usr/include/c++/12/bits/uniform_int_dist.h \
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/triangles_drawable/triangles_drawable.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/curve_drawable/curve_drawable.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/curve_drawable_dynamic_extend/curve_drawable_dynamic_extend.hpp \
@@ -20792,6 +22249,7 @@ CMakeFiles/project.dir/src/character.cpp.o: /home/guile/x/Doomicraft/scenes_inf4
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stl_relops.h \
   /usr/include/c++/12/bits/stl_pair.h \
   /usr/include/c++/12/type_traits \
@@ -20874,6 +22332,10 @@ CMakeFiles/project.dir/src/character.cpp.o: /home/guile/x/Doomicraft/scenes_inf4
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -20924,12 +22386,11 @@ CMakeFiles/project.dir/src/character.cpp.o: /home/guile/x/Doomicraft/scenes_inf4
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -20965,6 +22426,20 @@ CMakeFiles/project.dir/src/character.cpp.o: /home/guile/x/Doomicraft/scenes_inf4
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -21102,6 +22577,16 @@ CMakeFiles/project.dir/src/character.cpp.o: /home/guile/x/Doomicraft/scenes_inf4
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/environment/environment.hpp \
   /usr/include/c++/12/functional \
   /usr/include/c++/12/bits/std_function.h \
+  /usr/include/c++/12/unordered_map \
+  /usr/include/c++/12/bits/hashtable.h \
+  /usr/include/c++/12/bits/hashtable_policy.h \
+  /usr/include/c++/12/bits/enable_special_members.h \
+  /usr/include/c++/12/bits/unordered_map.h \
+  /usr/include/c++/12/bits/stl_algo.h \
+  /usr/include/c++/12/bits/algorithmfwd.h \
+  /usr/include/c++/12/bits/stl_heap.h \
+  /usr/include/c++/12/bits/stl_tempbuf.h \
+  /usr/include/c++/12/bits/uniform_int_dist.h \
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/triangles_drawable/triangles_drawable.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/curve_drawable/curve_drawable.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/curve_drawable_dynamic_extend/curve_drawable_dynamic_extend.hpp \
@@ -21177,6 +22662,7 @@ CMakeFiles/project.dir/src/cube.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/pr
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -21251,6 +22737,10 @@ CMakeFiles/project.dir/src/cube.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/pr
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -21301,12 +22791,11 @@ CMakeFiles/project.dir/src/cube.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/pr
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -21342,6 +22831,20 @@ CMakeFiles/project.dir/src/cube.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/pr
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -21479,6 +22982,16 @@ CMakeFiles/project.dir/src/cube.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/pr
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/environment/environment.hpp \
   /usr/include/c++/12/functional \
   /usr/include/c++/12/bits/std_function.h \
+  /usr/include/c++/12/unordered_map \
+  /usr/include/c++/12/bits/hashtable.h \
+  /usr/include/c++/12/bits/hashtable_policy.h \
+  /usr/include/c++/12/bits/enable_special_members.h \
+  /usr/include/c++/12/bits/unordered_map.h \
+  /usr/include/c++/12/bits/stl_algo.h \
+  /usr/include/c++/12/bits/algorithmfwd.h \
+  /usr/include/c++/12/bits/stl_heap.h \
+  /usr/include/c++/12/bits/stl_tempbuf.h \
+  /usr/include/c++/12/bits/uniform_int_dist.h \
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/triangles_drawable/triangles_drawable.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/curve_drawable/curve_drawable.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/curve_drawable_dynamic_extend/curve_drawable_dynamic_extend.hpp \
@@ -21532,11 +23045,8 @@ CMakeFiles/project.dir/src/cube.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/pr
   /home/guile/x/Doomicraft/scenes_inf443/project/src/utils.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/constants.hpp \
   /usr/include/c++/12/algorithm \
-  /usr/include/c++/12/bits/stl_algo.h \
-  /usr/include/c++/12/bits/algorithmfwd.h \
-  /usr/include/c++/12/bits/stl_heap.h \
-  /usr/include/c++/12/bits/stl_tempbuf.h \
-  /usr/include/c++/12/bits/uniform_int_dist.h
+  /usr/include/c++/12/pstl/glue_algorithm_defs.h \
+  /usr/include/c++/12/pstl/execution_defs.h
 
 CMakeFiles/project.dir/src/environment.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/project/src/environment.cpp \
   /usr/include/stdc-predef.h \
@@ -21558,6 +23068,7 @@ CMakeFiles/project.dir/src/environment.cpp.o: /home/guile/x/Doomicraft/scenes_in
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -21632,6 +23143,10 @@ CMakeFiles/project.dir/src/environment.cpp.o: /home/guile/x/Doomicraft/scenes_in
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -21682,12 +23197,11 @@ CMakeFiles/project.dir/src/environment.cpp.o: /home/guile/x/Doomicraft/scenes_in
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -21723,6 +23237,20 @@ CMakeFiles/project.dir/src/environment.cpp.o: /home/guile/x/Doomicraft/scenes_in
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -21860,6 +23388,16 @@ CMakeFiles/project.dir/src/environment.cpp.o: /home/guile/x/Doomicraft/scenes_in
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/environment/environment.hpp \
   /usr/include/c++/12/functional \
   /usr/include/c++/12/bits/std_function.h \
+  /usr/include/c++/12/unordered_map \
+  /usr/include/c++/12/bits/hashtable.h \
+  /usr/include/c++/12/bits/hashtable_policy.h \
+  /usr/include/c++/12/bits/enable_special_members.h \
+  /usr/include/c++/12/bits/unordered_map.h \
+  /usr/include/c++/12/bits/stl_algo.h \
+  /usr/include/c++/12/bits/algorithmfwd.h \
+  /usr/include/c++/12/bits/stl_heap.h \
+  /usr/include/c++/12/bits/stl_tempbuf.h \
+  /usr/include/c++/12/bits/uniform_int_dist.h \
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/triangles_drawable/triangles_drawable.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/curve_drawable/curve_drawable.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/curve_drawable_dynamic_extend/curve_drawable_dynamic_extend.hpp \
@@ -21929,6 +23467,7 @@ CMakeFiles/project.dir/src/main.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/pr
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -22003,6 +23542,10 @@ CMakeFiles/project.dir/src/main.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/pr
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -22053,12 +23596,11 @@ CMakeFiles/project.dir/src/main.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/pr
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -22094,6 +23636,20 @@ CMakeFiles/project.dir/src/main.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/pr
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -22231,6 +23787,16 @@ CMakeFiles/project.dir/src/main.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/pr
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/environment/environment.hpp \
   /usr/include/c++/12/functional \
   /usr/include/c++/12/bits/std_function.h \
+  /usr/include/c++/12/unordered_map \
+  /usr/include/c++/12/bits/hashtable.h \
+  /usr/include/c++/12/bits/hashtable_policy.h \
+  /usr/include/c++/12/bits/enable_special_members.h \
+  /usr/include/c++/12/bits/unordered_map.h \
+  /usr/include/c++/12/bits/stl_algo.h \
+  /usr/include/c++/12/bits/algorithmfwd.h \
+  /usr/include/c++/12/bits/stl_heap.h \
+  /usr/include/c++/12/bits/stl_tempbuf.h \
+  /usr/include/c++/12/bits/uniform_int_dist.h \
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/triangles_drawable/triangles_drawable.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/curve_drawable/curve_drawable.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/curve_drawable_dynamic_extend/curve_drawable_dynamic_extend.hpp \
@@ -22288,12 +23854,7 @@ CMakeFiles/project.dir/src/main.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/pr
   /home/guile/x/Doomicraft/scenes_inf443/project/src/constants.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/block.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/terrain.hpp \
-  /home/guile/x/Doomicraft/scenes_inf443/project/src/utils.hpp \
-  /usr/include/c++/12/unordered_map \
-  /usr/include/c++/12/bits/hashtable.h \
-  /usr/include/c++/12/bits/hashtable_policy.h \
-  /usr/include/c++/12/bits/enable_special_members.h \
-  /usr/include/c++/12/bits/unordered_map.h
+  /home/guile/x/Doomicraft/scenes_inf443/project/src/utils.hpp
 
 CMakeFiles/project.dir/src/scene.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/project/src/scene.cpp \
   /usr/include/stdc-predef.h \
@@ -22315,6 +23876,7 @@ CMakeFiles/project.dir/src/scene.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -22389,6 +23951,10 @@ CMakeFiles/project.dir/src/scene.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -22439,12 +24005,11 @@ CMakeFiles/project.dir/src/scene.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -22480,6 +24045,20 @@ CMakeFiles/project.dir/src/scene.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -22617,6 +24196,16 @@ CMakeFiles/project.dir/src/scene.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/environment/environment.hpp \
   /usr/include/c++/12/functional \
   /usr/include/c++/12/bits/std_function.h \
+  /usr/include/c++/12/unordered_map \
+  /usr/include/c++/12/bits/hashtable.h \
+  /usr/include/c++/12/bits/hashtable_policy.h \
+  /usr/include/c++/12/bits/enable_special_members.h \
+  /usr/include/c++/12/bits/unordered_map.h \
+  /usr/include/c++/12/bits/stl_algo.h \
+  /usr/include/c++/12/bits/algorithmfwd.h \
+  /usr/include/c++/12/bits/stl_heap.h \
+  /usr/include/c++/12/bits/stl_tempbuf.h \
+  /usr/include/c++/12/bits/uniform_int_dist.h \
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/triangles_drawable/triangles_drawable.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/curve_drawable/curve_drawable.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/curve_drawable_dynamic_extend/curve_drawable_dynamic_extend.hpp \
@@ -22674,11 +24263,6 @@ CMakeFiles/project.dir/src/scene.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
   /home/guile/x/Doomicraft/scenes_inf443/project/src/block.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/terrain.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/utils.hpp \
-  /usr/include/c++/12/unordered_map \
-  /usr/include/c++/12/bits/hashtable.h \
-  /usr/include/c++/12/bits/hashtable_policy.h \
-  /usr/include/c++/12/bits/enable_special_members.h \
-  /usr/include/c++/12/bits/unordered_map.h \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/stb_image.h \
   /usr/include/c++/12/stdlib.h \
   /usr/lib/gcc/x86_64-linux-gnu/12/include/limits.h \
@@ -22716,6 +24300,7 @@ CMakeFiles/project.dir/src/terrain.cpp.o: /home/guile/x/Doomicraft/scenes_inf443
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -22790,6 +24375,10 @@ CMakeFiles/project.dir/src/terrain.cpp.o: /home/guile/x/Doomicraft/scenes_inf443
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -22840,12 +24429,11 @@ CMakeFiles/project.dir/src/terrain.cpp.o: /home/guile/x/Doomicraft/scenes_inf443
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -22881,6 +24469,20 @@ CMakeFiles/project.dir/src/terrain.cpp.o: /home/guile/x/Doomicraft/scenes_inf443
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -23018,6 +24620,16 @@ CMakeFiles/project.dir/src/terrain.cpp.o: /home/guile/x/Doomicraft/scenes_inf443
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/environment/environment.hpp \
   /usr/include/c++/12/functional \
   /usr/include/c++/12/bits/std_function.h \
+  /usr/include/c++/12/unordered_map \
+  /usr/include/c++/12/bits/hashtable.h \
+  /usr/include/c++/12/bits/hashtable_policy.h \
+  /usr/include/c++/12/bits/enable_special_members.h \
+  /usr/include/c++/12/bits/unordered_map.h \
+  /usr/include/c++/12/bits/stl_algo.h \
+  /usr/include/c++/12/bits/algorithmfwd.h \
+  /usr/include/c++/12/bits/stl_heap.h \
+  /usr/include/c++/12/bits/stl_tempbuf.h \
+  /usr/include/c++/12/bits/uniform_int_dist.h \
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/triangles_drawable/triangles_drawable.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/curve_drawable/curve_drawable.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/curve_drawable_dynamic_extend/curve_drawable_dynamic_extend.hpp \
@@ -23072,11 +24684,10 @@ CMakeFiles/project.dir/src/terrain.cpp.o: /home/guile/x/Doomicraft/scenes_inf443
   /home/guile/x/Doomicraft/scenes_inf443/project/src/block.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/constants.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/utils.hpp \
-  /usr/include/c++/12/unordered_map \
-  /usr/include/c++/12/bits/hashtable.h \
-  /usr/include/c++/12/bits/hashtable_policy.h \
-  /usr/include/c++/12/bits/enable_special_members.h \
-  /usr/include/c++/12/bits/unordered_map.h
+  /usr/include/c++/12/chrono \
+  /usr/include/c++/12/bits/chrono.h \
+  /usr/include/c++/12/ratio \
+  /usr/include/c++/12/bits/parse_numbers.h
 
 CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/project/src/utils.cpp \
   /usr/include/stdc-predef.h \
@@ -23098,6 +24709,7 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
   /usr/include/c++/12/bits/char_traits.h \
@@ -23172,6 +24784,10 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
   /usr/include/c++/12/ext/alloc_traits.h \
   /usr/include/c++/12/bits/alloc_traits.h \
   /usr/include/c++/12/bits/stl_construct.h \
+  /usr/include/c++/12/string_view \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
@@ -23222,12 +24838,11 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /usr/include/c++/12/map \
   /usr/include/c++/12/bits/stl_tree.h \
   /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/node_handle.h \
   /usr/include/c++/12/bits/stl_map.h \
   /usr/include/c++/12/tuple \
   /usr/include/c++/12/bits/uses_allocator.h \
@@ -23263,6 +24878,20 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp \
@@ -23400,6 +25029,16 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/environment/environment.hpp \
   /usr/include/c++/12/functional \
   /usr/include/c++/12/bits/std_function.h \
+  /usr/include/c++/12/unordered_map \
+  /usr/include/c++/12/bits/hashtable.h \
+  /usr/include/c++/12/bits/hashtable_policy.h \
+  /usr/include/c++/12/bits/enable_special_members.h \
+  /usr/include/c++/12/bits/unordered_map.h \
+  /usr/include/c++/12/bits/stl_algo.h \
+  /usr/include/c++/12/bits/algorithmfwd.h \
+  /usr/include/c++/12/bits/stl_heap.h \
+  /usr/include/c++/12/bits/stl_tempbuf.h \
+  /usr/include/c++/12/bits/uniform_int_dist.h \
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/triangles_drawable/triangles_drawable.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/curve_drawable/curve_drawable.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/curve_drawable_dynamic_extend/curve_drawable_dynamic_extend.hpp \
@@ -23453,12 +25092,6 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 
 /home/guile/x/Doomicraft/scenes_inf443/project/src/utils.cpp:
 
-/usr/lib/gcc/x86_64-linux-gnu/12/include/mm_malloc.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/12/include/mmintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/12/include/xmmintrin.h:
-
 /home/guile/x/Doomicraft/scenes_inf443/project/src/stb_image.h:
 
 /home/guile/x/Doomicraft/scenes_inf443/project/src/scene.cpp:
@@ -23477,29 +25110,47 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 
 /home/guile/x/Doomicraft/scenes_inf443/project/src/camera.hpp:
 
-/home/guile/x/Doomicraft/cgp/library/cgp/geometry/transform/rotation_transform/test/test_rotation.cpp:
+/home/guile/x/Doomicraft/scenes_inf443/project/src/constants.hpp:
 
-/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/camera.hpp:
+/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/tracker/tracker.hpp:
 
-/usr/include/c++/12/random:
+/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer.hpp:
 
-/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_spheres/picking_spheres.hpp:
+/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/time.hpp:
+
+/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking.hpp:
+
+/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/special_drawable/special_drawable.hpp:
+
+/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/material/material.hpp:
+
+/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/shape.hpp:
+
+/home/guile/x/Doomicraft/cgp/library/cgp/geometry/geometry.hpp:
+
+/home/guile/x/Doomicraft/cgp/library/cgp/cgp.hpp:
+
+/home/guile/x/Doomicraft/scenes_inf443/project/src/cube.hpp:
+
+/home/guile/x/Doomicraft/scenes_inf443/project/src/block.hpp:
+
+/home/guile/x/Doomicraft/scenes_inf443/project/src/block.cpp:
+
+/home/guile/x/Doomicraft/cgp/library/third_party/src/lodepng/lodepng.cpp:
+
+/home/guile/x/Doomicraft/cgp/library/third_party/src/jpeg/jpgd.cpp:
+
+/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/drawable.hpp:
+
+/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_impl_opengl3.cpp:
+
+/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imstb_truetype.h:
 
 /usr/include/c++/12/backward/binders.h:
 
-/home/guile/x/Doomicraft/cgp/library/cgp/geometry/vec/vec4/vec4.hpp:
-
-/usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h:
-
 /home/guile/x/Doomicraft/cgp/library/cgp/geometry/vec/vec.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/waitflags.h:
-
-/usr/include/c++/12/bits/basic_ios.h:
-
 /usr/include/c++/12/sstream:
-
-/usr/include/c++/12/bits/parse_numbers.h:
 
 /home/guile/x/Doomicraft/scenes_inf443/project/src/cube.cpp:
 
@@ -23525,10 +25176,6 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
-/home/guile/x/Doomicraft/cgp/library/cgp/core/base/error/error.cpp:
-
-/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imstb_truetype.h:
-
 /usr/include/x86_64-linux-gnu/bits/time.h:
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
@@ -23549,8 +25196,6 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 
 /usr/include/c++/12/bits/stl_iterator_base_funcs.h:
 
-/usr/include/x86_64-linux-gnu/c++/12/bits/gthr.h:
-
 /usr/include/c++/12/bits/ios_base.h:
 
 /usr/include/c++/12/set:
@@ -23562,10 +25207,6 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 /usr/include/linux/stddef.h:
 
 /usr/include/c++/12/bits/exception_ptr.h:
-
-/usr/include/c++/12/ostream:
-
-/usr/include/dlfcn.h:
 
 /usr/include/wctype.h:
 
@@ -23584,6 +25225,36 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 /home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp:
 
 /home/guile/x/Doomicraft/cgp/library/third_party/src/glad/opengl46/glad.cpp:
+
+/usr/include/c++/12/tr1/poly_laguerre.tcc:
+
+/home/guile/x/Doomicraft/cgp/library/cgp/geometry/mat/mat.hpp:
+
+/usr/include/c++/12/tr1/modified_bessel_func.tcc:
+
+/usr/include/c++/12/tr1/legendre_function.tcc:
+
+/usr/include/x86_64-linux-gnu/c++/12/bits/gthr.h:
+
+/usr/include/c++/12/tr1/beta_function.tcc:
+
+/home/guile/x/Doomicraft/cgp/library/cgp/geometry/mat/mat4/mat4.cpp:
+
+/usr/include/c++/12/cwchar:
+
+/usr/include/c++/12/ostream:
+
+/usr/include/dlfcn.h:
+
+/home/guile/x/Doomicraft/cgp/library/cgp/geometry/mat/functions/mat_functions.cpp:
+
+/usr/include/c++/12/tr1/gamma.tcc:
+
+/usr/include/linux/stat.h:
+
+/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/noise/noise.cpp:
+
+/usr/include/c++/12/bits/specfun.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
@@ -23609,12 +25280,6 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 
 /home/guile/x/Doomicraft/cgp/library/cgp/core/base/types/types.hpp:
 
-/usr/include/c++/12/chrono:
-
-/home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/numarray_stack.hpp:
-
-/usr/include/c++/12/clocale:
-
 /usr/include/c++/12/bits/streambuf.tcc:
 
 /usr/include/c++/12/bits/stl_bvector.h:
@@ -23622,10 +25287,6 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 /usr/include/c++/12/bits/stl_vector.h:
 
 /usr/include/x86_64-linux-gnu/bits/dlfcn.h:
-
-/usr/include/c++/12/numeric:
-
-/home/guile/x/Doomicraft/cgp/library/cgp/core/containers/matrix_stack/matrix_stack.hpp:
 
 /usr/include/c++/12/vector:
 
@@ -23641,15 +25302,19 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 
 /home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/mesh/primitive/mesh_primitive.cpp:
 
-/home/guile/x/Doomicraft/scenes_inf443/project/src/cube.hpp:
-
 /usr/include/c++/12/bits/locale_facets.h:
+
+/usr/include/c++/12/string_view:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/core/containers/offset_grid/offset_grid.hpp:
 
 /home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imstb_textedit.h:
 
 /usr/include/c++/12/bits/functional_hash.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/c++/12/ext/aligned_buffer.h:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/graphics/emscripten/emscripten.cpp:
 
@@ -23667,8 +25332,6 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 
 /usr/include/c++/12/bits/basic_string.tcc:
 
-/usr/include/c++/12/bits/hash_bytes.h:
-
 /usr/include/c++/12/bits/charconv.h:
 
 /usr/include/c++/12/map:
@@ -23683,10 +25346,6 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 
 /usr/include/errno.h:
 
-/usr/include/c++/12/bit:
-
-/home/guile/x/Doomicraft/cgp/library/cgp/core/base/string/string.hpp:
-
 /usr/include/c++/12/bits/stl_uninitialized.h:
 
 /usr/include/x86_64-linux-gnu/bits/iscanonical.h:
@@ -23696,6 +25355,10 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 /home/guile/x/Doomicraft/cgp/library/cgp/geometry/transform/frame/frame.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/stdio.h:
+
+/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_widgets.cpp:
+
+/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/material/material_mesh_drawable_phong/material_mesh_drawable_phong.hpp:
 
 /usr/include/time.h:
 
@@ -23719,11 +25382,17 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 
 /home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui.cpp:
 
+/usr/include/c++/12/bits/hash_bytes.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
 /usr/include/c++/12/ext/type_traits.h:
 
 /usr/include/asm-generic/types.h:
+
+/home/guile/x/Doomicraft/scenes_inf443/project/src/camera.cpp:
+
+/usr/include/asm-generic/bitsperlong.h:
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
@@ -23741,16 +25410,6 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 
 /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/shaders/shaders.hpp:
 
-/usr/include/c++/12/cstdint:
-
-/usr/include/linux/errno.h:
-
-/usr/include/x86_64-linux-gnu/bits/wchar2-decl.h:
-
-/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/camera_model/camera_generic_base/camera_generic_base.hpp:
-
-/usr/include/c++/12/bits/stl_numeric.h:
-
 /usr/include/c++/12/bits/nested_exception.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
@@ -23759,25 +25418,23 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
+/home/guile/x/Doomicraft/scenes_inf443/project/src/environment.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h:
+
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
 /usr/include/features-time64.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
+/usr/include/c++/12/tr1/special_function_util.h:
+
 /usr/include/c++/12/ext/alloc_traits.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
-
-/usr/include/x86_64-linux-gnu/c++/12/bits/opt_random.h:
-
-/usr/include/c++/12/bits/fstream.tcc:
-
-/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/triangles_drawable/triangles_drawable.cpp:
-
-/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_structure/picking_structure.cpp:
-
 /usr/include/c++/12/bits/predefined_ops.h:
+
+/usr/include/c++/12/bits/string_view.tcc:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/core/base/stl/stl.hpp:
 
@@ -23807,17 +25464,9 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 
 /usr/include/c++/12/bits/stringfwd.h:
 
-/usr/include/x86_64-linux-gnu/asm/errno.h:
+/home/guile/x/Doomicraft/cgp/library/cgp/graphics/graphics.hpp:
 
-/usr/include/x86_64-linux-gnu/c++/12/bits/ctype_inline.h:
-
-/usr/include/c++/12/utility:
-
-/usr/include/x86_64-linux-gnu/c++/12/bits/atomic_word.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib.h:
+/usr/include/stdio.h:
 
 /home/guile/x/Doomicraft/scenes_inf443/project/src/terrain.cpp:
 
@@ -23836,6 +25485,8 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
 /usr/include/x86_64-linux-gnu/c++/12/bits/messages_members.h:
+
+/usr/include/c++/12/clocale:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/core/containers/grid_stack/grid_stack.hpp:
 
@@ -23859,33 +25510,59 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 
 /usr/include/c++/12/ext/string_conversions.h:
 
+/usr/include/c++/12/tr1/hypergeometric.tcc:
+
 /usr/include/c++/12/bits/vector.tcc:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_basic/timer_basic.cpp:
-
-/usr/include/c++/12/bits/stl_multimap.h:
-
-/usr/include/x86_64-linux-gnu/bits/select2.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
-
-/usr/include/c++/12/algorithm:
-
-/usr/include/x86_64-linux-gnu/bits/math-vector.h:
-
-/usr/include/x86_64-linux-gnu/c++/12/bits/c++allocator.h:
-
-/usr/include/c++/12/stdlib.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
 /usr/include/c++/12/bits/algorithmfwd.h:
 
-/home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray/test/test_numarray.cpp:
+/usr/include/GL/gl.h:
+
+/usr/include/c++/12/bits/stl_multimap.h:
+
+/usr/include/x86_64-linux-gnu/bits/select2.h:
+
+/usr/include/c++/12/ext/atomicity.h:
+
+/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/camera_model/camera_first_person_euler/camera_first_person_euler.cpp:
+
+/usr/include/c++/12/cstdint:
+
+/usr/include/linux/errno.h:
+
+/usr/include/x86_64-linux-gnu/bits/wchar2-decl.h:
+
+/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/camera_model/camera_generic_base/camera_generic_base.hpp:
+
+/usr/include/x86_64-linux-gnu/asm/errno.h:
+
+/usr/include/x86_64-linux-gnu/c++/12/bits/ctype_inline.h:
+
+/usr/include/c++/12/utility:
+
+/usr/include/x86_64-linux-gnu/c++/12/bits/atomic_word.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+
+/usr/include/c++/12/tr1/poly_hermite.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/math-vector.h:
+
+/usr/include/x86_64-linux-gnu/c++/12/bits/c++allocator.h:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/core/containers/grid_stack/grid_stack_2D/test/test_grid_stack_2D.cpp:
 
-/usr/include/GL/gl.h:
+/home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray/test/test_numarray.cpp:
+
+/usr/include/c++/12/stdlib.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
 
@@ -23925,8 +25602,6 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
-/usr/include/c++/12/cwchar:
-
 /usr/include/c++/12/bits/alloc_traits.h:
 
 /usr/include/c++/12/new:
@@ -23939,25 +25614,7 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 
 /home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/camera_model/camera_orbit_euler/camera_orbit_euler.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
-
 /usr/include/x86_64-linux-gnu/c++/12/bits/c++locale.h:
-
-/usr/include/c++/12/istream:
-
-/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_structure/picking_structure.hpp:
-
-/usr/include/c++/12/stdexcept:
-
-/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/spatial_domain/spatial_domain.hpp:
-
-/usr/include/c++/12/cctype:
-
-/usr/include/asm-generic/errno-base.h:
-
-/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/intersection/intersection.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
@@ -23966,6 +25623,8 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 /home/guile/x/Doomicraft/cgp/library/cgp/core/path/path.hpp:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/camera_controller/camera_controller_first_person_euler/camera_controller_first_person_euler.hpp:
+
+/usr/include/c++/12/pstl/glue_algorithm_defs.h:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/geometry/transform/affine/affine/affine.hpp:
 
@@ -23978,8 +25637,6 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 /usr/include/ctype.h:
 
 /usr/include/c++/12/bits/stl_algobase.h:
-
-/home/guile/x/Doomicraft/cgp/library/cgp/core/base/rand/rand.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
@@ -24017,10 +25674,6 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 
 /home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_spheres/picking_spheres.cpp:
 
-/usr/include/stdio.h:
-
-/home/guile/x/Doomicraft/cgp/library/cgp/graphics/graphics.hpp:
-
 /usr/include/sched.h:
 
 /usr/include/c++/12/bits/stl_multiset.h:
@@ -24030,6 +25683,8 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h:
 
 /usr/include/c++/12/bits/concept_check.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/12/include/mwaitintrin.h:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/geometry/transform/rotation_transform/rotation_transform.cpp:
 
@@ -24047,9 +25702,17 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 
 /usr/include/c++/12/bits/invoke.h:
 
-/home/guile/x/Doomicraft/cgp/library/cgp/core/base/basic_types/basic_types.cpp:
+/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
-/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/tracker/velocity_tracker/velocity_tracker.cpp:
+/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+
+/usr/include/c++/12/random:
+
+/usr/include/c++/12/tr1/riemann_zeta.tcc:
+
+/usr/lib/gcc/x86_64-linux-gnu/12/include/xmmintrin.h:
+
+/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_spheres/picking_spheres.hpp:
 
 /usr/include/locale.h:
 
@@ -24059,11 +25722,11 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 
 /usr/include/c++/12/bits/stl_function.h:
 
+/usr/include/c++/12/pstl/pstl_config.h:
+
 /usr/include/c++/12/bits/refwrap.h:
 
 /usr/include/c++/12/bits/stl_construct.h:
-
-/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/material/material.hpp:
 
 /usr/include/c++/12/bits/range_access.h:
 
@@ -24075,13 +25738,29 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 
 /usr/include/c++/12/bits/basic_string.h:
 
-/usr/include/c++/12/ext/aligned_buffer.h:
+/usr/include/c++/12/istream:
 
-/usr/include/stdlib.h:
+/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_structure/picking_structure.hpp:
 
-/usr/lib/gcc/x86_64-linux-gnu/12/include/emmintrin.h:
+/usr/include/c++/12/stdexcept:
 
-/home/guile/x/Doomicraft/cgp/library/cgp/core/containers/grid/grid_2D/grid_2D.hpp:
+/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/spatial_domain/spatial_domain.hpp:
+
+/usr/include/c++/12/cctype:
+
+/usr/include/asm-generic/errno-base.h:
+
+/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/intersection/intersection.hpp:
+
+/usr/include/c++/12/bits/basic_ios.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitflags.h:
+
+/home/guile/x/Doomicraft/cgp/library/cgp/core/array/numarray_stack/numarray_stack.hpp:
+
+/usr/include/c++/12/chrono:
+
+/home/guile/x/Doomicraft/cgp/library/cgp/geometry/transform/rotation_transform/test/test_rotation.cpp:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/core/array/array.hpp:
 
@@ -24091,11 +25770,11 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 
 /usr/include/c++/12/functional:
 
-/usr/include/c++/12/ext/atomicity.h:
+/home/guile/x/Doomicraft/cgp/library/cgp/core/base/string/string.hpp:
 
-/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/camera_model/camera_first_person_euler/camera_first_person_euler.cpp:
+/usr/include/c++/12/bit:
 
-/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/shape.hpp:
+/home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/camera.hpp:
 
 /usr/include/c++/12/bits/exception_defines.h:
 
@@ -24103,13 +25782,61 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 
 /home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/camera_controller/camera_controller_orbit_euler/camera_controller_orbit_euler.cpp:
 
+/home/guile/x/Doomicraft/cgp/library/cgp/geometry/vec/vec4/vec4.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h:
+
+/home/guile/x/Doomicraft/cgp/library/cgp/core/base/basic_types/basic_types.cpp:
+
+/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/tracker/velocity_tracker/velocity_tracker.cpp:
+
+/home/guile/x/Doomicraft/cgp/library/cgp/core/base/error/error.cpp:
+
+/home/guile/x/Doomicraft/cgp/library/cgp/core/base/rand/rand.cpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
+
+/usr/include/x86_64-linux-gnu/c++/12/bits/opt_random.h:
+
+/usr/include/c++/12/bits/fstream.tcc:
+
+/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/triangles_drawable/triangles_drawable.cpp:
+
+/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_structure/picking_structure.cpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/12/include/pmmintrin.h:
+
+/home/guile/x/Doomicraft/cgp/library/cgp/core/containers/grid/grid_2D/grid_2D.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/12/include/emmintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/12/include/mmintrin.h:
+
+/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/mesh/loader/obj/obj.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/12/include/mm_malloc.h:
+
+/usr/include/c++/12/algorithm:
+
+/usr/include/c++/12/numeric:
+
+/home/guile/x/Doomicraft/cgp/library/cgp/core/containers/matrix_stack/matrix_stack.hpp:
+
+/usr/include/c++/12/bits/stl_numeric.h:
+
+/usr/include/c++/12/pstl/glue_numeric_defs.h:
+
+/usr/include/c++/12/pstl/execution_defs.h:
+
+/usr/include/c++/12/bits/parse_numbers.h:
+
 /home/guile/x/Doomicraft/cgp/library/cgp/core/base/string/string.cpp:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/material/material_mesh_drawable_phong/material_mesh_drawable_phong.cpp:
 
-/usr/include/c++/12/exception:
-
 /home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/implicit/implicit.hpp:
+
+/usr/include/c++/12/exception:
 
 /home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_demo.cpp:
 
@@ -24118,6 +25845,10 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 /usr/include/c++/12/bits/stl_heap.h:
 
 /usr/include/asm-generic/posix_types.h:
+
+/home/guile/x/Doomicraft/cgp/library/third_party/src/jpeg/jpge.cpp:
+
+/home/guile/x/Doomicraft/cgp/library/third_party/src/glad/opengl46/khrplatform.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h:
 
@@ -24145,9 +25876,9 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 
 /home/guile/x/Doomicraft/cgp/library/cgp/core/containers/image/image.cpp:
 
-/usr/include/c++/12/ext/numeric_traits.h:
-
 /home/guile/x/Doomicraft/cgp/library/cgp/geometry/transform/frame/frame.hpp:
+
+/usr/include/c++/12/ext/numeric_traits.h:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/geometry/transform/affine/affine.hpp:
 
@@ -24195,6 +25926,8 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 
 /usr/include/strings.h:
 
+/usr/include/c++/12/tr1/bessel_function.tcc:
+
 /usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
 
 /usr/include/x86_64-linux-gnu/bits/string_fortified.h:
@@ -24227,10 +25960,6 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 
 /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/buffer/opengl_buffer/opengl_buffer.hpp:
 
-/usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h:
-
-/home/guile/x/Doomicraft/scenes_inf443/project/src/environment.hpp:
-
 /usr/include/GLFW/glfw3.h:
 
 /usr/include/c++/12/ctime:
@@ -24239,11 +25968,11 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 
 /home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/camera_controller/camera_controller_first_person/camera_controller_first_person.cpp:
 
-/home/guile/x/Doomicraft/cgp/library/cgp/geometry/mat/mat.hpp:
-
 /home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/camera_controller/camera_controller_orbit/camera_controller_orbit.cpp:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/geometry/mat/mat3/mat3.hpp:
+
+/usr/include/c++/12/tr1/ell_integral.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h:
 
@@ -24252,8 +25981,6 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 /home/guile/x/Doomicraft/cgp/library/cgp/geometry/mat/mat4/mat4.hpp:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/geometry/mat/functions/mat_functions.hpp:
-
-/home/guile/x/Doomicraft/scenes_inf443/project/src/constants.hpp:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/debug/debug.hpp:
 
@@ -24293,10 +26020,6 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 
 /home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/camera_model/common_functions/common_functions.hpp:
 
-/usr/include/linux/stat.h:
-
-/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/noise/noise.cpp:
-
 /usr/include/asm-generic/int-ll64.h:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_event_periodic/timer_event_periodic.hpp:
@@ -24315,13 +26038,9 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 
 /home/guile/x/Doomicraft/cgp/library/cgp/core/path/path.cpp:
 
-/home/guile/x/Doomicraft/cgp/library/third_party/src/jpeg/jpgd.cpp:
-
 /usr/include/c++/12/bits/exception.h:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/geometry/interpolation/interpolation.cpp:
-
-/home/guile/x/Doomicraft/cgp/library/cgp/geometry/mat/functions/mat_functions.cpp:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/uniform/uniform.cpp:
 
@@ -24338,8 +26057,6 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 /home/guile/x/Doomicraft/cgp/library/cgp/geometry/transform/rotation_transform/rotation_transform.hpp:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/geometry/quaternion/quaternion.hpp:
-
-/home/guile/x/Doomicraft/cgp/library/cgp/geometry/mat/mat4/mat4.cpp:
 
 /usr/include/c++/12/compare:
 
@@ -24377,8 +26094,6 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 
 /home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/mesh/loader/loader.hpp:
 
-/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/mesh/loader/obj/obj.hpp:
-
 /home/guile/x/Doomicraft/cgp/library/cgp/geometry/vec/vec2/vec2.hpp:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/spatial_domain/spatial_domain_grid_3D/spatial_domain_grid_3D.hpp:
@@ -24413,6 +26128,8 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 
 /home/guile/x/Doomicraft/cgp/library/cgp/graphics/window/window.hpp:
 
+/usr/include/c++/12/bits/node_handle.h:
+
 /home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/camera_model/camera_first_person/camera_first_person.hpp:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/camera_model/camera_first_person_euler/camera_first_person_euler.hpp:
@@ -24427,9 +26144,9 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 
 /home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/camera_model/camera_orbit/camera_orbit.cpp:
 
-/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
-
 /usr/include/x86_64-linux-gnu/bits/setjmp2.h:
+
+/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/camera_model/camera_orbit_euler/camera_orbit_euler.cpp:
 
@@ -24438,6 +26155,8 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 /home/guile/x/Doomicraft/cgp/library/cgp/core/files/files.cpp:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/curve_drawable/curve_drawable.cpp:
+
+/usr/include/c++/12/tr1/exp_integral.tcc:
 
 /usr/include/c++/12/bits/chrono.h:
 
@@ -24448,8 +26167,6 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/mesh_drawable/mesh_drawable.hpp:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/mesh_drawable/mesh_drawable.cpp:
-
-/home/guile/x/Doomicraft/cgp/library/third_party/src/lodepng/lodepng.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
@@ -24513,8 +26230,6 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 
 /home/guile/x/Doomicraft/cgp/library/cgp/graphics/window/window.cpp:
 
-/home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/dl_find_object.h:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/graphics/opengl/opengl.hpp:
@@ -24524,8 +26239,6 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 /home/guile/x/Doomicraft/cgp/library/third_party/src/glad/opengl46/glad.hpp:
 
 /home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_internal.h:
-
-/home/guile/x/Doomicraft/cgp/library/cgp/geometry/geometry.hpp:
 
 /usr/include/c++/12/iomanip:
 
@@ -24540,33 +26253,3 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 /usr/include/linux/limits.h:
 
 /home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_draw.cpp:
-
-/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/material/material_mesh_drawable_phong/material_mesh_drawable_phong.hpp:
-
-/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_widgets.cpp:
-
-/home/guile/x/Doomicraft/cgp/library/third_party/src/glad/opengl46/khrplatform.hpp:
-
-/home/guile/x/Doomicraft/cgp/library/third_party/src/jpeg/jpge.cpp:
-
-/home/guile/x/Doomicraft/scenes_inf443/project/src/block.cpp:
-
-/home/guile/x/Doomicraft/scenes_inf443/project/src/block.hpp:
-
-/home/guile/x/Doomicraft/cgp/library/cgp/cgp.hpp:
-
-/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_impl_opengl3.cpp:
-
-/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/drawable.hpp:
-
-/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/special_drawable/special_drawable.hpp:
-
-/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/time.hpp:
-
-/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer.hpp:
-
-/home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/tracker/tracker.hpp:
-
-/usr/include/asm-generic/bitsperlong.h:
-
-/home/guile/x/Doomicraft/scenes_inf443/project/src/camera.cpp:

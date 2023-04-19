@@ -19,12 +19,12 @@ public:
     vec3 velocity;
 
     bool is_jumping;
-    bool creative;
+    bool* creative;
 
-    character(camera_controller_custom&, vec3 center, bool creative = false);
+    character(camera_controller_custom&, vec3 center, bool* creative);
     character();
 
-    void move(std::vector<cube>);
+    void move(const std::vector<cube>&);
 
     float bottom();
     float top();

@@ -56,11 +56,12 @@ block_mesh::block_mesh(std::string texture_path){
 
     for (mesh_drawable& mesh : meshes){
         mesh.texture.load_and_initialize_texture_2d_on_gpu(texture_path);
+        mesh.material.phong.specular = 0;
     }
 
 }
 
-void block_mesh::draw(environment_structure& env, vec3 position, std::vector<directions> render_directions, bool wireframe){
+void block_mesh::draw(const environment_structure& env, vec3 position, std::vector<directions> render_directions, bool wireframe){
     for (directions dir : render_directions){
         mesh_drawable& mesh = meshes[dir];
         mesh.model.translation = position;
@@ -89,7 +90,7 @@ block::block(block_types b_type, vec3 pos)
     position = pos;
 }
 
-void block::draw(environment_structure& env, std::vector<directions> render_directions, bool wireframe){
+void block::draw(const environment_structure& env, bool wireframe){
     block_mesh& mesh = blocks[block_type];
     mesh.draw(env, position, render_directions, wireframe);
 }

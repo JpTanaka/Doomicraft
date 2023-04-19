@@ -1,5 +1,6 @@
 #include "terrain.hpp"
 #include "utils.hpp"
+#include <chrono>
 
 int terrain::generator_function(int x, int y){
 
@@ -7,7 +8,7 @@ int terrain::generator_function(int x, int y){
     for (auto tup : gaussians){
         z += get<0>(tup) * utils::gaussian({x,y}, get<1>(tup), get<2>(tup));
     }
-    z += 3.0f * cgp::noise_perlin(0.02*vec2{x, y}, 1);
+    z += 3.0f * cgp::noise_perlin(0.05*vec2{x, y}, 1);
     z += 0.5f * cgp::noise_perlin(0.05*vec2{x, y}, 2);
     return  (int) z;
 }
@@ -37,20 +38,12 @@ terrain::terrain(){
         blocks[utils::Triplet(x, y, height)] = b;
         cubes.push_back(b.block_cube);
     }
-}
-
-terrain::~terrain(){
-    // dont really know how to do it
-}
-
-void terrain::draw(environment_structure& env, bool wireframe){
     using namespace utils;
 
     auto check_has_block = [&](Triplet t){
         return ! (blocks.find(t) == blocks.end());
     };
 
-    // blocking: fps drop
     for (auto& [pos, blk] : blocks){
         std::vector<directions> render_dirs;
         if(!check_has_block(pos + Triplet( 1, 0, 0))) render_dirs.push_back(directions::kFront);
@@ -59,10 +52,27 @@ void terrain::draw(environment_structure& env, bool wireframe){
         if(!check_has_block(pos + Triplet(0, -1, 0))) render_dirs.push_back(directions::kRight);
         if(!check_has_block(pos + Triplet(0, 0,  1))) render_dirs.push_back(directions::kTop);
         if(!check_has_block(pos + Triplet(0, 0, -1))) render_dirs.push_back(directions::kBottom);
-        blk.draw(env, render_dirs, wireframe);
+        blk.render_directions = render_dirs;
     }
 }
 
-std::vector<cube> terrain::get_cubes(){
+terrain::~terrain(){
+    // dont really know how to do it
+}
+
+void terrain::draw(const environment_structure& env, bool wireframe){
+    // auto start = std::chrono::steady_clock::now();
+
+    // blocking: fps drop
+    for (auto& [pos, blk] : blocks)
+        blk.draw(env, wireframe);
+
+    // auto end = std::chrono::steady_clock::now();
+    // std::chrono::duration<double> elapsed_seconds = end-start;
+    // std::cout << "elapsed time: " << elapsed_seconds.count() << "s\n";
+
+}
+
+const std::vector<cube> terrain::get_cubes(){
     return cubes;
 }

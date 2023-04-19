@@ -27,6 +27,7 @@ struct gui_parameters
 {
 	bool display_frame = true;
 	bool display_wireframe = false;
+	bool creative = false;
 	
 	image_obj portal_gun;
 	image_obj crosshair;

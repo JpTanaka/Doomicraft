@@ -3,7 +3,7 @@
 #include "utils.hpp"
 #include "constants.hpp"
 
-character::character(camera_controller_custom &cam, vec3 center, bool creative)
+character::character(camera_controller_custom &cam, vec3 center, bool* creative)
     : creative(creative)
 {
     camera = &cam;
@@ -33,7 +33,7 @@ vec3 character::get_eyes(){
     return body.position;
 }
 
-void character::move(std::vector<cube> cubes)
+void character::move(const std::vector<cube>& cubes)
 {
     auto inputs = camera->inputs;
     float const dt = inputs->time_interval;
@@ -44,15 +44,14 @@ void character::move(std::vector<cube> cubes)
     float z_move = 0;
 
     // get input to move
-    if(creative){
+    if(*creative){
         if (inputs->keyboard.is_pressed(GLFW_KEY_SPACE) )
             z_move += step;
         if (inputs->keyboard.is_pressed(GLFW_KEY_Q) )
             z_move -= step;
-
     }
 
-    if (inputs->keyboard.is_pressed(GLFW_KEY_SPACE) && !is_jumping && !creative){
+    if (inputs->keyboard.is_pressed(GLFW_KEY_SPACE) && !is_jumping && !*creative){
         velocity += {0, 0, jump_velocity};
         is_jumping = true;
     }
@@ -70,7 +69,7 @@ void character::move(std::vector<cube> cubes)
         move_direction += -step * utils::standardize_direction(camera->camera_model.front());
 
     // updating z on gravity
-    if(!creative){
+    if(!*creative){
         z_move += velocity.z * dt - 0.5 * gravity * dt * dt;
         velocity.z -= gravity * dt;
     }

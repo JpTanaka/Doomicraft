@@ -41,8 +41,10 @@ using namespace cgp;
 
 void scene_structure::initialize()
 {
+	camera_projection.field_of_view = FIELD_OF_VIEW;
 	camera_control.initialize(inputs, window);
 	environment.light = {50, 50, 50};
+	environment.uniform_generic.uniform_vec3["fog_color"] = environment.background_color;
 	glfwSetCursorPos(window.glfw_window, 0, 0);
 
 	global_frame.initialize_data_on_gpu(mesh_primitive_frame());
@@ -63,8 +65,9 @@ void scene_structure::initialize()
 
 void scene_structure::display_frame()
 {
+	environment.uniform_generic.uniform_int["fog_depth"] = gui.fog_depth;
 	timer.update();
-	terr.draw(environment, gui.display_wireframe);
+	terr.draw(environment, gui.display_wireframe, main_player.get_eyes(), main_player.looking_at(), gui.fog_depth);
 }
 
 void scene_structure::display_gui()
@@ -72,6 +75,7 @@ void scene_structure::display_gui()
 	ImGui::Checkbox("Frame", &gui.display_frame);
 	ImGui::Checkbox("Wireframe", &gui.display_wireframe);
 	ImGui::Checkbox("Creative", &gui.creative);
+	ImGui::SliderInt2("Fog Depth", &gui.fog_depth, 0, 256);
 	
 	bool exit = ImGui::Button("Exit");
 	if(exit) {

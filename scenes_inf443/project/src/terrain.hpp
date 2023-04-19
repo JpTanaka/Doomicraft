@@ -17,16 +17,16 @@ class terrain {
 
 
     static const int 
-        xmin = -10, 
-        xmax =  10, 
-        ymin = -10, 
-        ymax =  10,
+        xmin = -32,
+        xmax =  32, 
+        ymin = -32, 
+        ymax =  32,
         zmin = -2, 
         zmax =  10;
 
 public:
     terrain();
     ~terrain();
-    void draw(const environment_structure&, bool wireframe);
+    void draw(const environment_structure&, bool wireframe, const vec3& player_position, const vec3& player_looking_at, const float& max_depth);
     const std::vector<cube> get_cubes();
 };

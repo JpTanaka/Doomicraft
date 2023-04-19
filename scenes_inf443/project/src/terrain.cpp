@@ -60,12 +60,16 @@ terrain::~terrain(){
     // dont really know how to do it
 }
 
-void terrain::draw(const environment_structure& env, bool wireframe){
+void terrain::draw(const environment_structure& env, bool wireframe, const vec3& player_position, const vec3& player_looking_at, const float& max_depth){
     // auto start = std::chrono::steady_clock::now();
 
     // blocking: fps drop
-    for (auto& [pos, blk] : blocks)
-        blk.draw(env, wireframe);
+    for (auto& [pos, blk] : blocks){
+
+        if(blk.is_being_seen(player_position, player_looking_at, max_depth))
+            blk.draw(env, wireframe);
+    }
+
 
     // auto end = std::chrono::steady_clock::now();
     // std::chrono::duration<double> elapsed_seconds = end-start;

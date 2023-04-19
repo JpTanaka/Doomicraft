@@ -6,9 +6,9 @@
 #include "constants.hpp"
 #include "character.hpp"
 
-class player : character {
+class player : public character {
 
-    float jump_velocity = 5;
+    float jump_velocity = 6;
 
 public:
     camera_controller_custom* camera;
@@ -18,4 +18,5 @@ public:
     player();
 
     void move(const std::vector<cube>&);
+    vec3 looking_at();
 };

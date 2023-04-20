@@ -37,7 +37,7 @@ namespace utils
     }
     vec2 standardize_direction(vec3 v){
         return crop(normalize(project_plane(v))); //TODO if v is too low, core dumped
-    }
+    }    
 
 
     int sign(float x){

@@ -30,6 +30,8 @@ struct gui_parameters
 	bool display_frame = true;
 	bool display_wireframe = false;
 	bool creative = false;
+
+	int fog_depth = 64;
 	
 	image_obj portal_gun;
 	image_obj crosshair;
@@ -86,3 +88,5 @@ struct scene_structure : cgp::scene_inputs_generic
 	void keyboard_event();
 	void idle_frame();
 };
+
+bool LoadTextureFromFile(const char *filename, GLuint *out_texture, int *out_width, int *out_height);

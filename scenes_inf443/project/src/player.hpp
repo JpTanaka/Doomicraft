@@ -15,4 +15,5 @@ public:
     player();
 
     void move(const std::vector<cube>&);
+    vec3 looking_at();
 };

@@ -13,6 +13,10 @@ player::player(camera_controller_custom &cam, vec3 center, bool* creative)
 player::player()
 {}
 
+vec3 player::looking_at(){
+    return camera->camera_model.front();
+}
+
 void player::move(const std::vector<cube>& cubes)
 {
     auto inputs = camera->inputs;

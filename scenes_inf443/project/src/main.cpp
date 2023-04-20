@@ -264,11 +264,9 @@ void keyboard_callback(GLFWwindow* window, int key, int scancode, int action, in
 			std::cout << str_pretty(camera_model.matrix_frame()) << std::endl;
 			std::cout << "  View matrix:" << std::endl;
 			std::cout << str_pretty(camera_model.matrix_view()) << std::endl;
-
 		}
 	}
 
 }
-
 
 

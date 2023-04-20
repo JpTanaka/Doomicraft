@@ -1,32 +1,16 @@
 #pragma once
 #include "cube.hpp"
 #include "constants.hpp"
+#include "block_mesh.hpp"
+
 
 enum block_types {
     earth,
-    rock
+    rock,
+    wood,
+    leaf,
+    NUMBER_BLOCKS
 };
-
-enum directions {
-    kTop,
-    kBottom,
-    kLeft,
-    kRight,
-    kFront,
-    kBack
-};
-
-class block_mesh {
-    std::array<mesh_drawable, 6> meshes;
-
-public:
-    block_mesh(std::string texture_path);
-    block_mesh();
-    void draw(const environment_structure& env, vec3 position, std::vector<directions> render_directions, bool wireframe);
-    void draw_all(const environment_structure& env, vec3 position, bool wireframe);
-};
-
-
 class block {
 
     block_types block_type;
@@ -37,7 +21,7 @@ class block {
 public:
     std::vector<directions> render_directions;
 
-    static std::array<block_mesh, NUM_BLOCKS> blocks;
+    static std::array<block_mesh, block_types::NUMBER_BLOCKS> blocks;
 
     cube block_cube;
 
@@ -46,6 +30,8 @@ public:
     block();
 
     block(block_types, vec3);
+
+    bool is_being_seen(const vec3& from, const vec3& looking_at, const float& max_depth);
 
     static void initialize();
 

@@ -2,58 +2,23 @@
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
 
-// Simple helper function to load an image into a OpenGL texture with common settings
-bool LoadTextureFromFile(const char *filename, GLuint *out_texture, int *out_width, int *out_height)
-{
-	// Load from file
-	int image_width = 0;
-	int image_height = 0;
-	unsigned char *image_data = stbi_load(filename, &image_width, &image_height, NULL, 4);
-	if (image_data == NULL)
-		return false;
-
-	// Create a OpenGL texture identifier
-	GLuint image_texture;
-	glGenTextures(1, &image_texture);
-	glBindTexture(GL_TEXTURE_2D, image_texture);
-
-	// Setup filtering parameters for display
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE); // This is required on WebGL for non power-of-two textures
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE); // Same
-
-	// Upload pixels into texture
-#if defined(GL_UNPACK_ROW_LENGTH) && !defined(__EMSCRIPTEN__)
-	glPixelStorei(GL_UNPACK_ROW_LENGTH, 0);
-#endif
-	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, image_width, image_height, 0, GL_RGBA, GL_UNSIGNED_BYTE, image_data);
-	stbi_image_free(image_data);
-
-	*out_texture = image_texture;
-	*out_width = image_width;
-	*out_height = image_height;
-
-	return true;
-}
-
 using namespace cgp;
 
 void scene_structure::initialize()
 {
+	camera_projection.field_of_view = FIELD_OF_VIEW;
 	camera_control.initialize(inputs, window);
 	environment.light = {50, 50, 50};
+	environment.uniform_generic.uniform_vec3["fog_color"] = environment.background_color;
 	glfwSetCursorPos(window.glfw_window, 0, 0);
 
 	global_frame.initialize_data_on_gpu(mesh_primitive_frame());
 
 	block::initialize();
 	terr = terrain();
-	main_player = player(camera_control, {2, 0, 10}, &gui.creative);
+	main_player = player(camera_control, {0, 0, 20}, &gui.creative);
 
 
-
-	block b = block(block_types::rock, {0, 0, 15});
 
 	enemy = mob({5, 0, 20});
 	// Adding portal gun
@@ -66,9 +31,10 @@ void scene_structure::initialize()
 
 void scene_structure::display_frame()
 {
+	environment.uniform_generic.uniform_int["fog_depth"] = gui.fog_depth;
 	timer.update();
-	terr.draw(environment, gui.display_wireframe);
 	enemy.draw(environment, gui.display_wireframe);
+	terr.draw(environment, gui.display_wireframe, main_player.get_eyes(), main_player.looking_at(), gui.fog_depth);
 }
 
 void scene_structure::display_gui()
@@ -76,6 +42,7 @@ void scene_structure::display_gui()
 	ImGui::Checkbox("Frame", &gui.display_frame);
 	ImGui::Checkbox("Wireframe", &gui.display_wireframe);
 	ImGui::Checkbox("Creative", &gui.creative);
+	ImGui::SliderInt2("Fog Depth", &gui.fog_depth, 0, 256);
 	
 	bool exit = ImGui::Button("Exit");
 	if(exit) {
@@ -117,3 +84,38 @@ void scene_structure::idle_frame()
 	main_player.move(terr.get_cubes());
 	enemy.move(terr.get_cubes(), main_player.body.position, main_player.camera->inputs->time_interval);
 }
+// Simple helper function to load an image into a OpenGL texture with common settings
+bool LoadTextureFromFile(const char *filename, GLuint *out_texture, int *out_width, int *out_height)
+{
+	// Load from file
+	int image_width = 0;
+	int image_height = 0;
+	unsigned char *image_data = stbi_load(filename, &image_width, &image_height, NULL, 4);
+	if (image_data == NULL)
+		return false;
+
+	// Create a OpenGL texture identifier
+	GLuint image_texture;
+	glGenTextures(1, &image_texture);
+	glBindTexture(GL_TEXTURE_2D, image_texture);
+
+	// Setup filtering parameters for display
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE); // This is required on WebGL for non power-of-two textures
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE); // Same
+
+	// Upload pixels into texture
+#if defined(GL_UNPACK_ROW_LENGTH) && !defined(__EMSCRIPTEN__)
+	glPixelStorei(GL_UNPACK_ROW_LENGTH, 0);
+#endif
+	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, image_width, image_height, 0, GL_RGBA, GL_UNSIGNED_BYTE, image_data);
+	stbi_image_free(image_data);
+
+	*out_texture = image_texture;
+	*out_width = image_width;
+	*out_height = image_height;
+
+	return true;
+}
+

@@ -68,7 +68,7 @@ void scene_structure::display_frame()
 {
 	timer.update();
 	terr.draw(environment, gui.display_wireframe);
-	enemy.draw(environment, b.blocks[1]);
+	enemy.draw(environment, gui.display_wireframe);
 }
 
 void scene_structure::display_gui()

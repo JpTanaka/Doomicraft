@@ -5,20 +5,31 @@
 #include "block.hpp"
 
 mob::mob(vec3 center) : character(center){
+    float l = Length;
+    mesh.initialize_data_on_gpu(
+        mesh_primitive_quadrangle(
+            { l/2, l/2,-l/2},
+            { l/2,-l/2,-l/2},
+            { l/2,-l/2, l*3/2-0.2},
+            { l/2, l/2, l*3/2-0.2}
+        )
+    );
+    mesh.texture.load_and_initialize_texture_2d_on_gpu(project::path + "assets/creeper_pirate.png");
 }
 
 mob::mob() : character() {
 }
 
 
-void mob::draw(const environment_structure& env, block_mesh mesh){
-    mesh.draw_all(env, position, false);
+void mob::draw(const environment_structure& env,bool wireframe){
+    mesh.model.translation = position;
+    if(!wireframe) cgp::draw(mesh, env);
+    else cgp::draw_wireframe(mesh, env);
 }
-
 
 void mob::move(const std::vector<cube>& cubes, vec3 &position_player, const float &dt) 
 {
-    float move_sensibility = 3.0f;
+    float move_sensibility = 2.0f;
     float const step = move_sensibility * dt;
 
     // initialize move direction
@@ -26,7 +37,12 @@ void mob::move(const std::vector<cube>& cubes, vec3 &position_player, const floa
     float z_move = 0;
 
     // move direction to player position
-    move_direction += step * utils::standardize_direction(position_player - position);
+    move_direction += step * utils::standardize_direction(position_player+vec3{0.1,0.1,0.1} - position);
+    if(norm(move_direction_xy)>0.01){
+        mesh.model.rotation = rotation_transform::from_frame_transform({1,0,0}, {0,0,1}, normalize(vec3{move_direction.x, move_direction.y, 0}), {0,0,1});
+    }
+    if(norm(move_direction)>0.01) 
+        move_direction_xy = normalize(utils::expand({move_direction.x, move_direction.y}));
 
     // updating z on gravity
     z_move += velocity.z * dt - 0.5 * gravity * dt * dt;
@@ -48,13 +64,13 @@ void mob::move(const std::vector<cube>& cubes, vec3 &position_player, const floa
                 !(axis == -1 || axis == 2)
             ) {
                 if(semiaxis * move_direction[axis] > 0) {
-                    move_direction[axis] = 0; //TODO MOB HAS TO JUMP IF COLLISION
+                    move_direction[axis] = 0; 
                 }
                 if(!is_jumping) {
                     velocity += {0, 0, jump_velocity};
                     is_jumping = true;
+                    break;
                    }
-                std::cout << is_jumping  << " " <<dt << std::endl;
                 }
         }
 
@@ -85,9 +101,7 @@ void mob::move(const std::vector<cube>& cubes, vec3 &position_player, const floa
 
     // moves!
     legs.position = position;
-
+    
     body.position = position;
     body.position.z += Length;
-
-    // camera->set_position(body.position);
 }

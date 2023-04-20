@@ -36,7 +36,7 @@ namespace utils
         return mat3{{1,0,0},{0,1,0},{0,0,0}} * v;
     }
     vec2 standardize_direction(vec3 v){
-        return crop(normalize(project_plane(v)));
+        return crop(normalize(project_plane(v))); //TODO if v is too low, core dumped
     }
 
 

@@ -51,8 +51,11 @@ void scene_structure::initialize()
 	terr = terrain();
 	main_player = player(camera_control, {2, 0, 10}, &gui.creative);
 
+
+
 	block b = block(block_types::rock, {0, 0, 15});
 
+	enemy = mob({5, 0, 20});
 	// Adding portal gun
 	glfwInit();
 	bool ret = LoadTextureFromFile("../assets/portal_gun.png", &gui.portal_gun.image_texture, &gui.portal_gun.image_width, &gui.portal_gun.image_height);
@@ -65,6 +68,7 @@ void scene_structure::display_frame()
 {
 	timer.update();
 	terr.draw(environment, gui.display_wireframe);
+	enemy.draw(environment, b.blocks[1]);
 }
 
 void scene_structure::display_gui()
@@ -111,4 +115,5 @@ void scene_structure::idle_frame()
 {
 	camera_control.idle_frame(environment.camera_view);
 	main_player.move(terr.get_cubes());
+	enemy.move(terr.get_cubes(), main_player.body.position, main_player.camera->inputs->time_interval);
 }

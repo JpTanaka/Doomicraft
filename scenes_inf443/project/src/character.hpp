@@ -7,9 +7,9 @@
 
 class character {
 
-    float jump_velocity = 5;
 
 public:
+    float jump_velocity = 5;
     cube body;
     cube legs;
 
@@ -20,8 +20,6 @@ public:
     bool is_jumping;
     character(vec3 center);
     character();
-
-    virtual void move(const std::vector<cube>&) = 0;
 
     float bottom();
     float top();

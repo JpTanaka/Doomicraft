@@ -361,6 +361,7 @@ CMakeFiles/project.dir/src/scene.cpp.o: \
  /home/tanaka/repos/Doomicraft/scenes_inf443/project/src/block.hpp \
  /home/tanaka/repos/Doomicraft/scenes_inf443/project/src/terrain.hpp \
  /home/tanaka/repos/Doomicraft/scenes_inf443/project/src/utils.hpp \
+ /home/tanaka/repos/Doomicraft/scenes_inf443/project/src/mob.hpp \
  /home/tanaka/repos/Doomicraft/scenes_inf443/project/src/stb_image.h \
  /usr/include/c++/11/stdlib.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \

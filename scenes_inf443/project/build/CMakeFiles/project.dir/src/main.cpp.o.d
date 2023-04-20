@@ -360,4 +360,5 @@ CMakeFiles/project.dir/src/main.cpp.o: \
  /home/tanaka/repos/Doomicraft/scenes_inf443/project/src/character.hpp \
  /home/tanaka/repos/Doomicraft/scenes_inf443/project/src/block.hpp \
  /home/tanaka/repos/Doomicraft/scenes_inf443/project/src/terrain.hpp \
- /home/tanaka/repos/Doomicraft/scenes_inf443/project/src/utils.hpp
+ /home/tanaka/repos/Doomicraft/scenes_inf443/project/src/utils.hpp \
+ /home/tanaka/repos/Doomicraft/scenes_inf443/project/src/mob.hpp

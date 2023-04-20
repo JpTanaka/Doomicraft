@@ -23,6 +23,7 @@ public:
     block_mesh(std::string texture_path);
     block_mesh();
     void draw(const environment_structure& env, vec3 position, std::vector<directions> render_directions, bool wireframe);
+    void draw_all(const environment_structure& env, vec3 position, bool wireframe);
 };
 
 

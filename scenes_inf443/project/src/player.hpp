@@ -6,10 +6,7 @@
 #include "constants.hpp"
 #include "character.hpp"
 
-class player : character {
-
-    float jump_velocity = 5;
-
+class player : public character {
 public:
     camera_controller_custom* camera;
     bool* creative;

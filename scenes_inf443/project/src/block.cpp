@@ -60,7 +60,15 @@ block_mesh::block_mesh(std::string texture_path){
     }
 
 }
-
+void block_mesh::draw_all(const environment_structure& env, vec3 position, bool wireframe){
+    std::vector<directions> render_directions = {directions::kBack, directions::kBottom, directions::kFront, directions::kLeft, directions::kRight, directions::kTop};
+    for (directions dir : render_directions){
+        mesh_drawable& mesh = meshes[dir];
+        mesh.model.translation = position;
+        if(!wireframe) cgp::draw(mesh, env);
+        else cgp::draw_wireframe(mesh, env);
+    }
+}
 void block_mesh::draw(const environment_structure& env, vec3 position, std::vector<directions> render_directions, bool wireframe){
     for (directions dir : render_directions){
         mesh_drawable& mesh = meshes[dir];

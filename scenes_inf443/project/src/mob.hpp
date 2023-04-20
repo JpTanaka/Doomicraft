@@ -1,19 +1,20 @@
-// #pragma once
+#pragma once
 
-// #include "cgp/cgp.hpp"
-// #include "camera.hpp"
-// #include "cube.hpp"
-// #include "constants.hpp"
-// #include "character.hpp"
+#include "cgp/cgp.hpp"
+#include "camera.hpp"
+#include "cube.hpp"
+#include "constants.hpp"
+#include "character.hpp"
+#include "block.hpp"
+#include "utils.hpp"
 
-// class mob : character {
+class mob : public character {
+public:
+    int life = 4;
+    mob(vec3 center);
+    mob();
 
-//     float jump_velocity = 5;
+    void move(const std::vector<cube>&, vec3&, const float &);
+    void draw(const environment_structure& env, block_mesh);
 
-// public:
-//     int life = 4;
-//     mob(camera_controller_custom&, vec3 center, bool* creative);
-//     mob();
-
-//     void move(const std::vector<cube>&);
-// };
+};

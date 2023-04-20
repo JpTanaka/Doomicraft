@@ -13,6 +13,39 @@ int terrain::generator_function(int x, int y){
     return  (int) z;
 }
 
+void terrain::create_block(const block_types& block_type, const vec3& position){
+    block b = block(block_type, position);
+    blocks[utils::Triplet(position)] = b;
+    cubes.push_back(b.block_cube);
+}
+
+void terrain::create_tree(const vec3& position){
+    float seed = utils::rand();
+    int height = 1 + (int) 4 * seed;
+    int width = 2 + (int) 4 * seed;
+
+    // trunk
+    for (int i = 0; i < height; i++)
+        create_block(block_types::wood, position + i * vec3{0,0,1});
+
+    // leaves
+    for(int z = height; z <= height + width ; z++){
+        for(int x = -width; x <= width; x++){
+            for(int y = -width; y <= width; y++){
+                if(
+                    round(utils::distance({x, y}, {0, 0})) > width - (z - height) - 1 // from width to zero
+                ) continue;
+                if(check_has_block(utils::Triplet(position + vec3{x, y, z}))) continue;
+                create_block(block_types::leaf, position + vec3{x, y, z});
+            }
+        }
+    }
+}
+
+bool terrain::check_has_block(const utils::Triplet& t){
+    return ! (blocks.find(t) == blocks.end());
+}
+
 terrain::terrain(){
 
     // generate gaussians
@@ -24,26 +57,17 @@ terrain::terrain(){
     for (int y = ymin; y < ymax; y++){
 
         int height = generator_function(x, y);
-        block b;
 
-        for (int z = zmin; z < height; z++){
-            b = block(block_types::rock, {x, y, z });
-            utils::Triplet t(x, y, z);
-            blocks[utils::Triplet(x, y, z)] = b;
-            // blocks.push_back(b);
-            cubes.push_back(b.block_cube);
-        }
-        b = block(block_types::earth, {x, y, height });
-        // blocks.push_back(b);
-        blocks[utils::Triplet(x, y, height)] = b;
-        cubes.push_back(b.block_cube);
+        for (int z = zmin; z < height; z++)
+            create_block(block_types::rock, {x, y, z});
+
+        create_block(block_types::earth, {x, y, height});
+
+        if(utils::rand() < 0.005)
+            create_tree({x, y, height + 1});
     }
+
     using namespace utils;
-
-    auto check_has_block = [&](Triplet t){
-        return ! (blocks.find(t) == blocks.end());
-    };
-
     for (auto& [pos, blk] : blocks){
         std::vector<directions> render_dirs;
         if(!check_has_block(pos + Triplet( 1, 0, 0))) render_dirs.push_back(directions::kFront);

@@ -86,3 +86,5 @@ struct scene_structure : cgp::scene_inputs_generic
 	void keyboard_event();
 	void idle_frame();
 };
+
+bool LoadTextureFromFile(const char *filename, GLuint *out_texture, int *out_width, int *out_height);

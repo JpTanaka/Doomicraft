@@ -3,6 +3,14 @@
 #include "constants.hpp"
 #include "block_mesh.hpp"
 
+
+enum block_types {
+    earth,
+    rock,
+    wood,
+    leaf,
+    NUMBER_BLOCKS
+};
 class block {
 
     block_types block_type;
@@ -13,7 +21,7 @@ class block {
 public:
     std::vector<directions> render_directions;
 
-    static std::array<block_mesh, NUM_BLOCKS> blocks;
+    static std::array<block_mesh, block_types::NUMBER_BLOCKS> blocks;
 
     cube block_cube;
 

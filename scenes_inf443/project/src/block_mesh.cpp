@@ -28,11 +28,12 @@ block_mesh::block_mesh(const std::tuple<std::string, vec3, bool>* config){
         auto& texture_path = get<0>(config[i]);
         auto& color = get<1>(config[i]);
         auto& transparent = get<2>(config[i]);
+
         mesh_drawable& mesh = meshes[i];
         mesh.texture.load_and_initialize_texture_2d_on_gpu(texture_path);
         mesh.material.color = color;
         mesh.material.phong.specular = 0;
-        mesh.material.alpha = transparent ? 1 : 0;
+        mesh.material.alpha = transparent ? 0 : 1;
     }
 }
 

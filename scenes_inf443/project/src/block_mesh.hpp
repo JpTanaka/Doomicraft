@@ -3,11 +3,6 @@
 #include "constants.hpp"
 #include "cube.hpp"
 
-enum block_types {
-    earth,
-    rock
-};
-
 enum directions {
     kTop,
     kBottom,

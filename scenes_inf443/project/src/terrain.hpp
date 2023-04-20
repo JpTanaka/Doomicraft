@@ -23,6 +23,12 @@ class terrain {
         ymax =  32,
         zmin = -2, 
         zmax =  10;
+    
+    void create_block(const block_types&, const vec3&);
+
+    void create_tree(const vec3&);
+
+    bool check_has_block(const utils::Triplet& t);
 
 public:
     terrain();

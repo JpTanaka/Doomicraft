@@ -15,14 +15,18 @@ namespace utils
     vec3 expand(vec2);
     vec3 project_plane(vec3);
 
+    float distance(vec2, vec2);
+
     vec2 standardize_direction(vec3);
 
     int sign(float);
+    float rand();
 
     float gaussian(vec2 r, vec2 mean, vec2 sigma);
-   struct Triplet {
+    struct Triplet {
         int x, y, z;
         Triplet(int x, int y, int z) : x(x), y(y), z(z) {}
+        Triplet(vec3 p) : x(p.x), y(p.y), z(p.z) {}
         bool operator==(const Triplet& other) const {
             return x == other.x && y == other.y && z == other.z;
         }

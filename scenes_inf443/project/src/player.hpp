@@ -11,8 +11,8 @@ class player : public character {
     float jump_velocity = 6;
 
 public:
-    camera_controller_custom* camera;
     bool* creative;
+    camera_controller_custom* camera;
 
     player(camera_controller_custom&, vec3 center, bool* creative);
     player();

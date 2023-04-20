@@ -4,35 +4,34 @@
 #include "cube.hpp"
 #include "block.hpp"
 #include "utils.hpp"
+#include "chunk.hpp"
 #include <unordered_map>
 #include <functional>
 
 class terrain {
 
-    int generator_function(int x, int y);
-    std::unordered_map<utils::Triplet, block, utils::TripletHash> blocks;
-    std::vector<cube> cubes;
-
-    std::vector<std::tuple<double, vec2, vec2>> gaussians;
+    std::unordered_map<utils::Triplet, chunk, utils::TripletHash> chunks;
 
 
-    static const int 
-        xmin = -32,
-        xmax =  32, 
-        ymin = -32, 
-        ymax =  32,
-        zmin = -2, 
-        zmax =  10;
-    
-    void create_block(const block_types&, const vec3&);
+    // static const int
+    //     chunk_x_size = 16,
+    //     chunk_y_size = 16,
+    //     chunk_z_size = 10;
 
-    void create_tree(const vec3&);
 
-    bool check_has_block(const utils::Triplet& t);
+    // static const int 
+    //     xmin = -32,
+    //     xmax =  32, 
+    //     ymin = -32, 
+    //     ymax =  32,
+    //     zmin = -2, 
+    //     zmax =  10;
+
+    void create_chunk();
+    bool check_chunk_exists(const utils::Triplet);
 
 public:
     terrain();
-    ~terrain();
     void draw(const environment_structure&, bool wireframe, const vec3& player_position, const vec3& player_looking_at, const float& max_depth);
-    const std::vector<cube> get_cubes();
+    const std::vector<cube> get_cubes(const vec3& player_position);
 };

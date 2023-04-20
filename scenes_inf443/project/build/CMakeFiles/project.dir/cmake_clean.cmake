@@ -191,6 +191,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/project.dir/src/camera.cpp.o.d"
   "CMakeFiles/project.dir/src/character.cpp.o"
   "CMakeFiles/project.dir/src/character.cpp.o.d"
+  "CMakeFiles/project.dir/src/chunk.cpp.o"
+  "CMakeFiles/project.dir/src/chunk.cpp.o.d"
   "CMakeFiles/project.dir/src/cube.cpp.o"
   "CMakeFiles/project.dir/src/cube.cpp.o.d"
   "CMakeFiles/project.dir/src/environment.cpp.o"

@@ -4,7 +4,7 @@
 #include "constants.hpp"
 
 player::player(camera_controller_custom &cam, vec3 center, bool* creative)
-    : creative(creative), character(center)
+    : character(center), creative(creative)
 {
     camera = &cam;
     camera->set_position(center);
@@ -93,7 +93,6 @@ void player::move(const std::vector<cube>& cubes)
                 velocity.z = 0;
             }
         }
-
     }
 
     // updates position

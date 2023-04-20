@@ -59,5 +59,27 @@ namespace utils
         return std::exp( - std::pow(norm((r - mean)/sigma), 2));
     }
 
+
+    Triplet::Triplet(int x, int y, int z) : x(x), y(y), z(z) {}
+    Triplet::Triplet(vec3 p) : x(p.x), y(p.y), z(p.z) {}
+    bool Triplet::operator==(const Triplet& other) const {
+        return x == other.x && y == other.y && z == other.z;
+    }
+    Triplet Triplet::operator+(const Triplet& other) const {
+        return Triplet(x + other.x, y + other.y, z + other.z);
+    }
+    std::ostream& operator<<(std::ostream& os, const Triplet& triplet) {
+        os << "(" << triplet.x << ", " << triplet.y << ", " << triplet.z << ")";
+        return os;
+    }
+    
+    std::size_t TripletHash::operator()(const Triplet& triplet) const {
+        std::hash<int> int_hash;
+        std::size_t x_hash = int_hash(triplet.x);
+        std::size_t y_hash = int_hash(triplet.y) << 1; // Shift left by 1 bit to create unique combinations
+        std::size_t z_hash = int_hash(triplet.z) << 2; // Shift left by 2 bits to create unique combinations
+        return x_hash ^ y_hash ^ z_hash;
+    }
+
 } // namespace utils
 

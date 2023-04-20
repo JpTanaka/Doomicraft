@@ -363,6 +363,7 @@ CMakeFiles/project.dir/src/scene.cpp.o: \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/block_mesh.hpp \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/terrain.hpp \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/utils.hpp \
+ /home/guile/x/Doomicraft/scenes_inf443/project/src/chunk.hpp \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/stb_image.h \
  /usr/include/c++/12/stdlib.h \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/limits.h \

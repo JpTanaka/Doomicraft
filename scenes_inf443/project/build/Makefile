@@ -2433,6 +2433,30 @@ src/character.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/character.cpp.s
 .PHONY : src/character.cpp.s
 
+src/chunk.o: src/chunk.cpp.o
+.PHONY : src/chunk.o
+
+# target to build an object file
+src/chunk.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/chunk.cpp.o
+.PHONY : src/chunk.cpp.o
+
+src/chunk.i: src/chunk.cpp.i
+.PHONY : src/chunk.i
+
+# target to preprocess a source file
+src/chunk.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/chunk.cpp.i
+.PHONY : src/chunk.cpp.i
+
+src/chunk.s: src/chunk.cpp.s
+.PHONY : src/chunk.s
+
+# target to generate assembly for a file
+src/chunk.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/chunk.cpp.s
+.PHONY : src/chunk.cpp.s
+
 src/cube.o: src/cube.cpp.o
 .PHONY : src/cube.o
 
@@ -2922,6 +2946,9 @@ help:
 	@echo "... src/character.o"
 	@echo "... src/character.i"
 	@echo "... src/character.s"
+	@echo "... src/chunk.o"
+	@echo "... src/chunk.i"
+	@echo "... src/chunk.s"
 	@echo "... src/cube.o"
 	@echo "... src/cube.i"
 	@echo "... src/cube.s"

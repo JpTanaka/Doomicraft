@@ -15,10 +15,10 @@ class block {
 
     block_types block_type;
 
+public:
+
     vec3 position;
 
-
-public:
     std::vector<directions> render_directions;
 
     static std::array<block_mesh, block_types::NUMBER_BLOCKS> blocks;

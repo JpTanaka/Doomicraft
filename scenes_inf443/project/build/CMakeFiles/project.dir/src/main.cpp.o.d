@@ -362,4 +362,5 @@ CMakeFiles/project.dir/src/main.cpp.o: \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/block.hpp \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/block_mesh.hpp \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/terrain.hpp \
- /home/guile/x/Doomicraft/scenes_inf443/project/src/utils.hpp
+ /home/guile/x/Doomicraft/scenes_inf443/project/src/utils.hpp \
+ /home/guile/x/Doomicraft/scenes_inf443/project/src/chunk.hpp

@@ -29,7 +29,7 @@ struct gui_parameters
 	bool display_wireframe = false;
 	bool creative = false;
 
-	int fog_depth = 64;
+	int fog_depth = 24;
 	
 	image_obj portal_gun;
 	image_obj crosshair;

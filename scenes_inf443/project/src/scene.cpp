@@ -20,6 +20,7 @@ void scene_structure::initialize()
 
 
 
+	enemy = mob({5, 0, 20});
 	// Adding portal gun
 	glfwInit();
 	bool ret = LoadTextureFromFile("../assets/portal_gun.png", &gui.portal_gun.image_texture, &gui.portal_gun.image_width, &gui.portal_gun.image_height);
@@ -32,8 +33,8 @@ void scene_structure::display_frame()
 {
 	environment.uniform_generic.uniform_int["fog_depth"] = gui.fog_depth;
 	timer.update();
+	enemy.draw(environment, gui.display_wireframe);
 	terr.draw(environment, gui.display_wireframe, main_player.get_eyes(), main_player.looking_at(), gui.fog_depth);
-	b.draw(environment, false);
 }
 
 void scene_structure::display_gui()
@@ -81,6 +82,7 @@ void scene_structure::idle_frame()
 {
 	camera_control.idle_frame(environment.camera_view);
 	main_player.move(terr.get_cubes(main_player.position));
+	enemy.move(terr.get_cubes(main_player.position), main_player.body.position, main_player.camera->inputs->time_interval);
 }
 // Simple helper function to load an image into a OpenGL texture with common settings
 bool LoadTextureFromFile(const char *filename, GLuint *out_texture, int *out_width, int *out_height)

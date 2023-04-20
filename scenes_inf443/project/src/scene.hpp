@@ -7,6 +7,8 @@
 #include "cube.hpp"
 #include "block.hpp"
 #include "terrain.hpp"
+#include "mob.hpp"
+
 
 
 // This definitions allow to use the structures: mesh, mesh_drawable, etc. without mentionning explicitly cgp::
@@ -64,7 +66,7 @@ struct scene_structure : cgp::scene_inputs_generic
 
 	player main_player;
 	block b;
-
+	mob enemy;
 
 	// std::vector<block> terrain;
 	// std::vector<cube> terrain_cubes;

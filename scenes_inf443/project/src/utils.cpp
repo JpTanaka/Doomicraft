@@ -36,22 +36,12 @@ namespace utils
         return mat3{{1,0,0},{0,1,0},{0,0,0}} * v;
     }
     vec2 standardize_direction(vec3 v){
-        return crop(normalize(project_plane(v)));
-    }
-    float distance(vec2 v, vec2 u){
-        return std::max(
-            std::abs(v.x - u.x),
-            std::abs(v.y - u.y)
-        );
-    }
+        return crop(normalize(project_plane(v))); //TODO if v is too low, core dumped
+    }    
 
 
     int sign(float x){
         return x < 0 ? -1 : 1;
-    }
-
-    float rand(){
-        return std::rand() / static_cast<float>(RAND_MAX);
     }
 
 

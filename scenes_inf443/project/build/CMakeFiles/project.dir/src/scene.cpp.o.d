@@ -323,6 +323,52 @@ CMakeFiles/project.dir/src/scene.cpp.o: \
  /home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_impl_glfw.h \
  /home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_impl_opengl3.h \
  /usr/include/GLFW/glfw3.h \
+<<<<<<< HEAD
+ /home/tanaka/repos/Doomicraft/cgp/library/cgp/graphics/input_devices/input_devices.hpp \
+ /home/tanaka/repos/Doomicraft/cgp/library/cgp/graphics/picking/picking.hpp \
+ /home/tanaka/repos/Doomicraft/cgp/library/cgp/graphics/picking/picking_structure/picking_structure.hpp \
+ /home/tanaka/repos/Doomicraft/cgp/library/cgp/graphics/picking/picking_spheres/picking_spheres.hpp \
+ /home/tanaka/repos/Doomicraft/cgp/library/cgp/graphics/camera/camera.hpp \
+ /home/tanaka/repos/Doomicraft/cgp/library/cgp/graphics/camera/camera_model/camera_model.hpp \
+ /home/tanaka/repos/Doomicraft/cgp/library/cgp/graphics/camera/camera_model/camera_generic_base/camera_generic_base.hpp \
+ /home/tanaka/repos/Doomicraft/cgp/library/cgp/graphics/camera/camera_model/camera_orbit/camera_orbit.hpp \
+ /home/tanaka/repos/Doomicraft/cgp/library/cgp/graphics/camera/camera_model/camera_orbit_euler/camera_orbit_euler.hpp \
+ /home/tanaka/repos/Doomicraft/cgp/library/cgp/graphics/camera/camera_model/camera_first_person/camera_first_person.hpp \
+ /home/tanaka/repos/Doomicraft/cgp/library/cgp/graphics/camera/camera_model/camera_first_person_euler/camera_first_person_euler.hpp \
+ /home/tanaka/repos/Doomicraft/cgp/library/cgp/graphics/camera/camera_model/common_functions/common_functions.hpp \
+ /home/tanaka/repos/Doomicraft/cgp/library/cgp/graphics/camera/camera_projection/camera_projection.hpp \
+ /home/tanaka/repos/Doomicraft/cgp/library/cgp/graphics/camera/camera_controller/camera_controller.hpp \
+ /home/tanaka/repos/Doomicraft/cgp/library/cgp/graphics/camera/camera_controller/camera_controller_generic_base/camera_controller_generic_base.hpp \
+ /home/tanaka/repos/Doomicraft/cgp/library/cgp/graphics/window/window.hpp \
+ /home/tanaka/repos/Doomicraft/cgp/library/cgp/graphics/camera/camera_controller/camera_controller_orbit/camera_controller_orbit.hpp \
+ /home/tanaka/repos/Doomicraft/cgp/library/cgp/graphics/camera/camera_controller/camera_controller_orbit_euler/camera_controller_orbit_euler.hpp \
+ /home/tanaka/repos/Doomicraft/cgp/library/cgp/graphics/camera/camera_controller/camera_controller_first_person/camera_controller_first_person.hpp \
+ /home/tanaka/repos/Doomicraft/cgp/library/cgp/graphics/camera/camera_controller/camera_controller_first_person_euler/camera_controller_first_person_euler.hpp \
+ /home/tanaka/repos/Doomicraft/cgp/library/cgp/graphics/picking/picking_plane/picking_plane.hpp \
+ /home/tanaka/repos/Doomicraft/cgp/library/cgp/graphics/time/time.hpp \
+ /home/tanaka/repos/Doomicraft/cgp/library/cgp/graphics/time/timer/timer.hpp \
+ /home/tanaka/repos/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_basic/timer_basic.hpp \
+ /home/tanaka/repos/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_event_periodic/timer_event_periodic.hpp \
+ /home/tanaka/repos/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_fps/timer_fps.hpp \
+ /home/tanaka/repos/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_interval/timer_interval.hpp \
+ /home/tanaka/repos/Doomicraft/cgp/library/cgp/graphics/time/tracker/tracker.hpp \
+ /home/tanaka/repos/Doomicraft/cgp/library/cgp/graphics/time/tracker/velocity_tracker/velocity_tracker.hpp \
+ /home/tanaka/repos/Doomicraft/cgp/library/cgp/graphics/emscripten/emscripten.hpp \
+ /home/tanaka/repos/Doomicraft/scenes_inf443/project/src/environment.hpp \
+ /home/tanaka/repos/Doomicraft/scenes_inf443/project/src/camera.hpp \
+ /home/tanaka/repos/Doomicraft/scenes_inf443/project/src/player.hpp \
+ /home/tanaka/repos/Doomicraft/scenes_inf443/project/src/cube.hpp \
+ /home/tanaka/repos/Doomicraft/scenes_inf443/project/src/constants.hpp \
+ /home/tanaka/repos/Doomicraft/scenes_inf443/project/src/character.hpp \
+ /home/tanaka/repos/Doomicraft/scenes_inf443/project/src/block.hpp \
+ /home/tanaka/repos/Doomicraft/scenes_inf443/project/src/terrain.hpp \
+ /home/tanaka/repos/Doomicraft/scenes_inf443/project/src/utils.hpp \
+ /home/tanaka/repos/Doomicraft/scenes_inf443/project/src/mob.hpp \
+ /home/tanaka/repos/Doomicraft/scenes_inf443/project/src/stb_image.h \
+ /usr/include/c++/11/stdlib.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
+=======
  /home/guile/x/Doomicraft/cgp/library/cgp/graphics/input_devices/input_devices.hpp \
  /home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking.hpp \
  /home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_structure/picking_structure.hpp \
@@ -368,6 +414,7 @@ CMakeFiles/project.dir/src/scene.cpp.o: \
  /usr/include/c++/12/stdlib.h \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/syslimits.h \
+>>>>>>> 143f2fbec129ea8588b589aba296d04a132172a6
  /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
  /usr/include/linux/limits.h \

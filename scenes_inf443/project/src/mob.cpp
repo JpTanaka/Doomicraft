@@ -2,102 +2,106 @@
 #include "mob.hpp"
 #include "utils.hpp"
 #include "constants.hpp"
+#include "block.hpp"
 
-// mob::mob(vec3 center)
-//     : character(center){
-// }
+mob::mob(vec3 center) : character(center){
+    float l = Length;
+    mesh.initialize_data_on_gpu(
+        mesh_primitive_quadrangle(
+            { l/2, l/2,-l/2},
+            { l/2,-l/2,-l/2},
+            { l/2,-l/2, l*3/2-0.2},
+            { l/2, l/2, l*3/2-0.2}
+        )
+    );
+    mesh.texture.load_and_initialize_texture_2d_on_gpu(project::path + "assets/creeper_pirate.png");
+}
 
-// mob::mob()
-// {}
+mob::mob() : character() {
+}
 
-// void mob::move(const std::vector<cube>& cubes) {}
-// {
-//     auto inputs = camera->inputs;
-//     float const dt = inputs->time_interval;
-//     float const step = camera->keyboard_sensitivity * dt;
 
-//     // initialize move direction
-//     vec2 move_direction = {0, 0};
-//     float z_move = 0;
+void mob::draw(const environment_structure& env,bool wireframe){
+    mesh.model.translation = position;
+    if(!wireframe) cgp::draw(mesh, env);
+    else cgp::draw_wireframe(mesh, env);
+}
 
-//     // get input to move
-//     if(*creative){
-//         if (inputs->keyboard.is_pressed(GLFW_KEY_SPACE) )
-//             z_move += step;
-//         if (inputs->keyboard.is_pressed(GLFW_KEY_Q) )
-//             z_move -= step;
-//     }
+void mob::move(const std::vector<cube>& cubes, vec3 &position_player, const float &dt) 
+{
+    float move_sensibility = 2.0f;
+    float const step = move_sensibility * dt;
 
-//     if (inputs->keyboard.is_pressed(GLFW_KEY_SPACE) && !is_jumping && !*creative){
-//         velocity += {0, 0, jump_velocity};
-//         is_jumping = true;
-//     }
+    // initialize move direction
+    vec2 move_direction = {0, 0};
+    float z_move = 0;
 
-//     if (inputs->keyboard.is_pressed(GLFW_KEY_D))
-//         move_direction += step * utils::standardize_direction(camera->camera_model.right());
+    // move direction to player position
+    move_direction += step * utils::standardize_direction(position_player+vec3{0.1,0.1,0.1} - position);
+    if(norm(move_direction_xy)>0.01){
+        mesh.model.rotation = rotation_transform::from_frame_transform({1,0,0}, {0,0,1}, normalize(vec3{move_direction.x, move_direction.y, 0}), {0,0,1});
+    }
+    if(norm(move_direction)>0.01) 
+        move_direction_xy = normalize(utils::expand({move_direction.x, move_direction.y}));
 
-//     if (inputs->keyboard.is_pressed(GLFW_KEY_A))
-//         move_direction += -step * utils::standardize_direction(camera->camera_model.right());
+    // updating z on gravity
+    z_move += velocity.z * dt - 0.5 * gravity * dt * dt;
+    velocity.z -= gravity * dt;
 
-//     if (inputs->keyboard.is_pressed(GLFW_KEY_W))
-//         move_direction += step * utils::standardize_direction(camera->camera_model.front());
+    // check for cubes colisions
+    for (cube c : cubes)
+    {
+        // plane collision
+        if (!(
+            c.top() <= bottom() ||
+            c.bottom() >= top()
+        )){ // checks only on the strip
+            auto direction = body.get_colision_direction(c);
+            int axis = direction.first;
+            int semiaxis = direction.second;
+            
+            if (
+                !(axis == -1 || axis == 2)
+            ) {
+                if(semiaxis * move_direction[axis] > 0) {
+                    move_direction[axis] = 0; 
+                }
+                if(!is_jumping) {
+                    velocity += {0, 0, jump_velocity};
+                    is_jumping = true;
+                    break;
+                   }
+                }
+        }
 
-//     if (inputs->keyboard.is_pressed(GLFW_KEY_S))
-//         move_direction += -step * utils::standardize_direction(camera->camera_model.front());
+        // z colision
+        if(body.distancexy(c) < Length){ // check only on the cilinder
+            if(
+                bottom() >= c.top() &&
+                bottom() + z_move <= c.top()
+            ) {
+                z_move = c.top() - bottom();
+                velocity.z = 0;
+                is_jumping = false;
+            };
+            if(
+                top() <= c.bottom() &&
+                top() + z_move >= c.bottom()
+            ) {
+                z_move = c.bottom() - top() ;
+                velocity.z = 0;
+            }
+        }
 
-//     // updating z on gravity
-//     if(!*creative){
-//         z_move += velocity.z * dt - 0.5 * gravity * dt * dt;
-//         velocity.z -= gravity * dt;
-//     }
+    }
 
-//     // check for cubes colisions
-//     for (cube c : cubes)
-//     {
-//         // plane collision
-//         if (!(
-//             c.top() <= bottom() ||
-//             c.bottom() >= top()
-//         )){ // checks only on the strip
-//             auto direction = body.get_colision_direction(c);
-//             int axis = direction.first;
-//             int semiaxis = direction.second;
-//             if (
-//                 !(axis == -1 || axis == 2) &&
-//                 (semiaxis * move_direction[axis] > 0)
-//             ) move_direction[axis] = 0;
-//         }
+    // updates position
+    position += utils::expand(move_direction);
+    position.z += z_move;
 
-//         // z colision
-//         if(body.distancexy(c) < Length){ // check only on the cilinder
-//             if(
-//                 bottom() >= c.top() &&
-//                 bottom() + z_move <= c.top()
-//             ) {
-//                 z_move = c.top() - bottom();
-//                 velocity.z = 0;
-//                 is_jumping = false;
-//             };
-//             if(
-//                 top() <= c.bottom() &&
-//                 top() + z_move >= c.bottom()
-//             ) {
-//                 z_move = c.bottom() - top() ;
-//                 velocity.z = 0;
-//             }
-//         }
-
-//     }
-
-//     // updates position
-//     position += utils::expand(move_direction);
-//     position.z += z_move;
-
-//     // moves!
-//     legs.position = position;
-
-//     body.position = position;
-//     body.position.z += Length;
-
-//     camera->set_position(body.position);
-// }
+    // moves!
+    legs.position = position;
+    
+    body.position = position;
+    body.position.z += Length;
+}

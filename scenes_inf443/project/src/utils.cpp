@@ -44,6 +44,17 @@ namespace utils
         return x < 0 ? -1 : 1;
     }
 
+    float rand(){
+        return std::rand() / static_cast<float>(RAND_MAX);
+    }
+
+    float distance(vec2 v, vec2 u){
+        return std::max(
+            std::abs((v-u).x),
+            std::abs((v-u).y)
+        );
+    }
+
 
     float gaussian(vec2 r, vec2 mean, vec2 sigma){
         return std::exp( - std::pow(norm((r - mean)/sigma), 2));

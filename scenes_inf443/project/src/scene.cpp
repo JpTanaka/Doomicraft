@@ -18,15 +18,12 @@ void scene_structure::initialize()
 	terr = terrain();
 	main_player = player(camera_control, {0, 0, 20}, &gui.creative);
 
-
-
 	enemy = mob({5, 0, 20});
+
 	// Adding portal gun
 	glfwInit();
-	bool ret = LoadTextureFromFile("../assets/portal_gun.png", &gui.portal_gun.image_texture, &gui.portal_gun.image_width, &gui.portal_gun.image_height);
-	IM_ASSERT(ret);
-	ret = LoadTextureFromFile("../assets/crosshair.png", &gui.crosshair.image_texture, &gui.crosshair.image_width, &gui.crosshair.image_height);
-	IM_ASSERT(ret);
+	LoadTextureFromFile("../assets/portal_gun.png", &gui.portal_gun.image_texture, &gui.portal_gun.image_width, &gui.portal_gun.image_height);
+	LoadTextureFromFile("../assets/crosshair.png", &gui.crosshair.image_texture, &gui.crosshair.image_width, &gui.crosshair.image_height);
 }
 
 void scene_structure::display_frame()
@@ -42,7 +39,7 @@ void scene_structure::display_gui()
 	ImGui::Checkbox("Frame", &gui.display_frame);
 	ImGui::Checkbox("Wireframe", &gui.display_wireframe);
 	ImGui::Checkbox("Creative", &gui.creative);
-	ImGui::SliderInt2("Fog Depth", &gui.fog_depth, 0, 256);
+	ImGui::SliderInt2("Fog Depth", &gui.fog_depth, 0, 64);
 	
 	bool exit = ImGui::Button("Exit");
 	if(exit) {
@@ -82,7 +79,9 @@ void scene_structure::idle_frame()
 {
 	camera_control.idle_frame(environment.camera_view);
 	main_player.move(terr.get_cubes(main_player.position));
-	enemy.move(terr.get_cubes(main_player.position), main_player.body.position, main_player.camera->inputs->time_interval);
+
+	// TODO
+	enemy.move(terr.get_cubes(enemy.position), main_player.body.position, main_player.camera->inputs->time_interval);
 }
 // Simple helper function to load an image into a OpenGL texture with common settings
 bool LoadTextureFromFile(const char *filename, GLuint *out_texture, int *out_width, int *out_height)

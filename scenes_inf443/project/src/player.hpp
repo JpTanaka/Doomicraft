@@ -16,4 +16,6 @@ public:
 
     void move(const std::vector<cube>&);
     vec3 looking_at();
+
+    float detect_colision (std::vector<cube>, float max_distance);
 };

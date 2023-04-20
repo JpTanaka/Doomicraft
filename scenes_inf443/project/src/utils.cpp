@@ -1,4 +1,5 @@
 #include "utils.hpp" 
+#include "constants.hpp"
 
 namespace utils
 {
@@ -12,6 +13,13 @@ namespace utils
             std::max(u.z, v.z)
         };
     }
+
+    float max(vec3 v){
+        return std::max({
+            v.x, v.y, v.z
+        });
+    }
+
     vec3 min(vec3 u, vec3 v){
         return {
             std::min(u.x, v.x),
@@ -55,9 +63,47 @@ namespace utils
         );
     }
 
+    float distance(vec3 v, vec3 u){
+        return max(abs(v - u));
+    }
+
 
     float gaussian(vec2 r, vec2 mean, vec2 sigma){
         return std::exp( - std::pow(norm((r - mean)/sigma), 2));
+    }
+
+    float distance_point_to_square(
+        vec3 point_from, // point from where the ray is being shot
+        vec3 direction, // direction of the ray
+        vec3 plane_center, // center of the plane
+        vec3 plane_normal, // plane normal
+        float plane_side // the lenght of the side of the plane
+    ){
+        if(dot(direction, plane_normal) == 0) return INFTY;
+
+        float t = dot(point_from - plane_center, plane_normal)
+            / dot(direction, plane_normal);
+        
+        if (t < 0) return INFTY;
+        float dist = distance(plane_center, point_from + t * direction);
+        if(dist > plane_side / 2.0f) return INFTY;
+        return dist;
+    }
+
+    float distance_point_cube(
+        vec3 point_from, // point from where the ray is being shot
+        vec3 direction, // direction of the ray
+        vec3 cube_center, // center of the plane
+        float cube_side // the lenght of the side of the plane
+    ){
+        return std::min({
+            distance_point_to_square(point_from, direction, cube_center + 0.5*cube_side*vec3{ 1, 0, 0}, { 1, 0, 0}, cube_side),
+            distance_point_to_square(point_from, direction, cube_center + 0.5*cube_side*vec3{-1, 0, 0}, {-1, 0, 0}, cube_side),
+            distance_point_to_square(point_from, direction, cube_center + 0.5*cube_side*vec3{ 0, 1, 0}, { 0, 1, 0}, cube_side),
+            distance_point_to_square(point_from, direction, cube_center + 0.5*cube_side*vec3{ 0,-1, 0}, { 0,-1, 0}, cube_side),
+            distance_point_to_square(point_from, direction, cube_center + 0.5*cube_side*vec3{ 0, 0, 1}, { 0, 0, 1}, cube_side),
+            distance_point_to_square(point_from, direction, cube_center + 0.5*cube_side*vec3{ 0, 0,-1}, { 0, 0,-1}, cube_side)
+        });
     }
 
 

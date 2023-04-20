@@ -107,3 +107,23 @@ void player::move(const std::vector<cube>& cubes)
 
     camera->set_position(body.position);
 }
+
+
+float player::detect_colision (std::vector<cube> cubes, float max_distance){
+    float distance = INFTY;
+
+    for (const cube& c: cubes){
+        if (norm(c.position - get_eyes()) >= max_distance) continue;
+        distance = std::min(
+            distance,
+            utils::distance_point_cube(
+                get_eyes(),
+                looking_at(),
+                c.position,
+                Length
+            )
+        );
+    }
+    
+    return distance;
+}

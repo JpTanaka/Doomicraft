@@ -53,8 +53,12 @@ const std::vector<cube> terrain::get_cubes(const vec3& player_position){
         floor(player_position.y / static_cast<float>(chunk::chunk_y_size)),
         0
     );
-    // maybe more chunks?
-    return chunks[player_chunk].get_cubes();
+    std::vector<cube> cubes;
+    for(const auto& chunk : get_neighbours(player_chunk)) {
+        auto& ccubes = chunks[chunk].get_cubes();
+        cubes.insert(cubes.end(), ccubes.begin(), ccubes.end());
+    }
+    return cubes;
 }
 
 

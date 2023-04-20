@@ -7,6 +7,7 @@ namespace utils
 
     // coordinate by coordinate functions
     vec3 max(vec3, vec3);
+    float max(vec3);
     vec3 min(vec3, vec3);
     vec3 relu(vec3);
     vec3 abs(vec3);
@@ -16,6 +17,7 @@ namespace utils
     vec3 project_plane(vec3);
 
     float distance(vec2, vec2);
+    float distance(vec3, vec3);
 
     vec2 standardize_direction(vec3);
 
@@ -23,6 +25,21 @@ namespace utils
     float rand();
 
     float gaussian(vec2 r, vec2 mean, vec2 sigma);
+
+    float distance_point_to_square(
+        vec3 point_from, // point from where the ray is being shot
+        vec3 direction, // direction of the ray
+        vec3 plane_center, // center of the plane
+        vec3 plane_normal, // plane normal
+        float plane_side // the lenght of the side of the plane
+    );
+
+    float distance_point_cube(
+        vec3 point_from, // point from where the ray is being shot
+        vec3 direction, // direction of the ray
+        vec3 cube_center, // center of the plane
+        float cube_side // the lenght of the side of the plane
+    );
 
     struct Triplet{
         int x, y, z;

@@ -185,6 +185,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/simplexnoise/simplexnoise1234.cpp.o.d"
   "CMakeFiles/project.dir/src/block.cpp.o"
   "CMakeFiles/project.dir/src/block.cpp.o.d"
+  "CMakeFiles/project.dir/src/block_mesh.cpp.o"
+  "CMakeFiles/project.dir/src/block_mesh.cpp.o.d"
   "CMakeFiles/project.dir/src/camera.cpp.o"
   "CMakeFiles/project.dir/src/camera.cpp.o.d"
   "CMakeFiles/project.dir/src/character.cpp.o"

@@ -2361,6 +2361,30 @@ src/block.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/block.cpp.s
 .PHONY : src/block.cpp.s
 
+src/block_mesh.o: src/block_mesh.cpp.o
+.PHONY : src/block_mesh.o
+
+# target to build an object file
+src/block_mesh.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/block_mesh.cpp.o
+.PHONY : src/block_mesh.cpp.o
+
+src/block_mesh.i: src/block_mesh.cpp.i
+.PHONY : src/block_mesh.i
+
+# target to preprocess a source file
+src/block_mesh.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/block_mesh.cpp.i
+.PHONY : src/block_mesh.cpp.i
+
+src/block_mesh.s: src/block_mesh.cpp.s
+.PHONY : src/block_mesh.s
+
+# target to generate assembly for a file
+src/block_mesh.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/block_mesh.cpp.s
+.PHONY : src/block_mesh.cpp.s
+
 src/camera.o: src/camera.cpp.o
 .PHONY : src/camera.o
 
@@ -2889,6 +2913,9 @@ help:
 	@echo "... src/block.o"
 	@echo "... src/block.i"
 	@echo "... src/block.s"
+	@echo "... src/block_mesh.o"
+	@echo "... src/block_mesh.i"
+	@echo "... src/block_mesh.s"
 	@echo "... src/camera.o"
 	@echo "... src/camera.i"
 	@echo "... src/camera.s"

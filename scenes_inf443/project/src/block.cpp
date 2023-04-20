@@ -1,84 +1,19 @@
 #include "block.hpp"
 
-block_mesh::block_mesh(){}
-
-block_mesh::block_mesh(std::string texture_path){
-
-    float l = Length/2.0f;
-    meshes[directions::kTop].initialize_data_on_gpu(
-        mesh_primitive_quadrangle(
-            { l, l, l},
-            {-l, l, l},
-            {-l,-l, l},
-            { l,-l, l}
-        )
-    );
-    meshes[directions::kBottom].initialize_data_on_gpu(
-        mesh_primitive_quadrangle(
-            { l, l,-l},
-            { l,-l,-l},
-            {-l,-l,-l},
-            {-l, l,-l}
-        )
-    );
-    meshes[directions::kFront].initialize_data_on_gpu(
-        mesh_primitive_quadrangle(
-            { l, l, l},
-            { l,-l, l},
-            { l,-l,-l},
-            { l, l,-l}
-        )
-    );
-    meshes[directions::kBack].initialize_data_on_gpu(
-        mesh_primitive_quadrangle(
-            {-l, l, l},
-            {-l, l,-l},
-            {-l,-l,-l},
-            {-l,-l, l}
-        )
-    );
-    meshes[directions::kLeft].initialize_data_on_gpu(
-        mesh_primitive_quadrangle(
-            { l, l, l},
-            {-l, l, l},
-            {-l, l,-l},
-            { l, l,-l}
-        )
-    );
-    meshes[directions::kRight].initialize_data_on_gpu(
-        mesh_primitive_quadrangle(
-            { l,-l, l},
-            { l,-l,-l},
-            {-l,-l,-l},
-            {-l,-l, l}
-        )
-    );
-
-    for (mesh_drawable& mesh : meshes){
-        mesh.texture.load_and_initialize_texture_2d_on_gpu(texture_path);
-        mesh.material.phong.specular = 0;
-    }
-
-}
-
-void block_mesh::draw(const environment_structure& env, vec3 position, std::vector<directions> render_directions, bool wireframe){
-    for (directions dir : render_directions){
-        mesh_drawable& mesh = meshes[dir];
-        mesh.model.translation = position;
-        if(!wireframe) cgp::draw(mesh, env);
-        else cgp::draw_wireframe(mesh, env);
-    }
-}
-
-
 std::array<block_mesh, 2> block::blocks;
 
 void block::initialize(){
-    blocks[block_types::earth] = block_mesh(
-        project::path + "assets/dirt.jpg"
-    );
+    std::tuple<std::string, vec3, bool> config[]  = {
+        {project::path + "assets/grass_top.png",    vec3{0,1,0},    false},
+        {project::path + "assets/dirt.png",         vec3{1,1,1},    true},
+        {project::path + "assets/grass_side.png",   vec3{1,1,1},    true},
+        {project::path + "assets/grass_side.png",   vec3{1,1,1},    true},
+        {project::path + "assets/grass_side.png",   vec3{1,1,1},    true},
+        {project::path + "assets/grass_side.png",   vec3{1,1,1},    true}
+    };
+    blocks[block_types::earth] = block_mesh(config);
     blocks[block_types::rock] = block_mesh(
-        project::path + "assets/stone.jpg"
+        project::path + "assets/stone.png"
     );
 }
 

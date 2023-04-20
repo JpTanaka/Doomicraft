@@ -53,6 +53,7 @@ void scene_structure::initialize()
 	terr = terrain();
 	main_player = player(camera_control, {2, 0, 10}, &gui.creative);
 
+
 	block b = block(block_types::rock, {0, 0, 15});
 
 	// Adding portal gun

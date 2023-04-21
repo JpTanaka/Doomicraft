@@ -70,7 +70,7 @@ int main(int, char* argv[])
 	//  (This call is different when we compile in standard mode with GLFW, than when we compile with emscripten to output the result in a webpage.)
 #ifndef __EMSCRIPTEN__
 	// Default mode to run the animation/display loop with GLFW in C++
-	while (!glfwWindowShouldClose(scene.window.glfw_window)) {
+	while (!glfwWindowShouldClose(scene.window.glfw_window) && !scene.close_game) {
 		animation_loop();
 	}
 #else
@@ -118,11 +118,13 @@ void animation_loop()
 	// Display the ImGUI interface (button, sliders, etc)
 	scene.display_gui();
 
-	// Handle camera behavior in standard frame
-	scene.idle_frame();
+	if (!scene.game_over){
+		// Handle camera behavior in standard frame
+		scene.idle_frame();
 
-	// Call the display of the scene
-	scene.display_frame();
+		// Call the display of the scene
+		scene.display_frame();
+	}
 
 
 	// End of ImGui display and handle GLFW events

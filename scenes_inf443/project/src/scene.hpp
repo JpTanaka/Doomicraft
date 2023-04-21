@@ -66,18 +66,13 @@ struct scene_structure : cgp::scene_inputs_generic
 
 	timer_basic timer;
 
-	// mesh_drawable terrain;
-	// mesh_drawable cube1;
-
-
 	terrain terr;
 	player main_player;
 	block b;
 	mob_group enemies;
 
-	// std::vector<block> terrain;
-	// std::vector<cube> terrain_cubes;
-
+	bool game_over = false;
+	bool close_game = false;
 
 
 	// ****************************** //
@@ -92,6 +87,7 @@ struct scene_structure : cgp::scene_inputs_generic
 	void mouse_click_event();
 	void keyboard_event();
 	void idle_frame();
+	void end_game();
 };
 
 bool LoadTextureFromFile(const char *filename, GLuint *out_texture, int *out_width, int *out_height);

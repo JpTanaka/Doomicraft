@@ -2,8 +2,8 @@
 #include"mob.hpp"
 #include<vector>
 
-mob_group::mob_group(){
-}
+mob_group::mob_group(){}
+
 mob_group::mob_group(vec3 starting_position){
     for (int i = 0; i < wave_size; i++){
         vec3 rand_vec = {utils::rand(-1, 1) * mob_range, utils::rand(-1, 1) * mob_range, 10};
@@ -78,3 +78,9 @@ void mob_group::draw(const environment_structure& env,bool wireframe){
     }
 }
 
+
+bool mob_group::check_kills_player(vec3 player_position){
+    for (mob& m : mobs) 
+        if (norm(m.position - player_position) < Length) return true;
+    return false;
+}

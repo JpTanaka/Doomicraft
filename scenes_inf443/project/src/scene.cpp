@@ -6,26 +6,6 @@ using namespace cgp;
 
 void scene_structure::initialize()
 {
-
-	//seems to be working
-	// auto d = utils::distance_point_to_square(
-	// 	{0, 0, 0},
-	// 	{1, 1, 0},
-	// 	{2, 2, 0},
-	// 	{0, 0, 1},
-	// 	1
-	// );
-	// std::cout << d<< std::endl;
-
-	// d = utils::distance_point_cube(
-	// 	{0, 0, 0},
-	// 	{-1, 1, 0},
-	// 	{-3, 2.9, 0},
-	// 	1
-	// );
-	// std::cout << d << std::endl;
-
-
 	camera_projection.field_of_view = FIELD_OF_VIEW;
 	camera_control.initialize(inputs, window);
 	environment.light = {50, 50, 50};
@@ -48,15 +28,40 @@ void scene_structure::initialize()
 
 void scene_structure::display_frame()
 {
+	if (game_over) return;
 	environment.uniform_generic.uniform_int["fog_depth"] = gui.fog_depth;
-
 	timer.update();
 	enemies.draw(environment, gui.display_wireframe);
 	terr.draw(environment, gui.display_wireframe, main_player.get_eyes(), main_player.looking_at(), gui.fog_depth);
 }
 
+void scene_structure::end_game(){
+	game_over = true;
+	camera_control.deactivate();
+}
+
 void scene_structure::display_gui()
 {
+
+	if (game_over){
+		ImGui::Begin("", NULL, 
+			ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_NoBackground
+		);
+		ImGui::Text("Game Over!");
+		ImGui::Text("---------------------");
+		ImGui::Text("Total kills: %d", main_player.get_kills());
+		ImGui::SetWindowSize(gui.config_window_size);
+		ImGui::SetWindowPos({
+			(float)(window.width - gui.config_window_size.x)/2.0f,
+			(float)(window.height - gui.config_window_size.y)/2.0f,
+		});
+		if(ImGui::Button("Exit")) {
+			close_game = true;
+		}
+		ImGui::End();
+
+		return;
+	}
 	// Menu
 	if (gui.display_config){
 		ImGui::Begin("Configuration ", NULL, 
@@ -71,7 +76,7 @@ void scene_structure::display_gui()
 		ImGui::Checkbox("Wireframe", &gui.display_wireframe);
 		ImGui::Checkbox("Creative", &gui.creative);
 		ImGui::SliderInt("Fog Depth", &gui.fog_depth, 0, 64);
-		if(ImGui::Button("Exit")) std::exit(0);
+		if(ImGui::Button("Exit", {gui.config_window_size.x, 40})) end_game();
 		ImGui::End();
 	}
 
@@ -153,6 +158,9 @@ void scene_structure::idle_frame()
 
 	// TODO
 	enemies.move(terr, main_player.body.position, main_player.camera->inputs->time_interval);
+
+	if(enemies.check_kills_player(main_player.position))
+		end_game();
 }
 // Simple helper function to load an image into a OpenGL texture with common settings
 bool LoadTextureFromFile(const char *filename, GLuint *out_texture, int *out_width, int *out_height)

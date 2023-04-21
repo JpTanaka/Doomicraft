@@ -13,9 +13,13 @@ class mob_group {
 
     std::vector<mob> mobs;
 
+    static const int mob_range = 16;
+    static const int wave_size = 5;
+
 public:
 
     mob_group();
+    mob_group(vec3 starting_position);
 
     std::vector<cube> get_cubes();
 
@@ -23,7 +27,7 @@ public:
 
     void move(terrain&, vec3&, const float &);
 
-    void add_mob(const mob&);
+    void add_mob(const mob);
 
     void shoot_mob(
         vec3, // point from where the ray is being shot

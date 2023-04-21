@@ -59,8 +59,8 @@ namespace utils
         return x < 0 ? -1 : 1;
     }
 
-    float rand(){
-        return std::rand() / static_cast<float>(RAND_MAX);
+    float rand(float min, float max){
+        return min + (max - min) * std::rand() / static_cast<float>(RAND_MAX);
     }
 
     float distance(vec2 v, vec2 u){

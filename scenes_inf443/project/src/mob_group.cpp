@@ -4,8 +4,17 @@
 
 mob_group::mob_group(){
 }
+mob_group::mob_group(vec3 starting_position){
+    for (int i = 0; i < wave_size; i++){
+        vec3 rand_vec = {utils::rand(-1, 1) * mob_range, utils::rand(-1, 1) * mob_range, 10};
+        add_mob(mob({
+            starting_position + rand_vec
+        }));
+    }
+}
+
 // TODO creating mobs in mob_group results in seg fault
-void mob_group::add_mob(const mob &b) {
+void mob_group::add_mob(const mob b) {
     mobs.push_back(b);
 }
 
@@ -35,9 +44,6 @@ void mob_group::shoot_mob(
             it->take_damage();
         } 
     }
-
-    // killing
-
 }
 
 int mob_group::check_dead(){
@@ -48,6 +54,13 @@ int mob_group::check_dead(){
             deads.push_back(it);
     
     for (auto& dead: deads) {
+        // creating another one around the dead
+        vec3 rand_vec = {utils::rand(-1, 1) * mob_range, utils::rand(-1, 1) * mob_range, 10};
+        add_mob(mob({
+            dead->position + rand_vec
+        }));
+
+        // erasing the dead
         mobs.erase(dead);
         kills++;
     }

@@ -43,7 +43,6 @@ void mob::draw(const environment_structure& env,bool wireframe){
     }
 }
 
-
 void mob::take_damage(){
     life--;
     mesh.material.color -= vec3{0, 1, 1} * 1/(float)max_life;

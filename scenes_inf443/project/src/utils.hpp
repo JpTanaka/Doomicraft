@@ -23,7 +23,7 @@ namespace utils
     vec2 standardize_direction(vec3);
 
     int sign(float);
-    float rand();
+    float rand(float min = 0, float max = 1);
 
     float gaussian(vec2 r, vec2 mean, vec2 sigma);
 

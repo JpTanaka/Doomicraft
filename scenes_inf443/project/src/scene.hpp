@@ -31,7 +31,7 @@ struct gui_parameters
 	bool display_config = false;
 
 	bool display_wireframe = false;
-	bool creative = true;
+	bool creative = false;
 
 	int fog_depth = 24;
 	

@@ -38,13 +38,7 @@ void scene_structure::initialize()
 	terr = terrain();
 	main_player = player(camera_control, {0, 0, 20}, &gui.creative, &terr);
 
-	enemies = mob_group();
-	mob b = mob({5,0, 10});
-	mob c = mob({8,2, 10});
-	mob d = mob({12,9, 10});
-	enemies.add_mob(b);
-	enemies.add_mob(c);
-	enemies.add_mob(d);
+	enemies = mob_group({0,0,10});
 
 	// Adding portal gun
 	glfwInit();
@@ -158,7 +152,7 @@ void scene_structure::idle_frame()
 	main_player.move(terr.get_cubes(main_player.position));
 
 	// TODO
-	// enemies.move(terr, main_player.body.position, main_player.camera->inputs->time_interval);
+	enemies.move(terr, main_player.body.position, main_player.camera->inputs->time_interval);
 }
 // Simple helper function to load an image into a OpenGL texture with common settings
 bool LoadTextureFromFile(const char *filename, GLuint *out_texture, int *out_width, int *out_height)

@@ -356,6 +356,7 @@ CMakeFiles/project.dir/src/main.cpp.o: \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/scene.hpp \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/camera.hpp \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/player.hpp \
+ /usr/include/c++/12/optional \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/cube.hpp \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/constants.hpp \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/character.hpp \

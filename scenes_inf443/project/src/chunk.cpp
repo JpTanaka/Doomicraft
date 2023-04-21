@@ -23,7 +23,10 @@ chunk::chunk(vec2 chunk_position)
         if(utils::rand() < 0.005)
             create_tree({x, y, height + 1});
     }
+    update_blocks();
+}
 
+void chunk::update_blocks(){
     for (auto& [pos, blk] : blocks){
         std::vector<directions> render_dirs;
         if(!check_has_block(pos + utils::Triplet( 1, 0, 0))) render_dirs.push_back(directions::kFront);
@@ -34,6 +37,7 @@ chunk::chunk(vec2 chunk_position)
         if(!check_has_block(pos + utils::Triplet(0, 0, -1))) render_dirs.push_back(directions::kBottom);
         blk.render_directions = render_dirs;
     }
+
 }
 
 int chunk::generator_function(const vec2& v){
@@ -77,7 +81,15 @@ void chunk::create_block(const block_types& block_type, const vec3& center){
     cubes.push_back(b.block_cube);
 }
 
-void chunk::delete_bloc(vec3 position){
+void chunk::create_block_absolute(const block_types& block_type, const vec3& center){
+    vec3 int_center = utils::round(center);
+    block b = block(block_type, int_center);
+    blocks[utils::Triplet(b.position)] = b;
+    cubes.push_back(b.block_cube);
+    update_blocks();
+}
+
+void chunk::delete_bloc_absolute(vec3 position){
     block& b = blocks[utils::Triplet(utils::round(position))];
     for (auto i = cubes.begin(); i < cubes.end(); i++){
         if(*i == b.block_cube){
@@ -86,6 +98,7 @@ void chunk::delete_bloc(vec3 position){
         }
     }
     blocks.erase(utils::Triplet(utils::round(position)));
+    update_blocks();
 }
 
 void chunk::draw(const environment_structure& env, bool wireframe, const vec3& player_position, const vec3& player_looking_at, const float& max_depth){

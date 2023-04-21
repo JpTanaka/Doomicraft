@@ -89,11 +89,12 @@ void scene_structure::mouse_move_event()
 }
 void scene_structure::mouse_click_event()
 {
+	main_player.handle_mouse_input(terr.get_cubes(main_player.position));
 	camera_control.action_mouse_click(environment.camera_view);
 }
 void scene_structure::keyboard_event()
 {
-	main_player.handle_blocks(terr.get_cubes(main_player.position));
+	main_player.handle_keyboard_input();
 	camera_control.action_keyboard(environment.camera_view);
 }
 void scene_structure::idle_frame()

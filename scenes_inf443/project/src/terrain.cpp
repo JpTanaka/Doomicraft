@@ -61,11 +61,11 @@ bool terrain::check_chunk_exists(const utils::Triplet t){
 void terrain::create_bloc(const vec3& position, const block_types& block_type){
     vec3 round_position = utils::round(position);
     auto player_chunk = chunk::get_chunk_triplet(round_position);
-    chunks[player_chunk].create_block(block_type, round_position);
+    chunks[player_chunk].create_block_absolute(block_type, round_position);
 }
 
 void terrain::delete_bloc(const vec3& position){
     vec3 round_position = utils::round(position);
     auto player_chunk = chunk::get_chunk_triplet(round_position);
-    chunks[player_chunk].delete_bloc(round_position);
+    chunks[player_chunk].delete_bloc_absolute(round_position);
 }

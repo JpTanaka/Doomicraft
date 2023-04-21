@@ -128,16 +128,29 @@ float player::detect_colision (std::vector<cube> cubes, float max_distance){
     return distance;
 }
 
-void player::handle_blocks(const std::vector<cube>& cubes){
+void player::handle_keyboard_input(){
     auto& inputs = camera->inputs;
-    std::cout<<looking_at() << " " << get_eyes() << std::endl;
-    if (inputs->keyboard.is_pressed(GLFW_KEY_1)){
-        float dist = detect_colision(cubes, 10);
-        std::cout << "creating block" << dist << std::endl;
-        terr->create_bloc(
-            looking_at() * (dist - 0.1), 
-            block_types::rock
-        );
+    if (inputs->keyboard.is_pressed(GLFW_KEY_1)) chosen_block = block_types::earth;
+    if (inputs->keyboard.is_pressed(GLFW_KEY_2)) chosen_block = block_types::rock;
+    if (inputs->keyboard.is_pressed(GLFW_KEY_3)) chosen_block = block_types::wood;
+    if (inputs->keyboard.is_pressed(GLFW_KEY_4)) chosen_block = block_types::leaf;
+    if (inputs->keyboard.is_pressed(GLFW_KEY_R)) chosen_block = {};
+}
+
+void player::handle_mouse_input(const std::vector<cube>& cubes){
+    auto& inputs = camera->inputs;
+    bool const click_right = inputs->mouse.click.right;
+    if (click_right){
+        float dist = detect_colision(cubes, 5);
+        if(chosen_block)
+            terr->create_bloc(
+                get_eyes() + looking_at() * (dist - 0.1), 
+                chosen_block.value()
+            );
+        else
+            terr->delete_bloc(
+                get_eyes() + looking_at() * (dist + 0.1)
+            );
     }
 
 }

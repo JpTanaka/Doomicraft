@@ -1,5 +1,6 @@
 #pragma once
 
+#include <optional>
 #include "cgp/cgp.hpp"
 #include "camera.hpp"
 #include "cube.hpp"
@@ -10,6 +11,7 @@
 class player : public character {
 
     terrain* terr = nullptr;
+    std::optional<block_types> chosen_block; // if empty means that you are breaking blocks ;)
 
 public:
     bool* creative;
@@ -23,5 +25,6 @@ public:
 
     float detect_colision (std::vector<cube>, float max_distance);
 
-    void handle_blocks(const std::vector<cube>& cubes);
+    void handle_keyboard_input();
+    void handle_mouse_input(const std::vector<cube>& cubes);
 };

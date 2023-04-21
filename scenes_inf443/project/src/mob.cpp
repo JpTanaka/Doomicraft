@@ -5,28 +5,53 @@
 #include "block.hpp"
 
 mob::mob(vec3 center) : character(center){
-    std::cout << "constructor default mob";
     float l = Length;
     mesh.initialize_data_on_gpu(
         mesh_primitive_quadrangle(
-            { l/2, l/2,-l/2},
-            { l/2,-l/2,-l/2},
-            { l/2,-l/2, l*3/2-0.2},
-            { l/2, l/2, l*3/2-0.2}
+            { l/2.0, l/2.0,-l/2.0},
+            { l/2.0,-l/2.0,-l/2.0},
+            { l/2.0,-l/2.0, l*3/2.0-0.2},
+            { l/2.0, l/2.0, l*3/2.0-0.2}
         )
     );
-    mesh.texture.load_and_initialize_texture_2d_on_gpu(project::path + "assets/creeper_pirate.png");
+    mesh.texture.load_and_initialize_texture_2d_on_gpu( 
+        project::path + "assets/creeper_pirate.png"
+    );
+    health_bar.initialize_data_on_gpu(
+        mesh_primitive_quadrangle(
+            { l/2.0, l/2.0, l*3/2.0 - 0.03},
+            { l/2.0,-l/2.0, l*3/2.0 - 0.03},
+            { l/2.0,-l/2.0, l*3/2.0 + 0.03},
+            { l/2.0, l/2.0, l*3/2.0 + 0.03}
+        )
+    );
+    health_bar.material.color = {0, 1, 0};
 }
 
-mob::mob() : character() {
-    std::cout << "constructor default mob";
-}
-
+mob::mob() : character() {}
 
 void mob::draw(const environment_structure& env,bool wireframe){
     mesh.model.translation = position;
-    if(!wireframe) cgp::draw(mesh, env);
-    else cgp::draw_wireframe(mesh, env);
+    health_bar.model.translation = position;
+    if(!wireframe) {
+        cgp::draw(mesh, env);
+        cgp::draw(health_bar, env);
+    }
+    else {
+        cgp::draw_wireframe(mesh, env);
+        cgp::draw_wireframe(health_bar, env);
+    }
+}
+
+
+void mob::take_damage(){
+    life--;
+    mesh.material.color -= vec3{0, 1, 1} * 1/(float)max_life;
+    health_bar.model.scaling_xyz = {1, (life)/(float)max_life, 1};
+}
+
+bool mob::is_dead(){
+    return life <= 0;
 }
 
 void mob::move(const std::vector<cube>& cubes, vec3 &position_player, const float &dt) 
@@ -42,6 +67,7 @@ void mob::move(const std::vector<cube>& cubes, vec3 &position_player, const floa
     move_direction += step * utils::standardize_direction(position_player+vec3{0.1,0.1,0.1} - position);
     if(norm(move_direction_xy)>0.01){
         mesh.model.rotation = rotation_transform::from_frame_transform({1,0,0}, {0,0,1}, normalize(vec3{move_direction.x, move_direction.y, 0}), {0,0,1});
+        health_bar.model.rotation = rotation_transform::from_frame_transform({1,0,0}, {0,0,1}, normalize(vec3{move_direction.x, move_direction.y, 0}), {0,0,1});
     }
     if(norm(move_direction)>0.01) 
         move_direction_xy = normalize(utils::expand({move_direction.x, move_direction.y}));

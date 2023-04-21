@@ -9,14 +9,20 @@
 #include "utils.hpp"
 
 class mob : public character {
+    static const int max_life = 4;
+    int life = max_life;
+    mesh_drawable mesh;
+    mesh_drawable health_bar;
+
 public:
-    int life = 4;
     mob(vec3 center);
     mob();
-    mesh_drawable mesh;
     vec3 move_direction_xy;
 
     void move(const std::vector<cube>&, vec3&, const float &);
     void draw(const environment_structure& env, bool);
+
+    void take_damage();
+    bool is_dead();
 
 };

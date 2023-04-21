@@ -32,7 +32,7 @@ void mob_group::shoot_mob(
             utils::distance(final_point, it->body.position) < Length  ||
             utils::distance(final_point, it->legs.position) < Length
         ){
-            it->life--;
+            it->take_damage();
         } 
     }
 
@@ -44,12 +44,12 @@ int mob_group::check_dead(){
     int kills = 0;
     std::vector<std::vector<mob>::iterator> deads;
     for (auto it = mobs.begin(); it != mobs.end(); it++) 
-        if(it->life == 0)
+        if(it->is_dead())
             deads.push_back(it);
     
     for (auto& dead: deads) {
         mobs.erase(dead);
-        kills ++;
+        kills++;
     }
     return kills;
 }

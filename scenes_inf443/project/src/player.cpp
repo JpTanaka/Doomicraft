@@ -201,3 +201,7 @@ void player::respawn(){
 bool player::is_dead(){
     return health <= 0;
 }
+
+int player::get_level(){
+    return kills / 10;
+}

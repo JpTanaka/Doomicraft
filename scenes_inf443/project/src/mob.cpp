@@ -53,9 +53,12 @@ bool mob::is_dead(){
     return life <= 0;
 }
 
-void mob::move(const std::vector<cube>& cubes, vec3 &position_player, const float &dt) 
+void mob::move(
+    const std::vector<cube>& cubes, 
+    vec3 &position_player, const float &dt, 
+    const float& move_sensibility
+) 
 {
-    float move_sensibility = 2.0f;
     float const step = move_sensibility * dt;
 
     // initialize move direction

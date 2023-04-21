@@ -69,7 +69,7 @@ int mob_group::check_dead(){
 
 void mob_group::move(terrain& terr, vec3& position_player, const float& dt) {
     for(mob& m : mobs)
-        m.move(terr.get_cubes(m.position), position_player, dt);
+        m.move(terr.get_cubes(m.position), position_player, dt, velocity);
 }
 
 void mob_group::draw(const environment_structure& env,bool wireframe){
@@ -83,4 +83,10 @@ bool mob_group::check_hits_player(vec3 player_position){
     for (mob& m : mobs) 
         if (norm(m.position - player_position) < Length) return true;
     return false;
+}
+
+void mob_group::set_level(int level){
+    wave_size = 5 + level;
+    mob_range = 16 - std::min(level, 10);
+    velocity = 1 + std::min(level, 3);
 }

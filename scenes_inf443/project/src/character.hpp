@@ -9,7 +9,7 @@ class character {
 
 
 public:
-    float jump_velocity = 8;
+    float jump_velocity = 7;
     cube body;
     cube legs;
 

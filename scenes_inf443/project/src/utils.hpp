@@ -55,4 +55,6 @@ namespace utils
         std::size_t operator()(const Triplet& triplet) const;
     };
 
+    bool LoadTextureFromFile(const char *filename, GLuint *out_texture, int *out_width, int *out_height);
+
 } // namespace utils

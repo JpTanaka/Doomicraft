@@ -13,8 +13,9 @@ class mob_group {
 
     std::vector<mob> mobs;
 
-    static const int mob_range = 16;
-    static const int wave_size = 5;
+    int mob_range = 16;
+    int wave_size = 5;
+    float velocity = 2;
 
 public:
 
@@ -38,5 +39,7 @@ public:
     int check_dead();
 
     bool check_hits_player(vec3 player_position);
+
+    void set_level(int);
         
 };

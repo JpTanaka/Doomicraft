@@ -45,4 +45,5 @@ public:
     int get_health();
     int get_max_health();
     bool is_dead();
+    int get_level();
 };

@@ -359,9 +359,9 @@ CMakeFiles/project.dir/src/scene.cpp.o: \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/cube.hpp \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/constants.hpp \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/character.hpp \
+ /home/guile/x/Doomicraft/scenes_inf443/project/src/terrain.hpp \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/block.hpp \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/block_mesh.hpp \
- /home/guile/x/Doomicraft/scenes_inf443/project/src/terrain.hpp \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/utils.hpp \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/chunk.hpp \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/mob.hpp \

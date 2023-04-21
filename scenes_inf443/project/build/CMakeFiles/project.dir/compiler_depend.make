@@ -1313,13 +1313,6 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/cgp/core/base/rand/ra
   /usr/include/c++/12/bits/vector.tcc \
   /usr/include/c++/12/bits/uniform_int_dist.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/opt_random.h \
-  /usr/lib/gcc/x86_64-linux-gnu/12/include/pmmintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/12/include/emmintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/12/include/xmmintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/12/include/mmintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/12/include/mm_malloc.h \
-  /usr/include/c++/12/stdlib.h \
-  /usr/lib/gcc/x86_64-linux-gnu/12/include/mwaitintrin.h \
   /usr/include/c++/12/bits/random.tcc \
   /usr/include/c++/12/numeric \
   /usr/include/c++/12/bits/stl_numeric.h \
@@ -24663,9 +24656,9 @@ CMakeFiles/project.dir/src/main.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/pr
   /home/guile/x/Doomicraft/scenes_inf443/project/src/cube.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/constants.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/character.hpp \
+  /home/guile/x/Doomicraft/scenes_inf443/project/src/terrain.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/block.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/block_mesh.hpp \
-  /home/guile/x/Doomicraft/scenes_inf443/project/src/terrain.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/utils.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/chunk.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/mob.hpp
@@ -25486,7 +25479,11 @@ CMakeFiles/project.dir/src/player.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/
   /home/guile/x/Doomicraft/scenes_inf443/project/src/cube.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/constants.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/character.hpp \
-  /home/guile/x/Doomicraft/scenes_inf443/project/src/utils.hpp
+  /home/guile/x/Doomicraft/scenes_inf443/project/src/terrain.hpp \
+  /home/guile/x/Doomicraft/scenes_inf443/project/src/block.hpp \
+  /home/guile/x/Doomicraft/scenes_inf443/project/src/block_mesh.hpp \
+  /home/guile/x/Doomicraft/scenes_inf443/project/src/utils.hpp \
+  /home/guile/x/Doomicraft/scenes_inf443/project/src/chunk.hpp
 
 CMakeFiles/project.dir/src/scene.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/project/src/scene.cpp \
   /usr/include/stdc-predef.h \
@@ -25893,9 +25890,9 @@ CMakeFiles/project.dir/src/scene.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
   /home/guile/x/Doomicraft/scenes_inf443/project/src/cube.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/constants.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/character.hpp \
+  /home/guile/x/Doomicraft/scenes_inf443/project/src/terrain.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/block.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/block_mesh.hpp \
-  /home/guile/x/Doomicraft/scenes_inf443/project/src/terrain.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/utils.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/chunk.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/mob.hpp \
@@ -26725,10 +26722,15 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_interval/timer_interval.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/tracker/tracker.hpp \
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/tracker/velocity_tracker/velocity_tracker.hpp \
-  /home/guile/x/Doomicraft/cgp/library/cgp/graphics/emscripten/emscripten.hpp
+  /home/guile/x/Doomicraft/cgp/library/cgp/graphics/emscripten/emscripten.hpp \
+  /home/guile/x/Doomicraft/scenes_inf443/project/src/constants.hpp
 
 
 /home/guile/x/Doomicraft/scenes_inf443/project/src/utils.cpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/12/include/mm_malloc.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/12/include/mmintrin.h:
 
 /home/guile/x/Doomicraft/scenes_inf443/project/src/stb_image.h:
 
@@ -26785,14 +26787,6 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 /home/guile/x/Doomicraft/scenes_inf443/project/src/block.cpp:
 
 /home/guile/x/Doomicraft/cgp/library/third_party/src/lodepng/lodepng.cpp:
-
-/home/guile/x/Doomicraft/cgp/library/third_party/src/jpeg/jpgd.cpp:
-
-/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/drawable.hpp:
-
-/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_impl_opengl3.cpp:
-
-/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imstb_truetype.h:
 
 /usr/include/c++/12/backward/binders.h:
 
@@ -26874,11 +26868,19 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 
 /home/guile/x/Doomicraft/cgp/library/third_party/src/glad/opengl46/glad.cpp:
 
+/usr/lib/gcc/x86_64-linux-gnu/12/include/xmmintrin.h:
+
+/usr/include/c++/12/tr1/riemann_zeta.tcc:
+
 /usr/include/c++/12/tr1/poly_laguerre.tcc:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/geometry/mat/mat.hpp:
 
 /usr/include/c++/12/tr1/modified_bessel_func.tcc:
+
+/usr/lib/gcc/x86_64-linux-gnu/12/include/emmintrin.h:
+
+/home/guile/x/Doomicraft/cgp/library/cgp/core/containers/grid/grid_2D/grid_2D.hpp:
 
 /usr/include/c++/12/tr1/legendre_function.tcc:
 
@@ -27005,10 +27007,6 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 /home/guile/x/Doomicraft/cgp/library/cgp/geometry/transform/frame/frame.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/stdio.h:
-
-/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_widgets.cpp:
-
-/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/material/material_mesh_drawable_phong/material_mesh_drawable_phong.hpp:
 
 /usr/include/time.h:
 
@@ -27260,6 +27258,10 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 
 /usr/include/limits.h:
 
+/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/drawable.hpp:
+
+/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_impl_opengl3.cpp:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
@@ -27336,8 +27338,6 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 
 /usr/include/c++/12/bits/concept_check.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/12/include/mwaitintrin.h:
-
 /home/guile/x/Doomicraft/cgp/library/cgp/geometry/transform/rotation_transform/rotation_transform.cpp:
 
 /usr/include/c++/12/debug/debug.h:
@@ -27359,10 +27359,6 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 
 /usr/include/c++/12/random:
-
-/usr/include/c++/12/tr1/riemann_zeta.tcc:
-
-/usr/lib/gcc/x86_64-linux-gnu/12/include/xmmintrin.h:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_spheres/picking_spheres.hpp:
 
@@ -27444,6 +27440,8 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 
 /home/guile/x/Doomicraft/cgp/library/cgp/core/base/error/error.cpp:
 
+/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imstb_truetype.h:
+
 /home/guile/x/Doomicraft/cgp/library/cgp/core/base/rand/rand.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
@@ -27455,18 +27453,6 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 /home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/triangles_drawable/triangles_drawable.cpp:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_structure/picking_structure.cpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/12/include/pmmintrin.h:
-
-/home/guile/x/Doomicraft/cgp/library/cgp/core/containers/grid/grid_2D/grid_2D.hpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/12/include/emmintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/12/include/mmintrin.h:
-
-/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/mesh/loader/obj/obj.hpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/12/include/mm_malloc.h:
 
 /usr/include/c++/12/algorithm:
 
@@ -27497,10 +27483,6 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 /usr/include/c++/12/bits/stl_heap.h:
 
 /usr/include/asm-generic/posix_types.h:
-
-/home/guile/x/Doomicraft/cgp/library/third_party/src/jpeg/jpge.cpp:
-
-/home/guile/x/Doomicraft/cgp/library/third_party/src/glad/opengl46/khrplatform.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h:
 
@@ -27690,6 +27672,8 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 
 /home/guile/x/Doomicraft/cgp/library/cgp/core/path/path.cpp:
 
+/home/guile/x/Doomicraft/cgp/library/third_party/src/jpeg/jpgd.cpp:
+
 /usr/include/c++/12/bits/exception.h:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/geometry/interpolation/interpolation.cpp:
@@ -27747,6 +27731,8 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 /home/guile/x/Doomicraft/cgp/library/cgp/geometry/transform/projection/projection.hpp:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/mesh/loader/loader.hpp:
+
+/home/guile/x/Doomicraft/cgp/library/cgp/geometry/shape/mesh/loader/obj/obj.hpp:
 
 /home/guile/x/Doomicraft/cgp/library/cgp/geometry/vec/vec2/vec2.hpp:
 
@@ -27907,3 +27893,11 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 /usr/include/linux/limits.h:
 
 /home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_draw.cpp:
+
+/home/guile/x/Doomicraft/cgp/library/cgp/graphics/drawable/material/material_mesh_drawable_phong/material_mesh_drawable_phong.hpp:
+
+/home/guile/x/Doomicraft/cgp/library/third_party/src/imgui/imgui_widgets.cpp:
+
+/home/guile/x/Doomicraft/cgp/library/third_party/src/glad/opengl46/khrplatform.hpp:
+
+/home/guile/x/Doomicraft/cgp/library/third_party/src/jpeg/jpge.cpp:

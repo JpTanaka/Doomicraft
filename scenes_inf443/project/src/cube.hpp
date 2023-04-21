@@ -27,6 +27,8 @@ public:
     bool check_colision(cube const&, double tolerance = 0.1);
     std::pair<int, int> get_colision_direction(cube const&, double tolerance = 0.1);
 
+    bool operator==(const cube&) const;
+
     float top();
     float bottom();
 };

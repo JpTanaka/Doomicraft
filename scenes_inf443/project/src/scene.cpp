@@ -6,6 +6,26 @@ using namespace cgp;
 
 void scene_structure::initialize()
 {
+
+	//seems to be working
+	// auto d = utils::distance_point_to_square(
+	// 	{0, 0, 0},
+	// 	{1, 1, 0},
+	// 	{2, 2, 0},
+	// 	{0, 0, 1},
+	// 	1
+	// );
+	// std::cout << d<< std::endl;
+
+	// d = utils::distance_point_cube(
+	// 	{0, 0, 0},
+	// 	{-1, 1, 0},
+	// 	{-3, 2.9, 0},
+	// 	1
+	// );
+	// std::cout << d << std::endl;
+
+
 	camera_projection.field_of_view = FIELD_OF_VIEW;
 	camera_control.initialize(inputs, window);
 	environment.light = {50, 50, 50};
@@ -16,7 +36,7 @@ void scene_structure::initialize()
 
 	block::initialize();
 	terr = terrain();
-	main_player = player(camera_control, {0, 0, 20}, &gui.creative);
+	main_player = player(camera_control, {0, 0, 20}, &gui.creative, &terr);
 
 	enemy = mob({5, 0, 20});
 
@@ -73,6 +93,7 @@ void scene_structure::mouse_click_event()
 }
 void scene_structure::keyboard_event()
 {
+	main_player.handle_blocks(terr.get_cubes(main_player.position));
 	camera_control.action_keyboard(environment.camera_view);
 }
 void scene_structure::idle_frame()
@@ -81,7 +102,7 @@ void scene_structure::idle_frame()
 	main_player.move(terr.get_cubes(main_player.position));
 
 	// TODO
-	enemy.move(terr.get_cubes(enemy.position), main_player.body.position, main_player.camera->inputs->time_interval);
+	// enemy.move(terr.get_cubes(enemy.position), main_player.body.position, main_player.camera->inputs->time_interval);
 }
 // Simple helper function to load an image into a OpenGL texture with common settings
 bool LoadTextureFromFile(const char *filename, GLuint *out_texture, int *out_width, int *out_height)

@@ -64,14 +64,13 @@ struct scene_structure : cgp::scene_inputs_generic
 	// mesh_drawable cube1;
 
 
+	terrain terr;
 	player main_player;
 	block b;
 	mob enemy;
 
 	// std::vector<block> terrain;
 	// std::vector<cube> terrain_cubes;
-
-	terrain terr;
 
 
 

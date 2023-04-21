@@ -15,7 +15,6 @@ class chunk {
 
     int generator_function(const vec2&);
 
-    void create_block(const block_types&, const vec3&);
 
     void create_tree(const vec3&);
 
@@ -26,7 +25,12 @@ public:
     chunk();
     chunk(vec2 position);
     void draw(const environment_structure&, bool wireframe, const vec3& player_position, const vec3& player_looking_at, const float& max_depth);
-    const std::vector<cube> get_cubes();
+    std::vector<cube>& get_cubes() ;
+
+    void create_block(const block_types&, const vec3&);
+    void delete_bloc(vec3 position);
+
+    static utils::Triplet get_chunk_triplet(const vec3& pos);
 
     static const int
         chunk_x_size = 16,

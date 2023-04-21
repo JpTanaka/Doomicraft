@@ -34,5 +34,4 @@ public:
     bool is_being_seen(const vec3& from, const vec3& looking_at, const float& max_depth);
 
     static void initialize();
-
 };

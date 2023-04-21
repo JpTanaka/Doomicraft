@@ -8,6 +8,7 @@ player::player(camera_controller_custom &cam, vec3 center, bool* creative, terra
 {
     camera = &cam;
     camera->set_position(center);
+    starting_position = center;
 }
 
 player::player()
@@ -175,4 +176,28 @@ void player::shoot_mob(
 
 int player::get_kills(){
     return kills;
+}
+
+int player::get_health(){
+    return health;
+}
+
+int player::get_max_health(){
+    return max_health;
+}
+
+void player::take_hit(){
+    health--;
+    respawn();
+}
+
+void player::respawn(){
+    position += respawn_delta;
+    legs.position += respawn_delta;
+    body.position += respawn_delta;
+    camera->set_position(body.position);
+}
+
+bool player::is_dead(){
+    return health <= 0;
 }

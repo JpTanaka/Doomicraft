@@ -37,6 +37,6 @@ public:
 
     int check_dead();
 
-    bool check_kills_player(vec3 player_position);
+    bool check_hits_player(vec3 player_position);
         
 };

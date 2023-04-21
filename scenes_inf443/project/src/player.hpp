@@ -17,6 +17,13 @@ class player : public character {
     void handle_cubes(const std::vector<cube>& cubes);
 
     int kills = 0;
+    int health = 5;
+    int max_health = 5;
+    vec3 respawn_delta = {10, 0, 10};
+
+    vec3 starting_position;
+
+    void respawn();
 
 public:
     bool* creative;
@@ -34,4 +41,8 @@ public:
     void handle_mouse_input(const std::vector<cube>& cubes, mob_group &mobg);
 
     int get_kills();
+    void take_hit();
+    int get_health();
+    int get_max_health();
+    bool is_dead();
 };

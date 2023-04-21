@@ -16,9 +16,9 @@ void scene_structure::initialize()
 
 	block::initialize();
 	terr = terrain();
-	main_player = player(camera_control, {0, 0, 6}, &gui.creative, &terr);
+	main_player = player(camera_control, {0, 0, 10}, &gui.creative, &terr);
 
-	enemies = mob_group({0,0,20});
+	enemies = mob_group({0, 0, 20});
 
 	// Adding portal gun
 	glfwInit();
@@ -62,8 +62,13 @@ void scene_structure::idle_frame()
 
 	// TODO
 	enemies.move(terr, main_player.body.position, main_player.camera->inputs->time_interval);
+	
 
-	if(!gui.creative && enemies.check_kills_player(main_player.position))
+	if(!gui.creative && enemies.check_hits_player(main_player.position)){
+		main_player.take_hit(); // respawns the player
+	}
+
+	if(!gui.creative && main_player.is_dead())
 		end_game();
 }
 
@@ -74,9 +79,13 @@ void scene_structure::display_gui()
 		ImGui::Begin("", NULL, 
 			ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_NoBackground
 		);
-		ImGui::Text("Game Over!");
 		ImGui::Text("---------------------");
+		ImGui::Text("------Game Over------");
+		ImGui::Text("---------------------");
+		ImGui::Text(" ");
 		ImGui::Text("Total kills: %d", main_player.get_kills());
+		ImGui::Text("---------------------");
+		ImGui::Text(" ");
 		ImGui::SetWindowSize(gui.config_window_size);
 		ImGui::SetWindowPos({
 			(float)(window.width - gui.config_window_size.x)/2.0f,
@@ -102,6 +111,7 @@ void scene_structure::display_gui()
 		});
 		ImGui::Checkbox("Wireframe", &gui.display_wireframe);
 		ImGui::Checkbox("Creative", &gui.creative);
+		ImGui::Checkbox("Debug mode", &gui.debug);
 		ImGui::SliderInt("Fog Depth", &gui.fog_depth, 0, 64);
 		if(ImGui::Button("Exit", {gui.config_window_size.x, 40})) end_game();
 		ImGui::End();
@@ -114,21 +124,28 @@ void scene_structure::display_gui()
 	ImGui::SetWindowSize(gui.stats_window_size);
 	ImGui::SetWindowPos({0, 0});
 
-	ImGui::Text("Position: (%.2f, %.2f, %.2f)", 
-		main_player.position.x,
-		main_player.position.y, 
-		main_player.position.z
-	);
-	ImGui::Text("Looking at: (%.2f, %.2f, %.2f)", 
-		main_player.looking_at().x, 
-		main_player.looking_at().y, 
-		main_player.looking_at().z
-	);
-	auto t = chunk::get_chunk_triplet(main_player.position);
-	ImGui::Text("Chunk: (%d, %d, %d)", 
-		t.x, t.y, t.z
-	);
+	if (gui.debug){
+		ImGui::Text("Position: (%.2f, %.2f, %.2f)", 
+			main_player.position.x,
+			main_player.position.y, 
+			main_player.position.z
+		);
+		ImGui::Text("Looking at: (%.2f, %.2f, %.2f)", 
+			main_player.looking_at().x, 
+			main_player.looking_at().y, 
+			main_player.looking_at().z
+		);
+		auto t = chunk::get_chunk_triplet(main_player.position);
+		ImGui::Text("Chunk: (%d, %d, %d)", 
+			t.x, t.y, t.z
+		);
+	}
+	ImGui::Text("-----------------");
 	ImGui::Text("Kills: %d", main_player.get_kills());
+	std::stringstream s;
+	for (int i = 0; i < main_player.get_health(); i++) s << "*";
+	ImGui::Text("Health: %s", s.str().c_str());
+	ImGui::Text("-----------------");
 	ImGui::End();
 	
 	// Weapon

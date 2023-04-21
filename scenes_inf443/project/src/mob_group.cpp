@@ -79,7 +79,7 @@ void mob_group::draw(const environment_structure& env,bool wireframe){
 }
 
 
-bool mob_group::check_kills_player(vec3 player_position){
+bool mob_group::check_hits_player(vec3 player_position){
     for (mob& m : mobs) 
         if (norm(m.position - player_position) < Length) return true;
     return false;

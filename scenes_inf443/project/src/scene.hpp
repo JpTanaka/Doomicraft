@@ -33,6 +33,8 @@ struct gui_parameters
 	bool display_wireframe = false;
 	bool creative = false;
 
+	bool debug = false;
+
 	int fog_depth = 24;
 	
 	image_obj portal_gun;
@@ -40,7 +42,7 @@ struct gui_parameters
 	
 	ImVec2 config_window_size = {500, 200};
 
-	ImVec2 stats_window_size = {400, 100};
+	ImVec2 stats_window_size = {400, 300};
 };
 
 // The structure of the custom scene

@@ -111,7 +111,6 @@ void animation_loop()
 
 	imgui_create_frame();
 	ImGui::GetIO().FontGlobalScale = project::gui_scale;
-	ImGui::Begin("GUI", NULL, ImGuiWindowFlags_AlwaysAutoResize);
 	scene.inputs.mouse.on_gui = ImGui::GetIO().WantCaptureMouse;
 	scene.inputs.time_interval = time_interval;
 
@@ -127,7 +126,6 @@ void animation_loop()
 
 
 	// End of ImGui display and handle GLFW events
-	ImGui::End();
 	imgui_render_frame(scene.window.glfw_window);
 	glfwSwapBuffers(scene.window.glfw_window);
 	glfwPollEvents();

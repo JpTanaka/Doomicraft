@@ -21,7 +21,7 @@ struct camera_controller_custom : camera_controller_first_person_euler
 
 	void action_mouse_move(mat4 &camera_matrix_view);
 
-	void action_keyboard(mat4& );
+	void action_keyboard(mat4&, bool&);
 
 	void idle_frame(mat4& camera_matrix_view);
 

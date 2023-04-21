@@ -125,23 +125,9 @@ float player::detect_colision (std::vector<cube> cubes, float max_distance){
         );
     }
     return distance;
-    }
-void player::shoot_mob(
-    mob_group &mobg
-) {
-    float distance = detect_colision(mobg.get_cubes(), 20.0f);
-    float eps = 0.001;
-    vec3 final_point = get_eyes() + distance * looking_at() + eps;
-    for(auto it = mobg.get_mobs().begin(); it!=mobg.get_mobs().end(); it++) {
-        if(utils::distance(final_point, it->body.position)<Length || utils::distance(final_point, it->legs.position)<Length){
-            mobg.mobs.erase(it);
-            break;
-        } 
-    }
 }
 
-
-void player::handle_blocks(const std::vector<cube>& cubes){
+void player::handle_keyboard_input(){
     auto& inputs = camera->inputs;
     if (inputs->keyboard.is_pressed(GLFW_KEY_1)) chosen_block = block_types::earth;
     if (inputs->keyboard.is_pressed(GLFW_KEY_2)) chosen_block = block_types::rock;
@@ -150,20 +136,43 @@ void player::handle_blocks(const std::vector<cube>& cubes){
     if (inputs->keyboard.is_pressed(GLFW_KEY_R)) chosen_block = {};
 }
 
-void player::handle_mouse_input(const std::vector<cube>& cubes){
+void player::handle_mouse_input(const std::vector<cube>& cubes, mob_group &mobg){
     auto& inputs = camera->inputs;
     bool const click_right = inputs->mouse.click.right;
-    if (click_right){
-        float dist = detect_colision(cubes, 5);
-        if(chosen_block)
-            terr->create_bloc(
-                get_eyes() + looking_at() * (dist - 0.1), 
-                chosen_block.value()
-            );
-        else
-            terr->delete_bloc(
-                get_eyes() + looking_at() * (dist + 0.1)
-            );
-    }
+    bool const click_left = inputs->mouse.click.left;
 
+    if (click_right)
+        handle_cubes(cubes);
+
+    if (click_left)
+        shoot_mob(mobg);
+}
+
+
+void player::handle_cubes(const std::vector<cube>& cubes){
+    float dist = detect_colision(cubes, 5);
+    if (chosen_block)
+        terr->create_bloc(
+            get_eyes() + looking_at() * (dist - kEps), 
+            chosen_block.value()
+        );
+    else
+        terr->delete_bloc(
+            get_eyes() + looking_at() * (dist + kEps)
+        );
+}
+
+void player::shoot_mob(
+    mob_group &mobg
+) {
+    mobg.shoot_mob(
+        get_eyes(),
+        looking_at(), 
+        detect_colision(mobg.get_cubes(), 20.0f)
+    );
+    kills += mobg.check_dead();
+}
+
+int player::get_kills(){
+    return kills;
 }

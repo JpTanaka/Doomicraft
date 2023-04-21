@@ -28,7 +28,8 @@ struct image_obj {
 // Variables associated to the GUI (buttons, etc)
 struct gui_parameters
 {
-	bool display_frame = true;
+	bool display_config = false;
+
 	bool display_wireframe = false;
 	bool creative = false;
 
@@ -36,6 +37,10 @@ struct gui_parameters
 	
 	image_obj portal_gun;
 	image_obj crosshair;
+	
+	ImVec2 config_window_size = {500, 200};
+
+	ImVec2 stats_window_size = {400, 100};
 };
 
 // The structure of the custom scene

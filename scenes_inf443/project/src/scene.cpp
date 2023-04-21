@@ -40,7 +40,11 @@ void scene_structure::initialize()
 
 	enemies = mob_group();
 	mob b = mob({5,0, 10});
+	mob c = mob({8,2, 10});
+	mob d = mob({12,9, 10});
 	enemies.add_mob(b);
+	enemies.add_mob(c);
+	enemies.add_mob(d);
 
 	// Adding portal gun
 	glfwInit();
@@ -51,6 +55,7 @@ void scene_structure::initialize()
 void scene_structure::display_frame()
 {
 	environment.uniform_generic.uniform_int["fog_depth"] = gui.fog_depth;
+
 	timer.update();
 	enemies.draw(environment, gui.display_wireframe);
 	terr.draw(environment, gui.display_wireframe, main_player.get_eyes(), main_player.looking_at(), gui.fog_depth);
@@ -58,29 +63,77 @@ void scene_structure::display_frame()
 
 void scene_structure::display_gui()
 {
-	ImGui::Checkbox("Frame", &gui.display_frame);
-	ImGui::Checkbox("Wireframe", &gui.display_wireframe);
-	ImGui::Checkbox("Creative", &gui.creative);
-	ImGui::SliderInt2("Fog Depth", &gui.fog_depth, 0, 64);
-	
-	bool exit = ImGui::Button("Exit");
-	if(exit) {
-		std::exit(0);
+	// Menu
+	if (gui.display_config){
+		ImGui::Begin("Configuration ", NULL, 
+			ImGuiWindowFlags_NoDecoration
+		);
+		ImGui::Text("Configurations");
+		ImGui::SetWindowSize(gui.config_window_size);
+		ImGui::SetWindowPos({
+			(float)(window.width - gui.config_window_size.x)/2.0f,
+			(float)(window.height - gui.config_window_size.y)/2.0f,
+		});
+		ImGui::Checkbox("Wireframe", &gui.display_wireframe);
+		ImGui::Checkbox("Creative", &gui.creative);
+		ImGui::SliderInt("Fog Depth", &gui.fog_depth, 0, 64);
+		if(ImGui::Button("Exit")) std::exit(0);
+		ImGui::End();
 	}
-	ImGui::Begin("Weapon", NULL, ImGuiWindowFlags_NoBackground | ImGuiWindowFlags_NoInputs | ImGuiWindowFlags_NoDecoration);
+
+	// UI
+	ImGui::Begin("stats", NULL, 
+		ImGuiWindowFlags_NoInputs | ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_NoBackground
+	);
+	ImGui::SetWindowSize(gui.stats_window_size);
+	ImGui::SetWindowPos({0, 0});
+
+	ImGui::Text("Position: (%.2f, %.2f, %.2f)", 
+		main_player.position.x,
+		main_player.position.y, 
+		main_player.position.z
+	);
+	ImGui::Text("Looking at: (%.2f, %.2f, %.2f)", 
+		main_player.looking_at().x, 
+		main_player.looking_at().y, 
+		main_player.looking_at().z
+	);
+	ImGui::Text("Kills: %d", main_player.get_kills());
+	ImGui::End();
+	
+	// Weapon
+	ImGui::Begin("Weapon", NULL, 
+		ImGuiWindowFlags_NoBackground | ImGuiWindowFlags_NoInputs | ImGuiWindowFlags_NoDecoration
+	);
 	gui.portal_gun.image_height = std::min(window.width / 4.0f, 300.0f);
 	gui.portal_gun.image_width = std::min(window.width / 4.0f, 300.0f);
-	ImGui::SetWindowPos({(float)window.width - (float)gui.portal_gun.image_width, (float)window.height - (float)gui.portal_gun.image_height});
-	ImGui::SetWindowSize({(float)gui.portal_gun.image_width, (float)gui.portal_gun.image_height});
-	ImGui::Image((void *)(intptr_t)gui.portal_gun.image_texture, ImVec2(gui.portal_gun.image_width, gui.portal_gun.image_height));
+	ImGui::SetWindowPos({
+		(float)window.width - (float)gui.portal_gun.image_width, 
+		(float)window.height - (float)gui.portal_gun.image_height
+	});
+	ImGui::SetWindowSize({
+		(float)gui.portal_gun.image_width, (float)gui.portal_gun.image_height
+	});
+	ImGui::Image(
+		(void *)(intptr_t)gui.portal_gun.image_texture, 
+		ImVec2(gui.portal_gun.image_width, gui.portal_gun.image_height)
+	);
 	ImGui::End();
 
-	ImGui::Begin("Crosshair", NULL, ImGuiWindowFlags_NoBackground | ImGuiWindowFlags_NoInputs | ImGuiWindowFlags_NoDecoration);
+	// Crosshair
+	ImGui::Begin("Crosshair", NULL, 
+		ImGuiWindowFlags_NoBackground | ImGuiWindowFlags_NoInputs | ImGuiWindowFlags_NoDecoration
+	);
 	gui.crosshair.image_height = std::min(30.0f, window.width / 30.0f);
 	gui.crosshair.image_width = std::min(30.0f, window.width / 30.0f);
-	ImGui::SetWindowPos({((float)window.width - (float)gui.crosshair.image_width) / 2.0f,
-	((float)window.height - (float)gui.crosshair.image_height) / 2.0f});
-	ImGui::Image((void *)(intptr_t)gui.crosshair.image_texture, ImVec2((float)gui.crosshair.image_width, (float)gui.crosshair.image_height));
+	ImGui::SetWindowPos({
+		((float)window.width - (float)gui.crosshair.image_width) / 2.0f,
+		((float)window.height - (float)gui.crosshair.image_height) / 2.0f
+	});
+	ImGui::Image(
+		(void *)(intptr_t)gui.crosshair.image_texture, 
+		ImVec2((float)gui.crosshair.image_width, (float)gui.crosshair.image_height)
+	);
 	ImGui::End();
 }
 
@@ -91,14 +144,13 @@ void scene_structure::mouse_move_event()
 }
 void scene_structure::mouse_click_event()
 {
-	main_player.handle_mouse_input(terr.get_cubes(main_player.position));
+	main_player.handle_mouse_input(terr.get_cubes(main_player.position), enemies);
 	camera_control.action_mouse_click(environment.camera_view);
-	main_player.shoot_mob(enemies);
 }
 void scene_structure::keyboard_event()
 {
 	main_player.handle_keyboard_input();
-	camera_control.action_keyboard(environment.camera_view);
+	camera_control.action_keyboard(environment.camera_view, gui.display_config);
 }
 void scene_structure::idle_frame()
 {

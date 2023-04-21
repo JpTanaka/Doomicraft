@@ -5,6 +5,7 @@
 #include "block.hpp"
 
 mob::mob(vec3 center) : character(center){
+    std::cout << "constructor default mob";
     float l = Length;
     mesh.initialize_data_on_gpu(
         mesh_primitive_quadrangle(
@@ -18,6 +19,7 @@ mob::mob(vec3 center) : character(center){
 }
 
 mob::mob() : character() {
+    std::cout << "constructor default mob";
 }
 
 

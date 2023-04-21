@@ -31,7 +31,7 @@ namespace utils
         return max({0, 0, 0}, v);
     }
     vec3 abs(vec3 v){
-        return relu(v) - relu(-v);
+        return relu(v) + relu(-v);
     }
 
     vec2 crop(vec3 v){
@@ -87,7 +87,7 @@ namespace utils
         if (t < 0) return INFTY;
         float dist = distance(plane_center, point_from + t * direction);
         if(dist > plane_side / 2.0f) return INFTY;
-        return dist;
+        return t;
     }
 
     float distance_point_cube(

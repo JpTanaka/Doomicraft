@@ -18,7 +18,9 @@ void scene_structure::initialize()
 	terr = terrain();
 	main_player = player(camera_control, {0, 0, 20}, &gui.creative);
 
-	enemy = mob({5, 0, 20});
+	enemies = mob_group();
+	mob b = mob({5,0, 10});
+	enemies.add_mob(b);
 
 	// Adding portal gun
 	glfwInit();
@@ -30,7 +32,7 @@ void scene_structure::display_frame()
 {
 	environment.uniform_generic.uniform_int["fog_depth"] = gui.fog_depth;
 	timer.update();
-	enemy.draw(environment, gui.display_wireframe);
+	enemies.draw(environment, gui.display_wireframe);
 	terr.draw(environment, gui.display_wireframe, main_player.get_eyes(), main_player.looking_at(), gui.fog_depth);
 }
 
@@ -70,6 +72,7 @@ void scene_structure::mouse_move_event()
 void scene_structure::mouse_click_event()
 {
 	camera_control.action_mouse_click(environment.camera_view);
+	main_player.shoot_mob(enemies);
 }
 void scene_structure::keyboard_event()
 {
@@ -81,7 +84,7 @@ void scene_structure::idle_frame()
 	main_player.move(terr.get_cubes(main_player.position));
 
 	// TODO
-	enemy.move(terr.get_cubes(enemy.position), main_player.body.position, main_player.camera->inputs->time_interval);
+	enemies.move(terr, main_player.body.position, main_player.camera->inputs->time_interval);
 }
 // Simple helper function to load an image into a OpenGL texture with common settings
 bool LoadTextureFromFile(const char *filename, GLuint *out_texture, int *out_width, int *out_height)

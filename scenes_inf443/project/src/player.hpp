@@ -6,6 +6,7 @@
 #include "cube.hpp"
 #include "constants.hpp"
 #include "character.hpp"
+#include "mob_group.hpp"
 #include "terrain.hpp"
 
 class player : public character {
@@ -22,6 +23,7 @@ public:
 
     void move(const std::vector<cube>&);
     vec3 looking_at();
+    void shoot_mob(mob_group &mobg);
 
     float detect_colision (std::vector<cube>, float max_distance);
 

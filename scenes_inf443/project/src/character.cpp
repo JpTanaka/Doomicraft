@@ -17,7 +17,9 @@ character::character(vec3 center)
 
 
 character::character()
-{}
+{
+
+}
 
 float character::bottom(){
     return legs.bottom();

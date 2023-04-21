@@ -8,6 +8,7 @@
 #include "block.hpp"
 #include "terrain.hpp"
 #include "mob.hpp"
+#include "mob_group.hpp"
 
 
 
@@ -67,7 +68,7 @@ struct scene_structure : cgp::scene_inputs_generic
 	terrain terr;
 	player main_player;
 	block b;
-	mob enemy;
+	mob_group enemies;
 
 	// std::vector<block> terrain;
 	// std::vector<cube> terrain_cubes;

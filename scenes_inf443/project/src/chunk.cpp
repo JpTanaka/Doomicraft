@@ -71,9 +71,21 @@ bool chunk::check_has_block(const utils::Triplet& t){
 }
 
 void chunk::create_block(const block_types& block_type, const vec3& center){
-    block b = block(block_type, utils::expand(position) + center);
+    vec3 int_center = utils::round(center);
+    block b = block(block_type, utils::expand(position) + int_center);
     blocks[utils::Triplet(b.position)] = b;
     cubes.push_back(b.block_cube);
+}
+
+void chunk::delete_bloc(vec3 position){
+    block& b = blocks[utils::Triplet(utils::round(position))];
+    for (auto i = cubes.begin(); i < cubes.end(); i++){
+        if(*i == b.block_cube){
+            cubes.erase(i);
+            break;
+        }
+    }
+    blocks.erase(utils::Triplet(utils::round(position)));
 }
 
 void chunk::draw(const environment_structure& env, bool wireframe, const vec3& player_position, const vec3& player_looking_at, const float& max_depth){
@@ -83,6 +95,16 @@ void chunk::draw(const environment_structure& env, bool wireframe, const vec3& p
     }
 }
     
-const std::vector<cube> chunk::get_cubes(){
+std::vector<cube>& chunk::get_cubes(){
     return cubes;
 }
+
+
+utils::Triplet chunk::get_chunk_triplet(const vec3& pos){
+    return utils::Triplet(
+        floor(pos.x / static_cast<float>(chunk::chunk_x_size)), 
+        floor(pos.y / static_cast<float>(chunk::chunk_y_size)),
+        0
+    );
+}
+

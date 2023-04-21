@@ -3,8 +3,8 @@
 #include "utils.hpp"
 #include "constants.hpp"
 
-player::player(camera_controller_custom &cam, vec3 center, bool* creative)
-    : character(center), creative(creative)
+player::player(camera_controller_custom &cam, vec3 center, bool* creative, terrain* terr)
+    : character(center), terr(terr), creative(creative)
 {
     camera = &cam;
     camera->set_position(center);
@@ -19,7 +19,7 @@ vec3 player::looking_at(){
 
 void player::move(const std::vector<cube>& cubes)
 {
-    auto inputs = camera->inputs;
+    auto& inputs = camera->inputs;
     float const dt = inputs->time_interval;
     float const step = camera->keyboard_sensitivity * dt;
 
@@ -109,7 +109,7 @@ void player::move(const std::vector<cube>& cubes)
 }
 
 
-float player::detect_colision (const std::vector<cube> & cubes, float max_distance){
+float player::detect_colision (std::vector<cube> cubes, float max_distance){
     float distance = INFTY;
 
     for (const cube& c: cubes){
@@ -142,3 +142,17 @@ void player::shoot_mob(
     }
 }
 
+
+void player::handle_blocks(const std::vector<cube>& cubes){
+    auto& inputs = camera->inputs;
+    std::cout<<looking_at() << " " << get_eyes() << std::endl;
+    if (inputs->keyboard.is_pressed(GLFW_KEY_1)){
+        float dist = detect_colision(cubes, 10);
+        std::cout << "creating block" << dist << std::endl;
+        terr->create_bloc(
+            looking_at() * (dist - 0.1), 
+            block_types::rock
+        );
+    }
+
+}

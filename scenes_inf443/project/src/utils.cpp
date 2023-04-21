@@ -33,6 +33,13 @@ namespace utils
     vec3 abs(vec3 v){
         return relu(v) + relu(-v);
     }
+    vec3 round(vec3 v){
+        return {
+            std::round(v.x),
+            std::round(v.y),
+            std::round(v.z)
+        };
+    }
 
     vec2 crop(vec3 v){
         return {v.x, v.y};
@@ -79,13 +86,13 @@ namespace utils
         vec3 plane_normal, // plane normal
         float plane_side // the lenght of the side of the plane
     ){
+        plane_normal = normalize(plane_normal);
+        direction = normalize(direction);
         if(dot(direction, plane_normal) == 0) return INFTY;
-
-        float t = dot(point_from - plane_center, plane_normal)
-            / dot(direction, plane_normal);
-        
+        float t = - dot(point_from - plane_center, plane_normal) / dot(direction, plane_normal);
+        vec3 interception_point = point_from + t * direction;
         if (t < 0) return INFTY;
-        float dist = distance(plane_center, point_from + t * direction);
+        float dist = distance(plane_center, interception_point);
         if(dist > plane_side / 2.0f) return INFTY;
         return t;
     }

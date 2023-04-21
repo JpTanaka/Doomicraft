@@ -6,16 +6,24 @@
 #include "constants.hpp"
 #include "character.hpp"
 #include "mob_group.hpp"
+#include "terrain.hpp"
+
 class player : public character {
+
+    terrain* terr = nullptr;
+
 public:
     bool* creative;
     camera_controller_custom* camera;
 
-    player(camera_controller_custom&, vec3 center, bool* creative);
+    player(camera_controller_custom&, vec3 center, bool* creative, terrain* terr);
     player();
 
     void move(const std::vector<cube>&);
     vec3 looking_at();
     void shoot_mob(mob_group mobg);
-    float detect_colision (const std::vector<cube>&, float max_distance);
+
+    float detect_colision (std::vector<cube>, float max_distance);
+
+    void handle_blocks(const std::vector<cube>& cubes);
 };

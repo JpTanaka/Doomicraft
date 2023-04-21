@@ -76,3 +76,11 @@ float cube::top(){
 float cube::bottom(){
     return position.z - Length/2.0f;
 }
+
+bool cube::operator==(const cube& other) const {
+    return (
+        other.position.x == position.x &&
+        other.position.y == position.y &&
+        other.position.z == position.z
+    );
+}

@@ -6,6 +6,26 @@ using namespace cgp;
 
 void scene_structure::initialize()
 {
+
+	//seems to be working
+	// auto d = utils::distance_point_to_square(
+	// 	{0, 0, 0},
+	// 	{1, 1, 0},
+	// 	{2, 2, 0},
+	// 	{0, 0, 1},
+	// 	1
+	// );
+	// std::cout << d<< std::endl;
+
+	// d = utils::distance_point_cube(
+	// 	{0, 0, 0},
+	// 	{-1, 1, 0},
+	// 	{-3, 2.9, 0},
+	// 	1
+	// );
+	// std::cout << d << std::endl;
+
+
 	camera_projection.field_of_view = FIELD_OF_VIEW;
 	camera_control.initialize(inputs, window);
 	environment.light = {50, 50, 50};
@@ -16,7 +36,7 @@ void scene_structure::initialize()
 
 	block::initialize();
 	terr = terrain();
-	main_player = player(camera_control, {0, 0, 20}, &gui.creative);
+	main_player = player(camera_control, {0, 0, 20}, &gui.creative, &terr);
 
 	enemies = mob_group();
 	mob b = mob({5,0, 10});
@@ -76,6 +96,7 @@ void scene_structure::mouse_click_event()
 }
 void scene_structure::keyboard_event()
 {
+	main_player.handle_blocks(terr.get_cubes(main_player.position));
 	camera_control.action_keyboard(environment.camera_view);
 }
 void scene_structure::idle_frame()

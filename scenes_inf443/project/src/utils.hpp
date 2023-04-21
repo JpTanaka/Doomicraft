@@ -11,6 +11,7 @@ namespace utils
     vec3 min(vec3, vec3);
     vec3 relu(vec3);
     vec3 abs(vec3);
+    vec3 round(vec3);
 
     vec2 crop(vec3);
     vec3 expand(vec2);

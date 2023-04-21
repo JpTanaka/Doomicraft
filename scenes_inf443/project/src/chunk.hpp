@@ -29,7 +29,7 @@ public:
     chunk();
     chunk(vec2 position);
     void draw(const environment_structure&, bool wireframe, const vec3& player_position, const vec3& player_looking_at, const float& max_depth);
-    std::vector<cube>& get_cubes() ;
+    std::vector<cube>& get_cubes();
 
     void create_block_absolute(const block_types&, const vec3&);
     void delete_bloc_absolute(vec3 position);

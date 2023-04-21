@@ -37,7 +37,6 @@ void chunk::update_blocks(){
         if(!check_has_block(pos + utils::Triplet(0, 0, -1))) render_dirs.push_back(directions::kBottom);
         blk.render_directions = render_dirs;
     }
-
 }
 
 int chunk::generator_function(const vec2& v){

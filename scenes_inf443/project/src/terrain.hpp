@@ -12,7 +12,7 @@ class terrain {
 
     std::unordered_map<utils::Triplet, chunk, utils::TripletHash> chunks;
     void create_chunk();
-    bool check_chunk_exists(const utils::Triplet);
+    bool check_chunk_exists(const utils::Triplet) const;
 
 public:
     terrain();
@@ -21,4 +21,6 @@ public:
 
     void create_bloc(const vec3& position, const block_types& block_type);
     void delete_bloc(const vec3& position);
+
+    void print_created_chunks(); //debugging 
 };

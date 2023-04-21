@@ -27,9 +27,8 @@ void terrain::draw(const environment_structure& env, bool wireframe, const vec3&
     // get visible chunks
     auto player_chunk = chunk::get_chunk_triplet(player_position);
 
-    std::vector<utils::Triplet> neighbour_chunks = get_neighbours(player_chunk);
 
-    for (const utils::Triplet& t : neighbour_chunks){
+    for (const utils::Triplet& t : get_neighbours(player_chunk)){
         if(!check_chunk_exists(t)) {
             chunks[t] = chunk({t.x, t.y});
         };
@@ -47,6 +46,7 @@ std::vector<cube> terrain::get_cubes(const vec3& player_position) {
     auto player_chunk = chunk::get_chunk_triplet(player_position);
     std::vector<cube> cubes;
     for(const auto& chunk : get_neighbours(player_chunk)) {
+        if(!check_chunk_exists(chunk)) continue;
         auto& ccubes = chunks[chunk].get_cubes();
         cubes.insert(cubes.end(), ccubes.begin(), ccubes.end());
     }
@@ -54,18 +54,26 @@ std::vector<cube> terrain::get_cubes(const vec3& player_position) {
 }
 
 
-bool terrain::check_chunk_exists(const utils::Triplet t){
+bool terrain::check_chunk_exists(const utils::Triplet t) const {
     return !(chunks.find(t) == chunks.end());
 }
 
 void terrain::create_bloc(const vec3& position, const block_types& block_type){
     vec3 round_position = utils::round(position);
-    auto player_chunk = chunk::get_chunk_triplet(round_position);
+    auto player_chunk = chunk::get_chunk_triplet(position);
     chunks[player_chunk].create_block_absolute(block_type, round_position);
 }
 
 void terrain::delete_bloc(const vec3& position){
     vec3 round_position = utils::round(position);
-    auto player_chunk = chunk::get_chunk_triplet(round_position);
+    auto player_chunk = chunk::get_chunk_triplet(position);
     chunks[player_chunk].delete_bloc_absolute(round_position);
+}
+
+void terrain::print_created_chunks(){
+    std::cout << "start " << std::endl;
+    for (auto& [key, val] : chunks){
+        std::cout<< key << " -- ";
+    }
+    std::cout << std::endl << " end" << std::endl;
 }

@@ -16,9 +16,9 @@ void scene_structure::initialize()
 
 	block::initialize();
 	terr = terrain();
-	main_player = player(camera_control, {0, 0, 20}, &gui.creative, &terr);
+	main_player = player(camera_control, {0, 0, 6}, &gui.creative, &terr);
 
-	enemies = mob_group({0,0,10});
+	enemies = mob_group({0,0,20});
 
 	// Adding portal gun
 	glfwInit();
@@ -38,6 +38,33 @@ void scene_structure::display_frame()
 void scene_structure::end_game(){
 	game_over = true;
 	camera_control.deactivate();
+}
+
+void scene_structure::mouse_move_event()
+{
+	if (!inputs.keyboard.shift)
+		camera_control.action_mouse_move(environment.camera_view);
+}
+void scene_structure::mouse_click_event()
+{
+	main_player.handle_mouse_input(terr.get_cubes(main_player.position), enemies);
+	camera_control.action_mouse_click(environment.camera_view);
+}
+void scene_structure::keyboard_event()
+{
+	main_player.handle_keyboard_input();
+	camera_control.action_keyboard(environment.camera_view, gui.display_config);
+}
+void scene_structure::idle_frame()
+{
+	camera_control.idle_frame(environment.camera_view);
+	main_player.move(terr.get_cubes(main_player.position));
+
+	// TODO
+	enemies.move(terr, main_player.body.position, main_player.camera->inputs->time_interval);
+
+	if(!gui.creative && enemies.check_kills_player(main_player.position))
+		end_game();
 }
 
 void scene_structure::display_gui()
@@ -97,6 +124,10 @@ void scene_structure::display_gui()
 		main_player.looking_at().y, 
 		main_player.looking_at().z
 	);
+	auto t = chunk::get_chunk_triplet(main_player.position);
+	ImGui::Text("Chunk: (%d, %d, %d)", 
+		t.x, t.y, t.z
+	);
 	ImGui::Text("Kills: %d", main_player.get_kills());
 	ImGui::End();
 	
@@ -134,33 +165,6 @@ void scene_structure::display_gui()
 		ImVec2((float)gui.crosshair.image_width, (float)gui.crosshair.image_height)
 	);
 	ImGui::End();
-}
-
-void scene_structure::mouse_move_event()
-{
-	if (!inputs.keyboard.shift)
-		camera_control.action_mouse_move(environment.camera_view);
-}
-void scene_structure::mouse_click_event()
-{
-	main_player.handle_mouse_input(terr.get_cubes(main_player.position), enemies);
-	camera_control.action_mouse_click(environment.camera_view);
-}
-void scene_structure::keyboard_event()
-{
-	main_player.handle_keyboard_input();
-	camera_control.action_keyboard(environment.camera_view, gui.display_config);
-}
-void scene_structure::idle_frame()
-{
-	camera_control.idle_frame(environment.camera_view);
-	main_player.move(terr.get_cubes(main_player.position));
-
-	// TODO
-	enemies.move(terr, main_player.body.position, main_player.camera->inputs->time_interval);
-
-	if(enemies.check_kills_player(main_player.position))
-		end_game();
 }
 // Simple helper function to load an image into a OpenGL texture with common settings
 bool LoadTextureFromFile(const char *filename, GLuint *out_texture, int *out_width, int *out_height)

@@ -205,3 +205,20 @@ bool player::is_dead(){
 int player::get_level(){
     return kills / 10;
 }
+
+std::string player::get_block(){
+    if(!chosen_block) return "Pickaxe";
+    switch (chosen_block.value()){
+    case block_types::earth:
+        return "Earth";
+    case block_types::rock:
+        return "Rock";
+    case block_types::wood:
+        return "Wood";
+    case block_types::leaf:
+        return "Leaves";
+    default:
+        return "";
+    }
+    return "";
+}

@@ -19,6 +19,13 @@ using cgp::numarray;
 using cgp::timer_basic;
 using cgp::vec3;
 
+
+// Game modes
+enum game_modes {
+	kSurvival,
+	kCreative
+};
+
 // for loading sprites in the ImGui
 struct image_obj {
 	int image_width = 0;
@@ -40,9 +47,10 @@ struct gui_parameters
 	image_obj portal_gun;
 	image_obj crosshair;
 	
-	ImVec2 config_window_size = {500, 200};
+	ImVec2 config_window_size = {500, 250};
 
 	ImVec2 stats_window_size = {400, 300};
+	ImVec2 end_window_size = {500, 300};
 };
 
 // The structure of the custom scene
@@ -61,6 +69,11 @@ struct scene_structure : cgp::scene_inputs_generic
 	environment_structure environment; // Standard environment controler
 	input_devices inputs;			   // Storage for inputs status (mouse, keyboard, window dimension)
 	gui_parameters gui;				   // Standard GUI element storage
+
+	int fps;
+
+
+	game_modes game_mode = game_modes::kSurvival;
 
 	// ****************************** //
 	// Elements and shapes of the scene
@@ -81,6 +94,7 @@ struct scene_structure : cgp::scene_inputs_generic
 	// Functions
 	// ****************************** //
 
+	void initialize_game();	 
 	void initialize();	  // Standard initialization to be called before the animation loop
 	void display_frame(); // The frame display to be called within the animation loop
 	void display_gui();	  // The display of the GUI, also called within the animation loop

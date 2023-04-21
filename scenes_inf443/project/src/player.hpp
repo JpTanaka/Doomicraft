@@ -46,4 +46,6 @@ public:
     int get_max_health();
     bool is_dead();
     int get_level();
+
+    std::string get_block();
 };

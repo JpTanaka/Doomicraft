@@ -27,6 +27,7 @@ scene_structure scene;
 window_structure standard_window_initialization(int width = 0, int height = 0);
 void initialize_default_shaders();
 void animation_loop();
+bool main_menu();
 
 timer_fps fps_record;
 
@@ -51,7 +52,6 @@ int main(int, char* argv[])
 	// Initialize default shaders
 	initialize_default_shaders();
 
-
 	// Custom scene initialization
 	std::cout << "Initialize data of the scene ..." << std::endl;
 	scene.initialize();
@@ -59,9 +59,17 @@ int main(int, char* argv[])
 
 
 	// ************************ //
+	//     Menu Loop
+	// ************************ //
+	std::cout << "Start menu loop ..." << std::endl;
+	while (!glfwWindowShouldClose(scene.window.glfw_window) && !main_menu()) {}
+
+
+	// ************************ //
 	//     Animation Loop
 	// ************************ //
 	std::cout << "Start animation loop ..." << std::endl;
+	scene.initialize_game();
 	fps_record.start();
 
 
@@ -88,6 +96,78 @@ int main(int, char* argv[])
 	return 0;
 }
 
+bool main_menu(){
+	bool ret = false;
+
+	emscripten_update_window_size(scene.window.width, scene.window.height); // update window size in case of use of emscripten (not used by default)
+    glfwSetInputMode(scene.window.glfw_window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
+
+	scene.camera_projection.aspect_ratio = scene.window.aspect_ratio();
+	scene.environment.camera_projection = scene.camera_projection.matrix();
+	glViewport(0, 0, scene.window.width, scene.window.height);
+
+	vec3 const& background_color = scene.environment.background_color;
+	glClearColor(background_color.x, background_color.y, background_color.z, 1.0f);
+	glClear(GL_COLOR_BUFFER_BIT);
+	glClear(GL_DEPTH_BUFFER_BIT);
+	glEnable(GL_DEPTH_TEST);
+
+	float const time_interval = fps_record.update();
+	glfwSetWindowTitle(scene.window.glfw_window, "DoomiCraft");
+
+	imgui_create_frame();
+	ImGui::GetIO().FontGlobalScale = project::gui_scale;
+	scene.inputs.mouse.on_gui = ImGui::GetIO().WantCaptureMouse;
+	scene.inputs.time_interval = time_interval;
+
+	ImVec2 window_size(500, 500);
+	ImGui::Begin("DoomiCraft", NULL, 
+		ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_NoBackground
+	);
+	ImGui::Text("		 --------------------------");
+	ImGui::Text("		 | Wellcome to DoomiCraft |");
+	ImGui::Text("		 --------------------------");
+	ImGui::Text(" ");
+	ImGui::Text("To move: A W S D");
+	ImGui::Text("To choose a block: 1, 2, 3 and 4");
+	ImGui::Text("To choose a pickaxe: R");
+	ImGui::Text("To shoot: Right mouse button");
+	ImGui::Text("To put a block/break it: Left mouse button");
+	ImGui::Text(" ");
+	ImGui::Text("To access the menu: Esc");
+	ImGui::Text(" ");
+	ImGui::Text(" ");
+	ImGui::Text("Good luck and have fun!");
+	ImGui::Text(" ");
+	ImGui::Text(" ");
+
+
+	if (ImGui::Button("Creative", {window_size.x/2.0f - 5, 50})) {
+		scene.game_mode = game_modes::kCreative;
+		ret = true;
+	}
+	ImGui::SameLine();
+	if (ImGui::Button("Survival", {window_size.x/2.0f - 5, 50})) {
+		scene.game_mode = game_modes::kSurvival;
+		ret = true;
+	}
+
+	ImGui::SetWindowSize(window_size);
+	ImGui::SetWindowPos({
+		(float)(scene.window.width - window_size.x)/2.0f,
+		(float)(scene.window.height - window_size.y)/2.0f,
+	});
+	ImGui::End();
+
+
+	// End of ImGui display and handle GLFW events
+	imgui_render_frame(scene.window.glfw_window);
+	glfwSwapBuffers(scene.window.glfw_window);
+	glfwPollEvents();
+
+	return ret;
+}
+
 void animation_loop()
 {
 
@@ -104,15 +184,13 @@ void animation_loop()
 	glEnable(GL_DEPTH_TEST);
 
 	float const time_interval = fps_record.update();
-	if (fps_record.event) {
-		std::string const title = "CGP Display - " + str(fps_record.fps) + " fps";
-		glfwSetWindowTitle(scene.window.glfw_window, title.c_str());
-	}
+	glfwSetWindowTitle(scene.window.glfw_window, "Doomicraft");
 
 	imgui_create_frame();
 	ImGui::GetIO().FontGlobalScale = project::gui_scale;
 	scene.inputs.mouse.on_gui = ImGui::GetIO().WantCaptureMouse;
 	scene.inputs.time_interval = time_interval;
+	scene.fps = fps_record.fps;
 
 
 	// Display the ImGUI interface (button, sliders, etc)

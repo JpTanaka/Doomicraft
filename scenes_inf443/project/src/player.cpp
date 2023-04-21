@@ -127,15 +127,13 @@ float player::detect_colision (std::vector<cube> cubes, float max_distance){
     return distance;
     }
 void player::shoot_mob(
-    mob_group mobg
+    mob_group &mobg
 ) {
     float distance = detect_colision(mobg.get_cubes(), 20.0f);
     float eps = 0.001;
     vec3 final_point = get_eyes() + distance * looking_at() + eps;
-    std::cout << final_point << " aa " <<  distance  << std::endl;
     for(auto it = mobg.get_mobs().begin(); it!=mobg.get_mobs().end(); it++) {
-        if(utils::distance(final_point, it->body.position)<Length/2 || utils::distance(final_point, it->legs.position)<Length/2){
-            std::cout << "tomou tiro " << it->body.position << std::endl;
+        if(utils::distance(final_point, it->body.position)<Length || utils::distance(final_point, it->legs.position)<Length){
             mobg.mobs.erase(it);
             break;
         } 

@@ -21,7 +21,7 @@ public:
 
     void move(const std::vector<cube>&);
     vec3 looking_at();
-    void shoot_mob(mob_group mobg);
+    void shoot_mob(mob_group &mobg);
 
     float detect_colision (std::vector<cube>, float max_distance);
 

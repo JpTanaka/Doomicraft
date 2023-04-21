@@ -22,10 +22,13 @@ std::vector<cube> mob_group::get_cubes(){
     return cubes;
 }
 
+// NOT USED
 void mob_group::erase_mob(auto it) {
     mobs.erase(it);
 }
 
+
+// NOT USED
 void mob_group::shoot_mob(
     vec3 point_from, // point from where the ray is being shot
     vec3 direction, // direction of the ray

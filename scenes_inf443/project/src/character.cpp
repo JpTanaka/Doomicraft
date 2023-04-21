@@ -18,7 +18,6 @@ character::character(vec3 center)
 
 character::character()
 {
-    std::cout << "constructor default center";
 
 }
 

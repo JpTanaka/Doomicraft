@@ -320,7 +320,6 @@ CMakeFiles/project.dir/src/player.cpp.o: \
  /home/tanaka/repos/Doomicraft/cgp/library/third_party/src/imgui/imgui_impl_glfw.h \
  /home/tanaka/repos/Doomicraft/cgp/library/third_party/src/imgui/imgui_impl_opengl3.h \
  /usr/include/GLFW/glfw3.h \
-<<<<<<< HEAD
  /home/tanaka/repos/Doomicraft/cgp/library/cgp/graphics/input_devices/input_devices.hpp \
  /home/tanaka/repos/Doomicraft/cgp/library/cgp/graphics/picking/picking.hpp \
  /home/tanaka/repos/Doomicraft/cgp/library/cgp/graphics/picking/picking_structure/picking_structure.hpp \
@@ -363,45 +362,3 @@ CMakeFiles/project.dir/src/player.cpp.o: \
  /home/tanaka/repos/Doomicraft/scenes_inf443/project/src/utils.hpp \
  /home/tanaka/repos/Doomicraft/scenes_inf443/project/src/chunk.hpp \
  /home/tanaka/repos/Doomicraft/scenes_inf443/project/src/mob.hpp
-=======
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/input_devices/input_devices.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_structure/picking_structure.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_spheres/picking_spheres.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/camera.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/camera_model/camera_model.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/camera_model/camera_generic_base/camera_generic_base.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/camera_model/camera_orbit/camera_orbit.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/camera_model/camera_orbit_euler/camera_orbit_euler.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/camera_model/camera_first_person/camera_first_person.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/camera_model/camera_first_person_euler/camera_first_person_euler.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/camera_model/common_functions/common_functions.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/camera_projection/camera_projection.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/camera_controller/camera_controller.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/camera_controller/camera_controller_generic_base/camera_controller_generic_base.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/window/window.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/camera_controller/camera_controller_orbit/camera_controller_orbit.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/camera_controller/camera_controller_orbit_euler/camera_controller_orbit_euler.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/camera_controller/camera_controller_first_person/camera_controller_first_person.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/camera/camera_controller/camera_controller_first_person_euler/camera_controller_first_person_euler.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/picking/picking_plane/picking_plane.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/time.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_basic/timer_basic.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_event_periodic/timer_event_periodic.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_fps/timer_fps.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/timer/timer_interval/timer_interval.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/tracker/tracker.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/time/tracker/velocity_tracker/velocity_tracker.hpp \
- /home/guile/x/Doomicraft/cgp/library/cgp/graphics/emscripten/emscripten.hpp \
- /home/guile/x/Doomicraft/scenes_inf443/project/src/camera.hpp \
- /home/guile/x/Doomicraft/scenes_inf443/project/src/environment.hpp \
- /home/guile/x/Doomicraft/scenes_inf443/project/src/cube.hpp \
- /home/guile/x/Doomicraft/scenes_inf443/project/src/constants.hpp \
- /home/guile/x/Doomicraft/scenes_inf443/project/src/character.hpp \
- /home/guile/x/Doomicraft/scenes_inf443/project/src/terrain.hpp \
- /home/guile/x/Doomicraft/scenes_inf443/project/src/block.hpp \
- /home/guile/x/Doomicraft/scenes_inf443/project/src/block_mesh.hpp \
- /home/guile/x/Doomicraft/scenes_inf443/project/src/utils.hpp \
- /home/guile/x/Doomicraft/scenes_inf443/project/src/chunk.hpp
->>>>>>> 78fe20818676e7ae0168ccf571de2b7e6cb8eea8

@@ -113,6 +113,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/guile/x/Doomicraft/scenes_inf443/project/src/player.cpp" "CMakeFiles/project.dir/src/player.cpp.o" "gcc" "CMakeFiles/project.dir/src/player.cpp.o.d"
   "/home/guile/x/Doomicraft/scenes_inf443/project/src/scene.cpp" "CMakeFiles/project.dir/src/scene.cpp.o" "gcc" "CMakeFiles/project.dir/src/scene.cpp.o.d"
   "/home/guile/x/Doomicraft/scenes_inf443/project/src/terrain.cpp" "CMakeFiles/project.dir/src/terrain.cpp.o" "gcc" "CMakeFiles/project.dir/src/terrain.cpp.o.d"
+  "/home/guile/x/Doomicraft/scenes_inf443/project/src/timed_gui.cpp" "CMakeFiles/project.dir/src/timed_gui.cpp.o" "gcc" "CMakeFiles/project.dir/src/timed_gui.cpp.o.d"
   "/home/guile/x/Doomicraft/scenes_inf443/project/src/utils.cpp" "CMakeFiles/project.dir/src/utils.cpp.o" "gcc" "CMakeFiles/project.dir/src/utils.cpp.o.d"
   )
 

@@ -2649,6 +2649,30 @@ src/terrain.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/terrain.cpp.s
 .PHONY : src/terrain.cpp.s
 
+src/timed_gui.o: src/timed_gui.cpp.o
+.PHONY : src/timed_gui.o
+
+# target to build an object file
+src/timed_gui.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/timed_gui.cpp.o
+.PHONY : src/timed_gui.cpp.o
+
+src/timed_gui.i: src/timed_gui.cpp.i
+.PHONY : src/timed_gui.i
+
+# target to preprocess a source file
+src/timed_gui.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/timed_gui.cpp.i
+.PHONY : src/timed_gui.cpp.i
+
+src/timed_gui.s: src/timed_gui.cpp.s
+.PHONY : src/timed_gui.s
+
+# target to generate assembly for a file
+src/timed_gui.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/timed_gui.cpp.s
+.PHONY : src/timed_gui.cpp.s
+
 src/utils.o: src/utils.cpp.o
 .PHONY : src/utils.o
 
@@ -2997,6 +3021,9 @@ help:
 	@echo "... src/terrain.o"
 	@echo "... src/terrain.i"
 	@echo "... src/terrain.s"
+	@echo "... src/timed_gui.o"
+	@echo "... src/timed_gui.i"
+	@echo "... src/timed_gui.s"
 	@echo "... src/utils.o"
 	@echo "... src/utils.i"
 	@echo "... src/utils.s"

@@ -30,7 +30,7 @@ public:
 
     void add_mob(const mob);
 
-    void shoot_mob(
+    bool shoot_mob(
         vec3, // point from where the ray is being shot
         vec3, // direction of the ray
         float // distance;

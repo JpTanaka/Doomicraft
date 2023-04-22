@@ -9,6 +9,7 @@
 #include "terrain.hpp"
 #include "mob.hpp"
 #include "mob_group.hpp"
+#include "timed_gui.hpp"
 
 
 
@@ -46,6 +47,7 @@ struct gui_parameters
 	
 	image_obj portal_gun;
 	image_obj crosshair;
+	image_obj hit_crosshair;
 	
 	ImVec2 config_window_size = {500, 250};
 
@@ -91,11 +93,15 @@ struct scene_structure : cgp::scene_inputs_generic
 	bool close_game = false;
 
 
+	timed_gui hit_crosshair;
+
+
 	// ****************************** //
 	// Functions
 	// ****************************** //
 
 	void initialize_game();	 
+	void initialize_timed_guis();
 	void initialize();	  // Standard initialization to be called before the animation loop
 	void display_frame(); // The frame display to be called within the animation loop
 	void display_gui();	  // The display of the GUI, also called within the animation loop

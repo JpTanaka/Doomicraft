@@ -18,7 +18,9 @@ void scene_structure::initialize_game(){
 	default:
 		break;
 	}
+
 }
+
 void scene_structure::initialize()
 {
 	camera_control.initialize(inputs, window);
@@ -35,7 +37,10 @@ void scene_structure::initialize()
 	// Adding portal gun
 	glfwInit();
 	utils::LoadTextureFromFile("../assets/portal_gun.png", &gui.portal_gun.image_texture, &gui.portal_gun.image_width, &gui.portal_gun.image_height);
-	utils::LoadTextureFromFile("../assets/crosshair.png", &gui.crosshair.image_texture, &gui.crosshair.image_width, &gui.crosshair.image_height);
+	utils::LoadTextureFromFile("../assets/crosshair_green.png", &gui.crosshair.image_texture, &gui.crosshair.image_width, &gui.crosshair.image_height);
+	utils::LoadTextureFromFile("../assets/hit_crosshair.png", &gui.hit_crosshair.image_texture, &gui.hit_crosshair.image_width, &gui.hit_crosshair.image_height);
+
+	initialize_timed_guis();
 }
 
 void scene_structure::display_frame()
@@ -72,7 +77,9 @@ void scene_structure::mouse_move_event()
 
 void scene_structure::mouse_click_event()
 {
-	main_player.handle_mouse_input(terr.get_cubes(main_player.position), enemies);
+	if(
+		main_player.handle_mouse_input(terr.get_cubes(main_player.position), enemies)
+	) hit_crosshair.init(10);
 	camera_control.action_mouse_click(environment.camera_view);
 }
 
@@ -109,6 +116,27 @@ void scene_structure::idle_frame()
 
 }
 
+void scene_structure::initialize_timed_guis(){
+
+	// hit crosshair
+	std::function<void()> render = [&](){
+		ImGui::Begin("Hit Crosshair", NULL, 
+			ImGuiWindowFlags_NoBackground | ImGuiWindowFlags_NoInputs | ImGuiWindowFlags_NoDecoration
+		);
+		gui.hit_crosshair.image_height = std::min(15.0f, window.width / 60.0f);
+		gui.hit_crosshair.image_width = std::min(15.0f, window.width / 60.0f);
+		ImGui::SetWindowPos({((float)window.width - (float)gui.hit_crosshair.image_width) / 2.0f,
+		((float)window.height - (float)gui.hit_crosshair.image_height) / 2.0f});
+		ImGui::Image(
+			(void *)(intptr_t)gui.hit_crosshair.image_texture, 
+			ImVec2((float)gui.hit_crosshair.image_width, 
+			(float)gui.hit_crosshair.image_height)
+		);
+		ImGui::End();
+	};
+	hit_crosshair = timed_gui(render);
+}
+
 void scene_structure::display_gui()
 {
 
@@ -138,6 +166,10 @@ void scene_structure::display_gui()
 
 		return;
 	}
+
+
+	// timed gui test
+	hit_crosshair.draw();
 
 	// Menu
 	if (gui.display_config){

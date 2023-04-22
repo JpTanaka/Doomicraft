@@ -13,7 +13,7 @@ class player : public character {
 
     terrain* terr = nullptr;
     block_types chosen_block = block_types::earth;
-    void shoot_mob(mob_group &mobg);
+    bool shoot_mob(mob_group &mobg);
     void handle_cubes(const std::vector<cube>& cubes);
 
     int kills = 0;
@@ -38,7 +38,7 @@ public:
     float detect_colision (std::vector<cube>, float max_distance);
 
     void handle_keyboard_input();
-    void handle_mouse_input(const std::vector<cube>& cubes, mob_group &mobg);
+    bool handle_mouse_input(const std::vector<cube>& cubes, mob_group &mobg); // returns true if mob was hit
 
     int get_kills();
     void take_hit();

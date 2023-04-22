@@ -27,13 +27,14 @@ std::vector<cube> mob_group::get_cubes(){
     return cubes;
 }
 
-void mob_group::shoot_mob(
+bool mob_group::shoot_mob(
     vec3 point_from, // point from where the ray is being shot
     vec3 direction, // direction of the ray
     float distance // distance of the closest cube
 ) {
     direction = normalize(direction);
     vec3 final_point = point_from + (distance + kEps) * direction;
+    bool hit = false;
 
     // shooting
     for (auto it = mobs.begin(); it != mobs.end(); it++) {
@@ -42,8 +43,10 @@ void mob_group::shoot_mob(
             utils::distance(final_point, it->legs.position) < Length
         ){
             it->take_damage();
+            hit = true;
         } 
     }
+    return hit;
 }
 
 int mob_group::check_dead(){

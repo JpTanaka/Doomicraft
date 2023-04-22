@@ -366,4 +366,5 @@ CMakeFiles/project.dir/src/scene.cpp.o: \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/block_mesh.hpp \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/utils.hpp \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/chunk.hpp \
- /home/guile/x/Doomicraft/scenes_inf443/project/src/mob.hpp
+ /home/guile/x/Doomicraft/scenes_inf443/project/src/mob.hpp \
+ /home/guile/x/Doomicraft/scenes_inf443/project/src/timed_gui.hpp

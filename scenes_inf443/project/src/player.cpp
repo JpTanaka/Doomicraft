@@ -134,7 +134,7 @@ void player::handle_keyboard_input(){
     if (inputs->keyboard.is_pressed(GLFW_KEY_E)) chosen_block = block::get_next_block(chosen_block, -1);
 }
 
-void player::handle_mouse_input(const std::vector<cube>& cubes, mob_group &mobg){
+bool player::handle_mouse_input(const std::vector<cube>& cubes, mob_group &mobg){
     auto& inputs = camera->inputs;
     bool const click_right = inputs->mouse.click.right;
     bool const click_left = inputs->mouse.click.left;
@@ -143,7 +143,8 @@ void player::handle_mouse_input(const std::vector<cube>& cubes, mob_group &mobg)
         handle_cubes(cubes);
 
     if (click_left)
-        shoot_mob(mobg);
+        return shoot_mob(mobg);
+    return false;
 }
 
 
@@ -160,15 +161,16 @@ void player::handle_cubes(const std::vector<cube>& cubes){
         );
 }
 
-void player::shoot_mob(
+bool player::shoot_mob(
     mob_group &mobg
 ) {
-    mobg.shoot_mob(
+    bool hit = mobg.shoot_mob(
         get_eyes(),
         looking_at(), 
         detect_colision(mobg.get_cubes(), 20.0f)
     );
     kills += mobg.check_dead();
+    return hit;
 }
 
 int player::get_kills(){

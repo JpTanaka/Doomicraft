@@ -130,11 +130,8 @@ float player::detect_colision (std::vector<cube> cubes, float max_distance){
 
 void player::handle_keyboard_input(){
     auto& inputs = camera->inputs;
-    if (inputs->keyboard.is_pressed(GLFW_KEY_1)) chosen_block = block_types::earth;
-    if (inputs->keyboard.is_pressed(GLFW_KEY_2)) chosen_block = block_types::rock;
-    if (inputs->keyboard.is_pressed(GLFW_KEY_3)) chosen_block = block_types::wood;
-    if (inputs->keyboard.is_pressed(GLFW_KEY_4)) chosen_block = block_types::leaf;
-    if (inputs->keyboard.is_pressed(GLFW_KEY_R)) chosen_block = {};
+    if (inputs->keyboard.is_pressed(GLFW_KEY_R)) chosen_block = block::get_next_block(chosen_block, 1);
+    if (inputs->keyboard.is_pressed(GLFW_KEY_E)) chosen_block = block::get_next_block(chosen_block, -1);
 }
 
 void player::handle_mouse_input(const std::vector<cube>& cubes, mob_group &mobg){
@@ -152,14 +149,14 @@ void player::handle_mouse_input(const std::vector<cube>& cubes, mob_group &mobg)
 
 void player::handle_cubes(const std::vector<cube>& cubes){
     float dist = detect_colision(cubes, 5);
-    if (chosen_block)
-        terr->create_bloc(
-            get_eyes() + looking_at() * (dist - kEps), 
-            chosen_block.value()
-        );
-    else
+    if (chosen_block == block_types::NO_BLOCK)
         terr->delete_bloc(
             get_eyes() + looking_at() * (dist + kEps)
+        );
+    else
+        terr->create_bloc(
+            get_eyes() + looking_at() * (dist - kEps), 
+            chosen_block
         );
 }
 
@@ -206,9 +203,14 @@ int player::get_level(){
     return kills / 10;
 }
 
-std::string player::get_block(){
-    if(!chosen_block) return "Pickaxe";
-    switch (chosen_block.value()){
+std::string player::get_block(int direction){
+    
+    switch (
+        direction ==  0 ? chosen_block : 
+        direction == -1 ? block::get_next_block(chosen_block, -1) :
+        direction ==  1 ? block::get_next_block(chosen_block,  1) :
+        chosen_block
+    ){
     case block_types::earth:
         return "Earth";
     case block_types::rock:
@@ -217,6 +219,8 @@ std::string player::get_block(){
         return "Wood";
     case block_types::leaf:
         return "Leaves";
+    case block_types::NO_BLOCK:
+        return "Pickaxe";
     default:
         return "";
     }

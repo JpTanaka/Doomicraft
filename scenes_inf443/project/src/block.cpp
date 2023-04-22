@@ -1,4 +1,6 @@
 #include "block.hpp"
+#include <optional>
+
 
 std::array<block_mesh, block_types::NUMBER_BLOCKS> block::blocks;
 
@@ -57,4 +59,26 @@ bool block::is_being_seen(const vec3& from, const vec3& looking_at, const float&
         dot(normalize(looking_at), normalize(block_to_player)) >= std::cos(FIELD_OF_VIEW)
         && norm(block_to_player) < max_depth
     );
+}
+
+
+block_types block::get_next_block(block_types b, int amount){
+    if (amount == 1) {
+        if (b == leaf) {
+            return NO_BLOCK;
+        } else if (b == NO_BLOCK) {
+            return earth;
+        } else {
+            return static_cast<block_types>(b + 1);
+        }
+    } else if (amount == -1) {
+        if (b == earth) {
+            return NO_BLOCK;
+        } else if (b == NO_BLOCK) {
+            return leaf;
+        } else {
+            return static_cast<block_types>(b - 1);
+        }
+    }
+    return b;
 }

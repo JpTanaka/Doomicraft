@@ -51,6 +51,7 @@ struct gui_parameters
 
 	ImVec2 stats_window_size = {400, 300};
 	ImVec2 end_window_size = {500, 300};
+	ImVec2 block_window_size = {600, 120};
 };
 
 // The structure of the custom scene

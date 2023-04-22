@@ -129,8 +129,8 @@ bool main_menu(){
 	ImGui::Text("		 --------------------------");
 	ImGui::Text(" ");
 	ImGui::Text("To move: A W S D");
-	ImGui::Text("To choose a block: 1, 2, 3 and 4");
-	ImGui::Text("To choose a pickaxe: R");
+	ImGui::Text("To choose a block: E for the previous and R for the next");
+	ImGui::Text(" ");
 	ImGui::Text("To shoot: Right mouse button");
 	ImGui::Text("To put a block/break it: Left mouse button");
 	ImGui::Text(" ");
@@ -334,15 +334,7 @@ void keyboard_callback(GLFWwindow* window, int key, int scancode, int action, in
 			else
 				scene.window.set_windowed_screen();
 		}
-		// Press 'V' for camera frame/view matrix debug
-		if (key == GLFW_KEY_V && action == GLFW_PRESS && scene.inputs.keyboard.shift) {
-			auto const camera_model = scene.camera_control.camera_model;
-			std::cout << "\nDebug camera (position = " << str(camera_model.position()) << "):\n" << std::endl;
-			std::cout << "  Frame matrix:" << std::endl;
-			std::cout << str_pretty(camera_model.matrix_frame()) << std::endl;
-			std::cout << "  View matrix:" << std::endl;
-			std::cout << str_pretty(camera_model.matrix_view()) << std::endl;
-		}
+
 	}
 
 }

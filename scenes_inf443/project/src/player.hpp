@@ -12,7 +12,7 @@
 class player : public character {
 
     terrain* terr = nullptr;
-    std::optional<block_types> chosen_block; // if empty means that you are breaking blocks ;)
+    block_types chosen_block = block_types::earth;
     void shoot_mob(mob_group &mobg);
     void handle_cubes(const std::vector<cube>& cubes);
 
@@ -47,5 +47,5 @@ public:
     bool is_dead();
     int get_level();
 
-    std::string get_block();
+    std::string get_block(int direction = 0);
 };

@@ -359,4 +359,5 @@ CMakeFiles/project.dir/src/mob.cpp.o: \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/character.hpp \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/block.hpp \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/block_mesh.hpp \
+ /usr/include/c++/12/optional \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/utils.hpp

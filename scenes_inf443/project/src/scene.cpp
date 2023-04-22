@@ -185,17 +185,34 @@ void scene_structure::display_gui()
 		);
 		ImGui::Text("FPS: %d", fps);
 	}
-	ImGui::Text("-----------------");
 	if (game_mode == game_modes::kSurvival){
-		ImGui::Text("Kills: %d", main_player.get_kills());
 		std::stringstream s;
 		for (int i = 0; i < main_player.get_health(); i++) s << "*";
-		ImGui::Text("Health: %s", s.str().c_str());
-		ImGui::Text("Level: %d", main_player.get_level());
+		ImGui::Text("----------------------");
+		ImGui::Text("| Kills:  %10d |", main_player.get_kills());
+		ImGui::Text("| Level:  %10d |", main_player.get_level() + 1);
+		ImGui::Text("| Health: %10s |", s.str().c_str());
+		ImGui::Text("----------------------");
 	}
-	ImGui::Text("Block: %s", main_player.get_block().c_str());
-	ImGui::Text("-----------------");
 	ImGui::End();
+	
+
+	// blocks
+	ImGui::Begin("blocks", NULL, 
+		ImGuiWindowFlags_NoInputs | ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_NoBackground
+	);
+	ImGui::SetWindowSize(gui.block_window_size);
+	ImGui::SetWindowPos({0, window.height - gui.block_window_size.y});
+
+	ImGui::Text("----------------------------------------------------");
+	ImGui::Text("| %-10s <--e--[ %-10s ]--r--> %10s |", 
+		main_player.get_block(-1).c_str(),
+		main_player.get_block().c_str(),
+		main_player.get_block(1).c_str()
+	);
+	ImGui::Text("----------------------------------------------------");
+	ImGui::End();
+
 	
 	// Weapon
 	ImGui::Begin("Weapon", NULL, 

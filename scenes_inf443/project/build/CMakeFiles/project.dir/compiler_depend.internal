@@ -21919,6 +21919,7 @@ CMakeFiles/project.dir/src/block.cpp.o
  /home/guile/x/Doomicraft/scenes_inf443/project/src/environment.hpp
  /home/guile/x/Doomicraft/scenes_inf443/project/src/constants.hpp
  /home/guile/x/Doomicraft/scenes_inf443/project/src/block_mesh.hpp
+ /usr/include/c++/12/optional
 
 CMakeFiles/project.dir/src/block_mesh.cpp.o
  /home/guile/x/Doomicraft/scenes_inf443/project/src/block_mesh.cpp
@@ -23540,6 +23541,7 @@ CMakeFiles/project.dir/src/chunk.cpp.o
  /home/guile/x/Doomicraft/scenes_inf443/project/src/block.hpp
  /home/guile/x/Doomicraft/scenes_inf443/project/src/constants.hpp
  /home/guile/x/Doomicraft/scenes_inf443/project/src/block_mesh.hpp
+ /usr/include/c++/12/optional
  /home/guile/x/Doomicraft/scenes_inf443/project/src/utils.hpp
 
 CMakeFiles/project.dir/src/cube.cpp.o
@@ -25174,6 +25176,7 @@ CMakeFiles/project.dir/src/mob.cpp.o
  /home/guile/x/Doomicraft/scenes_inf443/project/src/character.hpp
  /home/guile/x/Doomicraft/scenes_inf443/project/src/block.hpp
  /home/guile/x/Doomicraft/scenes_inf443/project/src/block_mesh.hpp
+ /usr/include/c++/12/optional
  /home/guile/x/Doomicraft/scenes_inf443/project/src/utils.hpp
 
 CMakeFiles/project.dir/src/mob_group.cpp.o
@@ -25582,6 +25585,7 @@ CMakeFiles/project.dir/src/mob_group.cpp.o
  /home/guile/x/Doomicraft/scenes_inf443/project/src/block.hpp
  /home/guile/x/Doomicraft/scenes_inf443/project/src/constants.hpp
  /home/guile/x/Doomicraft/scenes_inf443/project/src/block_mesh.hpp
+ /usr/include/c++/12/optional
  /home/guile/x/Doomicraft/scenes_inf443/project/src/utils.hpp
  /home/guile/x/Doomicraft/scenes_inf443/project/src/chunk.hpp
  /home/guile/x/Doomicraft/scenes_inf443/project/src/mob.hpp
@@ -26824,6 +26828,7 @@ CMakeFiles/project.dir/src/terrain.cpp.o
  /home/guile/x/Doomicraft/scenes_inf443/project/src/block.hpp
  /home/guile/x/Doomicraft/scenes_inf443/project/src/constants.hpp
  /home/guile/x/Doomicraft/scenes_inf443/project/src/block_mesh.hpp
+ /usr/include/c++/12/optional
  /home/guile/x/Doomicraft/scenes_inf443/project/src/utils.hpp
  /home/guile/x/Doomicraft/scenes_inf443/project/src/chunk.hpp
  /usr/include/c++/12/chrono

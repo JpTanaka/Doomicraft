@@ -358,6 +358,7 @@ CMakeFiles/project.dir/src/terrain.cpp.o: \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/block.hpp \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/constants.hpp \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/block_mesh.hpp \
+ /usr/include/c++/12/optional \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/utils.hpp \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/chunk.hpp \
  /usr/include/c++/12/chrono /usr/include/c++/12/bits/chrono.h \

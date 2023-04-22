@@ -21825,7 +21825,8 @@ CMakeFiles/project.dir/src/block.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
   /home/guile/x/Doomicraft/cgp/library/cgp/graphics/emscripten/emscripten.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/environment.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/constants.hpp \
-  /home/guile/x/Doomicraft/scenes_inf443/project/src/block_mesh.hpp
+  /home/guile/x/Doomicraft/scenes_inf443/project/src/block_mesh.hpp \
+  /usr/include/c++/12/optional
 
 CMakeFiles/project.dir/src/block_mesh.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/project/src/block_mesh.cpp \
   /usr/include/stdc-predef.h \
@@ -23443,6 +23444,7 @@ CMakeFiles/project.dir/src/chunk.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
   /home/guile/x/Doomicraft/scenes_inf443/project/src/block.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/constants.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/block_mesh.hpp \
+  /usr/include/c++/12/optional \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/utils.hpp
 
 CMakeFiles/project.dir/src/cube.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/project/src/cube.cpp \
@@ -25073,6 +25075,7 @@ CMakeFiles/project.dir/src/mob.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/pro
   /home/guile/x/Doomicraft/scenes_inf443/project/src/character.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/block.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/block_mesh.hpp \
+  /usr/include/c++/12/optional \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/utils.hpp
 
 CMakeFiles/project.dir/src/mob_group.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/project/src/mob_group.cpp \
@@ -25480,6 +25483,7 @@ CMakeFiles/project.dir/src/mob_group.cpp.o: /home/guile/x/Doomicraft/scenes_inf4
   /home/guile/x/Doomicraft/scenes_inf443/project/src/block.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/constants.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/block_mesh.hpp \
+  /usr/include/c++/12/optional \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/utils.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/chunk.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/mob.hpp \
@@ -26719,6 +26723,7 @@ CMakeFiles/project.dir/src/terrain.cpp.o: /home/guile/x/Doomicraft/scenes_inf443
   /home/guile/x/Doomicraft/scenes_inf443/project/src/block.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/constants.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/block_mesh.hpp \
+  /usr/include/c++/12/optional \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/utils.hpp \
   /home/guile/x/Doomicraft/scenes_inf443/project/src/chunk.hpp \
   /usr/include/c++/12/chrono \
@@ -27160,8 +27165,6 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 
 /home/guile/x/Doomicraft/scenes_inf443/project/src/terrain.hpp:
 
-/usr/include/c++/12/optional:
-
 /home/guile/x/Doomicraft/scenes_inf443/project/src/player.hpp:
 
 /home/guile/x/Doomicraft/scenes_inf443/project/src/scene.hpp:
@@ -27179,6 +27182,8 @@ CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/p
 /usr/include/c++/12/bits/stl_relops.h:
 
 /home/guile/x/Doomicraft/scenes_inf443/project/src/camera.hpp:
+
+/usr/include/c++/12/optional:
 
 /home/guile/x/Doomicraft/scenes_inf443/project/src/block_mesh.hpp:
 

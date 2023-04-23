@@ -5,16 +5,20 @@ using namespace cgp;
 
 void scene_structure::initialize_game(){
 	main_player.start_game();
+
+	
 	switch (game_mode){
 	case game_modes::kCreative:
 		environment.background_color = {0.5, 0.7, 1};
 		gui.fog_depth = 24;
+		lists.background_creative = true;
 		break;
 
 	case game_modes::kSurvival:
 		environment.background_color = 0.05*vec3{1, 1, 1};
 		gui.fog_depth = 10;
 		enemies = mob_group({0, 0, 20});
+		lists.background = true;
 		break;
 	
 	default:

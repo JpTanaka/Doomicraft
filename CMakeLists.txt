@@ -70,8 +70,8 @@ add_executable(${executable_name} ${src_files_cgp} ${src_files_third_party} ${sr
 # Set Compiler for Unix system
 if(UNIX)
    set(CMAKE_CXX_COMPILER g++)                      # Can switch to clang++ if prefered
-   add_definitions( -march=native -flto -O3 -std=c++17 -Wall -Wextra -Wfatal-errors -Wno-pragmas) # Can adapt compiler flags if needed
-   # add_definitions( -Og -ggdb -std=c++17 -Wall -Wextra -Wfatal-errors -Wno-pragmas) # Can adapt compiler flags if needed
+   # add_definitions( -O3 -std=c++17 -Wall -Wextra -Wfatal-errors -Wno-pragmas) # Can adapt compiler flags if needed
+   add_definitions( -Og -ggdb -std=c++17 -Wall -Wextra -Wfatal-errors -Wno-pragmas) # Can adapt compiler flags if needed
    add_definitions(-Wno-sign-compare -Wno-type-limits) # Remove some warnings
 endif()
 

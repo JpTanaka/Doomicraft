@@ -150,10 +150,8 @@ bool player::handle_mouse_input(const std::vector<cube>& cubes, mob_group &mobg)
 
     if (click_left){
         bool hit = shoot_mob(mobg);
-        if(game_on){
+        if(game_on)
             lists.shoot = true;
-            if (hit) lists.hit = true;
-        }
         return hit;
     }
     return false;
@@ -162,6 +160,7 @@ bool player::handle_mouse_input(const std::vector<cube>& cubes, mob_group &mobg)
 
 void player::handle_cubes(const std::vector<cube>& cubes){
     float dist = detect_colision(cubes, 5);
+    if (dist == INFTY) return;
     if (chosen_block == block_types::NO_BLOCK)
         terr->delete_bloc(
             get_eyes() + looking_at() * (dist + kEps)
@@ -205,6 +204,7 @@ void player::take_hit(){
 }
 
 void player::respawn(){
+    lists.death = true;
     respawn_timer = 0;
 
     position += respawn_delta;

@@ -3,6 +3,7 @@
 #include "utils.hpp"
 #include "constants.hpp"
 #include "block.hpp"
+#include "audio_controller.hpp"
 
 mob::mob(vec3 center) : character(center){
     float l = Length;
@@ -55,6 +56,7 @@ void mob::draw(const environment_structure& env,bool wireframe){
 }
 
 void mob::take_damage(){
+    lists.hit = true;
     life--;
     mesh_body.material.color -= vec3{0, 1, 1} * 1/(float)max_life;
     mesh_head.material.color -= vec3{0, 1, 1} * 1/(float)max_life;

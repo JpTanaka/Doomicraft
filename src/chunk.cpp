@@ -1,4 +1,5 @@
 #include "chunk.hpp"
+#include "audio_controller.hpp"
 
 chunk::chunk(){};
 
@@ -81,6 +82,7 @@ void chunk::create_block(const block_types& block_type, const vec3& center){
 }
 
 void chunk::create_block_absolute(const block_types& block_type, const vec3& center){
+    lists.place_block = true;
     vec3 int_center = utils::round(center);
     block b = block(block_type, int_center);
     blocks[utils::Triplet(b.position)] = b;
@@ -96,6 +98,7 @@ void chunk::delete_bloc_absolute(vec3 position){
             break;
         }
     }
+    lists.place_block = true;
     blocks.erase(utils::Triplet(utils::round(position)));
     update_blocks();
 }

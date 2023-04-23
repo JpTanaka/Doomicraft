@@ -14,7 +14,7 @@ void init_sound_effects(){
 	std::thread hit(init_sfx, "../assets/hit_2.wav", 40, &(lists.hit));
 	hit.detach();
 
-	std::thread kill(init_sfx, "../assets/death.wav", 1000, &(lists.kill));
+	std::thread kill(init_sfx, "../assets/death.wav", 400, &(lists.kill));
 	kill.detach();
 }
 

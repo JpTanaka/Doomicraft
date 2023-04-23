@@ -121,7 +121,7 @@ bool main_menu(){
 	scene.inputs.mouse.on_gui = ImGui::GetIO().WantCaptureMouse;
 	scene.inputs.time_interval = time_interval;
 
-	ImVec2 window_size(500, 500);
+	ImVec2 window_size(500, 600);
 	ImGui::Begin("DoomiCraft", NULL, 
 		ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_NoBackground
 	);
@@ -130,7 +130,10 @@ bool main_menu(){
 	ImGui::Text("		 --------------------------");
 	ImGui::Text(" ");
 	ImGui::Text("To move: A W S D");
-	ImGui::Text("To choose a block: Q for the previous and E for the next");
+	ImGui::Text("To choose a block: ");
+	ImGui::Text("	Q for the previous");
+	ImGui::Text("	E for the next");
+	ImGui::Text("	1 for the Pickaxe");
 	ImGui::Text(" ");
 	ImGui::Text("To shoot: Right mouse button");
 	ImGui::Text("To put a block/break it: Left mouse button");

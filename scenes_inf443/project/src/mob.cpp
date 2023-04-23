@@ -6,17 +6,22 @@
 
 mob::mob(vec3 center) : character(center){
     float l = Length;
-    mesh.initialize_data_on_gpu(
-        mesh_primitive_quadrangle(
-            { l/2.0, l/2.0,-l/2.0},
-            { l/2.0,-l/2.0,-l/2.0},
-            { l/2.0,-l/2.0, l*3/2.0-0.2},
-            { l/2.0, l/2.0, l*3/2.0-0.2}
-        )
+    mesh_head.initialize_data_on_gpu(
+        mesh_primitive_cube({0, 0, 1.2*l}, l)
     );
-    mesh.texture.load_and_initialize_texture_2d_on_gpu( 
-        project::path + "assets/seujorge.png"
+    mesh_head.model.scaling = 0.8;
+    mesh_head.texture.load_and_initialize_texture_2d_on_gpu( 
+        project::path + "assets/creeper_head.png"
     );
+
+    mesh_body.initialize_data_on_gpu(
+        mesh_primitive_cube({0, 0, 0}, l)
+    );
+    mesh_body.model.scaling_xyz = {0.6, 0.6, 1.2};
+    mesh_body.texture.load_and_initialize_texture_2d_on_gpu( 
+        project::path + "assets/creeper_texture.png"
+    );
+
     health_bar.initialize_data_on_gpu(
         mesh_primitive_quadrangle(
             { l/2.0, l/2.0, l*3/2.0 - 0.03},
@@ -31,26 +36,40 @@ mob::mob(vec3 center) : character(center){
 mob::mob() : character() {}
 
 void mob::draw(const environment_structure& env,bool wireframe){
-    mesh.model.translation = position;
+    // mesh.model.translation = position;
+    mesh_head.model.translation = position;
+    mesh_body.model.translation = position;
     health_bar.model.translation = position;
     if(!wireframe) {
-        cgp::draw(mesh, env);
+        // cgp::draw(mesh, env);
+        cgp::draw(mesh_head, env);
+        cgp::draw(mesh_body, env);
         cgp::draw(health_bar, env);
     }
     else {
-        cgp::draw_wireframe(mesh, env);
+        // cgp::draw_wireframe(mesh, env);
+        cgp::draw_wireframe(mesh_head, env);
+        cgp::draw_wireframe(mesh_body, env);
         cgp::draw_wireframe(health_bar, env);
     }
 }
 
 void mob::take_damage(){
     life--;
-    mesh.material.color -= vec3{0, 1, 1} * 1/(float)max_life;
+    mesh_body.material.color -= vec3{0, 1, 1} * 1/(float)max_life;
+    mesh_head.material.color -= vec3{0, 1, 1} * 1/(float)max_life;
     health_bar.model.scaling_xyz = {1, (life)/(float)max_life, 1};
 }
 
 bool mob::is_dead(){
     return life <= 0;
+}
+void mob::rotate_mesh(vec3 to){
+    // mesh.model.rotation = rotation_transform::from_frame_transform({-1,0,0}, {0,1,0}, normalize(to), {0,0,1});
+    mesh_head.model.rotation = rotation_transform::from_frame_transform({1,0,0}, {0,0,1}, normalize(to), {0,0,1});
+    mesh_body.model.rotation = rotation_transform::from_frame_transform({1,0,0}, {0,0,1}, normalize(to), {0,0,1});
+    health_bar.model.rotation = rotation_transform::from_frame_transform({1,0,0}, {0,0,1}, normalize(to), {0,0,1});
+
 }
 
 void mob::move(
@@ -68,8 +87,7 @@ void mob::move(
     // move direction to player position
     move_direction += step * utils::standardize_direction(position_player+vec3{0.1,0.1,0.1} - position);
     if(norm(move_direction_xy)>0.01){
-        mesh.model.rotation = rotation_transform::from_frame_transform({1,0,0}, {0,0,1}, normalize(vec3{move_direction.x, move_direction.y, 0}), {0,0,1});
-        health_bar.model.rotation = rotation_transform::from_frame_transform({1,0,0}, {0,0,1}, normalize(vec3{move_direction.x, move_direction.y, 0}), {0,0,1});
+        rotate_mesh({move_direction.x, move_direction.y, 0});
     }
     if(norm(move_direction)>0.01) 
         move_direction_xy = normalize(utils::expand({move_direction.x, move_direction.y}));

@@ -38,6 +38,19 @@ void block::initialize(){
     blocks[block_types::rock] = block_mesh(
         project::path + "assets/stone.png"
     );
+
+    blocks[block_types::brick] = block_mesh(
+        project::path + "assets/brick.png"
+    );
+    blocks[block_types::sand] = block_mesh(
+        project::path + "assets/sand.png"
+    );
+    blocks[block_types::wood_plank] = block_mesh(
+        project::path + "assets/planks_big_oak.png"
+    );
+    blocks[block_types::stone_brick] = block_mesh(
+        project::path + "assets/stonebrick.png"
+    );
 }
 
 block::block(){}
@@ -64,18 +77,18 @@ bool block::is_being_seen(const vec3& from, const vec3& looking_at, const float&
 
 block_types block::get_next_block(block_types b, int amount){
     if (amount == 1) {
-        if (b == leaf) {
+        if (b == NUMBER_BLOCKS - 1) {
             return NO_BLOCK;
         } else if (b == NO_BLOCK) {
-            return earth;
+            return static_cast<block_types>(0);
         } else {
             return static_cast<block_types>(b + 1);
         }
     } else if (amount == -1) {
-        if (b == earth) {
+        if (b == static_cast<block_types>(0)) {
             return NO_BLOCK;
         } else if (b == NO_BLOCK) {
-            return leaf;
+            return static_cast<block_types>(NUMBER_BLOCKS - 1);
         } else {
             return static_cast<block_types>(b - 1);
         }

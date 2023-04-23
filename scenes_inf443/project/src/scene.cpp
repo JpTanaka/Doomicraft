@@ -4,9 +4,10 @@ using namespace cgp;
 
 
 void scene_structure::initialize_game(){
+	main_player.start_game();
 	switch (game_mode){
 	case game_modes::kCreative:
-		environment.background_color = {0.5, 0.5, 1};
+		environment.background_color = {0.5, 0.7, 1};
 		gui.fog_depth = 24;
 		break;
 
@@ -48,6 +49,7 @@ void scene_structure::initialize()
 void scene_structure::display_frame()
 {
 	if (game_over) return;
+	environment.light = main_player.position + vec3{0,0,10};
 	environment.uniform_generic.uniform_int["fog_depth"] = gui.fog_depth;
 	timer.update();
 	terr.draw(environment, gui.display_wireframe, main_player.get_eyes(), main_player.looking_at(), gui.fog_depth);
@@ -66,6 +68,7 @@ void scene_structure::display_frame()
 }
 
 void scene_structure::end_game(){
+	main_player.end_game();
 	game_over = true;
 	camera_control.deactivate();
 	environment.background_color = 0.05 * vec3{1, 1, 1};

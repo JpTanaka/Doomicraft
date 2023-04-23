@@ -12,7 +12,11 @@ class mob : public character {
     static const int max_life = 4;
     int life = max_life;
     mesh_drawable mesh;
+    mesh_drawable mesh_head;
+    mesh_drawable mesh_body;
     mesh_drawable health_bar;
+
+    void rotate_mesh(vec3 to);
 
 public:
     mob(vec3 center);

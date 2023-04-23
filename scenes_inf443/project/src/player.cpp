@@ -137,6 +137,7 @@ void player::handle_keyboard_input(){
     auto& inputs = camera->inputs;
     if (inputs->keyboard.is_pressed(GLFW_KEY_Q)) chosen_block = block::get_next_block(chosen_block, -1);
     if (inputs->keyboard.is_pressed(GLFW_KEY_E)) chosen_block = block::get_next_block(chosen_block, 1);
+    if (inputs->keyboard.is_pressed(GLFW_KEY_1)) chosen_block = block_types::NO_BLOCK;
 }
 
 bool player::handle_mouse_input(const std::vector<cube>& cubes, mob_group &mobg){
@@ -149,8 +150,10 @@ bool player::handle_mouse_input(const std::vector<cube>& cubes, mob_group &mobg)
 
     if (click_left){
         bool hit = shoot_mob(mobg);
-        if (hit) lists.hit = true;
-        lists.shoot = true;
+        if(game_on){
+            lists.shoot = true;
+            if (hit) lists.hit = true;
+        }
         return hit;
     }
     return false;
@@ -234,10 +237,27 @@ std::string player::get_block(int direction){
         return "Wood";
     case block_types::leaf:
         return "Leaves";
+    case block_types::wood_plank:
+        return "Wood Plank";
+    case block_types::brick:
+        return "Brick";
+    case block_types::sand:
+        return "Sand";
+    case block_types::stone_brick:
+        return "Stone Brick";
     case block_types::NO_BLOCK:
         return "Pickaxe";
     default:
         return "";
     }
     return "";
+}
+
+
+void player::start_game(){
+    game_on = true;
+}
+
+void player::end_game(){
+    game_on = false;
 }

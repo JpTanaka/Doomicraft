@@ -8,6 +8,10 @@
 enum block_types {
     earth,
     rock,
+    wood_plank,
+    brick,
+    sand,
+    stone_brick,
     wood,
     leaf,
     NUMBER_BLOCKS,

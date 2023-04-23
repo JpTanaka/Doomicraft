@@ -24,6 +24,7 @@ class player : public character {
     int respawn_timer = 1000;
 
     vec3 starting_position;
+    bool game_on = false;
 
     void respawn();
 
@@ -48,6 +49,9 @@ public:
     int get_max_health();
     bool is_dead();
     int get_level();
+
+    void start_game();
+    void end_game();
 
     std::string get_block(int direction = 0);
 };

@@ -1,3 +1,0 @@
-/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles/project.dir
-/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles/edit_cache.dir
-/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles/rebuild_cache.dir

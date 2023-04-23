@@ -12,7 +12,14 @@ The project can be configured for windows if you have Visual Studio installed (p
 Originally a project for the INF443 course at Polytechnique.
 
 
-## Compiling and running
+## Quick build
+To get the game up and running on your Unix machine quickly, you can 
+
+1. Download the 2 files `download` and `run`
+2. On the command line, type `sh download` to download the game and
+3. `sh run` to run it!
+
+## Compiling and running by yourself
 To compile the program, make sure you have CMake on version at least 3.8 and git installed on your machine.
 After that, follow this steps:
 

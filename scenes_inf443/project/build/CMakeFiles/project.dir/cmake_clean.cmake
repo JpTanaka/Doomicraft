@@ -183,6 +183,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/lodepng/lodepng.cpp.o.d"
   "CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/simplexnoise/simplexnoise1234.cpp.o"
   "CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/simplexnoise/simplexnoise1234.cpp.o.d"
+  "CMakeFiles/project.dir/src/audio_controller.cpp.o"
+  "CMakeFiles/project.dir/src/audio_controller.cpp.o.d"
   "CMakeFiles/project.dir/src/block.cpp.o"
   "CMakeFiles/project.dir/src/block.cpp.o.d"
   "CMakeFiles/project.dir/src/block_mesh.cpp.o"

@@ -367,4 +367,10 @@ CMakeFiles/project.dir/src/main.cpp.o: \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/utils.hpp \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/chunk.hpp \
  /home/guile/x/Doomicraft/scenes_inf443/project/src/mob.hpp \
- /home/guile/x/Doomicraft/scenes_inf443/project/src/timed_gui.hpp
+ /home/guile/x/Doomicraft/scenes_inf443/project/src/timed_gui.hpp \
+ /home/guile/x/Doomicraft/scenes_inf443/project/src/audio_controller.hpp \
+ /usr/include/c++/12/thread /usr/include/c++/12/bits/std_thread.h \
+ /usr/include/c++/12/bits/unique_ptr.h \
+ /usr/include/c++/12/bits/this_thread_sleep.h \
+ /usr/include/c++/12/bits/chrono.h /usr/include/c++/12/ratio \
+ /usr/include/c++/12/bits/parse_numbers.h

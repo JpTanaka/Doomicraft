@@ -1,5 +1,3 @@
-
-
 #include "cgp/cgp.hpp" // Give access to the complete CGP library
 #include "environment.hpp" // The general scene environment + project variable
 #include <iostream> 
@@ -9,6 +7,7 @@
 // Custom scene of this code
 #include "scene.hpp"
 
+#include "audio_controller.hpp"
 
 
 
@@ -72,6 +71,8 @@ int main(int, char* argv[])
 	scene.initialize_game();
 	fps_record.start();
 
+	// sound thread	
+	init_sound_effects();
 
 	// Call the main display loop in the function animation_loop
 	//  The following part is simply a loop that call the function "animation_loop"
@@ -93,7 +94,7 @@ int main(int, char* argv[])
 	glfwDestroyWindow(scene.window.glfw_window);
 	glfwTerminate();
 
-	return 0;
+
 }
 
 bool main_menu(){
@@ -129,7 +130,7 @@ bool main_menu(){
 	ImGui::Text("		 --------------------------");
 	ImGui::Text(" ");
 	ImGui::Text("To move: A W S D");
-	ImGui::Text("To choose a block: E for the previous and R for the next");
+	ImGui::Text("To choose a block: Q for the previous and E for the next");
 	ImGui::Text(" ");
 	ImGui::Text("To shoot: Right mouse button");
 	ImGui::Text("To put a block/break it: Left mouse button");
@@ -150,6 +151,9 @@ bool main_menu(){
 	if (ImGui::Button("Survival", {window_size.x/2.0f - 5, 50})) {
 		scene.game_mode = game_modes::kSurvival;
 		ret = true;
+	}
+	if (ImGui::Button("Exit", {window_size.x, 50})) {
+		exit(0);
 	}
 
 	ImGui::SetWindowSize(window_size);

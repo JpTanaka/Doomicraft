@@ -19,7 +19,9 @@ class player : public character {
     int kills = 0;
     int health = 5;
     int max_health = 5;
-    vec3 respawn_delta = {10, 0, 10};
+    vec3 respawn_delta = {50, 0, 10};
+    int respawn_time = 100;
+    int respawn_timer = 1000;
 
     vec3 starting_position;
 

@@ -1357,10 +1357,24 @@ CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/simpl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/simplexnoise/simplexnoise1234.cpp.s"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guile/x/Doomicraft/cgp/library/third_party/src/simplexnoise/simplexnoise1234.cpp -o CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/simplexnoise/simplexnoise1234.cpp.s
 
+CMakeFiles/project.dir/src/audio_controller.cpp.o: CMakeFiles/project.dir/flags.make
+CMakeFiles/project.dir/src/audio_controller.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/project/src/audio_controller.cpp
+CMakeFiles/project.dir/src/audio_controller.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building CXX object CMakeFiles/project.dir/src/audio_controller.cpp.o"
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/audio_controller.cpp.o -MF CMakeFiles/project.dir/src/audio_controller.cpp.o.d -o CMakeFiles/project.dir/src/audio_controller.cpp.o -c /home/guile/x/Doomicraft/scenes_inf443/project/src/audio_controller.cpp
+
+CMakeFiles/project.dir/src/audio_controller.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project.dir/src/audio_controller.cpp.i"
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guile/x/Doomicraft/scenes_inf443/project/src/audio_controller.cpp > CMakeFiles/project.dir/src/audio_controller.cpp.i
+
+CMakeFiles/project.dir/src/audio_controller.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/audio_controller.cpp.s"
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guile/x/Doomicraft/scenes_inf443/project/src/audio_controller.cpp -o CMakeFiles/project.dir/src/audio_controller.cpp.s
+
 CMakeFiles/project.dir/src/block.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/src/block.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/project/src/block.cpp
 CMakeFiles/project.dir/src/block.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building CXX object CMakeFiles/project.dir/src/block.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building CXX object CMakeFiles/project.dir/src/block.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/block.cpp.o -MF CMakeFiles/project.dir/src/block.cpp.o.d -o CMakeFiles/project.dir/src/block.cpp.o -c /home/guile/x/Doomicraft/scenes_inf443/project/src/block.cpp
 
 CMakeFiles/project.dir/src/block.cpp.i: cmake_force
@@ -1374,7 +1388,7 @@ CMakeFiles/project.dir/src/block.cpp.s: cmake_force
 CMakeFiles/project.dir/src/block_mesh.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/src/block_mesh.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/project/src/block_mesh.cpp
 CMakeFiles/project.dir/src/block_mesh.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building CXX object CMakeFiles/project.dir/src/block_mesh.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building CXX object CMakeFiles/project.dir/src/block_mesh.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/block_mesh.cpp.o -MF CMakeFiles/project.dir/src/block_mesh.cpp.o.d -o CMakeFiles/project.dir/src/block_mesh.cpp.o -c /home/guile/x/Doomicraft/scenes_inf443/project/src/block_mesh.cpp
 
 CMakeFiles/project.dir/src/block_mesh.cpp.i: cmake_force
@@ -1388,7 +1402,7 @@ CMakeFiles/project.dir/src/block_mesh.cpp.s: cmake_force
 CMakeFiles/project.dir/src/camera.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/src/camera.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/project/src/camera.cpp
 CMakeFiles/project.dir/src/camera.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building CXX object CMakeFiles/project.dir/src/camera.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building CXX object CMakeFiles/project.dir/src/camera.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/camera.cpp.o -MF CMakeFiles/project.dir/src/camera.cpp.o.d -o CMakeFiles/project.dir/src/camera.cpp.o -c /home/guile/x/Doomicraft/scenes_inf443/project/src/camera.cpp
 
 CMakeFiles/project.dir/src/camera.cpp.i: cmake_force
@@ -1402,7 +1416,7 @@ CMakeFiles/project.dir/src/camera.cpp.s: cmake_force
 CMakeFiles/project.dir/src/character.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/src/character.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/project/src/character.cpp
 CMakeFiles/project.dir/src/character.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building CXX object CMakeFiles/project.dir/src/character.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building CXX object CMakeFiles/project.dir/src/character.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/character.cpp.o -MF CMakeFiles/project.dir/src/character.cpp.o.d -o CMakeFiles/project.dir/src/character.cpp.o -c /home/guile/x/Doomicraft/scenes_inf443/project/src/character.cpp
 
 CMakeFiles/project.dir/src/character.cpp.i: cmake_force
@@ -1416,7 +1430,7 @@ CMakeFiles/project.dir/src/character.cpp.s: cmake_force
 CMakeFiles/project.dir/src/chunk.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/src/chunk.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/project/src/chunk.cpp
 CMakeFiles/project.dir/src/chunk.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building CXX object CMakeFiles/project.dir/src/chunk.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building CXX object CMakeFiles/project.dir/src/chunk.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/chunk.cpp.o -MF CMakeFiles/project.dir/src/chunk.cpp.o.d -o CMakeFiles/project.dir/src/chunk.cpp.o -c /home/guile/x/Doomicraft/scenes_inf443/project/src/chunk.cpp
 
 CMakeFiles/project.dir/src/chunk.cpp.i: cmake_force
@@ -1430,7 +1444,7 @@ CMakeFiles/project.dir/src/chunk.cpp.s: cmake_force
 CMakeFiles/project.dir/src/cube.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/src/cube.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/project/src/cube.cpp
 CMakeFiles/project.dir/src/cube.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building CXX object CMakeFiles/project.dir/src/cube.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building CXX object CMakeFiles/project.dir/src/cube.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/cube.cpp.o -MF CMakeFiles/project.dir/src/cube.cpp.o.d -o CMakeFiles/project.dir/src/cube.cpp.o -c /home/guile/x/Doomicraft/scenes_inf443/project/src/cube.cpp
 
 CMakeFiles/project.dir/src/cube.cpp.i: cmake_force
@@ -1444,7 +1458,7 @@ CMakeFiles/project.dir/src/cube.cpp.s: cmake_force
 CMakeFiles/project.dir/src/environment.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/src/environment.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/project/src/environment.cpp
 CMakeFiles/project.dir/src/environment.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building CXX object CMakeFiles/project.dir/src/environment.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building CXX object CMakeFiles/project.dir/src/environment.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/environment.cpp.o -MF CMakeFiles/project.dir/src/environment.cpp.o.d -o CMakeFiles/project.dir/src/environment.cpp.o -c /home/guile/x/Doomicraft/scenes_inf443/project/src/environment.cpp
 
 CMakeFiles/project.dir/src/environment.cpp.i: cmake_force
@@ -1458,7 +1472,7 @@ CMakeFiles/project.dir/src/environment.cpp.s: cmake_force
 CMakeFiles/project.dir/src/main.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/src/main.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/project/src/main.cpp
 CMakeFiles/project.dir/src/main.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building CXX object CMakeFiles/project.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building CXX object CMakeFiles/project.dir/src/main.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/main.cpp.o -MF CMakeFiles/project.dir/src/main.cpp.o.d -o CMakeFiles/project.dir/src/main.cpp.o -c /home/guile/x/Doomicraft/scenes_inf443/project/src/main.cpp
 
 CMakeFiles/project.dir/src/main.cpp.i: cmake_force
@@ -1472,7 +1486,7 @@ CMakeFiles/project.dir/src/main.cpp.s: cmake_force
 CMakeFiles/project.dir/src/mob.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/src/mob.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/project/src/mob.cpp
 CMakeFiles/project.dir/src/mob.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building CXX object CMakeFiles/project.dir/src/mob.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building CXX object CMakeFiles/project.dir/src/mob.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/mob.cpp.o -MF CMakeFiles/project.dir/src/mob.cpp.o.d -o CMakeFiles/project.dir/src/mob.cpp.o -c /home/guile/x/Doomicraft/scenes_inf443/project/src/mob.cpp
 
 CMakeFiles/project.dir/src/mob.cpp.i: cmake_force
@@ -1486,7 +1500,7 @@ CMakeFiles/project.dir/src/mob.cpp.s: cmake_force
 CMakeFiles/project.dir/src/mob_group.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/src/mob_group.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/project/src/mob_group.cpp
 CMakeFiles/project.dir/src/mob_group.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building CXX object CMakeFiles/project.dir/src/mob_group.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building CXX object CMakeFiles/project.dir/src/mob_group.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/mob_group.cpp.o -MF CMakeFiles/project.dir/src/mob_group.cpp.o.d -o CMakeFiles/project.dir/src/mob_group.cpp.o -c /home/guile/x/Doomicraft/scenes_inf443/project/src/mob_group.cpp
 
 CMakeFiles/project.dir/src/mob_group.cpp.i: cmake_force
@@ -1500,7 +1514,7 @@ CMakeFiles/project.dir/src/mob_group.cpp.s: cmake_force
 CMakeFiles/project.dir/src/player.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/src/player.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/project/src/player.cpp
 CMakeFiles/project.dir/src/player.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building CXX object CMakeFiles/project.dir/src/player.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building CXX object CMakeFiles/project.dir/src/player.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/player.cpp.o -MF CMakeFiles/project.dir/src/player.cpp.o.d -o CMakeFiles/project.dir/src/player.cpp.o -c /home/guile/x/Doomicraft/scenes_inf443/project/src/player.cpp
 
 CMakeFiles/project.dir/src/player.cpp.i: cmake_force
@@ -1514,7 +1528,7 @@ CMakeFiles/project.dir/src/player.cpp.s: cmake_force
 CMakeFiles/project.dir/src/scene.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/src/scene.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/project/src/scene.cpp
 CMakeFiles/project.dir/src/scene.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building CXX object CMakeFiles/project.dir/src/scene.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building CXX object CMakeFiles/project.dir/src/scene.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/scene.cpp.o -MF CMakeFiles/project.dir/src/scene.cpp.o.d -o CMakeFiles/project.dir/src/scene.cpp.o -c /home/guile/x/Doomicraft/scenes_inf443/project/src/scene.cpp
 
 CMakeFiles/project.dir/src/scene.cpp.i: cmake_force
@@ -1528,7 +1542,7 @@ CMakeFiles/project.dir/src/scene.cpp.s: cmake_force
 CMakeFiles/project.dir/src/terrain.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/src/terrain.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/project/src/terrain.cpp
 CMakeFiles/project.dir/src/terrain.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building CXX object CMakeFiles/project.dir/src/terrain.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building CXX object CMakeFiles/project.dir/src/terrain.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/terrain.cpp.o -MF CMakeFiles/project.dir/src/terrain.cpp.o.d -o CMakeFiles/project.dir/src/terrain.cpp.o -c /home/guile/x/Doomicraft/scenes_inf443/project/src/terrain.cpp
 
 CMakeFiles/project.dir/src/terrain.cpp.i: cmake_force
@@ -1542,7 +1556,7 @@ CMakeFiles/project.dir/src/terrain.cpp.s: cmake_force
 CMakeFiles/project.dir/src/timed_gui.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/src/timed_gui.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/project/src/timed_gui.cpp
 CMakeFiles/project.dir/src/timed_gui.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building CXX object CMakeFiles/project.dir/src/timed_gui.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building CXX object CMakeFiles/project.dir/src/timed_gui.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/timed_gui.cpp.o -MF CMakeFiles/project.dir/src/timed_gui.cpp.o.d -o CMakeFiles/project.dir/src/timed_gui.cpp.o -c /home/guile/x/Doomicraft/scenes_inf443/project/src/timed_gui.cpp
 
 CMakeFiles/project.dir/src/timed_gui.cpp.i: cmake_force
@@ -1556,7 +1570,7 @@ CMakeFiles/project.dir/src/timed_gui.cpp.s: cmake_force
 CMakeFiles/project.dir/src/utils.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/src/utils.cpp.o: /home/guile/x/Doomicraft/scenes_inf443/project/src/utils.cpp
 CMakeFiles/project.dir/src/utils.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building CXX object CMakeFiles/project.dir/src/utils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building CXX object CMakeFiles/project.dir/src/utils.cpp.o"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/utils.cpp.o -MF CMakeFiles/project.dir/src/utils.cpp.o.d -o CMakeFiles/project.dir/src/utils.cpp.o -c /home/guile/x/Doomicraft/scenes_inf443/project/src/utils.cpp
 
 CMakeFiles/project.dir/src/utils.cpp.i: cmake_force
@@ -1661,6 +1675,7 @@ project_OBJECTS = \
 "CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/jpeg/jpge.cpp.o" \
 "CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/lodepng/lodepng.cpp.o" \
 "CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/simplexnoise/simplexnoise1234.cpp.o" \
+"CMakeFiles/project.dir/src/audio_controller.cpp.o" \
 "CMakeFiles/project.dir/src/block.cpp.o" \
 "CMakeFiles/project.dir/src/block_mesh.cpp.o" \
 "CMakeFiles/project.dir/src/camera.cpp.o" \
@@ -1772,6 +1787,7 @@ project: CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/
 project: CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/jpeg/jpge.cpp.o
 project: CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/lodepng/lodepng.cpp.o
 project: CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/simplexnoise/simplexnoise1234.cpp.o
+project: CMakeFiles/project.dir/src/audio_controller.cpp.o
 project: CMakeFiles/project.dir/src/block.cpp.o
 project: CMakeFiles/project.dir/src/block_mesh.cpp.o
 project: CMakeFiles/project.dir/src/camera.cpp.o
@@ -1790,7 +1806,7 @@ project: CMakeFiles/project.dir/src/utils.cpp.o
 project: CMakeFiles/project.dir/build.make
 project: /usr/lib/x86_64-linux-gnu/libglfw.so.3.3
 project: CMakeFiles/project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Linking CXX executable project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/guile/x/Doomicraft/scenes_inf443/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Linking CXX executable project"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/project.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

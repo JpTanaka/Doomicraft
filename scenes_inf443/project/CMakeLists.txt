@@ -1,6 +1,17 @@
 # This is a generic CMake setup for CGP library use
 cmake_minimum_required(VERSION 3.8) 
 
+
+# external packages
+
+# find_package(PkgConfig REQUIRED)
+# pkg_check_modules(SDL2 REQUIRED IMPORTED_TARGET sdl2)
+# pkg_check_modules(SDL2_MIXER REQUIRED IMPORTED_TARGET SDL2_mixer)
+
+# pkg_check_modules(SDL2 REQUIRED IMPORTED_TARGET sdl2)
+# pkg_check_modules(SDL2_MIXER REQUIRED IMPORTED_TARGET SDL2_mixer)
+
+
 # Relative path to the CGP library
 # => You may need to adapt this directory to your relative path in the case you move your directory
 set(PATH_TO_CGP "../../cgp/library/" CACHE PATH "Relative path to CGP library location") 
@@ -34,6 +45,10 @@ include_directories("src")
 
 # Add the lib directory
 include_directories(${ABS_PATH_TO_CGP})
+
+# Add audio library
+# include_directories(${SDL2_INCLUDE_DIRS})
+# include_directories(${SDL2_MIXER_INCLUDE_DIRS})
 
 # Include files from the CGP library (as well as external dependencies)
 message(STATUS "Include CGP lib and external dependencies files from relative path")
@@ -83,6 +98,7 @@ endif()
 
 # Link options for Unix
 target_link_libraries(${executable_name} ${GLFW_LIBRARIES})
+# target_link_libraries(${executable_name} PkgConfig::SDL2 PkgConfig::SDL2_MIXER) 
 if(UNIX)
    target_link_libraries(${executable_name} dl) #dlopen is required by Glad on Unix
 endif()

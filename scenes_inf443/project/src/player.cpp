@@ -2,6 +2,7 @@
 #include "player.hpp"
 #include "utils.hpp"
 #include "constants.hpp"
+#include "audio_controller.hpp"
 
 player::player(camera_controller_custom &cam, vec3 center, bool* creative, terrain* terr)
     : character(center), terr(terr), creative(creative)
@@ -20,6 +21,10 @@ vec3 player::looking_at(){
 
 void player::move(const std::vector<cube>& cubes)
 {
+    if (respawn_timer < respawn_time){
+        respawn_timer++;
+        return;
+    }
     auto& inputs = camera->inputs;
     float const dt = inputs->time_interval;
     float const step = camera->keyboard_sensitivity * dt;
@@ -32,7 +37,7 @@ void player::move(const std::vector<cube>& cubes)
     if(*creative){
         if (inputs->keyboard.is_pressed(GLFW_KEY_SPACE) )
             z_move += step;
-        if (inputs->keyboard.is_pressed(GLFW_KEY_Q) )
+        if (inputs->keyboard.is_pressed(GLFW_KEY_Z) )
             z_move -= step;
     }
 
@@ -130,8 +135,8 @@ float player::detect_colision (std::vector<cube> cubes, float max_distance){
 
 void player::handle_keyboard_input(){
     auto& inputs = camera->inputs;
-    if (inputs->keyboard.is_pressed(GLFW_KEY_R)) chosen_block = block::get_next_block(chosen_block, 1);
-    if (inputs->keyboard.is_pressed(GLFW_KEY_E)) chosen_block = block::get_next_block(chosen_block, -1);
+    if (inputs->keyboard.is_pressed(GLFW_KEY_Q)) chosen_block = block::get_next_block(chosen_block, -1);
+    if (inputs->keyboard.is_pressed(GLFW_KEY_E)) chosen_block = block::get_next_block(chosen_block, 1);
 }
 
 bool player::handle_mouse_input(const std::vector<cube>& cubes, mob_group &mobg){
@@ -142,8 +147,12 @@ bool player::handle_mouse_input(const std::vector<cube>& cubes, mob_group &mobg)
     if (click_right)
         handle_cubes(cubes);
 
-    if (click_left)
-        return shoot_mob(mobg);
+    if (click_left){
+        bool hit = shoot_mob(mobg);
+        if (hit) lists.hit = true;
+        lists.shoot = true;
+        return hit;
+    }
     return false;
 }
 
@@ -169,7 +178,9 @@ bool player::shoot_mob(
         looking_at(), 
         detect_colision(mobg.get_cubes(), 20.0f)
     );
-    kills += mobg.check_dead();
+    int new_kills = mobg.check_dead();
+    kills += new_kills;
+    if (new_kills > 0) lists.kill = true;
     return hit;
 }
 
@@ -191,6 +202,8 @@ void player::take_hit(){
 }
 
 void player::respawn(){
+    respawn_timer = 0;
+
     position += respawn_delta;
     legs.position += respawn_delta;
     body.position += respawn_delta;

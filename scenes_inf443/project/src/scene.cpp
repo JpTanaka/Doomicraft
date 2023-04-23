@@ -1,6 +1,7 @@
 #include "scene.hpp"
-
 using namespace cgp;
+#include "audio_controller.hpp"
+
 
 void scene_structure::initialize_game(){
 	switch (game_mode){
@@ -41,6 +42,7 @@ void scene_structure::initialize()
 	utils::LoadTextureFromFile("../assets/hit_crosshair.png", &gui.hit_crosshair.image_texture, &gui.hit_crosshair.image_width, &gui.hit_crosshair.image_height);
 
 	initialize_timed_guis();
+	initialize_sound();
 }
 
 void scene_structure::display_frame()
@@ -99,8 +101,10 @@ void scene_structure::idle_frame()
 		camera_control.idle_frame(environment.camera_view);
 		main_player.move(terr.get_cubes(main_player.position));
 		enemies.move(terr, main_player.body.position, inputs.time_interval);
-		if(!gui.creative && enemies.check_hits_player(main_player.position))
+		if(!gui.creative && enemies.check_hits_player(main_player.position)){
 			main_player.take_hit(); 
+			dead_notice.init(100);
+		}
 		if(!gui.creative && main_player.is_dead())
 			end_game();
 		break;
@@ -119,7 +123,7 @@ void scene_structure::idle_frame()
 void scene_structure::initialize_timed_guis(){
 
 	// hit crosshair
-	std::function<void()> render = [&](){
+	render_func render = [&](){
 		ImGui::Begin("Hit Crosshair", NULL, 
 			ImGuiWindowFlags_NoBackground | ImGuiWindowFlags_NoInputs | ImGuiWindowFlags_NoDecoration
 		);
@@ -135,6 +139,26 @@ void scene_structure::initialize_timed_guis(){
 		ImGui::End();
 	};
 	hit_crosshair = timed_gui(render);
+
+	render_func render_dead = [&](){
+		ImVec2 size = {200, 300};
+		ImGui::Begin("You died", NULL, 
+			ImGuiWindowFlags_NoBackground | ImGuiWindowFlags_NoInputs | ImGuiWindowFlags_NoDecoration
+		);
+		ImGui::SetWindowSize(size);
+		ImGui::SetWindowPos({
+			((float)window.width - size.x) / 2.0f,
+			((float)window.height - size.y) / 2.0f
+		});
+		ImGui::Text("---->YOU DIED<----");
+		ImGui::Text(" ");
+		ImGui::Text(" ");
+		ImGui::Text("%4d lifes left", main_player.get_health());
+		ImGui::Text(" ");
+		ImGui::End();
+	};
+	dead_notice = timed_gui(render_dead);
+
 }
 
 void scene_structure::display_gui()
@@ -168,8 +192,9 @@ void scene_structure::display_gui()
 	}
 
 
-	// timed gui test
+	// timed guis
 	hit_crosshair.draw();
+	dead_notice.draw();
 
 	// Menu
 	if (gui.display_config){
@@ -237,7 +262,7 @@ void scene_structure::display_gui()
 	ImGui::SetWindowPos({0, window.height - gui.block_window_size.y});
 
 	ImGui::Text("----------------------------------------------------");
-	ImGui::Text("| %-10s <--e--[ %-10s ]--r--> %10s |", 
+	ImGui::Text("| %-10s <--q--[ %-10s ]--e--> %10s |", 
 		main_player.get_block(-1).c_str(),
 		main_player.get_block().c_str(),
 		main_player.get_block(1).c_str()
@@ -280,4 +305,12 @@ void scene_structure::display_gui()
 		ImVec2((float)gui.crosshair.image_width, (float)gui.crosshair.image_height)
 	);
 	ImGui::End();
+}
+
+
+
+void scene_structure::initialize_sound(){
+}
+
+void scene_structure::cleanup(){
 }

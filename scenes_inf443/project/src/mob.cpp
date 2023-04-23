@@ -15,7 +15,7 @@ mob::mob(vec3 center) : character(center){
         )
     );
     mesh.texture.load_and_initialize_texture_2d_on_gpu( 
-        project::path + "assets/creeper_pirate.png"
+        project::path + "assets/seujorge.png"
     );
     health_bar.initialize_data_on_gpu(
         mesh_primitive_quadrangle(

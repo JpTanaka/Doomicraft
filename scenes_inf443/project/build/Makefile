@@ -2337,6 +2337,30 @@ home/guile/x/Doomicraft/cgp/library/third_party/src/simplexnoise/simplexnoise123
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/home/guile/x/Doomicraft/cgp/library/third_party/src/simplexnoise/simplexnoise1234.cpp.s
 .PHONY : home/guile/x/Doomicraft/cgp/library/third_party/src/simplexnoise/simplexnoise1234.cpp.s
 
+src/audio_controller.o: src/audio_controller.cpp.o
+.PHONY : src/audio_controller.o
+
+# target to build an object file
+src/audio_controller.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/audio_controller.cpp.o
+.PHONY : src/audio_controller.cpp.o
+
+src/audio_controller.i: src/audio_controller.cpp.i
+.PHONY : src/audio_controller.i
+
+# target to preprocess a source file
+src/audio_controller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/audio_controller.cpp.i
+.PHONY : src/audio_controller.cpp.i
+
+src/audio_controller.s: src/audio_controller.cpp.s
+.PHONY : src/audio_controller.s
+
+# target to generate assembly for a file
+src/audio_controller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/audio_controller.cpp.s
+.PHONY : src/audio_controller.cpp.s
+
 src/block.o: src/block.cpp.o
 .PHONY : src/block.o
 
@@ -2982,6 +3006,9 @@ help:
 	@echo "... home/guile/x/Doomicraft/cgp/library/third_party/src/simplexnoise/simplexnoise1234.o"
 	@echo "... home/guile/x/Doomicraft/cgp/library/third_party/src/simplexnoise/simplexnoise1234.i"
 	@echo "... home/guile/x/Doomicraft/cgp/library/third_party/src/simplexnoise/simplexnoise1234.s"
+	@echo "... src/audio_controller.o"
+	@echo "... src/audio_controller.i"
+	@echo "... src/audio_controller.s"
 	@echo "... src/block.o"
 	@echo "... src/block.i"
 	@echo "... src/block.s"

@@ -221,11 +221,26 @@ PKG_CONFIG_ARGN:STRING=
 //pkg-config executable
 PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
 
+//The directory containing a CMake configuration file for SDL2.
+SDL2_DIR:PATH=/usr/local/lib/cmake/SDL2
+
+//The directory containing a CMake configuration file for SDL2_mixer.
+SDL2_mixer_DIR:PATH=/usr/local/lib/cmake/SDL2_mixer
+
 //The directory containing a CMake configuration file for glfw3.
 glfw3_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/glfw3
 
 //Path to a library.
 pkgcfg_lib_GLFW_glfw:FILEPATH=/usr/lib/x86_64-linux-gnu/libglfw.so
+
+//Path to a library.
+pkgcfg_lib_SDL2_MIXER_SDL2:FILEPATH=/usr/local/lib/libSDL2.so
+
+//Path to a library.
+pkgcfg_lib_SDL2_MIXER_SDL2_mixer:FILEPATH=/usr/local/lib/libSDL2_mixer.so
+
+//Path to a library.
+pkgcfg_lib_SDL2_SDL2:FILEPATH=/usr/local/lib/libSDL2.so
 
 //Value Computed by CMake
 project_BINARY_DIR:STATIC=/home/guile/x/Doomicraft/scenes_inf443/project/build
@@ -425,10 +440,90 @@ GLFW_glfw3_VERSION:INTERNAL=
 PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
 PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
+SDL2_CFLAGS:INTERNAL=-D_REENTRANT;-I/usr/local/include;-I/usr/local/include/SDL2
+SDL2_CFLAGS_I:INTERNAL=
+SDL2_CFLAGS_OTHER:INTERNAL=-D_REENTRANT
+SDL2_FOUND:INTERNAL=1
+SDL2_INCLUDEDIR:INTERNAL=/usr/local/include
+SDL2_INCLUDE_DIRS:INTERNAL=/usr/local/include;/usr/local/include/SDL2
+SDL2_LDFLAGS:INTERNAL=-L/usr/local/lib;-Wl,-rpath,/usr/local/lib;-Wl,--enable-new-dtags;-lSDL2
+SDL2_LDFLAGS_OTHER:INTERNAL=-Wl,-rpath,/usr/local/lib;-Wl,--enable-new-dtags
+SDL2_LIBDIR:INTERNAL=/usr/local/lib
+SDL2_LIBRARIES:INTERNAL=SDL2
+SDL2_LIBRARY_DIRS:INTERNAL=/usr/local/lib
+SDL2_LIBS:INTERNAL=
+SDL2_LIBS_L:INTERNAL=
+SDL2_LIBS_OTHER:INTERNAL=
+SDL2_LIBS_PATHS:INTERNAL=
+SDL2_MIXER_CFLAGS:INTERNAL=-D_REENTRANT;-I/usr/local/include/SDL2;-I/usr/local/include;-I/usr/local/include/SDL2
+SDL2_MIXER_CFLAGS_I:INTERNAL=
+SDL2_MIXER_CFLAGS_OTHER:INTERNAL=-D_REENTRANT
+SDL2_MIXER_FOUND:INTERNAL=1
+SDL2_MIXER_INCLUDEDIR:INTERNAL=/usr/local/include
+SDL2_MIXER_INCLUDE_DIRS:INTERNAL=/usr/local/include/SDL2;/usr/local/include;/usr/local/include/SDL2
+SDL2_MIXER_LDFLAGS:INTERNAL=-L/usr/local/lib;-lSDL2_mixer;-Wl,-rpath,/usr/local/lib;-Wl,--enable-new-dtags;-lSDL2
+SDL2_MIXER_LDFLAGS_OTHER:INTERNAL=-Wl,-rpath,/usr/local/lib;-Wl,--enable-new-dtags
+SDL2_MIXER_LIBDIR:INTERNAL=/usr/local/lib
+SDL2_MIXER_LIBRARIES:INTERNAL=SDL2_mixer;SDL2
+SDL2_MIXER_LIBRARY_DIRS:INTERNAL=/usr/local/lib
+SDL2_MIXER_LIBS:INTERNAL=
+SDL2_MIXER_LIBS_L:INTERNAL=
+SDL2_MIXER_LIBS_OTHER:INTERNAL=
+SDL2_MIXER_LIBS_PATHS:INTERNAL=
+SDL2_MIXER_MODULE_NAME:INTERNAL=SDL2_mixer
+SDL2_MIXER_PREFIX:INTERNAL=/usr/local
+SDL2_MIXER_SDL2_mixer_INCLUDEDIR:INTERNAL=
+SDL2_MIXER_SDL2_mixer_LIBDIR:INTERNAL=
+SDL2_MIXER_SDL2_mixer_PREFIX:INTERNAL=
+SDL2_MIXER_SDL2_mixer_VERSION:INTERNAL=
+SDL2_MIXER_STATIC_CFLAGS:INTERNAL=-D_REENTRANT;-I/usr/local/include/SDL2;-I/usr/local/include;-I/usr/local/include/SDL2
+SDL2_MIXER_STATIC_CFLAGS_I:INTERNAL=
+SDL2_MIXER_STATIC_CFLAGS_OTHER:INTERNAL=-D_REENTRANT
+SDL2_MIXER_STATIC_INCLUDE_DIRS:INTERNAL=/usr/local/include/SDL2;/usr/local/include;/usr/local/include/SDL2
+SDL2_MIXER_STATIC_LDFLAGS:INTERNAL=-L/usr/local/lib;-lSDL2_mixer;-Wl,-rpath,/usr/local/lib;-Wl,--enable-new-dtags;-lSDL2;-lm;-lpthread;-lrt
+SDL2_MIXER_STATIC_LDFLAGS_OTHER:INTERNAL=-Wl,-rpath,/usr/local/lib;-Wl,--enable-new-dtags
+SDL2_MIXER_STATIC_LIBDIR:INTERNAL=
+SDL2_MIXER_STATIC_LIBRARIES:INTERNAL=SDL2_mixer;SDL2;m;pthread;rt
+SDL2_MIXER_STATIC_LIBRARY_DIRS:INTERNAL=/usr/local/lib
+SDL2_MIXER_STATIC_LIBS:INTERNAL=
+SDL2_MIXER_STATIC_LIBS_L:INTERNAL=
+SDL2_MIXER_STATIC_LIBS_OTHER:INTERNAL=
+SDL2_MIXER_STATIC_LIBS_PATHS:INTERNAL=
+SDL2_MIXER_VERSION:INTERNAL=2.6.3
+SDL2_MODULE_NAME:INTERNAL=sdl2
+SDL2_PREFIX:INTERNAL=/usr/local
+SDL2_STATIC_CFLAGS:INTERNAL=-D_REENTRANT;-I/usr/local/include;-I/usr/local/include/SDL2
+SDL2_STATIC_CFLAGS_I:INTERNAL=
+SDL2_STATIC_CFLAGS_OTHER:INTERNAL=-D_REENTRANT
+SDL2_STATIC_INCLUDE_DIRS:INTERNAL=/usr/local/include;/usr/local/include/SDL2
+SDL2_STATIC_LDFLAGS:INTERNAL=-L/usr/local/lib;-Wl,-rpath,/usr/local/lib;-Wl,--enable-new-dtags;-lSDL2;-lm;-lpthread;-lrt
+SDL2_STATIC_LDFLAGS_OTHER:INTERNAL=-Wl,-rpath,/usr/local/lib;-Wl,--enable-new-dtags
+SDL2_STATIC_LIBDIR:INTERNAL=
+SDL2_STATIC_LIBRARIES:INTERNAL=SDL2;m;pthread;rt
+SDL2_STATIC_LIBRARY_DIRS:INTERNAL=/usr/local/lib
+SDL2_STATIC_LIBS:INTERNAL=
+SDL2_STATIC_LIBS_L:INTERNAL=
+SDL2_STATIC_LIBS_OTHER:INTERNAL=
+SDL2_STATIC_LIBS_PATHS:INTERNAL=
+SDL2_VERSION:INTERNAL=2.26.5
+SDL2_sdl2_INCLUDEDIR:INTERNAL=
+SDL2_sdl2_LIBDIR:INTERNAL=
+SDL2_sdl2_PREFIX:INTERNAL=
+SDL2_sdl2_VERSION:INTERNAL=
 //linker supports push/pop state
 _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
+__pkg_config_arguments_SDL2:INTERNAL=REQUIRED;IMPORTED_TARGET;sdl2
+__pkg_config_arguments_SDL2_MIXER:INTERNAL=REQUIRED;IMPORTED_TARGET;SDL2_mixer
 __pkg_config_checked_GLFW:INTERNAL=1
+__pkg_config_checked_SDL2:INTERNAL=1
+__pkg_config_checked_SDL2_MIXER:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_GLFW_glfw
 pkgcfg_lib_GLFW_glfw-ADVANCED:INTERNAL=1
-prefix_result:INTERNAL=/usr/lib/x86_64-linux-gnu
+//ADVANCED property for variable: pkgcfg_lib_SDL2_MIXER_SDL2
+pkgcfg_lib_SDL2_MIXER_SDL2-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_SDL2_MIXER_SDL2_mixer
+pkgcfg_lib_SDL2_MIXER_SDL2_mixer-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_SDL2_SDL2
+pkgcfg_lib_SDL2_SDL2-ADVANCED:INTERNAL=1
+prefix_result:INTERNAL=/usr/local/lib
 

@@ -13,6 +13,7 @@
 
 
 
+
 // This definitions allow to use the structures: mesh, mesh_drawable, etc. without mentionning explicitly cgp::
 using cgp::mesh;
 using cgp::mesh_drawable;
@@ -94,6 +95,10 @@ struct scene_structure : cgp::scene_inputs_generic
 
 
 	timed_gui hit_crosshair;
+	timed_gui dead_notice;
+
+	// soundeffects
+	bool is_shooting = false;
 
 
 	// ****************************** //
@@ -101,6 +106,7 @@ struct scene_structure : cgp::scene_inputs_generic
 	// ****************************** //
 
 	void initialize_game();	 
+	void initialize_sound();	 
 	void initialize_timed_guis();
 	void initialize();	  // Standard initialization to be called before the animation loop
 	void display_frame(); // The frame display to be called within the animation loop
@@ -111,6 +117,8 @@ struct scene_structure : cgp::scene_inputs_generic
 	void keyboard_event();
 	void idle_frame();
 	void end_game();
+
+	void cleanup();
 };
 
 bool LoadTextureFromFile(const char *filename, GLuint *out_texture, int *out_width, int *out_height);

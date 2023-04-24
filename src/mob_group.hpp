@@ -36,7 +36,7 @@ public:
         float // distance;
     );
 
-    int check_dead();
+    int check_dead(vec3 from);
 
     bool check_hits_player(vec3 player_position);
 

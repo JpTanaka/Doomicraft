@@ -32,7 +32,9 @@ void init_sound_effects(){
 
 void init_sfx(const char* wav_path, int duration_ms, bool* listener, bool on_repeat) {
 	for(;;){
-        std::cout << std::endl; // dont know why but this is needed to make audio run on windows ...
+        #ifdef _WIN32
+            std::cout << std::endl; // dont know why but this is needed to make audio run on windows ...
+        #endif //_WIN32
 		if (!*listener) continue;
 		if (!on_repeat) *listener = false;
 

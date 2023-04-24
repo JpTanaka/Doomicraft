@@ -49,7 +49,7 @@ bool mob_group::shoot_mob(
     return hit;
 }
 
-int mob_group::check_dead(){
+int mob_group::check_dead(vec3 from){
     int kills = 0;
     std::vector<std::vector<mob>::iterator> deads;
     for (auto it = mobs.begin(); it != mobs.end(); it++) 
@@ -58,9 +58,13 @@ int mob_group::check_dead(){
     
     for (auto& dead: deads) {
         // creating another one around the dead
-        vec3 rand_vec = {utils::rand(-1, 1) * mob_range, utils::rand(-1, 1) * mob_range, 10};
+        vec3 rand_vec;
+        do {
+            rand_vec = {utils::rand(-1, 1) * mob_range, utils::rand(-1, 1) * mob_range, 10};
+        } while (norm(from - rand_vec) < 10);
+        
         add_mob(mob({
-            dead->position + rand_vec
+            from + rand_vec
         }));
 
         // erasing the dead
@@ -90,6 +94,6 @@ bool mob_group::check_hits_player(vec3 player_position){
 
 void mob_group::set_level(int level){
     wave_size = 5 + level;
-    mob_range = 16 - std::min(level, 10);
+    mob_range = 25 - std::min(level, 15);
     velocity = 1 + std::min(level, 3);
 }

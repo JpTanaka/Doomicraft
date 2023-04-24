@@ -180,7 +180,7 @@ bool player::shoot_mob(
         looking_at(), 
         detect_colision(mobg.get_cubes(), 20.0f)
     );
-    int new_kills = mobg.check_dead();
+    int new_kills = mobg.check_dead(position);
     kills += new_kills;
     if (new_kills > 0) lists.kill = true;
     return hit;

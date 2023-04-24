@@ -80,7 +80,7 @@ endif()
 if(MSVC)
    set(CMAKE_CONFIGURATION_TYPES RelWithDebInfo ) # default build as RelWithDebInfo
    set_property( DIRECTORY PROPERTY VS_STARTUP_PROJECT  ${executable_name} ) # default project (avoids AllBuild)
-   set_target_properties( ${executable_name} PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/build/$<CONFIG> ) # default output in root dir
+   set_target_properties( ${executable_name} PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/build$<0:> ) # default output in root dir
    set_target_properties( ${executable_name} PROPERTIES VS_DEBUGGER_WORKING_DIRECTORY ${CMAKE_SOURCE_DIR} ) # default debug execution in root dir
    
    # Avoids the warning /W3 overided by /W4 when using Ninja

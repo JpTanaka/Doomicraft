@@ -72,9 +72,9 @@ int main(int, char* argv[])
 	fps_record.start();
 
 	// sound thread	
-#ifdef __linux__
+//#ifdef __linux__
 	init_sound_effects();
-#endif //_WIN32
+//#endif //_WIN32
 
 	// Call the main display loop in the function animation_loop
 	//  The following part is simply a loop that call the function "animation_loop"

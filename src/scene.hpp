@@ -105,8 +105,7 @@ struct scene_structure : cgp::scene_inputs_generic
 	// Functions
 	// ****************************** //
 
-	void initialize_game();	 
-	void initialize_sound();	 
+	void initialize_game();	 	 
 	void initialize_timed_guis();
 	void initialize();	  // Standard initialization to be called before the animation loop
 	void display_frame(); // The frame display to be called within the animation loop
@@ -117,8 +116,6 @@ struct scene_structure : cgp::scene_inputs_generic
 	void keyboard_event();
 	void idle_frame();
 	void end_game();
-
-	void cleanup();
 };
 
 bool LoadTextureFromFile(const char *filename, GLuint *out_texture, int *out_width, int *out_height);

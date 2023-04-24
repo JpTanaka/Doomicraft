@@ -28,6 +28,7 @@ struct camera_controller_custom : camera_controller_first_person_euler
 	void set_position(vec3& position);
 
 	void deactivate();
+	void activate();
 
 	private:
 	    bool cursor_enabled = false;

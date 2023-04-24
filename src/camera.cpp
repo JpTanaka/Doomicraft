@@ -48,6 +48,9 @@ void camera_controller_custom::deactivate(){
     glfwSetInputMode(window->glfw_window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
     cursor_enabled = true;
 }
+void camera_controller_custom::activate() {
+    cursor_enabled = false;
+}
 
 void camera_controller_custom::action_keyboard(mat4 &, bool& config_mode)
 {

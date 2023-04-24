@@ -5,8 +5,8 @@ using namespace cgp;
 
 void scene_structure::initialize_game(){
 	main_player.start_game();
+	camera_control.activate();
 
-	
 	switch (game_mode){
 	case game_modes::kCreative:
 		environment.background_color = {0.5, 0.7, 1};
@@ -30,6 +30,7 @@ void scene_structure::initialize_game(){
 void scene_structure::initialize()
 {
 	camera_control.initialize(inputs, window);
+	camera_control.deactivate();
 	environment.uniform_generic.uniform_vec3["fog_color"] = environment.background_color;
 	camera_projection.field_of_view = FIELD_OF_VIEW;
 	environment.light = {50, 50, 50};
@@ -38,7 +39,7 @@ void scene_structure::initialize()
 
 	block::initialize();
 	terr = terrain();
-	main_player = player(camera_control, {0, 0, 10}, &gui.creative, &terr);
+	main_player = player(camera_control, { 0, 0, 10 }, &gui.creative, &terr);
 
 	// Adding portal gun
 	glfwInit();
@@ -47,7 +48,6 @@ void scene_structure::initialize()
 	utils::LoadTextureFromFile("../assets/hit_crosshair.png", &gui.hit_crosshair.image_texture, &gui.hit_crosshair.image_width, &gui.hit_crosshair.image_height);
 
 	initialize_timed_guis();
-	initialize_sound();
 }
 
 void scene_structure::display_frame()
@@ -312,12 +312,4 @@ void scene_structure::display_gui()
 		ImVec2((float)gui.crosshair.image_width, (float)gui.crosshair.image_height)
 	);
 	ImGui::End();
-}
-
-
-
-void scene_structure::initialize_sound(){
-}
-
-void scene_structure::cleanup(){
 }

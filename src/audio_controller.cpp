@@ -31,7 +31,7 @@ void init_sound_effects(){
 }
 
 void init_sfx(const char* wav_path, int duration_ms, bool* listener, bool on_repeat) {
-	for(;;){
+	while(1){
 
 		if (!*listener) continue;
 		if (!on_repeat) *listener = false;

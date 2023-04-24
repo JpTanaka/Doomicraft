@@ -1,4 +1,4 @@
-# Doomicraft
+# ⛏️ Doomicraft ⛏️
 
 A mix between Minecraft and Doom! Build your world on Creative or fight creepers in Survival, hoping to last another level...
 
@@ -8,7 +8,7 @@ The game is free to play and it uses free assets.
 
 Originally a project for the INF443 course at Polytechnique.
 
-## Downloading
+## 📥 Downloading
 To download the latest version of the game refer to the releases tab of the GitHub page.
 After downloading the package (.tar for linux and .zip for windows), go into the folder Doomicraft, then into build and run (double click) on Doomicraft!
 The path is going to look like: `Doomicraft/build/Doomicraft[.exe]`;
@@ -17,7 +17,7 @@ The game should start running on your machine after that!
 
 You are encouraged to create a shortcut on your Desktop workspace if you want to access without going into the folder structure.
 
-## Compiling 
+## 💽 Compiling 
 If you want to compile the game by yourself on your linux machine, go through with the following steps:
 
 0. Make sure you have CMake on version at least 3.8 and git installed on your machine.

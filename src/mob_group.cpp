@@ -6,7 +6,7 @@ mob_group::mob_group(){}
 
 mob_group::mob_group(vec3 starting_position){
     for (int i = 0; i < wave_size; i++){
-        vec3 rand_vec = {utils::rand(-1, 1) * mob_range, utils::rand(-1, 1) * mob_range, 10};
+        vec3 rand_vec = {utils::rand(-1, 1) * mob_range, utils::rand(-1, 1) * mob_range, 7};
         add_mob(mob({
             starting_position + rand_vec
         }));

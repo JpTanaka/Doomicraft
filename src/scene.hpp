@@ -25,7 +25,8 @@ using cgp::vec3;
 // Game modes
 enum game_modes {
 	kSurvival,
-	kCreative
+	kCreative,
+	kTest
 };
 
 // for loading sprites in the ImGui

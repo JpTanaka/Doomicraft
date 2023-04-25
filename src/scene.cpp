@@ -21,6 +21,11 @@ void scene_structure::initialize_game(){
 		lists.background = true;
 		break;
 	
+	case game_modes::kTest:
+		environment.background_color = vec3{1, 1, 1};
+		gui.fog_depth = 16;
+		break;
+	
 	default:
 		break;
 	}
@@ -117,6 +122,11 @@ void scene_structure::idle_frame()
 		break;
 
 	case game_modes::kCreative:
+		camera_control.idle_frame(environment.camera_view);
+		main_player.move(terr.get_cubes(main_player.position));
+		break;
+
+	case game_modes::kTest:
 		camera_control.idle_frame(environment.camera_view);
 		main_player.move(terr.get_cubes(main_player.position));
 		break;

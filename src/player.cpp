@@ -161,15 +161,20 @@ bool player::handle_mouse_input(const std::vector<cube>& cubes, mob_group &mobg)
 void player::handle_cubes(const std::vector<cube>& cubes){
     float dist = detect_colision(cubes, 5);
     if (dist == INFTY) return;
+
+    vec3 where = get_eyes() + 
+        looking_at() * (dist + kEps * (chosen_block == block_types::NO_BLOCK ? 1 : -1));
+
+    // check if inside player
+    if (
+        utils::distance(where, get_eyes()) < Length ||
+        utils::distance(where, get_legs()) < Length 
+    ) return;
+
     if (chosen_block == block_types::NO_BLOCK)
-        terr->delete_bloc(
-            get_eyes() + looking_at() * (dist + kEps)
-        );
+        terr->delete_bloc(where);
     else
-        terr->create_bloc(
-            get_eyes() + looking_at() * (dist - kEps), 
-            chosen_block
-        );
+        terr->create_bloc(where, chosen_block);
 }
 
 bool player::shoot_mob(

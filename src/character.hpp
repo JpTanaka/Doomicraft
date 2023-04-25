@@ -25,4 +25,5 @@ public:
     float top();
 
     vec3 get_eyes();
+    vec3 get_legs();
 };

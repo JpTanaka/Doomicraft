@@ -32,3 +32,7 @@ float character::top(){
 vec3 character::get_eyes(){
     return body.position;
 }
+
+vec3 character::get_legs(){
+    return legs.position;
+}

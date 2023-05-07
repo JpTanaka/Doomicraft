@@ -128,7 +128,7 @@ bool main_menu(){
 		ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_NoBackground
 	);
 	ImGui::Text("		 --------------------------");
-	ImGui::Text("		 | Wellcome to DoomiCraft |");
+	ImGui::Text("		 | Welcome to DoomiCraft! |");
 	ImGui::Text("		 --------------------------");
 	ImGui::Text(" ");
 	ImGui::Text("To move: A W S D");

@@ -20,7 +20,7 @@ namespace utils
     float distance(vec2, vec2);
     float distance(vec3, vec3);
 
-    vec2 standardize_direction(vec3);
+    vec3 standardize_direction(vec3);
 
     int sign(float);
     float rand(float min = 0, float max = 1);

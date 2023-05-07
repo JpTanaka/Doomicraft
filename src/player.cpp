@@ -7,6 +7,10 @@
 player::player(camera_controller_custom &cam, vec3 center, bool* creative, terrain* terr)
     : character(center), terr(terr), creative(creative)
 {
+    this->center = center + vec3{0, 0, 0.5 * dimensions.z};
+    collision_box.initialize_data_on_gpu(mesh_primitive_cube());
+    collision_box.model.scaling_xyz = dimensions;
+
     camera = &cam;
     camera->set_position(center);
     starting_position = center;
@@ -17,6 +21,49 @@ player::player()
 
 vec3 player::looking_at(){
     return camera->camera_model.front();
+}
+
+vec3 player::collide(const std::vector<cube>& cubes, const vec3& move_direction){
+
+    return move_direction;
+
+    // vec3 move = move_direction;
+    // float z_move = move.z;
+    // for (cube c : cubes){
+    //     // plane collision
+    //     if (!(
+    //         c.top() <= bottom() ||
+    //         c.bottom() >= top()
+    //     )){ // checks only on the strip
+    //         auto direction = body.get_colision_direction(c);
+    //         int axis = direction.first;
+    //         int semiaxis = direction.second;
+    //         if (
+    //             !(axis == -1 || axis == 2) &&
+    //             (semiaxis * move_direction[axis] > 0)
+    //         ) move[axis] = 0;
+    //     }
+
+    //     // z colision
+    //     if(body.distancexy(c) < Length){ // check only on the cilinder
+    //         if(
+    //             bottom() >= c.top() &&
+    //             bottom() + z_move <= c.top()
+    //         ) {
+    //             z_move = c.top() - bottom();
+    //             velocity.z = 0;
+    //             is_jumping = false;
+    //         };
+    //         if(
+    //             top() <= c.bottom() &&
+    //             top() + z_move >= c.bottom()
+    //         ) {
+    //             z_move = c.bottom() - top() ;
+    //             velocity.z = 0;
+    //         }
+    //     }
+    // }
+    // return move;
 }
 
 void player::move(const std::vector<cube>& cubes)
@@ -30,15 +77,14 @@ void player::move(const std::vector<cube>& cubes)
     float const step = camera->keyboard_sensitivity * dt;
 
     // initialize move direction
-    vec2 move_direction = {0, 0};
-    float z_move = 0;
+    vec3 move_direction = {0, 0, 0};
 
     // get input to move
     if(*creative){
         if (inputs->keyboard.is_pressed(GLFW_KEY_SPACE) )
-            z_move += step;
+            move_direction.z += step;
         if (inputs->keyboard.is_pressed(GLFW_KEY_Z) )
-            z_move -= step;
+            move_direction.z -= step;
     }
 
     if (inputs->keyboard.is_pressed(GLFW_KEY_SPACE) && !is_jumping && !*creative){
@@ -60,50 +106,16 @@ void player::move(const std::vector<cube>& cubes)
 
     // updating z on gravity
     if(!*creative){
-        z_move += velocity.z * dt - 0.5 * gravity * dt * dt;
+        move_direction.z += velocity.z * dt - 0.5 * gravity * dt * dt;
         velocity.z -= gravity * dt;
     }
 
     // check for cubes colisions
-    for (cube c : cubes)
-    {
-        // plane collision
-        if (!(
-            c.top() <= bottom() ||
-            c.bottom() >= top()
-        )){ // checks only on the strip
-            auto direction = body.get_colision_direction(c);
-            int axis = direction.first;
-            int semiaxis = direction.second;
-            if (
-                !(axis == -1 || axis == 2) &&
-                (semiaxis * move_direction[axis] > 0)
-            ) move_direction[axis] = 0;
-        }
-
-        // z colision
-        if(body.distancexy(c) < Length){ // check only on the cilinder
-            if(
-                bottom() >= c.top() &&
-                bottom() + z_move <= c.top()
-            ) {
-                z_move = c.top() - bottom();
-                velocity.z = 0;
-                is_jumping = false;
-            };
-            if(
-                top() <= c.bottom() &&
-                top() + z_move >= c.bottom()
-            ) {
-                z_move = c.bottom() - top() ;
-                velocity.z = 0;
-            }
-        }
-    }
+    move_direction = collide(cubes, move_direction);
 
     // updates position
-    position += utils::expand(move_direction);
-    position.z += z_move;
+    position += move_direction;
+    center += move_direction;
 
     // moves!
     legs.position = position;
@@ -177,9 +189,7 @@ void player::handle_cubes(const std::vector<cube>& cubes){
         terr->create_bloc(where, chosen_block);
 }
 
-bool player::shoot_mob(
-    mob_group &mobg
-) {
+bool player::shoot_mob(mob_group &mobg) {
     bool hit = mobg.shoot_mob(
         get_eyes(),
         looking_at(), 
@@ -265,4 +275,9 @@ void player::start_game(){
 
 void player::end_game(){
     game_on = false;
+}
+
+void player::draw_collision_box(environment_structure& env){
+    collision_box.model.translation = center;
+    draw_wireframe(collision_box, env);
 }

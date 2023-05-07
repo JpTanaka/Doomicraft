@@ -46,6 +46,8 @@ struct gui_parameters
 	bool debug = false;
 
 	int fog_depth = 24;
+
+	bool collision_box = false;
 	
 	image_obj portal_gun;
 	image_obj crosshair;

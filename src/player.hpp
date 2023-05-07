@@ -28,7 +28,16 @@ class player : public character {
 
     void respawn();
 
+    // new collision system
+    vec3 collide(const std::vector<cube>& cubes, const vec3& move_direction);
+    vec3 center = {0, 0, 0};
+    vec3 dimensions = vec3{0.7, 0.7, 2 * 0.9} * Length;
+
 public:
+    // collision debugging
+    mesh_drawable collision_box;
+    void draw_collision_box(environment_structure&);
+
     bool* creative;
     camera_controller_custom* camera;
 

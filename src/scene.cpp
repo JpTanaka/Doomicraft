@@ -24,6 +24,8 @@ void scene_structure::initialize_game(){
 	case game_modes::kTest:
 		environment.background_color = vec3{1, 1, 1};
 		gui.fog_depth = 16;
+		gui.creative = true;
+		gui.collision_box = true;
 		break;
 	
 	default:
@@ -62,6 +64,7 @@ void scene_structure::display_frame()
 	environment.uniform_generic.uniform_int["fog_depth"] = gui.fog_depth;
 	timer.update();
 	terr.draw(environment, gui.display_wireframe, main_player.get_eyes(), main_player.looking_at(), gui.fog_depth);
+	if(gui.collision_box) main_player.draw_collision_box(environment);
 
 	switch (game_mode){
 	case game_modes::kSurvival:
@@ -228,6 +231,7 @@ void scene_structure::display_gui()
 		if (gui.debug){
 			ImGui::Checkbox("Wireframe", &gui.display_wireframe);
 			ImGui::Checkbox("Creative", &gui.creative);
+			ImGui::Checkbox("Colision Box", &gui.collision_box);
 			ImGui::SliderInt("Fog Depth", &gui.fog_depth, 0, 64);
 		}
 		ImGui::Text(" ");

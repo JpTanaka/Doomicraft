@@ -30,6 +30,7 @@ float sweepAABB (
     const vec3& player_dimensions,
     const vec3& cube_center,
     const vec3& cube_dimensions,
+    vec3& normal,
     const vec3& move
 ){
     vec3 entry, exit, entry_t, exit_t;
@@ -62,8 +63,19 @@ float sweepAABB (
         (entry_t.x > 1.0f) ||
         (entry_t.y > 1.0f) ||
         (entry_t.z > 1.0f)
-    ) return 1.0f;
+    ) {
+        normal = {0, 0, 0};
+        return 1.0f;
+    }
 
+    // collision
+    // int i = 0;
+    // for (; i < 3; i++) if (entry_t[i] == entry_time) break;
+    // normal = {0, 0, 0};
+    // normal[i] = entry[i] < 0.0f ? 1.0f : -1.0f;
+    if (entry_t.x > entry_t.y && entry_t.x > entry_t.z) normal = {entry.x <= 0.0f ? 1.0f : -1.0f, 0, 0};
+    if (entry_t.y > entry_t.x && entry_t.y > entry_t.z) normal = {0, entry.y <= 0.0f ? 1.0f : -1.0f, 0};
+    if (entry_t.z > entry_t.y && entry_t.z > entry_t.x) normal = {0, 0, entry.z <= 0.0f ? 1.0f : -1.0f};
 
     return entry_time;
 }
@@ -71,31 +83,44 @@ float sweepAABB (
 bool in_box(const vec3& box_center, const vec3& box_dimension, const vec3& obj_center, const vec3& obj_dimension){
     for (int i = 0; i < 3; i ++)
         if (
-            obj_center[i] - 0.5f * obj_dimension[i] > box_center[i] + 0.5f * box_dimension[i] ||
-            obj_center[i] + 0.5f * obj_dimension[i] < box_center[i] - 0.5f * box_dimension[i]
+            obj_center[i] - 0.5f * obj_dimension[i] >= box_center[i] + 0.5f * box_dimension[i] ||
+            obj_center[i] + 0.5f * obj_dimension[i] <= box_center[i] - 0.5f * box_dimension[i]
         ) return false;
     return true;
 }
 
 vec3 player::collide(const std::vector<cube>& cubes, const vec3& move_direction){
-    float t_min = 1.0f;
-    vec3 box_center = center + 0.5f * move_direction;
-    vec3 box_dimentions = utils::abs(move_direction) + utils::abs(dimensions);
+    vec3 new_move_direction = move_direction;
+    for (int i = 0; i < 3; i++){
+        float t_min = 1.0f;
+        vec3 col_normal = {0, 0, 0};
 
-    std::cout << "center " << box_center << " dims " << box_dimentions << std::endl;
+        vec3 box_center = center + 0.5f * new_move_direction;
+        vec3 box_dimentions = utils::abs(new_move_direction) + utils::abs(dimensions);
 
-    for (const cube& c: cubes){
-        // broadphase
-        const vec3& pos = c.position;
-        if (!in_box(box_center, box_dimentions, pos, vec3{1, 1, 1} * Length)) continue;
+        for (const cube& c: cubes){
+            // broadphase
+            const vec3& pos = c.position;
+            if (!in_box(box_center, box_dimentions, pos, vec3{1, 1, 1} * Length)) continue;
+            vec3 normal = {0, 0, 0};
+            float t_entry = sweepAABB(center, dimensions, c.position, vec3{1, 1, 1}*Length, normal, new_move_direction);
+            if (t_entry < t_min){
+                t_min = t_entry; 
+                col_normal = normal;
+            }
+            // debugging
+            if (t_entry < 1.0f && t_entry > 0.0f && p_env != nullptr) c.draw_wire(*p_env);
+        }
 
-        float t_entry = sweepAABB(center, dimensions, c.position, vec3{1, 1, 1}*Length, move_direction);
-        t_min = std::min(t_min, t_entry);
+        // sliding
+        float remaining_time = 1.0f - t_min;
+        float dp = dot(new_move_direction, col_normal);
+        vec3 remainder = {0, 0, 0};
+        if (dp < 0) remainder = - dp * col_normal + new_move_direction;
 
-        // debugging
-        if (t_entry < 1.0f && t_entry > 0.0f && p_env != nullptr) c.draw_wire(*p_env);
+        new_move_direction = new_move_direction * (t_min - kEps) + remainder * remaining_time;
     }
-    return move_direction * t_min;
+    return new_move_direction;
 }
 
 void player::move(const std::vector<cube>& cubes)

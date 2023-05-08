@@ -69,10 +69,6 @@ float sweepAABB (
     }
 
     // collision
-    // int i = 0;
-    // for (; i < 3; i++) if (entry_t[i] == entry_time) break;
-    // normal = {0, 0, 0};
-    // normal[i] = entry[i] < 0.0f ? 1.0f : -1.0f;
     if (entry_t.x > entry_t.y && entry_t.x > entry_t.z) normal = {entry.x <= 0.0f ? 1.0f : -1.0f, 0, 0};
     if (entry_t.y > entry_t.x && entry_t.y > entry_t.z) normal = {0, entry.y <= 0.0f ? 1.0f : -1.0f, 0};
     if (entry_t.z > entry_t.y && entry_t.z > entry_t.x) normal = {0, 0, entry.z <= 0.0f ? 1.0f : -1.0f};
@@ -91,10 +87,10 @@ bool in_box(const vec3& box_center, const vec3& box_dimension, const vec3& obj_c
 
 vec3 player::collide(const std::vector<cube>& cubes, const vec3& move_direction){
     vec3 new_move_direction = move_direction;
+
     for (int i = 0; i < 3; i++){
         float t_min = 1.0f;
         vec3 col_normal = {0, 0, 0};
-
         vec3 box_center = center + 0.5f * new_move_direction;
         vec3 box_dimentions = utils::abs(new_move_direction) + utils::abs(dimensions);
 
@@ -103,7 +99,7 @@ vec3 player::collide(const std::vector<cube>& cubes, const vec3& move_direction)
             const vec3& pos = c.position;
             if (!in_box(box_center, box_dimentions, pos, vec3{1, 1, 1} * Length)) continue;
             vec3 normal = {0, 0, 0};
-            float t_entry = sweepAABB(center, dimensions, c.position, vec3{1, 1, 1}*Length, normal, new_move_direction);
+            float t_entry = sweepAABB(center, dimensions, c.position, vec3{1, 1, 1} * Length, normal, new_move_direction);
             if (t_entry < t_min){
                 t_min = t_entry; 
                 col_normal = normal;
@@ -117,7 +113,8 @@ vec3 player::collide(const std::vector<cube>& cubes, const vec3& move_direction)
         float dp = dot(new_move_direction, col_normal);
         vec3 remainder = {0, 0, 0};
         if (dp < 0) remainder = - dp * col_normal + new_move_direction;
-
+        
+        // updating move direction
         new_move_direction = new_move_direction * (t_min - kEps) + remainder * remaining_time;
     }
     return new_move_direction;
@@ -167,8 +164,27 @@ void player::move(const std::vector<cube>& cubes)
         velocity.z -= gravity * dt;
     }
 
+    // check will land from jump
+    // not ideal implementation but it works (very simple checks and const refs)
+    for (const cube& c : cubes){
+        if(body.distancexy(c) < 0.5f * dimensions.x + 0.5f * Length){ // check only on the cilinder
+            if(
+                bottom() >= c.top() &&
+                bottom() + move_direction.z <= c.top()
+            ) {
+                velocity.z = 0;
+                is_jumping = false;
+            };
+            if(
+                top() <= c.bottom() &&
+                top() + move_direction.z >= c.bottom()
+            ) velocity.z = 0;
+        }
+    }
+
     // check for cubes colisions
     move_direction = collide(cubes, move_direction);
+    
 
     // updates position
     position += move_direction;
@@ -235,10 +251,7 @@ void player::handle_cubes(const std::vector<cube>& cubes){
         looking_at() * (dist + kEps * (chosen_block == block_types::NO_BLOCK ? 1 : -1));
 
     // check if inside player
-    if (
-        utils::distance(where, get_eyes()) < Length ||
-        utils::distance(where, get_legs()) < Length 
-    ) return;
+    if (is_inside(where)) return;
 
     if (chosen_block == block_types::NO_BLOCK)
         terr->delete_bloc(where);
@@ -337,4 +350,18 @@ void player::end_game(){
 void player::draw_collision_box(environment_structure& env){
     collision_box.model.translation = center;
     draw_wireframe(collision_box, env);
+}
+
+float player::top() {
+    return center.z + dimensions.z * 0.5f;
+}
+
+float player::bottom() {
+    return center.z - dimensions.z * 0.5f;
+}
+
+bool player::is_inside(const vec3& p) const {
+    return in_box(
+        center, dimensions, utils::round(p), vec3{1, 1, 1} * Length
+    );
 }

@@ -69,11 +69,11 @@ float cube::distancexy(cube const& c){
 
 
 
-float cube::top(){
+float cube::top() const{
     return position.z + Length/2.0f;
 }
 
-float cube::bottom(){
+float cube::bottom() const{
     return position.z - Length/2.0f;
 }
 

@@ -32,6 +32,9 @@ class player : public character {
     vec3 collide(const std::vector<cube>& cubes, const vec3& move_direction);
     vec3 center = {0, 0, 0};
     vec3 dimensions = vec3{0.7, 0.7, 2 * 0.9} * Length;
+    float top();
+    float bottom();
+    bool is_inside(const vec3&) const;
 
     environment_structure* p_env;
 

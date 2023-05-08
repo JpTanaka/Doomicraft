@@ -29,8 +29,8 @@ public:
 
     bool operator==(const cube&) const;
 
-    float top();
-    float bottom();
+    float top() const;
+    float bottom() const;
 
 
     // debugging

@@ -24,7 +24,7 @@ void scene_structure::initialize_game(){
 	case game_modes::kTest:
 		environment.background_color = vec3{1, 1, 1};
 		gui.fog_depth = 16;
-		gui.creative = true;
+		gui.creative = false;
 		gui.collision_box = true;
 		gui.debug = true;
 		break;

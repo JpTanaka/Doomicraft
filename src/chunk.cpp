@@ -25,7 +25,7 @@ chunk::chunk(vec2 chunk_position)
         if(utils::rand() < 0.005)
             create_tree({x, y, height + 1});
 
-        if(utils::rand() < 0.01)
+        if(utils::rand() < 0.008)
             create_flower({x, y, height + 1});
     }
     update_blocks();
@@ -42,6 +42,11 @@ void chunk::update_blocks(){
         if(!check_has_block(pos + utils::Triplet(0, 0, -1))) render_dirs.push_back(directions::kBottom);
         blk.render_directions = render_dirs;
     }
+    for (auto& bill : billboards){// dropping billboards
+        if(!check_has_block(bill.get_position() + vec3{0, 0, -1})) 
+            bill.update_position(bill.get_position() + vec3{0, 0, -1});
+    }
+
 }
 
 int chunk::generator_function(const vec2& v){
@@ -60,7 +65,7 @@ void chunk::create_tree(const vec3& center){
     for (int i = 0; i < height; i++)
         create_block(block_types::wood, center + i * vec3{0,0,1});
 
-    // leaves
+    // leaves (transparent)
     for(int z = height; z <= height + width ; z++){
         for(int x = -width; x <= width; x++){
             for(int y = -width; y <= width; y++){
@@ -78,7 +83,8 @@ void chunk::create_flower(const vec3& center){
     vec3 int_center = utils::round(center);
     vec3 pos = utils::expand(position) + int_center;
     if(check_has_block(pos)) return;
-    auto b = billboard(red_flower, pos);
+    billboard_types t = static_cast<billboard_types>(utils::rand(0, NUM_BILLBOARDS));
+    auto b = billboard(t, pos);
     billboards.push_back(b);
 }
 
@@ -124,7 +130,6 @@ void chunk::draw(const environment_structure& env, bool wireframe, const vec3& p
         if(blk.is_being_seen(player_position, player_looking_at, max_depth))
             blk.draw(env, wireframe, player_looking_at);
     }
-
 }
     
 std::vector<cube>& chunk::get_cubes(){
@@ -134,11 +139,6 @@ std::vector<cube>& chunk::get_cubes(){
 std::vector<billboard>& chunk::get_billboards(){
     return billboards;
 }
-
-std::vector<block>& chunk::get_transparents(){
-    return transparents;
-}
-
 
 utils::Triplet chunk::get_chunk_triplet(const vec3& pos){
     return utils::Triplet(

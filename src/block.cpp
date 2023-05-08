@@ -100,3 +100,7 @@ block_types block::get_next_block(block_types b, int amount){
 bool block::is_transparent() const{
     return block_type == leaf;
 }
+
+vec3 block::get_position() const {
+    return position;
+}

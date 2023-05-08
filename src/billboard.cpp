@@ -24,6 +24,14 @@ void billboard::init_billboards(){
     billboards[red_flower].first.texture.load_and_initialize_texture_2d_on_gpu(project::path + "assets/red_flower.png");
     billboards[red_flower].second.texture.load_and_initialize_texture_2d_on_gpu(project::path + "assets/red_flower.png");
 
+    billboards[red_tulip].first.texture.load_and_initialize_texture_2d_on_gpu(project::path + "assets/red_tulip.png");
+    billboards[red_tulip].second.texture.load_and_initialize_texture_2d_on_gpu(project::path + "assets/red_tulip.png");
+
+    billboards[paeonia].first.texture.load_and_initialize_texture_2d_on_gpu(project::path + "assets/paeonia.png");
+    billboards[paeonia].second.texture.load_and_initialize_texture_2d_on_gpu(project::path + "assets/paeonia.png");
+
+    billboards[blue_flower].first.texture.load_and_initialize_texture_2d_on_gpu(project::path + "assets/blue_flower.png");
+    billboards[blue_flower].second.texture.load_and_initialize_texture_2d_on_gpu(project::path + "assets/blue_flower.png");
 }
 billboard::billboard(billboard_types bt, vec3 pos)
 {
@@ -47,4 +55,8 @@ void billboard::draw(const environment_structure& env, bool wireframe) const {
 
 vec3 billboard::get_position() const{
     return position;
+}
+
+void billboard::update_position(vec3 p){
+    position = p;
 }

@@ -4,6 +4,9 @@
 
 enum billboard_types {
     red_flower,
+    red_tulip,
+    paeonia,
+    blue_flower,
     NUM_BILLBOARDS
 };
 
@@ -19,6 +22,7 @@ public:
     void draw(const environment_structure&, bool wireframe) const;
 
     vec3 get_position() const;
+    void update_position(vec3);
 
     static void init_billboards();
 };

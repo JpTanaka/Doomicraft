@@ -33,7 +33,7 @@ block_mesh::block_mesh(const std::tuple<std::string, vec3, bool>* config){
         mesh.texture.load_and_initialize_texture_2d_on_gpu(texture_path);
         mesh.material.color = color;
         mesh.material.phong.specular = 0;
-        // mesh.material.alpha = transparent ? 0 : 1;
+        mesh.material.alpha = transparent ? 0 : 1;
     }
 }
 

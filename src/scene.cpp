@@ -51,7 +51,7 @@ void scene_structure::initialize()
 
 	// Adding portal gun
 	glfwInit();
-	utils::LoadTextureFromFile("../assets/portal_gun.png", &gui.portal_gun.image_texture, &gui.portal_gun.image_width, &gui.portal_gun.image_height);
+	// utils::LoadTextureFromFile("../assets/portal_gun.png", &gui.portal_gun.image_texture, &gui.portal_gun.image_width, &gui.portal_gun.image_height);
 	utils::LoadTextureFromFile("../assets/crosshair_green.png", &gui.crosshair.image_texture, &gui.crosshair.image_width, &gui.crosshair.image_height);
 	utils::LoadTextureFromFile("../assets/hit_crosshair.png", &gui.hit_crosshair.image_texture, &gui.hit_crosshair.image_width, &gui.hit_crosshair.image_height);
 
@@ -294,23 +294,23 @@ void scene_structure::display_gui()
 
 	
 	// Weapon
-	ImGui::Begin("Weapon", NULL, 
-		ImGuiWindowFlags_NoBackground | ImGuiWindowFlags_NoInputs | ImGuiWindowFlags_NoDecoration
-	);
-	gui.portal_gun.image_height = std::min(window.width / 4.0f, 300.0f);
-	gui.portal_gun.image_width = std::min(window.width / 4.0f, 300.0f);
-	ImGui::SetWindowPos({
-		(float)window.width - (float)gui.portal_gun.image_width, 
-		(float)window.height - (float)gui.portal_gun.image_height
-	});
-	ImGui::SetWindowSize({
-		(float)gui.portal_gun.image_width, (float)gui.portal_gun.image_height
-	});
-	ImGui::Image(
-		(void *)(intptr_t)gui.portal_gun.image_texture, 
-		ImVec2(gui.portal_gun.image_width, gui.portal_gun.image_height)
-	);
-	ImGui::End();
+	// ImGui::Begin("Weapon", NULL, 
+	// 	ImGuiWindowFlags_NoBackground | ImGuiWindowFlags_NoInputs | ImGuiWindowFlags_NoDecoration
+	// );
+	// gui.portal_gun.image_height = std::min(window.width / 4.0f, 300.0f);
+	// gui.portal_gun.image_width = std::min(window.width / 4.0f, 300.0f);
+	// ImGui::SetWindowPos({
+	// 	(float)window.width - (float)gui.portal_gun.image_width, 
+	// 	(float)window.height - (float)gui.portal_gun.image_height
+	// });
+	// ImGui::SetWindowSize({
+	// 	(float)gui.portal_gun.image_width, (float)gui.portal_gun.image_height
+	// });
+	// ImGui::Image(
+	// 	(void *)(intptr_t)gui.portal_gun.image_texture, 
+	// 	ImVec2(gui.portal_gun.image_width, gui.portal_gun.image_height)
+	// );
+	// ImGui::End();
 
 	// Crosshair
 	ImGui::Begin("Crosshair", NULL, 

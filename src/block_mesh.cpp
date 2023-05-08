@@ -37,8 +37,10 @@ block_mesh::block_mesh(const std::tuple<std::string, vec3, bool>* config){
     }
 }
 
-void block_mesh::draw(const environment_structure& env, vec3 position, std::vector<directions> render_directions, bool wireframe){
+void block_mesh::draw(const environment_structure& env, vec3 position, std::vector<directions> render_directions, const vec3& looking_at, bool wireframe){
     for (directions dir : render_directions){
+        if (dot(normals[dir], looking_at) >= cos_frac_fov)
+            continue;
         mesh_drawable& mesh = meshes[dir];
         mesh.model.translation = position;
         if(!wireframe) cgp::draw(mesh, env);
@@ -96,4 +98,11 @@ void block_mesh::init_meshes(){
             { l,-l, l}
         )
     );
+
+    normals[directions::kRight]  = { 0,-1, 0};
+    normals[directions::kLeft]   = { 0, 1, 0};
+    normals[directions::kFront]  = { 1, 0, 0};
+    normals[directions::kBack]   = {-1, 0, 0};
+    normals[directions::kTop]    = { 0, 0, 1};
+    normals[directions::kBottom] = { 0, 0,-1};
 }

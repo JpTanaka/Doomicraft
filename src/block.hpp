@@ -20,6 +20,7 @@ enum block_types {
 class block {
 
     block_types block_type;
+    float cos_fov = std::cos(FIELD_OF_VIEW);
 
 public:
 
@@ -31,7 +32,7 @@ public:
 
     cube block_cube;
 
-    void draw(const environment_structure&, bool wireframe);
+    void draw(const environment_structure&, bool wireframe, const vec3& looking_at);
 
     block();
 

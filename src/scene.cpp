@@ -22,7 +22,7 @@ void scene_structure::initialize_game(){
 		break;
 	
 	case game_modes::kTest:
-		environment.background_color = vec3{1, 1, 1};
+		environment.background_color = vec3{0, 0, 0};
 		gui.fog_depth = 16;
 		gui.creative = false;
 		gui.collision_box = true;
@@ -47,7 +47,7 @@ void scene_structure::initialize()
 
 	block::initialize();
 	terr = terrain();
-	main_player = player(camera_control, { 0, 0, 10 }, &gui.creative, &terr, &environment);
+	main_player = player(camera_control, { 0, 0, 10 }, &gui.creative, &terr, game_mode == game_modes::kTest ? &environment : nullptr);
 
 	// Adding portal gun
 	glfwInit();

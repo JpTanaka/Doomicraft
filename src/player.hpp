@@ -36,6 +36,8 @@ class player : public character {
     float bottom();
     bool is_inside(const vec3&) const;
 
+    vec3 camera_pos;
+
     environment_structure* p_env;
 
 public:
@@ -63,7 +65,7 @@ public:
     int get_max_health();
     bool is_dead();
     int get_level();
-
+    vec3 get_eyes();
     void start_game();
     void end_game();
 

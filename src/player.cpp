@@ -6,14 +6,15 @@
 #include "audio_controller.hpp"
 
 player::player(camera_controller_custom &cam, vec3 center, bool* creative, terrain* terr, environment_structure* p_env)
-    : character(center), terr(terr), creative(creative), p_env(p_env)
+    : character(center), terr(terr), p_env(p_env), creative(creative)
 {
     this->center = center + vec3{0, 0, 0.5 * dimensions.z};
     collision_box.initialize_data_on_gpu(mesh_primitive_cube());
     collision_box.model.scaling_xyz = dimensions;
 
     camera = &cam;
-    camera->set_position(center);
+    camera_pos = center + vec3{0, 0, dimensions.z - 0.2f};
+    camera->set_position(camera_pos);
     starting_position = center;
 }
 
@@ -189,6 +190,7 @@ void player::move(const std::vector<cube>& cubes)
     // updates position
     position += move_direction;
     center += move_direction;
+    camera_pos += move_direction;
 
     // moves!
     legs.position = position;
@@ -196,7 +198,7 @@ void player::move(const std::vector<cube>& cubes)
     body.position = position;
     body.position.z += Length;
 
-    camera->set_position(body.position);
+    camera->set_position(camera_pos);
 }
 
 
@@ -364,4 +366,9 @@ bool player::is_inside(const vec3& p) const {
     return in_box(
         center, dimensions, utils::round(p), vec3{1, 1, 1} * Length
     );
+}
+
+
+vec3 player::get_eyes(){
+    return camera_pos;
 }

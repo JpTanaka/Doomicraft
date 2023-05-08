@@ -67,7 +67,8 @@ void terrain::create_bloc(const vec3& position, const block_types& block_type){
 void terrain::delete_bloc(const vec3& position){
     vec3 round_position = utils::round(position);
     auto player_chunk = chunk::get_chunk_triplet(position);
-    chunks[player_chunk].delete_bloc_absolute(round_position);
+    for (const auto& t : get_neighbours(player_chunk))
+        chunks[t].delete_bloc_absolute(round_position);
 }
 
 void terrain::print_created_chunks(){

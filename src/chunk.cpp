@@ -91,7 +91,10 @@ void chunk::create_block_absolute(const block_types& block_type, const vec3& cen
 }
 
 void chunk::delete_bloc_absolute(vec3 position){
-    block& b = blocks[utils::Triplet(utils::round(position))];
+    auto t = utils::Triplet(utils::round(position));
+    if (blocks.count(t) == 0) return;
+
+    block& b = blocks[t];
     for (auto i = cubes.begin(); i < cubes.end(); i++){
         if(*i == b.block_cube){
             cubes.erase(i);
@@ -99,14 +102,14 @@ void chunk::delete_bloc_absolute(vec3 position){
         }
     }
     lists.place_block = true;
-    blocks.erase(utils::Triplet(utils::round(position)));
+    blocks.erase(t);
     update_blocks();
 }
 
 void chunk::draw(const environment_structure& env, bool wireframe, const vec3& player_position, const vec3& player_looking_at, const float& max_depth){
     for (auto& [pos, blk] : blocks){
         if(blk.is_being_seen(player_position, player_looking_at, max_depth))
-            blk.draw(env, wireframe);
+            blk.draw(env, wireframe, player_looking_at);
     }
 }
     

@@ -33,6 +33,8 @@ class player : public character {
     vec3 center = {0, 0, 0};
     vec3 dimensions = vec3{0.7, 0.7, 2 * 0.9} * Length;
 
+    environment_structure* p_env;
+
 public:
     // collision debugging
     mesh_drawable collision_box;
@@ -41,7 +43,7 @@ public:
     bool* creative;
     camera_controller_custom* camera;
 
-    player(camera_controller_custom&, vec3 center, bool* creative, terrain* terr);
+    player(camera_controller_custom&, vec3 center, bool* creative, terrain* terr, environment_structure* p_env = nullptr);
     player();
 
     void move(const std::vector<cube>&);

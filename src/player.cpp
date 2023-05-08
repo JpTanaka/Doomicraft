@@ -1,11 +1,12 @@
 #include <utility>
+#include <limits>
 #include "player.hpp"
 #include "utils.hpp"
 #include "constants.hpp"
 #include "audio_controller.hpp"
 
-player::player(camera_controller_custom &cam, vec3 center, bool* creative, terrain* terr)
-    : character(center), terr(terr), creative(creative)
+player::player(camera_controller_custom &cam, vec3 center, bool* creative, terrain* terr, environment_structure* p_env)
+    : character(center), terr(terr), creative(creative), p_env(p_env)
 {
     this->center = center + vec3{0, 0, 0.5 * dimensions.z};
     collision_box.initialize_data_on_gpu(mesh_primitive_cube());
@@ -23,47 +24,78 @@ vec3 player::looking_at(){
     return camera->camera_model.front();
 }
 
+
+float sweepAABB (
+    const vec3& player_center,
+    const vec3& player_dimensions,
+    const vec3& cube_center,
+    const vec3& cube_dimensions,
+    const vec3& move
+){
+    vec3 entry, exit, entry_t, exit_t;
+    for (int i = 0; i < 3; i++){
+        float p_start = player_center[i] - 0.5f * player_dimensions[i];
+        float p_end   = player_center[i] + 0.5f * player_dimensions[i];
+        float c_start = cube_center[i]   - 0.5f * cube_dimensions[i];
+        float c_end   = cube_center[i]   + 0.5f * cube_dimensions[i];
+
+        // entry and exit distances for each direction
+        entry[i] = move[i] > 0.0f ? c_start - p_end : c_end - p_start;
+        exit[i]  = move[i] > 0.0f ? c_end - p_start : c_start - p_end;
+
+        if (move[i] == 0) {
+            entry_t[i] = - std::numeric_limits<float>::infinity();
+            exit_t[i]  =   std::numeric_limits<float>::infinity();
+        }
+        else {
+            entry_t[i] = entry[i] / move[i];
+            exit_t[i]  = exit[i]  / move[i];
+        }
+    }
+
+    float entry_time = utils::max(entry_t);
+    float exit_time  = utils::min(exit_t);
+
+    if( // no collision
+        entry_time > exit_time ||
+        (entry_t.x < 0.0f && entry_t.y < 0.0f && entry_t.z < 0.0f)||
+        (entry_t.x > 1.0f) ||
+        (entry_t.y > 1.0f) ||
+        (entry_t.z > 1.0f)
+    ) return 1.0f;
+
+
+    return entry_time;
+}
+
+bool in_box(const vec3& box_center, const vec3& box_dimension, const vec3& obj_center, const vec3& obj_dimension){
+    for (int i = 0; i < 3; i ++)
+        if (
+            obj_center[i] - 0.5f * obj_dimension[i] > box_center[i] + 0.5f * box_dimension[i] ||
+            obj_center[i] + 0.5f * obj_dimension[i] < box_center[i] - 0.5f * box_dimension[i]
+        ) return false;
+    return true;
+}
+
 vec3 player::collide(const std::vector<cube>& cubes, const vec3& move_direction){
+    float t_min = 1.0f;
+    vec3 box_center = center + 0.5f * move_direction;
+    vec3 box_dimentions = utils::abs(move_direction) + utils::abs(dimensions);
 
-    return move_direction;
+    std::cout << "center " << box_center << " dims " << box_dimentions << std::endl;
 
-    // vec3 move = move_direction;
-    // float z_move = move.z;
-    // for (cube c : cubes){
-    //     // plane collision
-    //     if (!(
-    //         c.top() <= bottom() ||
-    //         c.bottom() >= top()
-    //     )){ // checks only on the strip
-    //         auto direction = body.get_colision_direction(c);
-    //         int axis = direction.first;
-    //         int semiaxis = direction.second;
-    //         if (
-    //             !(axis == -1 || axis == 2) &&
-    //             (semiaxis * move_direction[axis] > 0)
-    //         ) move[axis] = 0;
-    //     }
+    for (const cube& c: cubes){
+        // broadphase
+        const vec3& pos = c.position;
+        if (!in_box(box_center, box_dimentions, pos, vec3{1, 1, 1} * Length)) continue;
 
-    //     // z colision
-    //     if(body.distancexy(c) < Length){ // check only on the cilinder
-    //         if(
-    //             bottom() >= c.top() &&
-    //             bottom() + z_move <= c.top()
-    //         ) {
-    //             z_move = c.top() - bottom();
-    //             velocity.z = 0;
-    //             is_jumping = false;
-    //         };
-    //         if(
-    //             top() <= c.bottom() &&
-    //             top() + z_move >= c.bottom()
-    //         ) {
-    //             z_move = c.bottom() - top() ;
-    //             velocity.z = 0;
-    //         }
-    //     }
-    // }
-    // return move;
+        float t_entry = sweepAABB(center, dimensions, c.position, vec3{1, 1, 1}*Length, move_direction);
+        t_min = std::min(t_min, t_entry);
+
+        // debugging
+        if (t_entry < 1.0f && t_entry > 0.0f && p_env != nullptr) c.draw_wire(*p_env);
+    }
+    return move_direction * t_min;
 }
 
 void player::move(const std::vector<cube>& cubes)

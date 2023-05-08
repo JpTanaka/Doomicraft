@@ -21,6 +21,12 @@ namespace utils
         });
     }
 
+    float min(vec3 v){
+        return std::min({
+            v.x, v.y, v.z
+        });
+    }
+
     vec3 min(vec3 u, vec3 v){
         return {
             std::min(u.x, v.x),

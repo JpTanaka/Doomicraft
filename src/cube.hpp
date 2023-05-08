@@ -31,4 +31,8 @@ public:
 
     float top();
     float bottom();
+
+
+    // debugging
+    void draw_wire(environment_structure&) const;
 };

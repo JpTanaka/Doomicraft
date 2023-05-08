@@ -84,3 +84,11 @@ bool cube::operator==(const cube& other) const {
         other.position.z == position.z
     );
 }
+
+void cube::draw_wire(environment_structure& env) const {
+    mesh_drawable c;
+    c.initialize_data_on_gpu(
+        mesh_primitive_cube(position)
+    );
+    draw_wireframe(c, env, {1, 0, 0});
+}

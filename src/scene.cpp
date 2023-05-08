@@ -26,6 +26,7 @@ void scene_structure::initialize_game(){
 		gui.fog_depth = 16;
 		gui.creative = true;
 		gui.collision_box = true;
+		gui.debug = true;
 		break;
 	
 	default:
@@ -46,7 +47,7 @@ void scene_structure::initialize()
 
 	block::initialize();
 	terr = terrain();
-	main_player = player(camera_control, { 0, 0, 10 }, &gui.creative, &terr);
+	main_player = player(camera_control, { 0, 0, 10 }, &gui.creative, &terr, &environment);
 
 	// Adding portal gun
 	glfwInit();

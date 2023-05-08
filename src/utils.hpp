@@ -8,6 +8,7 @@ namespace utils
     // coordinate by coordinate functions
     vec3 max(vec3, vec3);
     float max(vec3);
+    float min(vec3);
     vec3 min(vec3, vec3);
     vec3 relu(vec3);
     vec3 abs(vec3);

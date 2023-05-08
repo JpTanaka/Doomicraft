@@ -40,6 +40,11 @@ class player : public character {
 
     environment_structure* p_env;
 
+
+    // gun
+    mesh_drawable gun;
+    vec3 gun_displace = {0, -0.4f, 0};
+
 public:
     // collision debugging
     mesh_drawable collision_box;
@@ -70,4 +75,6 @@ public:
     void end_game();
 
     std::string get_block(int direction = 0);
+
+    void draw(const environment_structure&, bool wireframe);
 };

@@ -24,7 +24,7 @@ void scene_structure::initialize_game(){
 	case game_modes::kTest:
 		environment.background_color = vec3{0, 0, 0};
 		gui.fog_depth = 16;
-		gui.creative = false;
+		gui.creative = true;
 		gui.collision_box = true;
 		gui.debug = true;
 		break;
@@ -78,6 +78,10 @@ void scene_structure::display_frame()
 	default:
 		break;
 	}
+
+	// player items must be on top of everything
+    glClear(GL_DEPTH_BUFFER_BIT);
+	main_player.draw(environment, gui.display_wireframe);
 }
 
 void scene_structure::end_game(){

@@ -12,8 +12,13 @@ player::player(camera_controller_custom &cam, vec3 center, bool* creative, terra
     collision_box.initialize_data_on_gpu(mesh_primitive_cube());
     collision_box.model.scaling_xyz = dimensions;
 
+    gun.initialize_data_on_gpu(
+        mesh_load_file_obj("../assets/gun.obj")
+    );
+    gun.material.color = 0.3f * vec3{1, 1, 1};
+
     camera = &cam;
-    camera_pos = center + vec3{0, 0, dimensions.z - 0.2f};
+    camera_pos = this->center + vec3{0, 0, 0.5f * dimensions.z - 0.2f};
     camera->set_position(camera_pos);
     starting_position = center;
 }
@@ -199,6 +204,8 @@ void player::move(const std::vector<cube>& cubes)
     body.position.z += Length;
 
     camera->set_position(camera_pos);
+
+    // moving gun in frame  
 }
 
 
@@ -295,9 +302,11 @@ void player::respawn(){
     respawn_timer = 0;
 
     position += respawn_delta;
+    center += respawn_delta;
     legs.position += respawn_delta;
     body.position += respawn_delta;
-    camera->set_position(body.position);
+    camera_pos = this->center + vec3{0, 0, 0.5f * dimensions.z - 0.2f};
+    camera->set_position(camera_pos);
 }
 
 bool player::is_dead(){
@@ -371,4 +380,18 @@ bool player::is_inside(const vec3& p) const {
 
 vec3 player::get_eyes(){
     return camera_pos;
+}
+
+void player::draw(const environment_structure& env, bool wireframe){
+    gun.model.translation = camera->camera_model.position();
+    gun.model.rotation = rotation_transform::from_frame_transform(
+        {1,0,0}, 
+        {0,0,1}, 
+        camera->camera_model.front(), 
+        camera->camera_model.up()
+    );
+    if (wireframe)
+        cgp::draw_wireframe(gun, env);
+    else
+        cgp::draw(gun, env);
 }

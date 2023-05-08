@@ -6,6 +6,7 @@ using namespace cgp;
 void scene_structure::initialize_game(){
 	main_player.start_game();
 	camera_control.activate();
+	billboard::init_billboards();
 
 	switch (game_mode){
 	case game_modes::kCreative:
@@ -64,7 +65,6 @@ void scene_structure::display_frame()
 	environment.light = main_player.position + vec3{0,0,10};
 	environment.uniform_generic.uniform_int["fog_depth"] = gui.fog_depth;
 	timer.update();
-	terr.draw(environment, gui.display_wireframe, main_player.get_eyes(), main_player.looking_at(), gui.fog_depth);
 	if(gui.collision_box) main_player.draw_collision_box(environment);
 
 	switch (game_mode){
@@ -78,6 +78,9 @@ void scene_structure::display_frame()
 	default:
 		break;
 	}
+
+	// drawing terrain (with transparent objs)
+	terr.draw(environment, gui.display_wireframe, main_player.get_eyes(), main_player.looking_at(), gui.fog_depth);
 
 	// player items must be on top of everything
     glClear(GL_DEPTH_BUFFER_BIT);

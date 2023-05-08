@@ -19,6 +19,7 @@ class block_mesh {
     float cos_frac_fov = std::cos(FIELD_OF_VIEW / 3.0f);
 
 public:
+    bool transparent = false;
     block_mesh(std::string texture_path_top, std::string texture_path_sides, vec3 color = {0,0,0});
     block_mesh(std::string texture_path);
     block_mesh(const std::tuple<std::string, vec3, bool>*);

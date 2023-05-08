@@ -1,5 +1,6 @@
 #include "chunk.hpp"
 #include "audio_controller.hpp"
+#include "billboard.hpp"
 
 chunk::chunk(){};
 
@@ -23,6 +24,9 @@ chunk::chunk(vec2 chunk_position)
 
         if(utils::rand() < 0.005)
             create_tree({x, y, height + 1});
+
+        if(utils::rand() < 0.01)
+            create_flower({x, y, height + 1});
     }
     update_blocks();
 }
@@ -70,6 +74,15 @@ void chunk::create_tree(const vec3& center){
     }
 }
 
+void chunk::create_flower(const vec3& center){
+    vec3 int_center = utils::round(center);
+    vec3 pos = utils::expand(position) + int_center;
+    if(check_has_block(pos)) return;
+    auto b = billboard(red_flower, pos);
+    billboards.push_back(b);
+}
+
+
 bool chunk::check_has_block(const utils::Triplet& t){
     return ! (blocks.find(t) == blocks.end());
 }
@@ -107,14 +120,23 @@ void chunk::delete_bloc_absolute(vec3 position){
 }
 
 void chunk::draw(const environment_structure& env, bool wireframe, const vec3& player_position, const vec3& player_looking_at, const float& max_depth){
-    for (auto& [pos, blk] : blocks){
+    for (const auto& [pos, blk] : blocks){
         if(blk.is_being_seen(player_position, player_looking_at, max_depth))
             blk.draw(env, wireframe, player_looking_at);
     }
+
 }
     
 std::vector<cube>& chunk::get_cubes(){
     return cubes;
+}
+
+std::vector<billboard>& chunk::get_billboards(){
+    return billboards;
+}
+
+std::vector<block>& chunk::get_transparents(){
+    return transparents;
 }
 
 

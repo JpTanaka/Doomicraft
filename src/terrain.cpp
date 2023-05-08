@@ -26,6 +26,7 @@ terrain::terrain(){
 void terrain::draw(const environment_structure& env, bool wireframe, const vec3& player_position, const vec3& player_looking_at, const float& max_depth){
     // get visible chunks
     auto player_chunk = chunk::get_chunk_triplet(player_position);
+    std::vector<billboard> billboards;
 
 
     for (const utils::Triplet& t : get_neighbours(player_chunk)){
@@ -39,7 +40,26 @@ void terrain::draw(const environment_structure& env, bool wireframe, const vec3&
             player_looking_at,
             max_depth
         );
+        auto& bills = chunks[t].get_billboards();
+        billboards.insert(billboards.end(), bills.begin(), bills.end());
     }
+
+	// display transparents
+	glEnable(GL_BLEND);
+	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+	glDepthMask(false);
+
+    std::sort(billboards.begin(), billboards.end(), 
+        [&](const auto& b1, const auto& b2){
+            return norm(b1.get_position() - player_position) < norm(b2.get_position() - player_position);
+        }
+    );
+
+    for (const auto& bill : billboards)
+	    bill.draw(env, wireframe);
+
+	glDepthMask(true);
+	glDisable(GL_BLEND);
 }
 
 std::vector<cube> terrain::get_cubes(const vec3& player_position) {

@@ -10,6 +10,7 @@
 #include "mob.hpp"
 #include "mob_group.hpp"
 #include "timed_gui.hpp"
+#include "billboard.hpp"
 
 
 

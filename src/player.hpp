@@ -8,10 +8,12 @@
 #include "character.hpp"
 #include "mob_group.hpp"
 #include "terrain.hpp"
+#include "game_modes.hpp"
 
 class player : public character {
 
     terrain* terr = nullptr;
+    game_modes* game_mode;
     block_types chosen_block = block_types::earth;
     bool shoot_mob(mob_group &mobg);
     void handle_cubes(const std::vector<cube>& cubes);
@@ -53,7 +55,7 @@ public:
     bool* creative;
     camera_controller_custom* camera;
 
-    player(camera_controller_custom&, vec3 center, bool* creative, terrain* terr, environment_structure* p_env = nullptr);
+    player(camera_controller_custom&, vec3 center, bool* creative, terrain* terr, game_modes* game_mode, environment_structure* p_env = nullptr);
     player();
 
     void move(const std::vector<cube>&);

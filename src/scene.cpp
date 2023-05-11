@@ -11,7 +11,7 @@ void scene_structure::initialize_game(){
 	switch (game_mode){
 	case game_modes::kCreative:
 		environment.background_color = {0.5, 0.7, 1};
-		gui.fog_depth = 24;
+		gui.fog_depth = 14;
 		lists.background_creative = true;
 		break;
 
@@ -48,7 +48,7 @@ void scene_structure::initialize()
 
 	block::initialize();
 	terr = terrain();
-	main_player = player(camera_control, { 0, 0, 10 }, &gui.creative, &terr, game_mode == game_modes::kTest ? &environment : nullptr);
+	main_player = player(camera_control, { 0, 0, 10 }, &gui.creative, &terr, &game_mode, game_mode == game_modes::kTest ? &environment : nullptr);
 
 	// Adding portal gun
 	glfwInit();
@@ -123,6 +123,7 @@ void scene_structure::idle_frame()
 		enemies.set_level(main_player.get_level());
 		camera_control.idle_frame(environment.camera_view);
 		main_player.move(terr.get_cubes(main_player.position));
+		enemies.update_mobs(main_player.position);
 		enemies.move(terr, main_player.body.position, inputs.time_interval);
 		if(!gui.creative && enemies.check_hits_player(main_player.position)){
 			main_player.take_hit(); 
@@ -130,6 +131,7 @@ void scene_structure::idle_frame()
 		}
 		if(!gui.creative && main_player.is_dead())
 			end_game();
+
 		break;
 
 	case game_modes::kCreative:
@@ -243,7 +245,7 @@ void scene_structure::display_gui()
 			ImGui::SliderInt("Fog Depth", &gui.fog_depth, 0, 64);
 		}
 		ImGui::Text(" ");
-		if(ImGui::Button("Exit", {gui.config_window_size.x, 40})) end_game();
+		if(ImGui::Button("Exit Game", {gui.config_window_size.x, 40})) end_game();
 		ImGui::End();
 	}
 

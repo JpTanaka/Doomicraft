@@ -11,6 +11,7 @@
 #include "mob_group.hpp"
 #include "timed_gui.hpp"
 #include "billboard.hpp"
+#include "game_modes.hpp"
 
 
 
@@ -23,12 +24,6 @@ using cgp::timer_basic;
 using cgp::vec3;
 
 
-// Game modes
-enum game_modes {
-	kSurvival,
-	kCreative,
-	kTest
-};
 
 // for loading sprites in the ImGui
 struct image_obj {

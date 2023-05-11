@@ -57,7 +57,8 @@ void terrain::draw(const environment_structure& env, bool wireframe, const vec3&
     );
 
     for (const auto& trans : transparents)
-	    trans.draw(env, wireframe);
+        if (norm(player_position - trans.get_position()) < max_depth)
+	        trans.draw(env, wireframe);
 
 	glDepthMask(true);
 	glDisable(GL_BLEND);

@@ -97,3 +97,19 @@ void mob_group::set_level(int level){
     mob_range = 25 - std::min(level, 15);
     velocity = 1 + std::min(level, 3);
 }
+
+void mob_group::update_mobs(const vec3& from){
+    frame_counter++;
+    if (frame_counter < spawn_delay) return;
+
+    frame_counter = 0;
+    wave_size++;
+
+    vec3 rand_vec;
+    do {
+        rand_vec = {utils::rand(-1, 1) * mob_range, utils::rand(-1, 1) * mob_range, 10};
+    } while (norm(from - rand_vec) < 10);
+    add_mob(mob({
+        from + rand_vec
+    }));
+}

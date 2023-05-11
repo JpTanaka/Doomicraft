@@ -5,8 +5,8 @@
 #include "constants.hpp"
 #include "audio_controller.hpp"
 
-player::player(camera_controller_custom &cam, vec3 center, bool* creative, terrain* terr, environment_structure* p_env)
-    : character(center), terr(terr), p_env(p_env), creative(creative)
+player::player(camera_controller_custom &cam, vec3 center, bool* creative, terrain* terr, game_modes* game_mode, environment_structure* p_env)
+    :character(center), terr(terr), game_mode(game_mode), p_env(p_env), creative(creative)
 {
     this->center = center + vec3{0, 0, 0.5 * dimensions.z};
     collision_box.initialize_data_on_gpu(mesh_primitive_cube());
@@ -244,7 +244,7 @@ bool player::handle_mouse_input(const std::vector<cube>& cubes, mob_group &mobg)
 
     if (click_left){
         bool hit = shoot_mob(mobg);
-        if(game_on)
+        if(game_on && *game_mode == game_modes::kSurvival)
             lists.shoot = true;
         return hit;
     }
@@ -276,7 +276,7 @@ bool player::shoot_mob(mob_group &mobg) {
     );
     int new_kills = mobg.check_dead(position);
     kills += new_kills;
-    if (new_kills > 0) lists.kill = true;
+    if (new_kills > 0 && *game_mode == game_modes::kSurvival) lists.kill = true;
     return hit;
 }
 
@@ -383,6 +383,7 @@ vec3 player::get_eyes(){
 }
 
 void player::draw(const environment_structure& env, bool wireframe){
+    if (*game_mode == game_modes::kCreative) return;
     gun.model.translation = camera->camera_model.position();
     gun.model.rotation = rotation_transform::from_frame_transform(
         {1,0,0}, 

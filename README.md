@@ -1,4 +1,6 @@
-# ⛏️ Doomicraft ⛏️
+<p align="center">
+  <img src = "https://github.com/JpTanaka/Doomicraft/assets/77277361/cd095d24-18f5-407e-a63f-c64d45b7daff" alt="Doomicraft"/>
+</p>
 
 A mix between Minecraft and Doom! Build your world on Creative or fight creepers in Survival, hoping to last another level...
 
@@ -10,8 +12,7 @@ Originally a project for the INF443 course at Polytechnique.
 
 Authors: Guile Vieira (guilevieiram), João Tanaka (jptanaka) and Rafael Nagai
 
-![Doomicraft creeper](https://user-images.githubusercontent.com/82896115/234225080-24732dd7-2ef3-48d1-82a9-29a3acb35fd0.jpeg)
-
+![Screenshot from 2023-05-11 14-15-49](https://github.com/JpTanaka/Doomicraft/assets/77277361/ab4bd509-fe5d-4d7f-9649-c4f453abb4a7)
 
 
 ## 📥 Downloading
@@ -57,19 +58,15 @@ make
 ## Galery
 
 Videos of the gameplay showing the game features:
-
-[[INSERT LINK]]
+- Creative: https://youtu.be/k5S0gGmGR48
+- Survival: https://youtu.be/ag2cmsAGo3w
 
 Some images from the gameplay.
 
-![WhatsApp Image 2023-04-25 at 10 33 54](https://user-images.githubusercontent.com/82896115/234225492-ad5f7d6c-9b16-4467-919e-009a5b61931d.jpeg)
-
-
-![WhatsApp Image 2023-04-25 at 10 43 45](https://user-images.githubusercontent.com/82896115/234225661-6a562558-e966-4095-8b84-c205d9a2fb51.jpeg)
-![WhatsApp Image 2023-04-25 at 10 42 19](https://user-images.githubusercontent.com/82896115/234225663-867605e9-211b-4e8d-bba2-a5a9a59a731f.jpeg)
-![WhatsApp Image 2023-04-25 at 10 36 03](https://user-images.githubusercontent.com/82896115/234225669-44f7b516-7027-4104-ae04-1ebb751309ab.jpeg)
-![WhatsApp Image 2023-04-25 at 10 34 57](https://user-images.githubusercontent.com/82896115/234225680-a87c3a61-2bcc-4310-b27a-91d5f8e1ad49.jpeg)
-![Game over](https://user-images.githubusercontent.com/82896115/234225659-4baa08cf-dbe3-4410-8f23-cfba461108af.jpeg)
+![Screenshot from 2023-05-11 14-17-59](https://github.com/JpTanaka/Doomicraft/assets/77277361/d011f25b-d809-4072-9ce3-e6980ecbaf67)
+![Screenshot from 2023-05-11 14-17-22](https://github.com/JpTanaka/Doomicraft/assets/77277361/92623790-ffe8-4ff7-9a78-1fcec652c28a)
+![Screenshot from 2023-05-11 14-15-59](https://github.com/JpTanaka/Doomicraft/assets/77277361/c4702868-4642-40cf-a299-f0b64388229c)
+![Screenshot from 2023-05-11 14-15-08](https://github.com/JpTanaka/Doomicraft/assets/77277361/1e83807e-47f4-4f7f-8c61-33b6771f8a62)
 
 
 

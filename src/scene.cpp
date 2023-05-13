@@ -64,6 +64,7 @@ void scene_structure::display_frame()
 	if (game_over) return;
 	environment.light = main_player.position + vec3{0,0,10};
 	environment.uniform_generic.uniform_int["fog_depth"] = gui.fog_depth;
+	environment.uniform_generic.uniform_vec3["fog_color"] = environment.background_color;
 	timer.update();
 	if(gui.collision_box) main_player.draw_collision_box(environment);
 

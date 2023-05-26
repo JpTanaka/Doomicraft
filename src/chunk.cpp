@@ -42,11 +42,16 @@ void chunk::update_blocks(){
         if(!check_has_block(pos + utils::Triplet(0, 0, -1))) render_dirs.push_back(directions::kBottom);
         blk.render_directions = render_dirs;
     }
+    billboard* to_kill = nullptr;
     for (auto& bill : billboards){// dropping billboards
         if(!check_has_block(bill.get_position() + vec3{0, 0, -1})) 
             bill.update_position(bill.get_position() + vec3{0, 0, -1});
+        if(check_has_block(bill.get_position())) 
+            to_kill = &bill;
     }
 
+    if (to_kill != nullptr) std::remove(billboards.begin(), billboards.end(), *to_kill);
+    
 }
 
 int chunk::generator_function(const vec2& v){

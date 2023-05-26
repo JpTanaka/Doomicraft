@@ -48,8 +48,8 @@ void block_mesh::draw(const environment_structure& env, vec3 position, std::vect
         //     continue;
 
 
-        // if (dot(normals[dir], normalize(position - from)) >= 0)
-        //     continue;
+        if (dot(normals[dir], normalize(position + normals[dir] * Length * 0.5f - from)) >= 0)
+            continue;
         mesh_drawable& mesh = meshes[dir];
         mesh.model.translation = position;
         if(!wireframe) cgp::draw(mesh, env);

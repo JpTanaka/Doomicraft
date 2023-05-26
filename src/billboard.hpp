@@ -25,4 +25,7 @@ public:
     void update_position(vec3);
 
     static void init_billboards();
+    bool operator==(const billboard& b) const{
+        return norm(position - b.get_position()) == 0;
+    }
 };

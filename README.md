@@ -58,7 +58,7 @@ make
 ## Galery
 
 Videos of the gameplay showing the game features:
-- Creative: https://youtu.be/k5S0gGmGR48
+- Creative: https://youtu.be/Fd9LEMZV8Cs
 - Survival: https://youtu.be/ag2cmsAGo3w
 
 Some images from the gameplay.
@@ -84,7 +84,7 @@ To achieve high performance on the game (at least 30FPS), some modifications on 
 1. The meshes for each type of block are created and loaded on the GPU only once in the initialization of the program. The drawing of different blocks is made using translations. The same works for the flowers, they are loaded in the GPU only once.
 2. The contact face when two blocks are touching are not rendered, which decreases significantly the render time for the scene.
 3. A max depth to render blocks is defined to prevent blocks far away to be rendered. This, together with the Fog (implemented on the Shader) gives a smooth transition between the terrain and the background. Also the number of render calls decreses significantly with this optimization. The fog depth can be changed by the player on the menu on runtime!
-4. The faces whose normal face away from the direction the player is looking are not shown. This is made by approximation using a threshold on the dot product of the vectors since the calculations using the field of view would be too expensive.
+4. Block faces that are facing away from the player are not rendered as well, saving a lot of runtime.
 
 --------------------------------------
 ### Collision

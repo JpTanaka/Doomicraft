@@ -24,7 +24,7 @@ public:
     block_mesh(std::string texture_path);
     block_mesh(const std::tuple<std::string, vec3, bool>*);
     block_mesh();
-    void draw(const environment_structure& env, vec3 position, std::vector<directions> render_directions, const vec3& looking_at, bool wireframe);
+    void draw(const environment_structure& env, vec3 position, std::vector<directions> render_directions, const vec3& from, bool wireframe);
     void init_meshes();
 };
 

@@ -32,7 +32,7 @@ public:
 
     cube block_cube;
 
-    void draw(const environment_structure&, bool wireframe, const vec3& looking_at) const;
+    void draw(const environment_structure&, bool wireframe, const vec3& from) const;
 
 
     block();

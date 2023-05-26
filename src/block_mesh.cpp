@@ -37,10 +37,19 @@ block_mesh::block_mesh(const std::tuple<std::string, vec3, bool>* config){
     }
 }
 
-void block_mesh::draw(const environment_structure& env, vec3 position, std::vector<directions> render_directions, const vec3& looking_at, bool wireframe){
+void block_mesh::draw(const environment_structure& env, vec3 position, std::vector<directions> render_directions, const vec3& from, bool wireframe){
     for (directions dir : render_directions){
-        if (dot(normals[dir], looking_at) >= cos_frac_fov)
-            continue;
+        /*
+            this was giving out lots of bugs and i didn't figure it out just yet...
+            it also didn't do wonders to the performance...
+            TODO
+        */
+        // if (dot(normals[dir], looking_at) >= cos_frac_fov)
+        //     continue;
+
+
+        // if (dot(normals[dir], normalize(position - from)) >= 0)
+        //     continue;
         mesh_drawable& mesh = meshes[dir];
         mesh.model.translation = position;
         if(!wireframe) cgp::draw(mesh, env);

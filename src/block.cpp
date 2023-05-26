@@ -61,9 +61,9 @@ block::block(block_types b_type, vec3 pos)
     position = pos;
 }
 
-void block::draw(const environment_structure& env, bool wireframe, const vec3& looking_at) const{
+void block::draw(const environment_structure& env, bool wireframe, const vec3& from) const{
     block_mesh& mesh = blocks[block_type];
-    mesh.draw(env, position, render_directions, looking_at, wireframe);
+    mesh.draw(env, position, render_directions, from, wireframe);
 }
 
 bool block::is_being_seen(const vec3& from, const vec3& looking_at, const float& max_depth) const{

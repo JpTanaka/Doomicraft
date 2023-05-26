@@ -128,7 +128,7 @@ void chunk::delete_bloc_absolute(vec3 position){
 void chunk::draw(const environment_structure& env, bool wireframe, const vec3& player_position, const vec3& player_looking_at, const float& max_depth){
     for (const auto& [pos, blk] : blocks){
         if(blk.is_being_seen(player_position, player_looking_at, max_depth))
-            blk.draw(env, wireframe, player_looking_at);
+            blk.draw(env, wireframe, player_position);
     }
 }
     
